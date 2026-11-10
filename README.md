@@ -9,6 +9,9 @@ A responsive, static quotation collection built with **Astro 7, TypeScript, CSS,
 ## What works today
 
 - Browse 100 individually addressable quotation pages, with preserved authors and any supplied references.
+- Explore six hand-curated themes across 96 distinct quotations at `/collections/` (quotes may appear in multiple themes).
+- Create custom quote artwork in the browser at `/studio/` (4 canvas formats × 4 palettes; full-resolution PNG export).
+- Review provenance, citation coverage, correction reporting, and reuse guidance at `/sources/`.
 - Search quote text, people, and references; filter quotes with/without references.
 - Save favorites in the browser (localStorage), with cross-tab synchronization; no account or server database.
 - Find a random quote, copy text, and share/copy a quotation link.
@@ -63,6 +66,7 @@ src/
   assets/                   Custom jester SVG and decorative assets
   components/               Hero, gallery, cards, favorites, share/poster UI
   data/jester-quotes.json   Canonical quote registry (100 entries)
+  data/collections.json    Editorial quote-ID groupings (not a new quote database)
   layouts/BaseLayout.astro  Shared SEO, metadata, navigation, styling
   lib/                      Quote data, SEO, filters, poster layout
   pages/
@@ -70,6 +74,10 @@ src/
     about.astro             Jester archetype introduction
     404.astro               Accessible 404 page
     quotes/[id].astro       100 static quote detail routes
+    collections/index.astro  Six editorial themes
+    collections/[slug].astro Curated quote pages
+    studio.astro             Client-side poster customization
+    sources.astro            Provenance and correction information
     sitemap.xml.ts          XML index of public routes
     robots.txt.ts           Robots policy and sitemap URL
   scripts/                  Favorites, explorer, downloadable posters
@@ -88,6 +96,8 @@ CREDITS.md                  Source and publication-rights information
 - **Collection source:** [100 Jester Quotes — Know Your Archetypes](https://knowyourarchetypes.com/jester-quotes/).
 - **Identifiers:** `jester-quote-001` through `jester-quote-100`; do not renumber existing IDs or silently rewrite quotations, people, or references.
 - The collection currently has 100 quotations attributed to 92 distinct people. Reference metadata is provided for 14 entries; missing references must not be invented.
+- `src/data/collections.json` maps themes to existing quote IDs. Collections are intentionally non-exclusive editorial lists, and they must not duplicate or alter the canonical quote registry.
+- Quote Studio imports the same registry and existing `poster-layout.ts` text-fitting helper. Artwork is rendered locally in a browser canvas; formats that cannot display the full text are not exportable.
 
 **Copyright:** Attributions are not licenses. The site's existing quotations come from third-party sources and may require permission or a documented legal basis for reproduction. Review `CREDITS.md` and resolve publication rights before expanding distribution or adding third-party material.
 
@@ -114,4 +124,4 @@ When introducing a custom domain, update the **Production** `PUBLIC_SITE_URL` va
 
 Keep the static architecture and existing routes unless a new capability requires a change. Add content/features in coherent batches with targeted tests, preserve responsive behavior and accessibility, and prefer reusable components to duplicate pages or data registries. Check GitHub Actions and the Vercel Production deployment after release.
 
-**Current status:** Midnight Carnival 1.1 and Phase D publication metadata are implemented. Follow-on page ideas (thematic collections, a daily quotation, improved sharing, and source transparency) are not yet implemented.
+**Current status:** Midnight Carnival 1.1, publication metadata, six curated Collections, browser Quote Studio, and Sources & Attribution are implemented. Possible later additions: a rotating daily quotation and a dedicated saved-quote library.

@@ -1,0 +1,12 @@
+---
+import type { CuratedCollection } from '../lib/collections';
+interface Props { collection: CuratedCollection; index: number; }
+const { collection, index } = Astro.props;
+---
+<a class:list={['collection-card', `collection-card--${collection.tone}`]} href={`/collections/${collection.slug}/`}>
+  <span class="collection-number">{String(index + 1).padStart(2, '0')} / THE COLLECTION</span>
+  <span class="collection-ornament" aria-hidden="true">✦</span>
+  <h3>{collection.title}</h3>
+  <p>{collection.description}</p>
+  <span class="collection-card-foot"><span>{collection.quotes.length} curated quotes</span><strong>Explore ↗</strong></span>
+</a>
