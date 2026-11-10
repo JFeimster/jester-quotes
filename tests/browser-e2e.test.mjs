@@ -145,6 +145,9 @@ test('real headless Chrome exercises site routes, PNG/ZIP downloads and responsi
     assert.equal(await app.eval(`getComputedStyle(document.querySelector('.hero-copy')).animationName`),'none');
     await app.page.send('Emulation.setEmulatedMedia',{features:[]});
 
+    // Establish actual keyboard input modality so :focus-visible is meaningful.
+    await app.page.send('Input.dispatchKeyEvent',{type:'keyDown',key:'Tab',code:'Tab',windowsVirtualKeyCode:9,nativeVirtualKeyCode:9});
+    await app.page.send('Input.dispatchKeyEvent',{type:'keyUp',key:'Tab',code:'Tab',windowsVirtualKeyCode:9,nativeVirtualKeyCode:9});
     const focus=await app.eval(`(function(){
       const btn=document.querySelector('.nav-studio-cta');btn.focus();return {tag:document.activeElement?.tagName,visible:getComputedStyle(btn).outlineStyle!=='none'};
     })()`);
