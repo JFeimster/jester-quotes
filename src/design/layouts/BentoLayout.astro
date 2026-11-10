@@ -1,0 +1,26 @@
+---
+import QuoteCard from '../../components/QuoteCard.astro';
+import {getTheme,labThemeStyle} from '../theme-registry';
+import type {Quote} from '../../types/quote';
+const {samples}=Astro.props as {samples:[Quote,Quote,Quote]};
+const theme=getTheme('velvet-gallery');
+---
+<section class="lab-composition lab-composition--bento" data-theme="velvet-gallery" style={labThemeStyle(theme)} aria-label="Luxury Velvet Bento layout preview">
+  <div class="lab-gallery-mast"><span>THE VELVET GALLERY</span><span>CURATED IRREVERENCE — № 003</span><span>✦</span></div>
+  <div class="lab-gallery-hero">
+    <div class="lab-gallery-lead"><span class="lab-gallery-kicker">THE BEAUTY OF CONTRADICTION</span>
+      <h2>A little<br/><em>beautiful</em><br/>trouble.</h2>
+      <p>Literary wit, dressed for the gallery and just slightly out of place.</p>
+      <a href="/collections/masks-and-identity/">EXPERIENCE THE COLLECTION ↗</a></div>
+    <aside class="lab-gallery-statement"><span class="lab-gallery-mark" aria-hidden="true">❧</span><p>EXHIBITION NOTE 003</p>
+      <p class="lab-gallery-manifesto">The art of<br/><em>questioning</em><br/>everything.</p>
+      <span class="lab-gallery-small">CURATORIAL ART DIRECTION / ORIGINAL COPY</span>
+      <div class="lab-gallery-links"><a href="/tricksters/">THE FIGURES ↗</a><a href="/resources/">THE SOURCES ↗</a></div>
+    </aside>
+  </div>
+  <div class="lab-gallery-caption"><span>SELECTED WORKS / THE ARCHIVE</span><span>3 QUOTES / 3 COMPOSITIONS</span></div>
+  <div class="lab-quote-grid lab-quote-grid--bento">
+    <QuoteCard quote={samples[0]} index={0}/><QuoteCard quote={samples[1]} index={3}/><QuoteCard quote={samples[2]} index={5}/>
+  </div>
+  <div class="lab-gallery-bottom"><span>© JESTER QUOTES / VISUAL STUDY 03</span><a href="/studio/">COMPOSE YOUR OWN QUOTE ART ↗</a></div>
+</section>
