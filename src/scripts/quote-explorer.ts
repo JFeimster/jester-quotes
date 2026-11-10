@@ -154,17 +154,21 @@ document.addEventListener('click', async (event) => {
 
   const shareButton = target.closest<HTMLButtonElement>('.share-quote');
   if (shareButton) {
-    try {
-      if (navigator.share) {
+    if (navigator.share) {
+      try {
         await navigator.share({ title: document.title, url: window.location.href });
         announce('Link shared.');
-      } else {
-        await copyText(window.location.href);
-        flash(shareButton, 'Link copied ✓');
-        announce('Quote link copied to clipboard.');
+        return;
+      } catch (error) {
+        // Cancellation is intentional; all other failures fall back to copying.
+        if (error instanceof Error && error.name === 'AbortError') return;
       }
-    } catch (error) {
-      if (error instanceof Error && error.name === 'AbortError') return;
+    }
+    try {
+      await copyText(window.location.href);
+      flash(shareButton, 'Link copied ✓');
+      announce('Quote link copied to clipboard.');
+    } catch {
       flash(shareButton, 'Share unavailable');
       announce('Sharing is unavailable. Copy the page URL from your browser.');
     }
