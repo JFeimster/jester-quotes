@@ -29,5 +29,269 @@
     "alt": "Midnight Carnival jester artwork in a theatrical editorial style",
     "status": "integrated",
     "notes": "Existing legacy URL used by Hero.astro. Actual pixel dimensions not independently verified."
+  },
+  {
+    "id": "brand-logo-horizontal",
+    "path": "/assets/branding/logos/midnight-carnival-logo-horizontal.png",
+    "assetType": "logo",
+    "style": "midnight-carnival",
+    "variant": "horizontal",
+    "dimensions": {
+      "width": 1672,
+      "height": 941
+    },
+    "mimeType": "image/png",
+    "usage": [
+      "site-brand",
+      "social-brand"
+    ],
+    "status": "approved",
+    "alt": "Jester Quotes wordmark and ornate jester crest",
+    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+  },
+  {
+    "id": "quote-studio-promo",
+    "path": "/assets/studio/promotional/midnight-carnival-studio-16x9.png",
+    "assetType": "studio-promo",
+    "style": "midnight-carnival",
+    "variant": "editorial",
+    "aspectRatio": "16x9",
+    "dimensions": {
+      "width": 1672,
+      "height": 941
+    },
+    "mimeType": "image/png",
+    "usage": [
+      "studio-promotion"
+    ],
+    "status": "approved",
+    "alt": "Midnight Carnival quote studio promo",
+    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+  },
+  {
+    "id": "collection-06-editorial",
+    "path": "/assets/collections/06-art-of-jester/midnight-carnival-collection-06-art-of-jester-editorial-4x3.png",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "editorial",
+    "collection": "art-of-the-jester",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mimeType": "image/png",
+    "usage": [
+      "collection-detail",
+      "feature-banner"
+    ],
+    "status": "approved",
+    "alt": "Midnight Carnival collection artwork for art-of-the-jester",
+    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+  },
+  {
+    "id": "collection-05-editorial",
+    "path": "/assets/collections/05-carnival-absurdity/midnight-carnival-collection-05-carnival-absurdity-editorial-4x3.png",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "editorial",
+    "collection": "carnival-absurdity",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mimeType": "image/png",
+    "usage": [
+      "collection-detail",
+      "feature-banner"
+    ],
+    "status": "approved",
+    "alt": "Midnight Carnival collection artwork for carnival-absurdity",
+    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+  },
+  {
+    "id": "collection-04-clean",
+    "path": "/assets/collections/04-masks-identity/midnight-carnival-collection-04-masks-identity-4x3.png",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "clean",
+    "collection": "masks-and-identity",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mimeType": "image/png",
+    "usage": [
+      "collection-card"
+    ],
+    "status": "approved",
+    "alt": "Midnight Carnival collection artwork for masks-and-identity",
+    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+  },
+  {
+    "id": "collection-04-editorial",
+    "path": "/assets/collections/04-masks-identity/midnight-carnival-collection-04-masks-identity-editorial-4x3.png",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "editorial",
+    "collection": "masks-and-identity",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mimeType": "image/png",
+    "usage": [
+      "collection-detail",
+      "feature-banner"
+    ],
+    "status": "approved",
+    "alt": "Midnight Carnival collection artwork for masks-and-identity",
+    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+  },
+  {
+    "id": "collection-03-editorial",
+    "path": "/assets/collections/03-laughter-life/midnight-carnival-collection-03-laughter-life-editorial-4x3.png",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "editorial",
+    "collection": "laughter-and-life",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mimeType": "image/png",
+    "usage": [
+      "collection-detail",
+      "feature-banner"
+    ],
+    "status": "approved",
+    "alt": "Midnight Carnival collection artwork for laughter-and-life",
+    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+  },
+  {
+    "id": "collection-03-clean",
+    "path": "/assets/collections/03-laughter-life/midnight-carnival-collection-03-laughter-life-4x3.png",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "clean",
+    "collection": "laughter-and-life",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mimeType": "image/png",
+    "usage": [
+      "collection-card"
+    ],
+    "status": "approved",
+    "alt": "Midnight Carnival collection artwork for laughter-and-life",
+    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+  },
+  {
+    "id": "collection-02-editorial",
+    "path": "/assets/collections/02-truth-power/midnight-carnival-collection-02-truth-power-editorial-4x3.png",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "editorial",
+    "collection": "truth-to-power",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mimeType": "image/png",
+    "usage": [
+      "collection-detail",
+      "feature-banner"
+    ],
+    "status": "approved",
+    "alt": "Midnight Carnival collection artwork for truth-to-power",
+    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+  },
+  {
+    "id": "collection-02-clean",
+    "path": "/assets/collections/02-truth-power/midnight-carnival-collection-02-truth-power-4x3.png",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "clean",
+    "collection": "truth-to-power",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mimeType": "image/png",
+    "usage": [
+      "collection-card"
+    ],
+    "status": "approved",
+    "alt": "Midnight Carnival collection artwork for truth-to-power",
+    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+  },
+  {
+    "id": "collection-01-editorial",
+    "path": "/assets/collections/01-wise-fool/midnight-carnival-collection-01-wise-fool-editorial-4x3.png",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "editorial",
+    "collection": "wise-fools",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 1600,
+      "height": 1200
+    },
+    "mimeType": "image/png",
+    "usage": [
+      "collection-detail",
+      "feature-banner"
+    ],
+    "status": "approved",
+    "alt": "Midnight Carnival collection artwork for wise-fools",
+    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+  },
+  {
+    "id": "collection-01-clean",
+    "path": "/assets/collections/01-wise-fool/midnight-carnival-collection-01-wise-fool-4x3.png",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "clean",
+    "collection": "wise-fools",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 1600,
+      "height": 1200
+    },
+    "mimeType": "image/png",
+    "usage": [
+      "collection-card"
+    ],
+    "status": "approved",
+    "alt": "Midnight Carnival collection artwork for wise-fools",
+    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+  },
+  {
+    "id": "collections-featured",
+    "path": "/assets/images/featured/midnight-carnival-collection-4x3.png",
+    "assetType": "featured",
+    "style": "midnight-carnival",
+    "variant": "editorial",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mimeType": "image/png",
+    "usage": [
+      "collections-featured",
+      "collections-promo"
+    ],
+    "status": "approved",
+    "alt": "Midnight Carnival collections featured",
+    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
   }
 ]
