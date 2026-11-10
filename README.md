@@ -59,7 +59,9 @@ npm audit --audit-level=high
   ci.yml                    Checks, build, tests, security audit
   auto-squash.yml           Merge validated trusted PRs automatically
 data/jester-quotes.csv      Original CSV archive
-public/                     Static assets and generated quote PNGs
+public/                     Directly served static assets
+  images/                   Manual artwork: [style]-[type]-[ratio].png
+  social/quotes/            Generated quote PNGs (unchanged URLs)
 scripts/
   generate-social-images.mjs
 src/
