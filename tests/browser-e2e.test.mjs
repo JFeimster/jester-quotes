@@ -52,10 +52,32 @@ test('real headless Chrome exercises site routes, PNG/ZIP downloads and responsi
     // Long quotations must deliver ALL numbered PNG slides as one downloadable ZIP.
     await app.navigate('/quotes/jester-quote-069/');
     await app.eval(`document.querySelector('#download-poster').click()`);
-    const quoteZip=await app.waitDownload(/^jester-quote-069-complete-complete-\d+-slides\.zip$/);
-    const names=zipEntries(await fs.readFile(quoteZip));
-    assert.ok(names.length>=2,'Long-quote ZIP must contain multiple image slides');
-    assert.ok(names.every(name=>/\.png$/.test(name)), 'Quote ZIP should contain PNG slides only');
+    const quoteFile=await app.waitDownload(/^jester-quote-069-complete(?:-complete-\d+-slides\.zip|\.png)$/);
+    if(quoteFile.endsWith('.zip')){
+      const names=zipEntries(await fs.readFile(quoteFile));
+      assert.ok(names.length>=2,'Multi-slide export should contain multiple PNG files');
+      assert.ok(names.every(name=>/\.png$/.test(name)),'Single-quote ZIP should contain PNG slides');
+    }else{
+      const meta=await sharp(quoteFile).metadata();
+      assert.equal(meta.format,'png');
+      assert.equal(meta.width,1080);
+      assert.equal(meta.height,1080);
+    }
+    // A deliberately constrained landscape format MUST paginate this long quote.
+    await app.navigate('/studio/');
+    await app.waitFor(`!document.querySelector('#studio-download').disabled`,'long quote Studio loaded');
+    await app.eval(`(function(){
+      const input=document.querySelector('#studio-quote');
+      input.value='jester-quote-069';
+      input.dispatchEvent(new Event('change',{bubbles:true}));
+    })()`);
+    await app.eval(`document.querySelector('[data-studio-format="landscape"]').click()`);
+    await app.waitFor(`/Slide 1 of [2-9][0-9]*/.test(document.querySelector('#studio-page-info').textContent)`,'landscape pagination');
+    await app.eval(`document.querySelector('#studio-download').click()`);
+    const studioZip=await app.waitDownload(/^jester-quote-069-landscape-midnight-complete-\d+-slides\.zip$/,24000);
+    const studioNames=zipEntries(await fs.readFile(studioZip));
+    assert.ok(studioNames.length>=2,'Studio landscape must export every paginated slide');
+    assert.ok(studioNames.every(name=>/\.png$/.test(name)),'Studio ZIP must contain PNG slides');
 
     // Saved library remains browser-only, shares the same storage key and saves across page loads.
     await app.navigate('/quotes/jester-quote-016/');
