@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ThemeSwitcher from '../../components/ThemeSwitcher.astro';
+import EditorialLayout from '../../design/layouts/EditorialLayout.astro';
+import BrutalistLayout from '../../design/layouts/BrutalistLayout.astro';
+import BentoLayout from '../../design/layouts/BentoLayout.astro';
+import {themeCatalog} from '../../design/theme-registry';
+import {quotes} from '../../lib/quote-data';
+import type {Quote} from '../../types/quote';
+import '../../styles/design-variants.css';
+
+function samplesFor(ids:readonly string[]):[Quote,Quote,Quote] {
+  if(ids.length!==3) throw new Error('Each theme needs three distinct canonical quotes');
+  const list=ids.map(id=>quotes.find(q=>q.id===id));
+  if(list.some(value=>!value)) throw new Error('Theme references a missing canonical quote');
+  return list as [Quote,Quote,Quote];
+}
+const midnightSamples=samplesFor(themeCatalog[0].sampleQuoteIds);
+const brutalistSamples=samplesFor(themeCatalog[1].sampleQuoteIds);
+const velvetSamples=samplesFor(themeCatalog[2].sampleQuoteIds);
+---
+<BaseLayout
+  title="Design Lab — Jester Quotes (Private Visual Preview)"
+  description="An unindexed preview of design variants for the Jester Quotes editorial and discovery experiences."
+  robots="noindex, nofollow"
+>
+<div class="wrap theme-lab">
+  <header class="lab-page-header">
+    <p class="eyebrow">Internal visual experiment / 03 directions</p>
+    <h1>Three ways to <em>cause trouble.</em></h1>
+    <p class="lede">The same words and working links, staged three different ways. This is a design experiment, not a replacement for the published site.</p>
+    <p class="lab-page-disclaimer">Preview only · Not in the sitemap · Public site remains Midnight Carnival 2.0</p>
+  </header>
+  <ThemeSwitcher />
+  <div id="lab-panel-midnight-carnival" role="tabpanel" aria-labelledby="lab-tab-midnight-carnival" data-lab-panel="midnight-carnival">
+    <EditorialLayout samples={midnightSamples}/>
+  </div>
+  <div id="lab-panel-neo-brutalist" role="tabpanel" aria-labelledby="lab-tab-neo-brutalist" data-lab-panel="neo-brutalist" hidden>
+    <BrutalistLayout samples={brutalistSamples}/>
+  </div>
+  <div id="lab-panel-velvet-gallery" role="tabpanel" aria-labelledby="lab-tab-velvet-gallery" data-lab-panel="velvet-gallery" hidden>
+    <BentoLayout samples={velvetSamples}/>
+  </div>
+  <p id="interaction-status" class="sr-only" role="status" aria-live="polite"></p>
+  <aside class="lab-endnote"><strong>A design laboratory—not a second website.</strong> Every quote card links to the real detail page and uses the existing Save, Copy and Create Art actions. The sitewide canonical registry, artwork renderer and published routes are unchanged.</aside>
+</div>
+<script src="../../scripts/theme-lab.ts"></script>
+<script src="../../scripts/quote-explorer.ts"></script>
+</BaseLayout>

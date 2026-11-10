@@ -4,7 +4,7 @@
 
 [Live website](https://jester-quotes.vercel.app/) · [Project board](https://github.com/users/JFeimster/projects/11) · [Production deployments](https://vercel.com/jason-feimsters-projects/jester-quotes/deployments)
 
-A responsive, static quotation collection built with **Astro 7, TypeScript, CSS, and Sharp**, hosted on Vercel. The **Midnight Carnival 2.0** visual system uses editorial typography, a custom illustrated jester, and the midnight/velvet/gold/ivory/coral palette.
+A responsive, static quotation collection built with **Astro 7, TypeScript, CSS, and Sharp**, hosted on Vercel. The **Midnight Carnival 2.0** public visual system uses editorial typography, a custom illustrated jester, and the midnight/velvet/gold/ivory/coral palette.
 
 ## What works today
 
@@ -93,6 +93,7 @@ src/
     tricksters/[slug].astro Verified individual profiles
     resources/index.astro  Filterable Resource Vault
     videos/index.astro     Privacy-conscious YouTube directory
+    lab/index.astro        Unindexed, unlinked design variations (draft preview)
     sources.astro            Provenance and correction information
     sitemap.xml.ts          XML index of public routes
     robots.txt.ts           Robots policy and sitemap URL
@@ -124,6 +125,12 @@ CREDITS.md                  Source and publication-rights information
 ### Image asset organization
 
 Keep manually created brand and collection artwork flat in `public/images/`; the existing 100 generated social previews remain in `public/social/quotes/`. The live homepage already uses `midnight-carnival-hero-4x5.png`. Upload and integrate future assets only after confirming exact paths. See [Image assets and naming](docs/IMAGE-ASSETS.md) for the complete collection-cover and brand-asset registry.
+
+## Design Lab (unindexed preview)
+
+The optional `/lab/` route presents Midnight Carnival, Neo-Brutalist Jester, and Luxury Bento / Velvet Gallery as **three different page compositions**, not just recolors. The lab uses the same canonical quotations, quote-card actions, source registries and `/studio/` downloads as the published site. Theme specifications live in `src/design/themes/`; `src/design/layouts/` holds the three component compositions, with one scoped design stylesheet and an accessible no-storage tab selector.
+
+The Lab remains **`noindex, nofollow`**, is excluded from the sitemap and public navigation, and does not change the public Midnight Carnival default. No new frameworks, CMS, root `assets/` folder, or cloned quote datasets are introduced.
 
 ## Deployment and automation
 

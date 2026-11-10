@@ -1,0 +1,27 @@
+---
+import QuoteCard from '../../components/QuoteCard.astro';
+import {getTheme,labThemeStyle} from '../theme-registry';
+import type {Quote} from '../../types/quote';
+const {samples}=Astro.props as {samples:[Quote,Quote,Quote]};
+const theme=getTheme('midnight-carnival');
+---
+<section class="lab-composition lab-composition--editorial" data-theme="midnight-carnival" style={labThemeStyle(theme)} aria-label="Midnight Carnival layout preview">
+  <div class="lab-editorial-hero">
+    <div class="lab-editorial-intro">
+      <p class="lab-micro">THE COURT IS IN SESSION / 001</p>
+      <h2>Long live<br/><em>the fool.</em></h2>
+      <p>Dark theatre, literary contrast, and the kind of truth a king never wanted to hear.</p>
+      <div class="lab-hero-actions"><a href="/collections/">Browse Collections ↗</a><a href="/studio/">Open Studio ✳</a></div>
+      <div class="lab-editorial-index"><span>THE ARCHIVE / 100 QUOTES</span><span>THE GALLERY / 6 COLLECTIONS</span></div>
+    </div>
+    <figure class="lab-editorial-portrait">
+      <img src="/images/midnight-carnival-hero-4x5.png" alt="Original Midnight Carnival jester artwork" width="1600" height="2000" loading="lazy" />
+      <figcaption>FIG 001 / WISDOM WEARS A MASK</figcaption>
+    </figure>
+  </div>
+  <div class="lab-section-label"><span>EDITORIAL QUOTATION ARCHIVE</span><strong>Wit worth its weight in gold.</strong></div>
+  <div class="lab-quote-grid lab-quote-grid--editorial">
+    <QuoteCard quote={samples[0]} index={0}/><QuoteCard quote={samples[1]} index={3}/><QuoteCard quote={samples[2]} index={5}/>
+  </div>
+  <div class="lab-composition-footer"><a href="/tricksters/">Meet the archetypes ↗</a><a href="/resources/">Follow the sources ↗</a></div>
+</section>
