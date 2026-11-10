@@ -10,7 +10,9 @@
     "check": "npm run assets:validate && astro check",
     "test": "node --test tests/*.test.mjs",
     "social:generate": "node scripts/generate-social-images.mjs",
-    "assets:validate": "node scripts/validate-assets.mjs"
+    "assets:validate": "node scripts/validate-assets.mjs",
+    "assets:optimize": "node scripts/optimize-assets.mjs",
+    "assets:inventory": "node scripts/inventory-assets.mjs"
   },
   "dependencies": {
     "astro": "^7.0.0",
