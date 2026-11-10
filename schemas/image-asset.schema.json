@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JFeimster/jester-quotes/blob/main/schemas/image-asset.schema.json",
+  "title": "Jester Quotes — Image Asset Metadata v2.0",
+  "description": "Contract for future asset records. Does not create, assert, or publish a registry in Task 1.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "path",
+    "assetType",
+    "style",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "path": {
+      "type": "string",
+      "pattern": "^/assets/(?!.*(?:\\.\\.|//))[a-z0-9/_-]+\\.[a-z0-9]+$"
+    },
+    "assetType": {
+      "type": "string",
+      "enum": [
+        "logo",
+        "avatar",
+        "profile",
+        "favicon",
+        "icon",
+        "hero",
+        "banner",
+        "thumbnail",
+        "background",
+        "illustration",
+        "featured",
+        "collection-cover",
+        "social-post",
+        "social-story",
+        "carousel-slide",
+        "reel-cover",
+        "video-thumbnail",
+        "studio-template",
+        "studio-mockup",
+        "studio-promo",
+        "resource-asset",
+        "theme-art"
+      ]
+    },
+    "style": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "collection": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "variant": {
+      "type": "string",
+      "enum": [
+        "clean",
+        "editorial",
+        "light",
+        "dark",
+        "horizontal",
+        "vertical",
+        "square",
+        "cover",
+        "source",
+        "optimized",
+        "alternate"
+      ]
+    },
+    "aspectRatio": {
+      "type": "string",
+      "enum": [
+        "1x1",
+        "4x3",
+        "4x5",
+        "3x4",
+        "16x9",
+        "9x16",
+        "21x9",
+        "191x100"
+      ]
+    },
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "width",
+        "height"
+      ],
+      "properties": {
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "mimeType": {
+      "type": "string"
+    },
+    "usage": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "alt": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "description": "Origin, creator or source identifier; not proof of licensing."
+    },
+    "license": {
+      "type": "string",
+      "description": "Documented rights/permission basis, if applicable."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "generated",
+        "approved",
+        "uploaded",
+        "integrated",
+        "archived"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

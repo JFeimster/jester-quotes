@@ -7,9 +7,10 @@
     "dev": "astro dev",
     "build": "npm run social:generate && astro build",
     "preview": "astro preview",
-    "check": "astro check",
+    "check": "npm run assets:validate && astro check",
     "test": "node --test tests/*.test.mjs",
-    "social:generate": "node scripts/generate-social-images.mjs"
+    "social:generate": "node scripts/generate-social-images.mjs",
+    "assets:validate": "node scripts/validate-assets.mjs"
   },
   "dependencies": {
     "astro": "^7.0.0",
