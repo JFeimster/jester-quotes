@@ -13,3 +13,6 @@ dist/
 *.pfx
 *.key
 
+
+# Browser regression capture output (local only)
+.qa-screenshots/
