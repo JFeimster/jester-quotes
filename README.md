@@ -55,6 +55,15 @@ npm audit --audit-level=high
 | `npm run preview` | Serve the generated production build locally |
 | `npm run social:generate` | Regenerate the 100 PNG previews, OG image, and touch icon |
 
+## Asset Architecture v2.0 — Task 1
+
+The complete, future-ready `public/assets/` taxonomy is scaffolded with directories for branding, images, all six collections, ratio-specific social posts/stories/carousels/reels, videos, Studio, resources and reusable visual themes. **No existing assets were moved or URLs changed.** Uploads and integration follow in Task 2.
+
+- [Full architecture, filenames and migration boundary](docs/IMAGE-ASSETS.md)
+- [Machine-readable directory taxonomy](config/asset-architecture.json)
+- [Future asset-entry JSON Schema](schemas/image-asset.schema.json)
+- Run `npm run assets:validate` to verify directories and preserve legacy paths; `npm run check` runs this automatically.
+
 ## Repository structure
 
 ```text
