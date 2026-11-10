@@ -3,12 +3,15 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import ts from 'typescript';
 
-// Test small, dependency-free TypeScript modules without adding a test framework.
+// Test small TypeScript modules without a browser test framework. Imports from
+// data: modules must point to absolute file URLs rather than relative paths.
 async function loadTs(relativePath) {
   const source = readFileSync(new URL(relativePath, import.meta.url), 'utf8');
-  const { outputText } = ts.transpileModule(source, {
+  let { outputText } = ts.transpileModule(source, {
     compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 }
   });
+  const artworkModule = new URL('../src/lib/artwork/text-layout.mjs', import.meta.url).href;
+  outputText = outputText.replaceAll("'./artwork/text-layout.mjs'", JSON.stringify(artworkModule));
   return import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
 }
 

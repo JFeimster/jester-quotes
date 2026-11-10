@@ -1,2 +1,7 @@
 .poster-controls {display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:20px}
-.poster-note {color:var(--muted);font-size:.87rem}
+.poster-note {color:var(--muted);font-size:.87rem;line-height:1.7}
+.studio-slide-nav {display:flex;justify-content:space-between;gap:12px;align-items:center;margin:18px 0 8px}
+.studio-slide-nav span {font-size:.8rem;font-weight:700;color:var(--gold);text-align:center}
+.studio-slide-nav button {min-height:42px;padding:8px 14px}
+.studio-slide-nav button:disabled {opacity:.38;cursor:not-allowed}
+@media(max-width:450px) {.studio-slide-nav {flex-wrap:wrap;justify-content:center}}

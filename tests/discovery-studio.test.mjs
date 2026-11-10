@@ -58,8 +58,8 @@ test('Studio supports real browser canvas export and all 100 quote selectors', (
     assert.ok(html.includes(`id="${hook}"`), `Missing Studio control: ${hook}`);
   }
   for (const quote of registry.items) assert.ok(html.includes(`value="${quote.id}"`), quote.id);
-  assert.match(script, /fitPosterText/);
-  assert.match(script, /toBlob/);
+  assert.match(read('src/lib/artwork/canvas-renderer.ts'), /fitPosterText/);
+  assert.match(read('src/lib/artwork/export-image.ts'), /toBlob/);
   assert.match(script, /download\.disabled = true/);
   assert.match(script, /new URL\(window\.location\.href\)\.searchParams\.get\('quote'\)/);
 });

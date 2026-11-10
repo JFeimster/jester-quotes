@@ -15,7 +15,8 @@ A responsive, static quotation collection built with **Astro 7, TypeScript, CSS,
 - Search quote text, people, and references; filter quotes with/without references.
 - Save favorites in the browser (localStorage), with cross-tab synchronization; no account or server database.
 - Find a random quote, copy text, and share/copy a quotation link.
-- Download square **1080 × 1080** quote posters and **1200 × 630** social preview images.
+- Download complete quotations and full author attribution as square **1080 × 1080** PNG artwork, or an automatic **ZIP of numbered PNG slides** when a quotation cannot fit legibly. Quote Studio supports four canvas dimensions and four palettes.
+- Download **1200 × 630** social/OG previews; long excerpts are explicitly labeled inside their artwork and never represented as complete-quote downloads.
 - Generate canonical URLs, XML sitemap, robots rules, Open Graph/Twitter metadata, and schema.org quotation structured data.
 - Responsive desktop/mobile layout, accessible controls, keyboard skip link, and reduced-motion support.
 
@@ -98,8 +99,10 @@ CREDITS.md                  Source and publication-rights information
 - **Collection source:** [100 Jester Quotes — Know Your Archetypes](https://knowyourarchetypes.com/jester-quotes/).
 - **Identifiers:** `jester-quote-001` through `jester-quote-100`; do not renumber existing IDs or silently rewrite quotations, people, or references.
 - The collection currently has 100 quotations attributed to 92 distinct people. Reference metadata is provided for 14 entries; missing references must not be invented.
+- The social image generator emits `public/social/quote-layouts.json` with measured text-region dimensions, author fit and excerpt status for all 100 previews; the CI test asserts geometric integrity. Existing `public/social/quotes/` URLs remain unchanged.
+- `src/lib/artwork/` centralizes measured layout and local PNG/ZIP exports for Studio and individual quote pages. No client-side library or server endpoint is required.
 - `src/data/collections.json` maps themes to existing quote IDs. Collections are intentionally non-exclusive editorial lists, and they must not duplicate or alter the canonical quote registry.
-- Quote Studio imports the same registry and existing `poster-layout.ts` text-fitting helper. Artwork is rendered locally in a browser canvas; formats that cannot display the full text are not exportable.
+- Quote Studio imports the same registry, existing `poster-layout.ts` text-fitting helper and shared artwork renderer. Artwork is rendered locally in a browser canvas; long quotes are paginated rather than clipped, with one ZIP download for all slides.
 
 **Copyright:** Attributions are not licenses. The site's existing quotations come from third-party sources and may require permission or a documented legal basis for reproduction. Review `CREDITS.md` and resolve publication rights before expanding distribution or adding third-party material.
 
