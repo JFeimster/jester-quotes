@@ -59,7 +59,7 @@ export async function makeUncompressedZip(items: NamedImage[]): Promise<Blob> {
     view.setUint32(12, directorySize, true);
     view.setUint32(16, offset, true);
   });
-  return new Blob([...records, ...central, footer], { type: 'application/zip' });
+  return new Blob([...records, ...central, footer].map(part => new Uint8Array(part).buffer), { type: 'application/zip' });
 }
 function pngBlob(canvas: HTMLCanvasElement): Promise<Blob> {
   return new Promise((resolve, reject) => {
