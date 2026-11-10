@@ -78,8 +78,8 @@ test('each visual composition is structurally different and uses real quote acti
   assert.equal([...html.matchAll(/class="[^"]*copy-quote/g)].length,9);
   assert.equal([...html.matchAll(/class="[^"]*card-create-link/g)].length,9);
   for(const id of IDs)assert.ok(html.includes(`data-lab-panel="${id}"`));
-  assert.ok(html.includes('/images/midnight-carnival-hero-4x5.png'));
-  assert.ok(existsSync(path.join(root,'public/images/midnight-carnival-hero-4x5.png')));
+  assert.ok(html.includes('/assets/images/heroes/midnight-carnival-hero-4x5.png'));
+  assert.ok(existsSync(path.join(root,'public/assets/images/heroes/midnight-carnival-hero-4x5.png')));
 });
 
 test('Lab switcher supports keyboard focus, no persistence and reduced-motion behavior',()=>{

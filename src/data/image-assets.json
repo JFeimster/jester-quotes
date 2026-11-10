@@ -1,7 +1,7 @@
 [
   {
     "id": "site-hero-wide",
-    "path": "/images/midnight-carnival-hero-16x9.png",
+    "path": "/assets/images/heroes/midnight-carnival-hero-16x9.png",
     "assetType": "hero",
     "style": "midnight-carnival",
     "aspectRatio": "16x9",
@@ -13,11 +13,11 @@
     ],
     "alt": "Cinematic Midnight Carnival hero artwork for Jester Quotes",
     "status": "uploaded",
-    "notes": "Existing legacy path; not the default OG image. Actual pixel dimensions not independently verified."
+    "notes": "Canonical v2 hero path. Not the site's default Open Graph image; source pixels not independently verified."
   },
   {
     "id": "site-hero-portrait",
-    "path": "/images/midnight-carnival-hero-4x5.png",
+    "path": "/assets/images/heroes/midnight-carnival-hero-4x5.png",
     "assetType": "hero",
     "style": "midnight-carnival",
     "aspectRatio": "4x5",
@@ -28,7 +28,7 @@
     ],
     "alt": "Midnight Carnival jester artwork in a theatrical editorial style",
     "status": "integrated",
-    "notes": "Existing legacy URL used by Hero.astro. Actual pixel dimensions not independently verified."
+    "notes": "Canonical v2 hero path used by Hero.astro and EditorialLayout.astro; source pixels not independently verified."
   },
   {
     "id": "brand-logo-horizontal",

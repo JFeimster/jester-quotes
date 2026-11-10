@@ -65,7 +65,7 @@ npm audit --audit-level=high
 
 ## Asset Architecture v2.0 — Task 1
 
-The complete, future-ready `public/assets/` taxonomy is scaffolded with directories for branding, images, all six collections, ratio-specific social posts/stories/carousels/reels, videos, Studio, resources and reusable visual themes. **No existing assets were moved or URLs changed.** Uploads and integration follow in Task 2.
+The `public/assets/` taxonomy contains branding, hero images, six collections, ratio-specific social posts/stories/carousels/reels, videos, Studio, resources and reusable visual themes. Both hero images use canonical v2 paths; their former URLs redirect permanently.
 
 - [Full architecture, filenames and migration boundary](docs/IMAGE-ASSETS.md)
 - [Machine-readable directory taxonomy](config/asset-architecture.json)
@@ -74,7 +74,7 @@ The complete, future-ready `public/assets/` taxonomy is scaffolded with director
 
 ### Asset Architecture v2.0 — Task 2 operations
 
-The new `public/assets/` taxonomy and registry pipeline are operational without moving current image files. Only the two confirmed existing hero images are registered; all 100 generated social previews are managed separately.
+The `public/assets/` taxonomy and image registry are operational with canonical hero locations and permanent redirects for old hero URLs. The canonical registry includes the migrated hero images and manually uploaded editorial artwork; all 100 generated social previews are managed separately.
 
 | Command | Purpose |
 | --- | --- |
@@ -96,7 +96,7 @@ data/trickster-candidates.csv  Unpublished research leads (not displayed)
 data/resources.csv         Export of sourced external reference links
 data/videos.csv            Export of confirmed YouTube directory entries
 public/                     Directly served static assets
-  images/                   Approved manual artwork (see docs/IMAGE-ASSETS.md)
+  assets/                   Canonical manual artwork tree (see docs/IMAGE-ASSETS.md)
   social/quotes/            Generated quote PNGs (unchanged URLs)
 scripts/
   generate-social-images.mjs
@@ -156,7 +156,7 @@ CREDITS.md                  Source and publication-rights information
 
 ### Image asset organization
 
-Keep manually created brand and collection artwork flat in `public/images/`; the existing 100 generated social previews remain in `public/social/quotes/`. The live homepage already uses `midnight-carnival-hero-4x5.png`. Upload and integrate future assets only after confirming exact paths. See [Image assets and naming](docs/IMAGE-ASSETS.md) for the complete collection-cover and brand-asset registry.
+Keep manual artwork organized in `public/assets/` by purpose and collection, including the two migrated hero images in `public/assets/images/heroes/`. The former `/images/midnight-carnival-hero-*.png` URLs permanently redirect to their new URLs for backward compatibility. All 100 generated quote previews remain at `public/social/quotes/`. See [Image assets and naming](docs/IMAGE-ASSETS.md).
 
 ## Design Lab (unindexed preview)
 

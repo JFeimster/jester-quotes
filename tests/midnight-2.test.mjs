@@ -13,8 +13,8 @@ test('homepage contains a real image-backed hero and three meaningful card varia
   const html = dist('index.html');
   assert.match(html, /id="hero-title"/);
   assert.match(html, /id="surprise-me"/);
-  assert.match(html, /src="\/images\/midnight-carnival-hero-4x5\.png"/);
-  assert.ok(existsSync(path.join(root,'public/images/midnight-carnival-hero-4x5.png')));
+  assert.match(html, /src="\/assets\/images\/heroes\/midnight-carnival-hero-4x5\.png"/);
+  assert.ok(existsSync(path.join(root,'public/assets/images/heroes/midnight-carnival-hero-4x5.png')));
   const variants = [...html.matchAll(/data-variant="(compact|editorial|poster)"/g)].map(x=>x[1]);
   assert.equal(variants.length, registry.items.length, 'all 100 quotation cards must render');
   for (const kind of ['compact','editorial','poster']) {
