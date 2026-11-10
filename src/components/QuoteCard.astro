@@ -1,6 +1,6 @@
 ---
 import type { Quote } from '../types/quote';
-const { quote, index } = Astro.props as { quote: Quote; index: number };
+const { quote, index, selectable = false } = Astro.props as { quote: Quote; index: number; selectable?: boolean };
 const isLong = quote.quote.length > 500;
 type CardVariant = 'compact' | 'editorial' | 'poster';
 const variant: CardVariant = isLong || (index % 11 === 0) ? 'editorial'
@@ -25,6 +25,7 @@ const styleLabel = variant === 'editorial' ? 'THE EDITORIAL' : variant === 'post
       <span class="card-art-label">SHARE ART / {String(index + 1).padStart(3, '0')}</span>
     </div>
   )}
+  {selectable && <label class="saved-pick"><input type="checkbox" class="saved-pick-input" data-pick-id={quote.id} aria-label={`Include quote by ${quote.person} in artwork pack`} /> <span>Select for art pack</span></label>}
   <div class="quote-card-content">
     <h3>{quote.quote}</h3>
     <div class="card-attribution">

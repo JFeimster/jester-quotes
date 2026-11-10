@@ -28,13 +28,14 @@ test('sitemap covers all discovery tools, curated collections, and 100 quote URL
     ...collections.map((collection) => `${origin}/collections/${collection.slug}/`),
     `${origin}/studio/`,
     `${origin}/sources/`,
+    `${origin}/daily/`,
     `${origin}/tricksters/`,
     `${origin}/resources/`,
     `${origin}/videos/`,
     ...tricksters.map((item) => `${origin}/tricksters/${item.slug}/`),
     ...registry.items.map((item) => `${origin}/quotes/${item.id}/`)
   ];
-  assert.equal(urls.length, 102 + 3 + collections.length + 1 + tricksters.length + 2);
+  assert.equal(urls.length, 102 + 3 + collections.length + 1 + tricksters.length + 2 + 1);
   assert.equal(new Set(urls).size, urls.length);
   assert.deepEqual(urls, expected);
   assert.ok(!xml.includes('/404'), '404 route must not be indexed');
