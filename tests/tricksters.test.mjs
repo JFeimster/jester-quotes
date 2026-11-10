@@ -75,7 +75,7 @@ test('directory page has functioning filter/empty-state/random hooks and all ver
     assert.ok(html.includes(`href="/tricksters/${record.slug}/"`),record.slug);
     assert.ok(html.includes(`data-kind="${record.kind}"`),record.slug);
   }
-  assert.equal([...html.matchAll(/data-trickster-card/g)].length,source.length);
+  assert.equal([...html.matchAll(/<article\\b[^>]*\\bdata-trickster-card\\b/g)].length,source.length);
   const client=read('src/scripts/trickster-explorer.ts');
   assert.match(client,/\.includes\(query\)/);
   assert.match(client,/card\.hidden = !matches/);
