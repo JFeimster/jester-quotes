@@ -37,6 +37,12 @@ npm run dev
 
 Open the local URL printed by Astro (normally `http://localhost:4321`).
 
+### Browser and release validation
+
+The final QA suite uses **headless Chrome DevTools via Node.js 22**, with no Playwright dependency or protected CI workflow changes. Tests navigate the real generated pages, verify layout and JS behavior, and exercise actual complete-quote PNG/ZIP downloads and saved-pack exports. Desktop, tablet, mobile, and all three Design Lab variants are captured in local `.qa-screenshots/` (gitignored). GitHub Actions treats a missing Chrome browser as a test failure; local machines without Chrome report a skip until configured.
+
+Read [Release and Browser QA Checklist](docs/RELEASE-CHECKLIST.md) and [Editorial Standards](docs/EDITORIAL-STANDARDS.md). These browser checks are a complement to editorial review, not a substitute for copyright clearance.
+
 ### Validation
 
 ```powershell
