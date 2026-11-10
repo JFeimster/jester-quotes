@@ -1,13 +1,13 @@
 :root {
   color-scheme: dark;
-  --midnight: #14101e;
+  --midnight: #15111f;
   --velvet: #69263f;
-  --gold: #d9ae63;
-  --ivory: #f7eddf;
-  --coral: #f06c7a;
-  --muted: #b5a8b8;
+  --gold: #d8ac64;
+  --ivory: #f5ebdd;
+  --coral: #f26778;
+  --muted: #b8a9b9;
   --surface: #231b2c;
   --line: #4e3a4c;
-  --radius: 20px;
-  --max: 1160px;
+  --radius: 16px;
+  --max: 1240px;
 }

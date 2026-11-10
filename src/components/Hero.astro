@@ -1,15 +1,21 @@
 ---
 import art from '../assets/jester-hero.svg';
 ---
-<section class="hero">
-  <div>
-    <p class="eyebrow">A treasury of wit & mischief</p>
-    <h1>Long live<br /><em>the fool.</em></h1>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow hero-eyebrow"><span class="eyebrow-symbol" aria-hidden="true">✧</span> The art of the unwise · Vol. I</p>
+    <h1 id="hero-title">Long live <em>the fool.</em></h1>
     <p class="lede">One hundred irreverent reflections on humor, rebellion, and the strangely wise art of playing the jester.</p>
     <div class="hero-actions">
-      <a class="btn" href="#explore">Explore all 100 quotes ↘</a>
-      <button class="btn secondary" id="surprise-me" type="button">Surprise me ✧</button>
+      <a class="btn" href="#explore">Explore all 100 quotes <span aria-hidden="true">↘</span></a>
+      <button class="btn secondary" id="surprise-me" type="button">Surprise me <span aria-hidden="true">✧</span></button>
     </div>
+    <p class="hero-note">A collection for curious minds and inconvenient truths</p>
   </div>
-  <img class="hero-art" src={art.src} alt="Illustration of a theatrical jester in gold and coral" width="880" height="740" />
+  <figure class="hero-visual">
+    <div class="hero-frame">
+      <img class="hero-art" src={art.src} alt="A half-masked jester in a velvet cap, framed like an antique playing card" width="880" height="740" fetchpriority="high" decoding="async" />
+    </div>
+    <figcaption class="hero-art-caption"><span>Fig. 01 / The Jester</span><span>Not all fools wear crowns</span></figcaption>
+  </figure>
 </section>
