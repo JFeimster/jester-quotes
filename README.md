@@ -1,22 +1,117 @@
-# Jester Quotes Site
+# Jester Quotes
 
-Astro + TypeScript + CSS static collection of 100 jester quotes.
+**100 quotations. One midnight carnival of wit, wisdom, and mischief.**
 
-## Local setup
-- Install Node.js 22 or newer (a current LTS release).
-- `npm install`
-- `npm run dev`
-- `npm test`
-- `npm run build`
+[Live website](https://jester-quotes.vercel.app/) · [Project board](https://github.com/users/JFeimster/projects/11) · [Production deployments](https://vercel.com/jason-feimsters-projects/jester-quotes/deployments)
 
-The canonical quote dataset is `src/data/jester-quotes.json`, copied from your local source folder.
-The CSV archive is `data/jester-quotes.csv`.
+A responsive, static quotation collection built with **Astro 7, TypeScript, CSS, and Sharp**, hosted on Vercel. The **Midnight Carnival 1.1** visual system uses editorial typography, a custom illustrated jester, and the midnight/velvet/gold/ivory/coral palette.
 
-The first build invokes `npm run social:generate` to produce 100 PNG social preview cards at `public/social/quotes/`.
-Individual quote pages are statically generated from quote IDs.
+## What works today
 
-Set `PUBLIC_SITE_URL` to the site's actual canonical production origin (currently `https://jester-quotes.vercel.app`) in Vercel when a production domain changes. Local and preview builds without that variable use the production URL as their canonical fallback, not a preview hostname.
+- Browse 100 individually addressable quotation pages, with preserved authors and any supplied references.
+- Search quote text, people, and references; filter quotes with/without references.
+- Save favorites in the browser (localStorage), with cross-tab synchronization; no account or server database.
+- Find a random quote, copy text, and share/copy a quotation link.
+- Download square **1080 × 1080** quote posters and **1200 × 630** social preview images.
+- Generate canonical URLs, XML sitemap, robots rules, Open Graph/Twitter metadata, and schema.org quotation structured data.
+- Responsive desktop/mobile layout, accessible controls, keyboard skip link, and reduced-motion support.
 
-The Midnight Carnival 1.1 artwork is a custom SVG in `src/assets/jester-hero.svg`, with visual refinements isolated in `src/styles/midnight-carnival.css`. Review quotation publication rights and attributions before broader distribution.
+## Run locally
 
-The root folder's name may contain spaces; the npm package and GitHub repo use `jester-quotes`.
+Requirements: **Node.js 22** (see `.nvmrc`), npm, and Git. Prefer the project's existing lockfile.
+
+```powershell
+git clone https://github.com/JFeimster/jester-quotes.git
+cd jester-quotes
+npm ci
+npm run dev
+```
+
+Open the local URL printed by Astro (normally `http://localhost:4321`).
+
+### Validation
+
+```powershell
+npm run check
+npm run build
+npm test
+npm audit --audit-level=high
+```
+
+**Run `npm run build` before `npm test` on a fresh clone:** the publication-readiness tests inspect the generated `dist/` output. The build also runs `npm run social:generate` automatically. To regenerate social assets without rebuilding the site, use `npm run social:generate`.
+
+| Script | Purpose |
+| --- | --- |
+| `npm run dev` | Local Astro development server |
+| `npm run check` | Astro/TypeScript diagnostics |
+| `npm run build` | Generate social images and build the static site |
+| `npm test` | Data, image, interaction, layout, and publication regression tests |
+| `npm run preview` | Serve the generated production build locally |
+| `npm run social:generate` | Regenerate the 100 PNG previews, OG image, and touch icon |
+
+## Repository structure
+
+```text
+.github/workflows/
+  ci.yml                    Checks, build, tests, security audit
+  auto-squash.yml           Merge validated trusted PRs automatically
+data/jester-quotes.csv      Original CSV archive
+public/                     Static assets and generated quote PNGs
+scripts/
+  generate-social-images.mjs
+src/
+  assets/                   Custom jester SVG and decorative assets
+  components/               Hero, gallery, cards, favorites, share/poster UI
+  data/jester-quotes.json   Canonical quote registry (100 entries)
+  layouts/BaseLayout.astro  Shared SEO, metadata, navigation, styling
+  lib/                      Quote data, SEO, filters, poster layout
+  pages/
+    index.astro             Collection home / quote search
+    about.astro             Jester archetype introduction
+    404.astro               Accessible 404 page
+    quotes/[id].astro       100 static quote detail routes
+    sitemap.xml.ts          XML index of public routes
+    robots.txt.ts           Robots policy and sitemap URL
+  scripts/                  Favorites, explorer, downloadable posters
+  styles/                   Tokens, global CSS, Midnight Carnival design
+  types/                    Quote and registry interfaces
+tests/                      Automated regression tests
+astro.config.mjs            Astro static-site and canonical origin
+vercel.json                 Production-only Git deployment policy
+CREDITS.md                  Source and publication-rights information
+```
+
+### Source of truth and attribution
+
+- **Canonical quote dataset:** `src/data/jester-quotes.json`.
+- **CSV archive:** `data/jester-quotes.csv`; preserve this alongside the dataset when intentionally changing records.
+- **Collection source:** [100 Jester Quotes — Know Your Archetypes](https://knowyourarchetypes.com/jester-quotes/).
+- **Identifiers:** `jester-quote-001` through `jester-quote-100`; do not renumber existing IDs or silently rewrite quotations, people, or references.
+- The collection currently has 100 quotations attributed to 92 distinct people. Reference metadata is provided for 14 entries; missing references must not be invented.
+
+**Copyright:** Attributions are not licenses. The site's existing quotations come from third-party sources and may require permission or a documented legal basis for reproduction. Review `CREDITS.md` and resolve publication rights before expanding distribution or adding third-party material.
+
+## Deployment and automation
+
+Vercel project: [jester-quotes](https://vercel.com/jason-feimsters-projects/jester-quotes)
+
+- `main` is the **Production** branch. `vercel.json` disables automatic Vercel Preview deployments for non-`main` branches, avoiding a Vercel build for every work-in-progress commit.
+- GitHub Actions runs `.github/workflows/ci.yml` on pushes and PRs: `npm ci`, Astro checks, the static build, tests, and a high-severity npm audit.
+- `.github/workflows/auto-squash.yml` listens for **successful PR CI**, then automatically **squash-merges** an unchanged, non-draft, same-repository PR targeting `main`. The workflow verifies that the PR head is the exact SHA that passed validation.
+- **Manual review is retained** for PRs from forks, draft PRs, failed/stale checks, and PRs changing `.github/workflows/**` or `vercel.json`. These privileged changes are intentionally excluded from unattended merges.
+- After a merge into `main`, Vercel's existing Git integration handles the **Production** deployment. No Vercel deployment token or separate deployment pipeline is needed.
+- This is a **repository-level** auto-merge policy, not a change to other repositories in the GitHub account.
+
+> GitHub Actions merges performed with its built-in `GITHUB_TOKEN` do not start new GitHub Actions push-workflow runs. The associated PR validation is therefore the CI gate for automated merges; Vercel Production deployment status should be checked after release.
+
+### Canonical domain
+
+Canonical URLs and social metadata use `PUBLIC_SITE_URL`, falling back to `https://jester-quotes.vercel.app` when unset. For local builds, copy `.env.example` to `.env` only if you need to override the domain.
+
+When introducing a custom domain, update the **Production** `PUBLIC_SITE_URL` value in Vercel to that domain and verify the resulting canonical URLs, sitemap, and Open Graph images. Avoid placeholders such as `https://your-domain.example`.
+
+## Development conventions
+
+Keep the static architecture and existing routes unless a new capability requires a change. Add content/features in coherent batches with targeted tests, preserve responsive behavior and accessibility, and prefer reusable components to duplicate pages or data registries. Check GitHub Actions and the Vercel Production deployment after release.
+
+**Current status:** Midnight Carnival 1.1 and Phase D publication metadata are implemented. Follow-on page ideas (thematic collections, a daily quotation, improved sharing, and source transparency) are not yet implemented.
