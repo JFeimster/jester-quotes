@@ -34,7 +34,7 @@ h3 {font-size:1.45rem; line-height:1.28;}
 .controls {display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 24px}
 .controls input,.controls select {background:#231b2c;border:1px solid var(--line);border-radius:12px;color:var(--ivory);padding:12px 14px;min-height:48px;}
 .controls input[type="search"] {flex:1;min-width:220px;}
-.controls input[type="checkbox"] {width:18px;height:18px;min-width:18px;accent-color:var(--coral);}
+.controls input[type="checkbox"] {width:18px;height:18px;min-width:18px;min-height:18px;padding:0;flex:0 0 18px;accent-color:var(--coral);}
 .controls .favorites-filter-label {display:inline-flex;align-items:center;gap:8px;white-space:nowrap;}
 .controls .clear-filters {background:transparent;color:var(--ivory);border:1px solid var(--line);border-radius:12px;padding:10px 14px;min-height:48px;}
 .controls .clear-filters:hover {border-color:var(--gold);}
