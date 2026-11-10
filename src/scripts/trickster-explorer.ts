@@ -6,7 +6,7 @@ const reset = document.querySelector<HTMLButtonElement>('#trickster-reset');
 const random = document.querySelector<HTMLButtonElement>('#trickster-random');
 const count = document.querySelector<HTMLElement>('#trickster-count');
 const empty = document.querySelector<HTMLElement>('#trickster-empty');
-const status = document.querySelector<HTMLElement>('#trickster-status');
+const tricksterStatus = document.querySelector<HTMLElement>('#trickster-status');
 const cards = [...document.querySelectorAll<HTMLElement>('[data-trickster-card]')];
 const searchable = (card: HTMLElement) => card.dataset.search ?? '';
 function refresh(): HTMLElement[] {
@@ -44,6 +44,6 @@ random?.addEventListener('click',()=>{
   const index=Math.min(visible.length-1,Math.floor(Math.random()*visible.length));
   const link=visible[index].querySelector<HTMLAnchorElement>('h3 a');
   if(link) window.location.assign(link.href);
-  else if(status) status.textContent='No verified profile is available.';
+  else if(tricksterStatus) tricksterStatus.textContent='No verified profile is available.';
 });
 refresh();
