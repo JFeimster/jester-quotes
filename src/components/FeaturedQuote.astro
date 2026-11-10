@@ -1,0 +1,10 @@
+---
+import type { Quote } from '../types/quote';
+const { quote } = Astro.props as { quote: Quote };
+---
+<section class="featured" aria-label="Featured quote">
+  <p class="kicker">A word from the court</p>
+  <blockquote>{quote.quote}</blockquote>
+  <p class="byline">— {quote.person}{quote.reference ? ` · ${quote.reference}` : ''}</p>
+  <a class="btn small secondary" href={`/quotes/${quote.id}/`}>View this quote</a>
+</section>

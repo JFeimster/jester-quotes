@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import QuoteActions from '../../components/QuoteActions.astro';
+import QuotePoster from '../../components/QuotePoster.astro';
+import SourceAttribution from '../../components/SourceAttribution.astro';
+import { quotes } from '../../lib/quote-data';
+import type { Quote } from '../../types/quote';
+
+export function getStaticPaths() {
+  return quotes.map((quote) => ({ params: { id: quote.id }, props: { quote } }));
+}
+const { quote } = Astro.props as { quote: Quote };
+const summary = `${quote.quote.slice(0, 145)}${quote.quote.length > 145 ? '…' : ''}`;
+---
+<BaseLayout title={`${quote.person} — Jester Quotes`} description={summary} image={`/social/quotes/${quote.id}.png`}>
+  <article class="detail">
+    <p class="eyebrow"><a href="/#explore">← All 100 quotes</a></p>
+    <p class="kicker">{quote.name}</p>
+    <blockquote>“{quote.quote}”</blockquote>
+    <p class="credit">— {quote.person}</p>
+    {quote.reference && <p class="byline">Reference: {quote.reference}</p>}
+    <QuoteActions quote={quote} />
+    <QuotePoster quote={quote} />
+    <div style="margin-top:70px"><SourceAttribution /></div>
+  </article>
+  <script src="../../scripts/quote-explorer.ts"></script>
+</BaseLayout>

@@ -1,0 +1,12 @@
+---
+import { quotes } from '../lib/quote-data';
+import QuoteSearch from './QuoteSearch.astro';
+import QuoteCard from './QuoteCard.astro';
+---
+<section id="explore">
+  <div class="section-title"><div><p class="eyebrow">Explore the collection</p><h2>The fool speaks.</h2></div><p class="byline">100 voices · infinite mischief</p></div>
+  <QuoteSearch />
+  <p class="result-count" id="result-count" aria-live="polite">{quotes.length} quotes</p>
+  <div class="gallery" id="quote-gallery">{quotes.map((q,index)=><QuoteCard quote={q} index={index}/>)}</div>
+  <p id="empty-state" hidden>No quotes match those filters.</p>
+</section>

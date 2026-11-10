@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import FeaturedQuote from '../components/FeaturedQuote.astro';
+import QuoteGallery from '../components/QuoteGallery.astro';
+import FavoritesPanel from '../components/FavoritesPanel.astro';
+import SourceAttribution from '../components/SourceAttribution.astro';
+import { quotes } from '../lib/quote-data';
+---
+<BaseLayout>
+  <div class="wrap">
+    <Hero />
+    <FeaturedQuote quote={quotes[4] ?? quotes[0]} />
+    <QuoteGallery />
+    <FavoritesPanel />
+    <SourceAttribution />
+  </div>
+  <script src="../scripts/quote-explorer.ts"></script>
+</BaseLayout>

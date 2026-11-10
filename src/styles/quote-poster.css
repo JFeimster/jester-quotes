@@ -1,0 +1,2 @@
+.poster-controls {display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:20px}
+.poster-note {color:var(--muted);font-size:.87rem}

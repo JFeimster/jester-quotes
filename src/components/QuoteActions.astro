@@ -1,0 +1,9 @@
+---
+import type { Quote } from '../types/quote';
+const { quote } = Astro.props as { quote: Quote };
+---
+<div class="actions">
+  <button class="btn copy-quote" type="button" data-quote-text={`${quote.quote}\n— ${quote.person}`}>Copy quote</button>
+  <button class="btn secondary favorite-toggle" type="button" data-quote-id={quote.id} aria-pressed="false">♡ Save favorite</button>
+  <button class="btn secondary share-quote" type="button">Share link</button>
+</div>
