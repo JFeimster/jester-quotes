@@ -15,7 +15,8 @@ The CSV archive is `data/jester-quotes.csv`.
 The first build invokes `npm run social:generate` to produce 100 PNG social preview cards at `public/social/quotes/`.
 Individual quote pages are statically generated from quote IDs.
 
-Add a real website origin to `.env` as `PUBLIC_SITE_URL=https://your-domain.example` before production deployment.
-Replace the placeholder hero artwork and review quotation rights before making the website publicly accessible.
+Set `PUBLIC_SITE_URL` to the site's actual canonical production origin (currently `https://jester-quotes.vercel.app`) in Vercel when a production domain changes. Local and preview builds without that variable use the production URL as their canonical fallback, not a preview hostname.
+
+The Midnight Carnival 1.1 artwork is a custom SVG in `src/assets/jester-hero.svg`, with visual refinements isolated in `src/styles/midnight-carnival.css`. Review quotation publication rights and attributions before broader distribution.
 
 The root folder's name may contain spaces; the npm package and GitHub repo use `jester-quotes`.
