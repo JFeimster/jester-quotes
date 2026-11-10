@@ -45,9 +45,9 @@
       "site-brand",
       "social-brand"
     ],
-    "status": "approved",
+    "status": "uploaded",
     "alt": "Jester Quotes wordmark and ornate jester crest",
-    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+    "notes": "Uploaded and registered. Not yet integrated into a website page."
   },
   {
     "id": "quote-studio-promo",
@@ -64,9 +64,9 @@
     "usage": [
       "studio-promotion"
     ],
-    "status": "approved",
+    "status": "uploaded",
     "alt": "Midnight Carnival quote studio promo",
-    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+    "notes": "Uploaded and registered. Not yet integrated into a website page."
   },
   {
     "id": "collection-06-editorial",
@@ -85,9 +85,9 @@
       "collection-detail",
       "feature-banner"
     ],
-    "status": "approved",
+    "status": "uploaded",
     "alt": "Midnight Carnival collection artwork for art-of-the-jester",
-    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+    "notes": "Uploaded and registered. Not yet integrated into a website page."
   },
   {
     "id": "collection-05-editorial",
@@ -106,9 +106,9 @@
       "collection-detail",
       "feature-banner"
     ],
-    "status": "approved",
+    "status": "uploaded",
     "alt": "Midnight Carnival collection artwork for carnival-absurdity",
-    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+    "notes": "Uploaded and registered. Not yet integrated into a website page."
   },
   {
     "id": "collection-04-clean",
@@ -126,9 +126,9 @@
     "usage": [
       "collection-card"
     ],
-    "status": "approved",
+    "status": "uploaded",
     "alt": "Midnight Carnival collection artwork for masks-and-identity",
-    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+    "notes": "Uploaded and registered. Not yet integrated into a website page."
   },
   {
     "id": "collection-04-editorial",
@@ -147,9 +147,9 @@
       "collection-detail",
       "feature-banner"
     ],
-    "status": "approved",
+    "status": "uploaded",
     "alt": "Midnight Carnival collection artwork for masks-and-identity",
-    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+    "notes": "Uploaded and registered. Not yet integrated into a website page."
   },
   {
     "id": "collection-03-editorial",
@@ -168,9 +168,9 @@
       "collection-detail",
       "feature-banner"
     ],
-    "status": "approved",
+    "status": "uploaded",
     "alt": "Midnight Carnival collection artwork for laughter-and-life",
-    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+    "notes": "Uploaded and registered. Not yet integrated into a website page."
   },
   {
     "id": "collection-03-clean",
@@ -188,9 +188,9 @@
     "usage": [
       "collection-card"
     ],
-    "status": "approved",
+    "status": "uploaded",
     "alt": "Midnight Carnival collection artwork for laughter-and-life",
-    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+    "notes": "Uploaded and registered. Not yet integrated into a website page."
   },
   {
     "id": "collection-02-editorial",
@@ -209,9 +209,9 @@
       "collection-detail",
       "feature-banner"
     ],
-    "status": "approved",
+    "status": "uploaded",
     "alt": "Midnight Carnival collection artwork for truth-to-power",
-    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+    "notes": "Uploaded and registered. Not yet integrated into a website page."
   },
   {
     "id": "collection-02-clean",
@@ -229,9 +229,9 @@
     "usage": [
       "collection-card"
     ],
-    "status": "approved",
+    "status": "uploaded",
     "alt": "Midnight Carnival collection artwork for truth-to-power",
-    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+    "notes": "Uploaded and registered. Not yet integrated into a website page."
   },
   {
     "id": "collection-01-editorial",
@@ -250,9 +250,9 @@
       "collection-detail",
       "feature-banner"
     ],
-    "status": "approved",
+    "status": "uploaded",
     "alt": "Midnight Carnival collection artwork for wise-fools",
-    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+    "notes": "Uploaded and registered. Not yet integrated into a website page."
   },
   {
     "id": "collection-01-clean",
@@ -270,9 +270,9 @@
     "usage": [
       "collection-card"
     ],
-    "status": "approved",
+    "status": "uploaded",
     "alt": "Midnight Carnival collection artwork for wise-fools",
-    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+    "notes": "Uploaded and registered. Not yet integrated into a website page."
   },
   {
     "id": "collections-featured",
@@ -290,8 +290,8 @@
       "collections-featured",
       "collections-promo"
     ],
-    "status": "approved",
+    "status": "uploaded",
     "alt": "Midnight Carnival collections featured",
-    "notes": "Approved attached image; reserved path. Binary upload pending; not yet integrated."
+    "notes": "Uploaded and registered. Not yet integrated into a website page."
   }
 ]
