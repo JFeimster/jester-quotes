@@ -77,10 +77,11 @@ test('quote artwork paths, imported art and optional video hosting retain canoni
   for(const quote of registry.items){
     assert.ok(existsSync(path.join(dist,'social/quotes',quote.id+'.png')),quote.id);
   }
-  assert.ok(existsSync(path.join(dist,'images/midnight-carnival-hero-16x9.png')));
+  assert.ok(existsSync(path.join(dist,'assets/images/heroes/midnight-carnival-hero-16x9.png')));
   assert.ok(existsSync(path.join(root,'src/assets/jester-hero.svg')));
+  assert.ok(!existsSync(path.join(root,'public/images')),'Legacy public/images directory should stay retired');
   assert.equal(existsSync(path.join(root,'public/videos')),false,'YouTube directory must not rehost downloaded videos');
-  assert.ok(asset.every(x=>x.path.startsWith('/assets/')||x.path.startsWith('/images/')),'Asset registry paths must be absolute public paths');
+  assert.ok(asset.every(x=>x.path.startsWith('/assets/')),'Asset registry paths must be absolute public paths');
 });
 
 test('published editorial records have non-placeholder provenance and unique IDs',()=>{

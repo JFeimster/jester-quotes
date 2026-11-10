@@ -20,6 +20,22 @@ test('asset registry has unique IDs and only confirmed published files', () => {
   assert.ok(registry.some(x=>x.id==='site-hero-portrait' && x.status==='integrated'));
   assert.ok(registry.some(x=>x.id==='site-hero-wide' && x.status==='uploaded'));
 });
+test('migrated hero paths are canonical and legacy URLs redirect permanently', () => {
+  const heroRecords = registry.filter(x => x.assetType === 'hero');
+  assert.equal(heroRecords.length, 2);
+  for (const item of heroRecords) {
+    assert.ok(item.path.startsWith('/assets/images/heroes/'), item.path);
+    assert.ok(existsSync(path.join(root, 'public', item.path.slice(1))));
+  }
+  const redirects = JSON.parse(read('vercel.json')).redirects;
+  for (const suffix of ['16x9','4x5']) {
+    const source = '/images/midnight-carnival-hero-' + suffix + '.png';
+    const destination = '/assets/images/heroes/midnight-carnival-hero-' + suffix + '.png';
+    assert.ok(redirects.some(x => x.source === source && x.destination === destination && x.permanent === true), source);
+  }
+  assert.ok(!existsSync(path.join(root,'public/images')));
+});
+
 test('inventory CSV reproduces deterministic canonical registry output', () => {
   const output = execFileSync(process.execPath, ['scripts/inventory-assets.mjs'], {cwd:root,encoding:'utf8'});
   assert.equal(output,read('data/asset-inventory.csv'));

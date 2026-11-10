@@ -5,5 +5,17 @@
       "**": false,
       "main": true
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/images/midnight-carnival-hero-16x9.png",
+      "destination": "/assets/images/heroes/midnight-carnival-hero-16x9.png",
+      "permanent": true
+    },
+    {
+      "source": "/images/midnight-carnival-hero-4x5.png",
+      "destination": "/assets/images/heroes/midnight-carnival-hero-4x5.png",
+      "permanent": true
+    }
+  ]
 }

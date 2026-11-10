@@ -54,7 +54,7 @@ The filename's ratio is an editorial descriptor, **not verified pixel dimensions
 - `integrated`: uploaded file is already referenced by the live application.
 - `archived`: excluded from regular use.
 
-Existing live hero URLs are registered as legacy `/images/...` paths; this is intentional and allowed by the schema. **Dimensions are omitted until actual image headers are checked; do not claim the layout's intended dimensions reflect the binary.** The validator compares declared dimensions against actual image metadata whenever supplied. The two registered hero entries are the only currently verified manual images on GitHub; the local collection artwork, logo and Studio promo are not uploaded by this change.
+Existing hero URLs now use canonical `/assets/images/heroes/...` paths; the old `/images/...` URLs are preserved through permanent Vercel redirects. **Dimensions are omitted until actual image headers are checked; do not claim the layout's intended dimensions reflect the binary.** The validator compares declared dimensions against actual image metadata whenever supplied. The two registered hero entries are the only currently verified manual images on GitHub; the local collection artwork, logo and Studio promo are not uploaded by this change.
 
 `src/lib/assets.ts` exports `getAsset(id)`, `findAssets(filter)`, `selectAsset(filter)`, `resolveAssetPath(id)`, and `imageAssets`. Resolution is gated on `uploaded`/`integrated`; planned artwork never creates a broken URL.
 
@@ -97,7 +97,7 @@ The optimizer limits inputs to `public/assets/`, refuses symlinks, never enlarge
 
 ## Protected legacy assets
 
-No current live URLs changed. Keep `public/images/`'s two heroes, all `public/social/quotes/` generated PNGs, `public/og-jester-quotes.png`, `public/favicon.svg`, `public/apple-touch-icon.png`, `public/site.webmanifest` and existing `src/assets/` files at their working paths.
+The two original `/images/midnight-carnival-hero-*.png` URLs redirect permanently to `/assets/images/heroes/`; there is no longer a `public/images/` folder. Keep all `public/social/quotes/` generated PNGs, `public/og-jester-quotes.png`, `public/favicon.svg`, `public/apple-touch-icon.png`, `public/site.webmanifest` and existing `src/assets/` files at their working paths.
 
 The programmatic quote image generator is separate from the manual image registry; its 100 generated quote PNGs and the OG image are **not** individual records in `image-assets.json`.
 

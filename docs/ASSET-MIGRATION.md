@@ -1,13 +1,13 @@
 # Asset Migration Map — v2.0
 
-**Status: plan only. No binaries or URLs have been moved by Task 2.** Preserve live assets while the local artwork is uploaded in separately reviewed batches.
+**Status: hero migration complete.** Both hero PNGs are at their v2 locations. Existing public URLs receive permanent Vercel redirects. Remaining brand/collection integration is a separate task.
 
 ## Existing paths → intended v2 destinations
 
 | Currently served URL / source | Intended future location | State |
 |---|---|---|
-| `/images/midnight-carnival-hero-16x9.png` | `/assets/images/heroes/midnight-carnival-hero-16x9.png` | Existing URL preserved; not migrated |
-| `/images/midnight-carnival-hero-4x5.png` | `/assets/images/heroes/midnight-carnival-hero-4x5.png` | Existing URL preserved; referenced in `src/components/Hero.astro` |
+| `/images/midnight-carnival-hero-16x9.png` | `/assets/images/heroes/midnight-carnival-hero-16x9.png` | Migrated; original URL redirects permanently |
+| `/images/midnight-carnival-hero-4x5.png` | `/assets/images/heroes/midnight-carnival-hero-4x5.png` | Migrated; original URL redirects permanently; current Hero and Editorial Layout references updated |
 | `/social/quotes/jester-quote-001.png` through `100.png` | **Remain at current URLs** | Generated previews; no migration |
 | `/og-jester-quotes.png` | **Remain at current URL** | Generated default Open Graph image |
 | `/favicon.svg` | **Remain at current URL** | Active favicon |
@@ -15,7 +15,7 @@
 | `/site.webmanifest` | **Remain at current URL** | Active manifest |
 | `src/assets/*.svg` | **Remain in Astro source tree** | Imported SVG assets |
 
-## Planned incoming local artwork (not yet in GitHub)
+## Other artwork and future integration
 
 - Horizontal logo → `public/assets/branding/logos/`
 - Profile/bio → `public/assets/branding/profiles/`
@@ -28,10 +28,10 @@
 
 ## Safe migration rules
 
-1. Upload new copies and record real dimensions. Do not delete legacy files in the same step.
-2. Update registry `path`, then consuming Astro components; validate every reference.
-3. Preserve old URLs with existing files or deliberate redirects if any external links need them.
-4. Review CI, build, and production. Only after confirming equivalent behavior should removing redundant old binaries be discussed.
+1. Verify each new asset exists at its canonical path before updating consumers.
+2. Update the registry path and all consuming Astro components and tests together; validate every reference.
+3. Preserve old URLs with deliberate permanent redirects (currently configured for the two hero URLs).
+4. Review CI, build, and production; do not introduce duplicate copies solely for compatibility.
 5. Do not change `src/data/jester-quotes.json`, generated quote filenames or image generator paths for organizational convenience.
 
-**Task 2 creates tooling and documentation only; it does not authorize migrating images.**
+**Hero migration:** Two canonical v2 hero files are present, and `public/images/` has been retired. The 100 quote previews, default OG image, favicon, touch icon, manifest and Astro-imported source art remain unchanged.
