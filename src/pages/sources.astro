@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { registry, quotes } from '../lib/quote-data';
 import { collections } from '../lib/collections';
 import { tricksters } from '../lib/tricksters';
+import { resources, videos } from '../lib/resource-catalog';
 const withReferences = quotes.filter((quote) => Boolean(quote.reference)).length;
 const authors = new Set(quotes.map((quote) => quote.person)).size;
 ---
@@ -47,6 +48,12 @@ const authors = new Set(quotes.map((quote) => quote.person)).size;
         <h2>Independent reference notes.</h2>
         <p>The <a href="/tricksters/">Trickster Directory</a> contains {tricksters.length} short original profiles backed by external references. It is a curated introduction, not a reproduction of another researcher's list or a claim that every culture interprets these figures alike.</p>
         <p><a href="https://www.aadip.com/trickster/" target="_blank" rel="noopener noreferrer">Aadip Desai’s Trickster Hit List!</a> contains 139 numbered research leads and is credited as inspiration, not reproduced. A separate unpublished research-candidate CSV is maintained. No third-party character pictures were copied.</p>
+      </section>
+      <section class="source-panel">
+        <p class="eyebrow">06 / Linked resources and video catalog</p>
+        <h2>Original sources stay original.</h2>
+        <p>The <a href="/resources/">Resource Vault</a> has {resources.length} independently linked references and the <a href="/videos/">Video Library</a> features {videos.length} verified YouTube links. All summaries are written for this site, and the original publishers retain their content.</p>
+        <p>Resource cards link outward to their original pages. Video embeds are not loaded until a visitor chooses to load the YouTube player; external video links work without embedding. Publisher inclusion does not imply endorsement or grant any media reuse permission.</p>
       </section>
     </div>
     <p class="curation-note">Original quotation records remain in <a href="https://github.com/JFeimster/jester-quotes/blob/main/src/data/jester-quotes.json" target="_blank" rel="noopener noreferrer">the public source registry</a>. The corresponding credit policy is in <a href="https://github.com/JFeimster/jester-quotes/blob/main/CREDITS.md" target="_blank" rel="noopener noreferrer">CREDITS.md</a>.</p>

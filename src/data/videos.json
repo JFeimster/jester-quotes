@@ -1,0 +1,98 @@
+[
+  {
+    "id": "video-crashcourse-tricksters",
+    "slug": "crashcourse-tricksters",
+    "title": "Tricksters: An Introduction — Crash Course World Mythology #20",
+    "video_id": "RW1ChiWyiZQ",
+    "youtube_url": "https://www.youtube.com/watch?v=RW1ChiWyiZQ",
+    "channel_title": "CrashCourse",
+    "summary": "An introduction to the trickster across myth traditions, from Anansi to Br’er Rabbit; useful for comparing the category before exploring individual stories.",
+    "tags": [
+      "overview",
+      "folklore",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": true,
+    "related_trickster_ids": [
+      "trickster-anansi",
+      "trickster-brer-rabbit"
+    ]
+  },
+  {
+    "id": "video-teded-anansi",
+    "slug": "teded-anansi",
+    "title": "The Myth of Anansi, the Trickster Spider",
+    "video_id": "6nWba9Ii5Lo",
+    "youtube_url": "https://www.youtube.com/watch?v=6nWba9Ii5Lo",
+    "channel_title": "TED-Ed",
+    "summary": "Emily Zobel Marshall tells an Akan story about Anansi’s bid to acquire stories. Use the linked lesson for context and creator credits.",
+    "tags": [
+      "anansi",
+      "african-diaspora",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": true,
+    "related_trickster_ids": [
+      "trickster-anansi"
+    ]
+  },
+  {
+    "id": "video-teded-loki-builder",
+    "slug": "teded-loki-builder",
+    "title": "The Myth of Loki and the Master Builder",
+    "video_id": "MTz2f9yjmK8",
+    "youtube_url": "https://www.youtube.com/watch?v=MTz2f9yjmK8",
+    "channel_title": "TED-Ed",
+    "summary": "An animated retelling of Loki and a bargain involving the defenses of Asgard. Compare the plot with other Norse sources.",
+    "tags": [
+      "loki",
+      "norse",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-loki"
+    ]
+  },
+  {
+    "id": "video-teded-loki-mistletoe",
+    "slug": "teded-loki-mistletoe",
+    "title": "The Myth of Loki and the Deadly Mistletoe",
+    "video_id": "8Poklx9Ifz4",
+    "youtube_url": "https://www.youtube.com/watch?v=8Poklx9Ifz4",
+    "channel_title": "TED-Ed",
+    "summary": "A separate Norse narrative centering on Baldur and Loki; it offers a darker view of the figure’s disruptive role.",
+    "tags": [
+      "loki",
+      "norse",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-loki"
+    ]
+  },
+  {
+    "id": "video-teded-monkey-king",
+    "slug": "teded-monkey-king",
+    "title": "The Monkey King and the Realm of the Dead",
+    "video_id": "Xs-9vfWDJfU",
+    "youtube_url": "https://www.youtube.com/watch?v=Xs-9vfWDJfU",
+    "channel_title": "TED-Ed",
+    "summary": "An animated story of Sun Wukong and his resistance to the rules of the underworld, emphasizing the Monkey King’s extraordinary powers.",
+    "tags": [
+      "monkey-king",
+      "literature",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-sun-wukong"
+    ]
+  }
+]

@@ -11,7 +11,7 @@ export const GET: APIRoute = ({ site }) => {
   const paths = [
     '/', '/about/', '/collections/',
     ...collections.map((collection) => `/collections/${encodeURIComponent(collection.slug)}/`),
-    '/studio/', '/sources/', '/tricksters/',
+    '/studio/', '/sources/', '/tricksters/', '/resources/', '/videos/',
     ...tricksters.map((record) => `/tricksters/${encodeURIComponent(record.slug)}/`),
     ...quotes.map((quote) => `/quotes/${encodeURIComponent(quote.id)}/`)
   ];

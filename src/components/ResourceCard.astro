@@ -1,0 +1,26 @@
+---
+import type { ResourceEntry } from '../types/resource';
+import { tricksters, tricksterUrl } from '../lib/tricksters';
+import { resourceTypes } from '../lib/resource-catalog';
+interface Props { entry: ResourceEntry; index: number; }
+const { entry, index } = Astro.props;
+const related = entry.related_trickster_ids
+  .map(id=>tricksters.find(record=>record.id===id))
+  .filter((item):item is (typeof tricksters)[number]=>Boolean(item));
+---
+<article class:list={['vault-card',{'vault-card--featured':entry.featured}]}
+  data-catalog-card data-search={`${entry.title} ${entry.summary} ${entry.source_name} ${entry.tags.join(' ')}`.toLowerCase()}
+  data-type={entry.type} data-tags={entry.tags.join(' ')}>
+  <div class="vault-card-top"><span class="vault-item-number">FIELD NOTE / {String(index+1).padStart(2,'0')}</span><span class="vault-kind">{resourceTypes[entry.type]}</span></div>
+  <div class="vault-sigil" aria-hidden="true">{entry.featured?'✳':'✦'}</div>
+  <h3><a href={entry.url} target="_blank" rel="noopener noreferrer">{entry.title}<span aria-hidden="true"> ↗</span></a></h3>
+  <p class="vault-source">{entry.source_name}</p>
+  <p class="vault-summary">{entry.summary}</p>
+  {related.length>0 && <div class="vault-related"><span>RELATED PROFILES</span>
+    {related.map(record=><a href={tricksterUrl(record)}>{record.name}</a>)}
+  </div>}
+  <div class="vault-card-foot">
+    <span>Checked {entry.verified_at}</span>
+    <a href={entry.url} target="_blank" rel="noopener noreferrer" aria-label={`Open ${entry.title} at ${entry.source_name} in a new tab`}>Open original source ↗</a>
+  </div>
+</article>
