@@ -1,0 +1,68 @@
+name: Auto-squash validated PRs
+
+# Runs from the trusted default branch. Never checks out PR code with a write token.
+on:
+  workflow_run:
+    workflows: ["Validate and build"]
+    types: [completed]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: auto-squash-main
+  cancel-in-progress: false
+
+jobs:
+  auto-squash:
+    if: >-
+      github.event.workflow_run.event == 'pull_request' &&
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_repository.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Squash merge unchanged, validated same-repo PRs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_SHA: ${{ github.event.workflow_run.head_sha }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+        run: |
+          set -euo pipefail
+
+          prs="$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$RUN_ID" --jq '.pull_requests[]?.number')"
+          if [[ -z "$prs" ]]; then
+            echo "No PR associated with completed CI run; nothing to merge."
+            exit 0
+          fi
+
+          for number in $prs; do
+            details="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$number")"
+            state="$(jq -r '.state' <<< "$details")"
+            draft="$(jq -r '.draft' <<< "$details")"
+            base="$(jq -r '.base.ref' <<< "$details")"
+            head_repo="$(jq -r '.head.repo.full_name' <<< "$details")"
+            head_sha="$(jq -r '.head.sha' <<< "$details")"
+
+            if [[ "$state" != "open" || "$draft" != "false" || "$base" != "main" ]]; then
+              echo "Skipping #$number: not an open, ready PR targeting main."
+              continue
+            fi
+            if [[ "$head_repo" != "$GITHUB_REPOSITORY" || "$head_sha" != "$RUN_SHA" ]]; then
+              echo "Skipping #$number: untrusted fork or head changed after CI."
+              continue
+            fi
+
+            # Privileged workflow or deployment policy changes always require a manual merge.
+            files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$number/files?per_page=100" --jq '.[].filename')"
+            if grep -Eq '^(\.github/workflows/|vercel\.json$)' <<< "$files"; then
+              echo "Skipping #$number: workflow or Vercel deployment configuration changed."
+              continue
+            fi
+
+            gh pr merge "$number" --repo "$GITHUB_REPOSITORY" \
+              --squash --delete-branch --match-head-commit "$RUN_SHA"
+            echo "Squash-merged validated PR #$number."
+          done
