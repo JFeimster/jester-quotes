@@ -8,6 +8,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const read = (p) => readFileSync(path.join(root, p), 'utf8');
 const registry = JSON.parse(read('src/data/jester-quotes.json'));
 const collections = JSON.parse(read('src/data/collections.json'));
+const tricksters = JSON.parse(read('src/data/tricksters.json'));
 const origin = 'https://jester-quotes.vercel.app';
 const dist = (p) => read(path.join('dist', p));
 const schemaFrom = (html) => {
@@ -27,9 +28,11 @@ test('sitemap covers all discovery tools, curated collections, and 100 quote URL
     ...collections.map((collection) => `${origin}/collections/${collection.slug}/`),
     `${origin}/studio/`,
     `${origin}/sources/`,
+    `${origin}/tricksters/`,
+    ...tricksters.map((item) => `${origin}/tricksters/${item.slug}/`),
     ...registry.items.map((item) => `${origin}/quotes/${item.id}/`)
   ];
-  assert.equal(urls.length, 102 + 3 + collections.length);
+  assert.equal(urls.length, 102 + 3 + collections.length + 1 + tricksters.length);
   assert.equal(new Set(urls).size, urls.length);
   assert.deepEqual(urls, expected);
   assert.ok(!xml.includes('/404'), '404 route must not be indexed');

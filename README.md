@@ -4,7 +4,7 @@
 
 [Live website](https://jester-quotes.vercel.app/) · [Project board](https://github.com/users/JFeimster/projects/11) · [Production deployments](https://vercel.com/jason-feimsters-projects/jester-quotes/deployments)
 
-A responsive, static quotation collection built with **Astro 7, TypeScript, CSS, and Sharp**, hosted on Vercel. The **Midnight Carnival 1.1** visual system uses editorial typography, a custom illustrated jester, and the midnight/velvet/gold/ivory/coral palette.
+A responsive, static quotation collection built with **Astro 7, TypeScript, CSS, and Sharp**, hosted on Vercel. The **Midnight Carnival 2.0** visual system uses editorial typography, a custom illustrated jester, and the midnight/velvet/gold/ivory/coral palette.
 
 ## What works today
 
@@ -12,6 +12,7 @@ A responsive, static quotation collection built with **Astro 7, TypeScript, CSS,
 - Explore six hand-curated themes across 96 distinct quotations at `/collections/` (quotes may appear in multiple themes).
 - Create custom quote artwork in the browser at `/studio/` (4 canvas formats × 4 palettes; full-resolution PNG export).
 - Review provenance, citation coverage, correction reporting, and reuse guidance at `/sources/`.
+- Browse **11 independently sourced, original short Trickster profiles** at `/tricksters/`, with search, figure/media/tag filters, random discovery, and contextual source links.
 - Search quote text, people, and references; filter quotes with/without references.
 - Save favorites in the browser (localStorage), with cross-tab synchronization; no account or server database.
 - Find a random quote, copy text, and share/copy a quotation link.
@@ -60,6 +61,8 @@ npm audit --audit-level=high
   ci.yml                    Checks, build, tests, security audit
   auto-squash.yml           Merge validated trusted PRs automatically
 data/jester-quotes.csv      Original CSV archive
+data/tricksters.csv         Export of verified directory profiles
+data/trickster-candidates.csv  Unpublished research leads (not displayed)
 public/                     Directly served static assets
   images/                   Manual artwork: [style]-[type]-[ratio].png
   social/quotes/            Generated quote PNGs (unchanged URLs)
@@ -70,6 +73,7 @@ src/
   components/               Hero, gallery, cards, favorites, share/poster UI
   data/jester-quotes.json   Canonical quote registry (100 entries)
   data/collections.json    Editorial quote-ID groupings (not a new quote database)
+  data/tricksters.json     Independently sourced, verified profile data
   layouts/BaseLayout.astro  Shared SEO, metadata, navigation, styling
   lib/                      Quote data, SEO, filters, poster layout
   pages/
@@ -80,6 +84,8 @@ src/
     collections/index.astro  Six editorial themes
     collections/[slug].astro Curated quote pages
     studio.astro             Client-side poster customization
+    tricksters/index.astro  Searchable sourced directory
+    tricksters/[slug].astro Verified individual profiles
     sources.astro            Provenance and correction information
     sitemap.xml.ts          XML index of public routes
     robots.txt.ts           Robots policy and sitemap URL
@@ -102,6 +108,7 @@ CREDITS.md                  Source and publication-rights information
 - The social image generator emits `public/social/quote-layouts.json` with measured text-region dimensions, author fit and excerpt status for all 100 previews; the CI test asserts geometric integrity. Existing `public/social/quotes/` URLs remain unchanged.
 - `src/lib/artwork/` centralizes measured layout and local PNG/ZIP exports for Studio and individual quote pages. No client-side library or server endpoint is required.
 - `src/data/collections.json` maps themes to existing quote IDs. Collections are intentionally non-exclusive editorial lists, and they must not duplicate or alter the canonical quote registry.
+- The Trickster registry publishes only independently evidenced records. Each entry includes stable IDs, source URLs, verification date, original summary and contextual collection links. `data/trickster-candidates.csv` remains **unpublished**; no artwork is scraped or assumed licensed. Review `docs/TRICKSTER-EDITORIAL.md` before adding entries.
 - Quote Studio imports the same registry, existing `poster-layout.ts` text-fitting helper and shared artwork renderer. Artwork is rendered locally in a browser canvas; long quotes are paginated rather than clipped, with one ZIP download for all slides.
 
 **Copyright:** Attributions are not licenses. The site's existing quotations come from third-party sources and may require permission or a documented legal basis for reproduction. Review `CREDITS.md` and resolve publication rights before expanding distribution or adding third-party material.
@@ -129,4 +136,4 @@ When introducing a custom domain, update the **Production** `PUBLIC_SITE_URL` va
 
 Keep the static architecture and existing routes unless a new capability requires a change. Add content/features in coherent batches with targeted tests, preserve responsive behavior and accessibility, and prefer reusable components to duplicate pages or data registries. Check GitHub Actions and the Vercel Production deployment after release.
 
-**Current status:** Midnight Carnival 1.1, publication metadata, six curated Collections, browser Quote Studio, and Sources & Attribution are implemented. Possible later additions: a rotating daily quotation and a dedicated saved-quote library.
+**Current status:** Midnight Carnival 2.0, publication metadata, six curated Collections, browser Quote Studio, Sources & Attribution, and the first sourced Trickster Directory are implemented. Possible later additions: a rotating daily quotation and a dedicated saved-quote library.

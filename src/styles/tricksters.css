@@ -1,0 +1,98 @@
+/* Trickster Directory — original text-forward editorial system, no unlicensed artwork. */
+.trickster-page{padding-top:clamp(44px,6vw,92px)}
+.trickster-header{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.76fr);gap:clamp(23px,4vw,60px);align-items:stretch;margin-bottom:clamp(64px,8vw,105px)}
+.trickster-header h1{font-size:clamp(3.9rem,8vw,7.7rem);line-height:.94;letter-spacing:-.067em;margin:18px 0 23px}
+.trickster-header h1 em{color:var(--coral);font-weight:400}
+.trickster-header .lede{color:#ddd0c8;font-size:clamp(1rem,1.6vw,1.18rem);line-height:1.8;max-width:58ch}
+.trickster-header-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}
+.trickster-hero-aside{position:relative;overflow:hidden;background:#f5ebdd;color:#201d21;border:1px solid var(--gold);padding:clamp(24px,4.5vw,52px);display:flex;flex-direction:column;justify-content:end;min-height:410px}
+.trickster-hero-aside::before{content:"";position:absolute;inset:16px;border:1px solid rgba(78,45,55,.23);pointer-events:none}
+.trickster-hero-symbol{position:absolute;top:0;right:17px;font-size:clamp(9rem,19vw,17rem);line-height:.96;color:rgba(105,38,63,.1);pointer-events:none}
+.trickster-hero-aside .eyebrow{color:#763651;position:relative}
+.trickster-hero-aside h2{font-size:clamp(2.2rem,4.2vw,4.3rem);max-width:12ch;line-height:1.03;position:relative;letter-spacing:-.052em;margin:15px 0}
+.trickster-hero-aside h2 em{color:#923d56}
+.trickster-hero-aside p:not(.eyebrow){font-size:.93rem;line-height:1.68;color:#51444c;max-width:43ch;position:relative}
+.trickster-hero-aside>a{font-size:.75rem;letter-spacing:.06em;font-weight:850;color:#632c47;position:relative;margin-top:8px}
+.trickster-page .section-title h2 em{color:var(--gold)}
+.trickster-page .section-title .byline{max-width:26ch;text-align:right}
+.trickster-controls{display:flex;align-items:end;flex-wrap:wrap;gap:12px;border:1px solid rgba(216,172,100,.38);padding:21px;background:#1d2024;margin:28px 0 16px}
+.trickster-field{display:grid;gap:8px;min-width:0;flex:1 1 165px}
+.trickster-field--search{flex:2.2 1 260px}
+.trickster-field label{font-size:.68rem;letter-spacing:.1em;color:var(--gold);font-weight:800;text-transform:uppercase}
+.trickster-field input,.trickster-field select{min-width:0;width:100%;min-height:48px;background:#101115;color:var(--ivory);border:1px solid #74666a;border-radius:2px;padding:11px 12px;font-size:.86rem}
+.trickster-field input::placeholder{color:#aca0a3}
+.trickster-reset{min-height:48px;border:1px solid var(--gold);background:transparent;color:var(--gold);font-size:.73rem;font-weight:850;padding:10px 16px;text-transform:uppercase;letter-spacing:.07em}
+.trickster-reset:hover{background:var(--gold);color:#111115}
+.trickster-results-row{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:18px 0}
+.trickster-results-row p{color:var(--gold);text-transform:uppercase;font-size:.71rem;letter-spacing:.1em;font-weight:850}
+.trickster-results-row button{min-height:44px;border-color:var(--gold);font-size:.74rem;padding:9px 15px}
+.trickster-results-row button:disabled{opacity:.4;cursor:not-allowed}
+.trickster-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin-bottom:35px}
+.trickster-card{min-width:0;display:flex;flex-direction:column;position:relative;overflow:hidden;background:#22242a;border:1px solid #66565e;padding:clamp(22px,3vw,32px);min-height:380px;transition:border-color .22s ease,transform .22s ease,box-shadow .22s ease}
+.trickster-card:nth-child(5n+2){background:linear-gradient(137deg,#522d3f,#251d29);border-color:#ac717e}
+.trickster-card:nth-child(7n+4){background:#f5ebdd;color:#292126;border-color:#f5ebdd}
+.trickster-card:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:5px 7px 0 rgba(216,172,100,.22)}
+.trickster-card-top{display:flex;justify-content:space-between;gap:12px;align-items:start;position:relative;z-index:1;color:var(--gold);font-size:.62rem;letter-spacing:.14em;font-weight:850}
+.trickster-card-kind{text-align:right;letter-spacing:.04em;max-width:17ch}
+.trickster-emblem{height:76px;display:flex;align-items:center;justify-content:end;color:rgba(216,172,100,.33);font:6rem/.8 Georgia,serif;pointer-events:none}
+.trickster-card h3{font:400 clamp(1.7rem,2.6vw,2.85rem)/1.04 Georgia,serif;letter-spacing:-.04em;margin:7px 0 15px;overflow-wrap:anywhere}
+.trickster-card h3 a{text-decoration:none}
+.trickster-card h3 a:hover{text-decoration:underline;text-decoration-color:var(--coral)}
+.trickster-card-origin{margin:0 0 13px;color:#e2b7a9;font-size:.76rem;line-height:1.5;font-weight:800}
+.trickster-card-desc{color:#d8d1d0;font-size:.88rem;line-height:1.68;margin:0 0 23px}
+.trickster-card-foot{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;gap:10px;margin-top:auto;padding-top:18px;border-top:1px solid rgba(216,172,100,.38);font-size:.71rem;color:#c8b5b4}
+.trickster-card-foot a{font-weight:850;color:var(--gold);font-size:.72rem;text-decoration:none;letter-spacing:.04em}
+.trickster-card-foot a:hover{text-decoration:underline}
+.trickster-card:nth-child(7n+4) .trickster-card-top,
+.trickster-card:nth-child(7n+4) .trickster-emblem,
+.trickster-card:nth-child(7n+4) .trickster-card-origin,
+.trickster-card:nth-child(7n+4) .trickster-card-foot a{color:#68314a}
+.trickster-card:nth-child(7n+4) .trickster-card-desc,
+.trickster-card:nth-child(7n+4) .trickster-card-foot{color:#4d3b42}
+.trickster-card:nth-child(7n+4) .trickster-card-foot{border-color:rgba(70,45,51,.28)}
+.trickster-empty{padding:32px;border:1px dashed #97816f;color:#d4c5be}
+.trickster-research-note{display:flex;gap:20px;align-items:start;background:#2b2029;border-left:5px solid var(--coral);padding:clamp(20px,3vw,35px);margin-top:60px}
+.trickster-note-mark{display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);font-family:Georgia,serif;width:38px;height:38px;flex:none}
+.trickster-research-note h2{font-size:clamp(1.45rem,2.4vw,2.4rem);margin:0 0 10px}
+.trickster-research-note p{margin:0;color:#dccdca;max-width:89ch}
+.trickster-research-note a{color:var(--gold)}
+.trickster-detail{padding-top:48px;padding-bottom:70px}
+.trickster-breadcrumb{display:flex;gap:13px;align-items:center;flex-wrap:wrap;font-size:.73rem;letter-spacing:.06em;color:var(--muted);margin-bottom:48px}
+.trickster-breadcrumb a{color:var(--gold)}
+.trickster-detail-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,.35fr);align-items:center;gap:30px;margin-bottom:62px}
+.trickster-detail-head h1{font-size:clamp(3.5rem,7vw,7.8rem);line-height:.95;letter-spacing:-.066em;overflow-wrap:anywhere;margin:18px 0 23px}
+.trickster-origin{font-size:1.08rem;color:#d2b5b5;max-width:60ch}
+.trickster-portrait-placeholder{min-height:230px;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#f5ebdd;border:1px solid var(--gold);position:relative}
+.trickster-portrait-placeholder::after{content:"";position:absolute;inset:14px;border:1px solid rgba(98,47,74,.25)}
+.trickster-portrait-placeholder span{font:8rem/.95 Georgia,serif;color:#a15a68}
+.trickster-portrait-placeholder small{color:#613049;letter-spacing:.12em;font-size:.56rem;font-weight:850}
+.trickster-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}
+.trickster-tags span{border:1px solid #826d74;padding:6px 10px;color:#e9cabc;font-size:.67rem;text-transform:uppercase;letter-spacing:.09em}
+.trickster-tags .trickster-type{background:var(--gold);border-color:var(--gold);color:#171219;font-weight:850}
+.trickster-detail-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:26px;align-items:start}
+.trickster-detail-main{background:#21232a;padding:clamp(26px,4vw,50px);border:1px solid #76625d}
+.trickster-detail-main h2{font-size:clamp(2.4rem,4.5vw,4.6rem);margin:12px 0 30px}
+.trickster-detail-main .trickster-introduction{font:400 clamp(1.3rem,2.3vw,2.15rem)/1.4 Georgia,serif;color:#f5ebdd}
+.trickster-detail-main p:not(.eyebrow){line-height:1.78}
+.trickster-detail-main h3{font-size:1.6rem;margin-top:35px}
+.trickster-sources{padding:clamp(26px,3vw,36px);background:#f5ebdd;color:#29212a;border:1px solid var(--gold)}
+.trickster-sources .eyebrow{color:#72354e}
+.trickster-sources h2{font-size:clamp(1.75rem,3vw,2.6rem);margin:10px 0 20px}
+.trickster-sources ol{margin:0;padding-left:22px}
+.trickster-sources li{margin-bottom:19px;padding-left:4px}
+.trickster-sources li strong{display:block;font-size:.71rem;color:#6d3b4c}
+.trickster-sources li a{color:#4e2839;font-weight:800;font-size:.86rem}
+.trickster-sources>p{border-top:1px solid #ccbfae;padding-top:20px;font-size:.76rem;line-height:1.7}
+.trickster-related{margin:67px 0 40px}
+.trickster-related h2{font-size:clamp(2rem,3.4vw,3.7rem);margin:10px 0 22px}
+.trickster-related-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.trickster-related-links a{display:grid;grid-template-columns:1fr auto;gap:7px;align-items:end;min-width:0;padding:21px;background:#2c2530;border:1px solid rgba(216,172,100,.3);text-decoration:none}
+.trickster-related-links a:hover{border-color:var(--coral)}
+.trickster-related-links a span:first-child{grid-column:1/-1;color:var(--gold);font-size:.63rem;letter-spacing:.09em;text-transform:uppercase}
+.trickster-related-links a strong{font-family:Georgia,serif;font-weight:400;font-size:1.4rem;overflow-wrap:anywhere}
+.trickster-relationship-note{font-size:.8rem;color:var(--muted);margin-top:16px}
+@media(max-width:960px){.trickster-header{grid-template-columns:1fr}.trickster-hero-aside{min-height:270px}.trickster-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.trickster-detail-grid{grid-template-columns:1fr}}
+@media(max-width:680px){.trickster-header h1{font-size:clamp(3.3rem,12vw,5.8rem)}.trickster-header-actions{flex-direction:column}.trickster-grid{grid-template-columns:1fr}.trickster-detail-head{grid-template-columns:1fr}.trickster-portrait-placeholder{min-height:160px}.trickster-related-links{grid-template-columns:1fr}.trickster-page .section-title .byline{text-align:left}.trickster-controls{padding:16px}.trickster-field,.trickster-field--search{flex-basis:100%}.trickster-reset{width:100%}.trickster-card{min-height:0}.trickster-research-note{flex-direction:column}}
+@media(max-width:370px){.trickster-header h1{font-size:3.1rem}.trickster-results-row{flex-wrap:wrap}.trickster-card{padding:20px}}
+@media(hover:none){.trickster-card:hover{transform:none;box-shadow:none}}
+@media(prefers-reduced-motion:reduce){.trickster-card{transition:none}}
