@@ -6,8 +6,10 @@ import QuoteGallery from '../components/QuoteGallery.astro';
 import FavoritesPanel from '../components/FavoritesPanel.astro';
 import SourceAttribution from '../components/SourceAttribution.astro';
 import { quotes } from '../lib/quote-data';
+import { collectionSchema } from '../lib/seo';
+const structuredData = collectionSchema(Astro.site ?? new URL('https://jester-quotes.vercel.app'), quotes);
 ---
-<BaseLayout>
+<BaseLayout structuredData={structuredData}>
   <div class="wrap">
     <Hero />
     <FeaturedQuote quote={quotes[4] ?? quotes[0]} />
