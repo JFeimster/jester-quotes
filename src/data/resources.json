@@ -1,0 +1,182 @@
+[
+  {
+    "id": "resource-loc-animal-trickster-tales",
+    "slug": "loc-animal-trickster-tales",
+    "title": "Animal and Trickster Tales",
+    "url": "https://guides.loc.gov/folktales-oral-storytelling/animal-trickster-tales",
+    "source_name": "Library of Congress",
+    "type": "reference",
+    "summary": "How the American Folklife Center connects animal storytelling, trickster characters, archival recordings, and competing interpretations of Br’er Rabbit.",
+    "tags": [
+      "folklore",
+      "oral-tradition",
+      "archives"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": true,
+    "related_trickster_ids": [
+      "trickster-brer-rabbit",
+      "trickster-coyote",
+      "trickster-anansi"
+    ],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-loc-storytelling-collections",
+    "slug": "loc-storytelling-collections",
+    "title": "Folktales and Oral Storytelling: Collection Guide",
+    "url": "https://guides.loc.gov/folktales-oral-storytelling",
+    "source_name": "Library of Congress",
+    "type": "reference",
+    "summary": "An entry point into oral histories, folktale genres, community storytelling traditions, and the Library’s collections and finding aids.",
+    "tags": [
+      "folklore",
+      "oral-tradition",
+      "archives"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-loc-anansi-world-treasures",
+    "slug": "loc-anansi-world-treasures",
+    "title": "Anansi the Spider — World Treasures",
+    "url": "https://www.loc.gov/exhibits/world/earth.html",
+    "source_name": "Library of Congress",
+    "type": "reference",
+    "summary": "An exhibition section placing Anansi within Ghanaian, Caribbean, and African diaspora storytelling and the illustrated-book tradition.",
+    "tags": [
+      "anansi",
+      "african-diaspora",
+      "exhibitions"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-anansi"
+    ],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-bgsu-ananse-guide",
+    "slug": "bgsu-ananse-guide",
+    "title": "Ananse: Folktale and Fairy Tale Resources",
+    "url": "https://libguides.bgsu.edu/fairytales/ananse",
+    "source_name": "Bowling Green State University Libraries",
+    "type": "reference",
+    "summary": "A teaching and discovery guide to Ananse or Anansi, including spelling variants and references to retellings of the Akan spider stories.",
+    "tags": [
+      "anansi",
+      "folklore",
+      "research"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": true,
+    "related_trickster_ids": [
+      "trickster-anansi"
+    ],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-unesco-nasreddin",
+    "slug": "unesco-nasreddin",
+    "title": "Telling Tradition of Nasreddin Anecdotes",
+    "url": "https://ich.unesco.org/en/RL/telling-tradition-of-nasreddin-hodja-molla-nasreddin-juha-01705",
+    "source_name": "UNESCO Intangible Cultural Heritage",
+    "type": "reference",
+    "summary": "An official heritage listing describing how humorous Nasreddin anecdotes circulate across several communities and remain part of living traditions.",
+    "tags": [
+      "oral-tradition",
+      "nasreddin",
+      "cultural-heritage"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": true,
+    "related_trickster_ids": [
+      "trickster-nasreddin-hodja"
+    ],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-smithsonian-raven-story",
+    "slug": "smithsonian-raven-story",
+    "title": "Raven Story — Native American Lifeways",
+    "url": "https://postalmuseum.si.edu/exhibition/the-american-indian-in-postage-stamps-american-indian-lifeways/raven-story",
+    "source_name": "Smithsonian National Postal Museum",
+    "type": "reference",
+    "summary": "A museum presentation of a Raven narrative that offers a specific interpretive context for Indigenous storytelling rather than a universal account.",
+    "tags": [
+      "raven",
+      "indigenous-stories",
+      "museum"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-raven-tlingit"
+    ],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-teara-maori-first-peoples",
+    "slug": "teara-maori-first-peoples",
+    "title": "First Peoples in Māori Tradition",
+    "url": "https://teara.govt.nz/en/first-peoples-in-maori-tradition",
+    "source_name": "Te Ara — Encyclopedia of New Zealand",
+    "type": "reference",
+    "summary": "New Zealand encyclopedia material introducing traditions involving early ancestral and culture-hero narratives, including Māui.",
+    "tags": [
+      "maui",
+      "cultural-heritage",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-maui"
+    ],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-teded-anansi-lesson",
+    "slug": "teded-anansi-lesson",
+    "title": "The Myth of Anansi, the Trickster Spider",
+    "url": "https://ed.ted.com/lessons/the-myth-of-anansi-the-trickster-spider-emily-zobel-marshall",
+    "source_name": "TED-Ed",
+    "type": "article",
+    "summary": "An educator-led illustrated lesson that follows Anansi’s attempt to obtain stories from the sky god, with supporting background and creator credits.",
+    "tags": [
+      "anansi",
+      "mythology",
+      "education"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-anansi"
+    ],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-teded-loki-lesson",
+    "slug": "teded-loki-lesson",
+    "title": "The Myth of Loki and the Master Builder",
+    "url": "https://ed.ted.com/lessons/the-myth-of-loki-and-the-master-builder-alex-gendler",
+    "source_name": "TED-Ed",
+    "type": "article",
+    "summary": "A Norse-storytelling lesson focused on the bargain to build Asgard’s wall, with prompts for further reading about surviving sources.",
+    "tags": [
+      "loki",
+      "norse",
+      "education"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-loki"
+    ],
+    "related_quote_ids": []
+  }
+]

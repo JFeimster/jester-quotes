@@ -13,6 +13,7 @@ A responsive, static quotation collection built with **Astro 7, TypeScript, CSS,
 - Create custom quote artwork in the browser at `/studio/` (4 canvas formats × 4 palettes; full-resolution PNG export).
 - Review provenance, citation coverage, correction reporting, and reuse guidance at `/sources/`.
 - Browse **11 independently sourced, original short Trickster profiles** at `/tricksters/`, with search, figure/media/tag filters, random discovery, and contextual source links.
+- Browse a **Resource Vault of 9 verified links** at `/resources/` and a **Video Library of 5 verified YouTube lessons** at `/videos/`; searchable topic/publisher filters, related Trickster links, and user-initiated privacy-enhanced playback.
 - Search quote text, people, and references; filter quotes with/without references.
 - Save favorites in the browser (localStorage), with cross-tab synchronization; no account or server database.
 - Find a random quote, copy text, and share/copy a quotation link.
@@ -63,6 +64,8 @@ npm audit --audit-level=high
 data/jester-quotes.csv      Original CSV archive
 data/tricksters.csv         Export of verified directory profiles
 data/trickster-candidates.csv  Unpublished research leads (not displayed)
+data/resources.csv         Export of sourced external reference links
+data/videos.csv            Export of confirmed YouTube directory entries
 public/                     Directly served static assets
   images/                   Manual artwork: [style]-[type]-[ratio].png
   social/quotes/            Generated quote PNGs (unchanged URLs)
@@ -74,6 +77,8 @@ src/
   data/jester-quotes.json   Canonical quote registry (100 entries)
   data/collections.json    Editorial quote-ID groupings (not a new quote database)
   data/tricksters.json     Independently sourced, verified profile data
+  data/resources.json     Source-linked editorial Resource Vault
+  data/videos.json        Verified YouTube directory metadata
   layouts/BaseLayout.astro  Shared SEO, metadata, navigation, styling
   lib/                      Quote data, SEO, filters, poster layout
   pages/
@@ -86,6 +91,8 @@ src/
     studio.astro             Client-side poster customization
     tricksters/index.astro  Searchable sourced directory
     tricksters/[slug].astro Verified individual profiles
+    resources/index.astro  Filterable Resource Vault
+    videos/index.astro     Privacy-conscious YouTube directory
     sources.astro            Provenance and correction information
     sitemap.xml.ts          XML index of public routes
     robots.txt.ts           Robots policy and sitemap URL
@@ -108,6 +115,7 @@ CREDITS.md                  Source and publication-rights information
 - The social image generator emits `public/social/quote-layouts.json` with measured text-region dimensions, author fit and excerpt status for all 100 previews; the CI test asserts geometric integrity. Existing `public/social/quotes/` URLs remain unchanged.
 - `src/lib/artwork/` centralizes measured layout and local PNG/ZIP exports for Studio and individual quote pages. No client-side library or server endpoint is required.
 - `src/data/collections.json` maps themes to existing quote IDs. Collections are intentionally non-exclusive editorial lists, and they must not duplicate or alter the canonical quote registry.
+- `src/data/resources.json` and `src/data/videos.json` are small curated link registries. Their summaries are original, video IDs and creators are verified, and all media stays with its source publisher. Videos embed through `youtube-nocookie.com` **only after the visitor presses Load player**; links remain usable without scripts. No `/public/videos/` directory or third-party video files are created.
 - The Trickster registry publishes only independently evidenced records. Each entry includes stable IDs, source URLs, verification date, original summary and contextual collection links. `data/trickster-candidates.csv` remains **unpublished**; no artwork is scraped or assumed licensed. Review `docs/TRICKSTER-EDITORIAL.md` before adding entries.
 - Quote Studio imports the same registry, existing `poster-layout.ts` text-fitting helper and shared artwork renderer. Artwork is rendered locally in a browser canvas; long quotes are paginated rather than clipped, with one ZIP download for all slides.
 
@@ -136,4 +144,4 @@ When introducing a custom domain, update the **Production** `PUBLIC_SITE_URL` va
 
 Keep the static architecture and existing routes unless a new capability requires a change. Add content/features in coherent batches with targeted tests, preserve responsive behavior and accessibility, and prefer reusable components to duplicate pages or data registries. Check GitHub Actions and the Vercel Production deployment after release.
 
-**Current status:** Midnight Carnival 2.0, publication metadata, six curated Collections, browser Quote Studio, Sources & Attribution, and the first sourced Trickster Directory are implemented. Possible later additions: a rotating daily quotation and a dedicated saved-quote library.
+**Current status:** Midnight Carnival 2.0, publication metadata, six curated Collections, browser Quote Studio, Sources & Attribution, and the sourced Trickster Directory plus Resource/Video libraries are implemented. Possible later additions: a rotating daily quotation and a dedicated saved-quote library.
