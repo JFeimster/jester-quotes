@@ -9,6 +9,7 @@ const { quote } = Astro.props as { quote: Quote };
   <div class="poster-controls">
     <button class="btn" type="button" id="download-poster" aria-describedby="poster-note" data-text={quote.quote} data-person={quote.person} data-id={quote.id}>Download PNG poster ↓</button>
     <a class="btn secondary" href={`/social/quotes/${quote.id}.png`} download={`${quote.id}-social.png`}>Download social image</a>
+    <a class="btn secondary" href={`/studio/?quote=${quote.id}`}>Customize in Quote Studio ↗</a>
   </div>
   <p id="poster-status" role="status" aria-live="polite" class="poster-status"></p>
   <canvas id="poster-canvas" width="1080" height="1080" hidden aria-hidden="true"></canvas>

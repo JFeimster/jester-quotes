@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import FeaturedQuote from '../components/FeaturedQuote.astro';
+import CollectionsTeaser from '../components/CollectionsTeaser.astro';
 import QuoteGallery from '../components/QuoteGallery.astro';
 import FavoritesPanel from '../components/FavoritesPanel.astro';
 import SourceAttribution from '../components/SourceAttribution.astro';
@@ -13,6 +14,7 @@ const structuredData = collectionSchema(Astro.site ?? new URL('https://jester-qu
   <div class="wrap">
     <Hero />
     <FeaturedQuote quote={quotes[4] ?? quotes[0]} />
+    <CollectionsTeaser />
     <QuoteGallery />
     <FavoritesPanel />
     <SourceAttribution />
