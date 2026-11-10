@@ -1,9 +1,23 @@
-const STORAGE_KEY = 'jester-quotes:favorites:v1';
+export const FAVORITES_STORAGE_KEY = 'jester-quotes:favorites:v1';
+
 export function readFavorites(): Set<string> {
-  try { const value = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? '[]'); return new Set(Array.isArray(value) ? value.filter((x): x is string => typeof x === 'string') : []); }
-  catch { return new Set(); }
+  try {
+    const value: unknown = JSON.parse(localStorage.getItem(FAVORITES_STORAGE_KEY) ?? '[]');
+    return new Set(
+      Array.isArray(value)
+        ? value.filter((id): id is string => typeof id === 'string' && id.length > 0)
+        : []
+    );
+  } catch {
+    return new Set();
+  }
 }
-export function saveFavorites(values: Set<string>): void {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify([...values])); }
-  catch { /* Storage may be disabled; functionality remains in the current page. */ }
+
+export function saveFavorites(values: ReadonlySet<string>): boolean {
+  try {
+    localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify([...values]));
+    return true;
+  } catch {
+    return false;
+  }
 }

@@ -7,6 +7,7 @@ import QuoteCard from './QuoteCard.astro';
   <div class="section-title"><div><p class="eyebrow">Explore the collection</p><h2>The fool speaks.</h2></div><p class="byline">100 voices · infinite mischief</p></div>
   <QuoteSearch />
   <p class="result-count" id="result-count" aria-live="polite">{quotes.length} quotes</p>
+  <p class="sr-only" id="interaction-status" role="status" aria-live="polite"></p>
   <div class="gallery" id="quote-gallery">{quotes.map((q,index)=><QuoteCard quote={q} index={index}/>)}</div>
   <p id="empty-state" hidden>No quotes match those filters.</p>
 </section>

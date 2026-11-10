@@ -9,7 +9,7 @@ const { quote, index } = Astro.props as { quote: Quote; index: number };
   {quote.reference && <div class="reference">{quote.reference}</div>}
   <div class="card-foot">
     <a href={`/quotes/${quote.id}/`}>View quote ↗</a>
-    <button class="mini-action favorite-toggle" type="button" data-quote-id={quote.id} aria-pressed="false" aria-label={`Save quote by ${quote.person} to favorites`}>♡ Save</button>
+    <button class="mini-action favorite-toggle" type="button" data-quote-id={quote.id} data-person={quote.person} data-unsaved-label="♡ Save" data-saved-label="♥ Saved" aria-pressed="false" aria-label={`Save quote by ${quote.person} to favorites`}>♡ Save</button>
     <button class="mini-action copy-quote" type="button" data-quote-text={`${quote.quote}\n— ${quote.person}`}>Copy</button>
   </div>
 </article>

@@ -5,11 +5,12 @@ const { quote } = Astro.props as { quote: Quote };
 ---
 <section aria-label="Download quote artwork">
   <h2>Create a quote poster</h2>
-  <p class="poster-note">Save a square 1080 × 1080 PNG of this quote. Longer text is wrapped and sized to fit.</p>
+  <p class="poster-note" id="poster-note">Save a square 1080 × 1080 PNG of this quote. Longer text is wrapped and sized to fit.</p>
   <div class="poster-controls">
-    <button class="btn" type="button" id="download-poster" data-text={quote.quote} data-person={quote.person} data-id={quote.id}>Download PNG poster ↓</button>
+    <button class="btn" type="button" id="download-poster" aria-describedby="poster-note" data-text={quote.quote} data-person={quote.person} data-id={quote.id}>Download PNG poster ↓</button>
     <a class="btn secondary" href={`/social/quotes/${quote.id}.png`} download={`${quote.id}-social.png`}>Download social image</a>
   </div>
+  <p id="poster-status" role="status" aria-live="polite" class="poster-status"></p>
   <canvas id="poster-canvas" width="1080" height="1080" hidden aria-hidden="true"></canvas>
 </section>
 <script src="../scripts/poster.ts"></script>
