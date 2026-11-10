@@ -1,17 +1,41 @@
 ---
 import type { Quote } from '../types/quote';
 const { quote, index } = Astro.props as { quote: Quote; index: number };
+const isLong = quote.quote.length > 500;
+type CardVariant = 'compact' | 'editorial' | 'poster';
+const variant: CardVariant = isLong || (index % 11 === 0) ? 'editorial'
+  : (index % 7 === 3 && quote.quote.length < 260) ? 'poster'
+  : 'compact';
+const styleLabel = variant === 'editorial' ? 'THE EDITORIAL' : variant === 'poster' ? 'THE POSTER' : 'THE ARCHIVE';
 ---
-<article class:list={['quote-card', { 'quote-card--long': quote.quote.length > 500 }]} data-id={quote.id} data-search={`${quote.person} ${quote.reference ?? ''} ${quote.quote}`.toLowerCase()} data-reference={quote.reference ? 'yes' : 'no'}>
-  <p class="kicker">No. {String(index + 1).padStart(3, '0')} <span class="sr-only">of 100</span></p>
-  <h3>{quote.quote}</h3>
-  <div class="card-attribution">
-    <div class="person">— {quote.person}</div>
-    {quote.reference && <div class="reference">{quote.reference}</div>}
+<article
+  class:list={['quote-card', `quote-card--${variant}`, { 'quote-card--long': quote.quote.length > 500 }]}
+  data-variant={variant}
+  data-id={quote.id}
+  data-search={`${quote.person} ${quote.reference ?? ''} ${quote.quote}`.toLowerCase()}
+  data-reference={quote.reference ? 'yes' : 'no'}
+>
+  <div class="quote-card-top">
+    <p class="kicker">№ {String(index + 1).padStart(3, '0')} <span class="sr-only">of 100</span></p>
+    <span class="card-type">{styleLabel}</span>
+  </div>
+  {variant === 'poster' && (
+    <div class="quote-card-art">
+      <img src={`/social/quotes/${quote.id}.png`} alt={`Quote artwork preview for ${quote.person}; full quotation appears below`} width="1200" height="630" loading="lazy" decoding="async" />
+      <span class="card-art-label">SHARE ART / {String(index + 1).padStart(3, '0')}</span>
+    </div>
+  )}
+  <div class="quote-card-content">
+    <h3>{quote.quote}</h3>
+    <div class="card-attribution">
+      <div class="person">— {quote.person}</div>
+      {quote.reference && <div class="reference">{quote.reference}</div>}
+    </div>
   </div>
   <div class="card-foot">
-    <a href={`/quotes/${quote.id}/`}>View quote <span aria-hidden="true">↗</span></a>
+    <a class="card-detail-link" href={`/quotes/${quote.id}/`}>View quote <span aria-hidden="true">↗</span></a>
     <button class="mini-action favorite-toggle" type="button" data-quote-id={quote.id} data-person={quote.person} data-unsaved-label="♡ Save" data-saved-label="♥ Saved" aria-pressed="false" aria-label={`Save quote by ${quote.person} to favorites`}>♡ Save</button>
     <button class="mini-action copy-quote" type="button" data-quote-text={`${quote.quote}\n— ${quote.person}`}>Copy</button>
+    <a class="card-create-link" href={`/studio/?quote=${quote.id}`} aria-label={`Create quote artwork from ${quote.person}'s quote`}>Create art <span aria-hidden="true">✦</span></a>
   </div>
 </article>

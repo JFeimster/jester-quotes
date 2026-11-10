@@ -2,11 +2,16 @@
 import type { CuratedCollection } from '../lib/collections';
 interface Props { collection: CuratedCollection; index: number; }
 const { collection, index } = Astro.props;
+const sigils: Record<string, string> = {
+  'wise-fools': '♛', 'truth-to-power': '✴', 'laughter-and-life': '☺',
+  'masks-and-identity': '◈', 'carnival-absurdity': '✳', 'art-of-the-jester': '♠'
+};
 ---
 <a class:list={['collection-card', `collection-card--${collection.tone}`]} href={`/collections/${collection.slug}/`}>
-  <span class="collection-number">{String(index + 1).padStart(2, '0')} / THE COLLECTION</span>
-  <span class="collection-ornament" aria-hidden="true">✦</span>
+  <span class="collection-number">VOLUME {String(index + 1).padStart(2, '0')} <span aria-hidden="true">/</span> {collection.eyebrow}</span>
+  <span class="collection-ornament" aria-hidden="true">{sigils[collection.slug] ?? '✦'}</span>
+  <span class="collection-intro">THE JESTER ARCHIVE</span>
   <h3>{collection.title}</h3>
   <p>{collection.description}</p>
-  <span class="collection-card-foot"><span>{collection.quotes.length} curated quotes</span><strong>Explore ↗</strong></span>
+  <span class="collection-card-foot"><span>{collection.quotes.length} curated quotes</span><strong>Enter collection ↗</strong></span>
 </a>

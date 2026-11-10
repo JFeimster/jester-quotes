@@ -1,21 +1,25 @@
 ---
-import art from '../assets/jester-hero.svg';
+/* Retain the current, approved public image and stable random-quote hook. */
 ---
-<section class="hero" aria-labelledby="hero-title">
+<section class="hero hero-2" aria-labelledby="hero-title">
   <div class="hero-copy">
-    <p class="eyebrow hero-eyebrow"><span class="eyebrow-symbol" aria-hidden="true">✧</span> The art of the unwise · Vol. I</p>
-    <h1 id="hero-title">Long live <em>the fool.</em></h1>
-    <p class="lede">One hundred irreverent reflections on humor, rebellion, and the strangely wise art of playing the jester.</p>
+    <p class="eyebrow hero-eyebrow"><span class="hero-tiny-sigil" aria-hidden="true">✦</span> The midnight carnival / volume 001</p>
+    <h1 id="hero-title"><span>Long live</span><em>the fool<span class="hero-period">.</span></em></h1>
+    <p class="lede">A hundred voices. Six curious collections. One inconvenient truth: sometimes the joker is the only one telling the truth.</p>
     <div class="hero-actions">
-      <a class="btn" href="#explore">Explore all 100 quotes <span aria-hidden="true">↘</span></a>
-      <button class="btn secondary" id="surprise-me" type="button">Surprise me <span aria-hidden="true">✧</span></button>
+      <a class="btn" href="#explore">Explore 100 quotes <span aria-hidden="true">↗</span></a>
+      <button class="btn secondary" id="surprise-me" type="button">Surprise me <span aria-hidden="true">✳</span></button>
     </div>
-    <p class="hero-note">A collection for curious minds and inconvenient truths</p>
+    <div class="hero-utility" aria-label="Discover the site">
+      <a href="/collections/"><span class="utility-index">01 / DISCOVER</span><strong>Six sides of mischief</strong><span aria-hidden="true">↗</span></a>
+      <a href="/studio/"><span class="utility-index">02 / CREATE</span><strong>Make a quote your own</strong><span aria-hidden="true">↗</span></a>
+    </div>
   </div>
-  <figure class="hero-visual">
-    <div class="hero-frame">
-      <img class="hero-art" src={art.src} alt="A half-masked jester in a velvet cap, framed like an antique playing card" width="880" height="740" fetchpriority="high" decoding="async" />
+  <figure class="hero-visual hero-visual-2">
+    <div class="hero-frame hero-frame-2">
+      <img class="hero-art" src="/images/midnight-carnival-hero-4x5.png" alt="Midnight Carnival jester artwork in a richly theatrical, editorial style" width="1600" height="2000" fetchpriority="high" decoding="async" />
     </div>
-    <figcaption class="hero-art-caption"><span>Fig. 01 / The Jester</span><span>Not all fools wear crowns</span></figcaption>
+    <figcaption class="hero-art-caption"><span>Fig. 001 — The Fool</span><span>Wisdom wears a mask</span></figcaption>
+    <div class="hero-stamp" aria-hidden="true"><span>THE</span><strong>JOKER</strong><span>IS WILD</span></div>
   </figure>
 </section>
