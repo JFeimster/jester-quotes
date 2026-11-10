@@ -64,7 +64,7 @@ data/jester-quotes.csv      Original CSV archive
 data/tricksters.csv         Export of verified directory profiles
 data/trickster-candidates.csv  Unpublished research leads (not displayed)
 public/                     Directly served static assets
-  images/                   Manual artwork: [style]-[type]-[ratio].png
+  images/                   Approved manual artwork (see docs/IMAGE-ASSETS.md)
   social/quotes/            Generated quote PNGs (unchanged URLs)
 scripts/
   generate-social-images.mjs
@@ -112,6 +112,10 @@ CREDITS.md                  Source and publication-rights information
 - Quote Studio imports the same registry, existing `poster-layout.ts` text-fitting helper and shared artwork renderer. Artwork is rendered locally in a browser canvas; long quotes are paginated rather than clipped, with one ZIP download for all slides.
 
 **Copyright:** Attributions are not licenses. The site's existing quotations come from third-party sources and may require permission or a documented legal basis for reproduction. Review `CREDITS.md` and resolve publication rights before expanding distribution or adding third-party material.
+
+### Image asset organization
+
+Keep manually created brand and collection artwork flat in `public/images/`; the existing 100 generated social previews remain in `public/social/quotes/`. The live homepage already uses `midnight-carnival-hero-4x5.png`. Upload and integrate future assets only after confirming exact paths. See [Image assets and naming](docs/IMAGE-ASSETS.md) for the complete collection-cover and brand-asset registry.
 
 ## Deployment and automation
 
