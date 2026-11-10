@@ -66,6 +66,18 @@ The complete, future-ready `public/assets/` taxonomy is scaffolded with director
 - [Future asset-entry JSON Schema](schemas/image-asset.schema.json)
 - Run `npm run assets:validate` to verify directories and preserve legacy paths; `npm run check` runs this automatically.
 
+### Asset Architecture v2.0 — Task 2 operations
+
+The new `public/assets/` taxonomy and registry pipeline are operational without moving current image files. Only the two confirmed existing hero images are registered; all 100 generated social previews are managed separately.
+
+| Command | Purpose |
+| --- | --- |
+| `npm run assets:validate` | Validate folder taxonomy, registry paths, file names and available real image dimensions |
+| `npm run assets:inventory` | Print the canonical registry as CSV (`-- --write` refreshes the tracked CSV) |
+| `npm run assets:optimize -- --input public/assets/<path>` | Dry-run derivative generation; `--write` explicitly opts into non-overwriting WebP/AVIF creation |
+
+See [Asset architecture and upload workflow](docs/IMAGE-ASSETS.md) and [Legacy migration map](docs/ASSET-MIGRATION.md).
+
 ## Repository structure
 
 ```text

@@ -1,0 +1,3 @@
+"id","path","assetType","style","collection","variant","aspectRatio","width","height","status","usage","fileExists","notes"
+"site-hero-wide","/images/midnight-carnival-hero-16x9.png","hero","midnight-carnival","","horizontal","16x9","","","uploaded","site-promo;repository-preview-candidate","yes","Existing legacy path; not the default OG image. Actual pixel dimensions not independently verified."
+"site-hero-portrait","/images/midnight-carnival-hero-4x5.png","hero","midnight-carnival","","vertical","4x5","","","integrated","homepage-hero","yes","Existing legacy URL used by Hero.astro. Actual pixel dimensions not independently verified."

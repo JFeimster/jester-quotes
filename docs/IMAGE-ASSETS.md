@@ -1,116 +1,102 @@
-# Jester Quotes — Asset Architecture v2.0 (Task 1)
+# Jester Quotes — Asset Architecture v2.0
 
-**Scope:** Future-facing directory taxonomy, metadata schema, naming rules and structural validation only. No images migrated, uploaded, integrated or changed. The canonical asset registry and optimization/ingestion tooling belong to **Task 2**, after approval.
+This is the operational guide for the **existing Stage 1 folder taxonomy** and **Task 2 asset tooling**. The repository already has the full `public/assets/` directory tree, including 42 tracked leaf folders for brand, imagery, collections, social by ratio, videos, Studio, resources and themes.
 
-## Architecture: purpose → content family → ratio where production volume warrants
+- **Taxonomy:** [`config/asset-architecture.json`](../config/asset-architecture.json)
+- **Metadata contract:** [`schemas/image-asset.schema.json`](../schemas/image-asset.schema.json)
+- **Canonical manual-image registry:** [`src/data/image-assets.json`](../src/data/image-assets.json)
+- **Typed lookup API:** [`src/lib/assets.ts`](../src/lib/assets.ts)
+- **Local inventory:** [`data/asset-inventory.csv`](../data/asset-inventory.csv)
+- **Preserved-path mapping:** [`docs/ASSET-MIGRATION.md`](ASSET-MIGRATION.md)
 
-`public/assets/` is the new canonical destination for **future approved manual assets**. Keep existing Astro source imports in `src/assets/` and the active production URLs for the current two hero PNGs, generated quote PNGs, browser icons and social/OG images unchanged until a separately validated migration.
+## Directory logic
 
-The directory list lives in [`config/asset-architecture.json`](../config/asset-architecture.json) and is checked by [`scripts/validate-assets.mjs`](../scripts/validate-assets.mjs). Empty directories use a tracked `.gitkeep` file. Do **not** replace those with dummy images.
-
-### Complete directory inventory
+Organize by **purpose first**; use numbered collection folders when the image belongs to one collection; use **ratio folders** for high-volume `social/posts/`, `social/stories/`, `social/carousels/` and `social/reels/`. The Stage 1 folders already include all planned sections—not merely folders with existing images.
 
 ```text
 public/assets/
-├── branding/
-│   ├── logos/
-│   ├── avatars/
-│   ├── profiles/
-│   ├── favicons/
-│   └── icons/
-├── images/
-│   ├── heroes/
-│   ├── banners/
-│   ├── thumbnails/
-│   ├── backgrounds/
-│   ├── illustrations/
-│   └── featured/
-├── collections/
-│   ├── 01-wise-fool/
-│   ├── 02-truth-power/
-│   ├── 03-laughter-life/
-│   ├── 04-masks-identity/
-│   ├── 05-carnival-absurdity/
-│   └── 06-art-of-jester/
-├── social/
-│   ├── open-graph/
-│   ├── posts/
-│   │   ├── 1x1/
-│   │   ├── 4x5/
-│   │   └── 16x9/
-│   ├── stories/
-│   │   └── 9x16/
-│   ├── carousels/
-│   │   ├── 1x1/
-│   │   ├── 4x5/
-│   │   └── 9x16/
-│   ├── reels/
-│   │   └── 9x16/
-│   └── templates/
-├── videos/
-│   ├── promotional/
-│   ├── explainers/
-│   ├── shorts/
-│   ├── backgrounds/
-│   └── thumbnails/
-├── studio/
-│   ├── templates/
-│   ├── mockups/
-│   ├── presets/
-│   └── promotional/
-├── resources/
-│   ├── articles/
-│   ├── videos/
-│   └── downloads/
-└── themes/
-    ├── midnight-carnival/
-    ├── neo-brutalist/
-    └── velvet-gallery/
+├── branding/{logos,avatars,profiles,favicons,icons}/
+├── images/{heroes,banners,thumbnails,backgrounds,illustrations,featured}/
+├── collections/{01-wise-fool,02-truth-power,03-laughter-life,
+│                04-masks-identity,05-carnival-absurdity,06-art-of-jester}/
+├── social/{open-graph,posts/{1x1,4x5,16x9},stories/9x16,
+│           carousels/{1x1,4x5,9x16},reels/9x16,templates}/
+├── videos/{promotional,explainers,shorts,backgrounds,thumbnails}/
+├── studio/{templates,mockups,presets,promotional}/
+├── resources/{articles,videos,downloads}/
+└── themes/{midnight-carnival,neo-brutalist,velvet-gallery}/
 ```
 
-**Classification rules:** Use **purpose first**, the collection's numbered folder for collection-specific artwork, and ratio-specific folders in high-volume social production (`posts`, `stories`, `carousels`, `reels`). Place a video thumbnail in `videos/thumbnails/`, not `images/thumbnails/`; put reusable decorative textures/patterns in `themes/` but collection artwork in `collections/`. A carousel slide belongs under `social/carousels/<ratio>/`, rather than `collections/` even if it features a collection. Do not duplicate files across categories just to support multiple uses; reference one URL from multiple pages.
+**Categorization:** Movie/video thumbnail → `videos/thumbnails/`; collection clean/editorial pair → that numbered collection folder; carousel slide → `social/carousels/<ratio>/`, even if based on a collection; reusable motif/ornament → `themes/<style>/`. Cross-publish by reference rather than copying the same binary to several folders.
 
-## Naming
+## Filenames and formats
 
-For assets with a ratio, use `[style]-[subject-or-purpose]-[variant?]-[ratio].[ext]`. Use lowercase kebab-case, zero-padded collection numbers and normalized ratios **16x9, 4x5, 4x3, 1x1, 9x16**. Keep filenames self-explanatory without duplicating the whole directory path. Do not encode dimensions redundantly when the ratio is sufficient.
+Use lowercase kebab-case: `[style]-[subject]-[variant?]-[ratio].[extension]`. Choose `1x1`, `4x3`, `4x5`, `16x9`, `9x16` etc.; use `01`–`06` for collections and `slide-01`, `slide-02` for sequential carousel slides.
 
-| Destination | Example |
-|---|---|
-| `branding/logos/` | `midnight-carnival-logo-horizontal.png` |
-| `branding/avatars/` | `midnight-carnival-avatar-1x1.png` |
-| `images/heroes/` | `midnight-carnival-hero-16x9.png` |
-| `collections/01-wise-fool/` | `midnight-carnival-collection-01-wise-fool-clean-4x3.png` |
-| `collections/01-wise-fool/` | `midnight-carnival-collection-01-wise-fool-editorial-4x3.png` |
-| `social/carousels/4x5/` | `midnight-carnival-wisdom-slide-01-4x5.png` |
-| `social/stories/9x16/` | `midnight-carnival-wisdom-story-9x16.png` |
-| `videos/thumbnails/` | `midnight-carnival-archetype-thumbnail-16x9.png` |
-| `studio/promotional/` | `midnight-carnival-studio-16x9.png` |
-| `themes/neo-brutalist/` | `neo-brutalist-background-16x9.webp` |
+Examples:
+- `branding/logos/midnight-carnival-logo-horizontal.png`
+- `branding/avatars/midnight-carnival-avatar-1x1.png`
+- `collections/04-masks-identity/midnight-carnival-collection-04-masks-identity-editorial-4x3.png`
+- `social/carousels/4x5/midnight-carnival-wisdom-slide-01-4x5.png`
+- `videos/thumbnails/midnight-carnival-trickster-thumbnail-16x9.png`
+- `studio/promotional/midnight-carnival-studio-16x9.png`
 
-If a previously approved file is named differently (e.g. `midnight-carnival-collection-01-wise-fool-4x3.png`), retain its original filename on upload and document its canonical path in Task 2; avoid duplicate renamed copies.
+The filename's ratio is an editorial descriptor, **not verified pixel dimensions**. Preserve an already approved original filename; don't generate duplicates solely to impose a new naming pattern.
 
-### Future metadata contract
+## Registry contract
 
-[`schemas/image-asset.schema.json`](../schemas/image-asset.schema.json) specifies the shape of *future* asset entries: ID, published path, type, style, optional collection/variant, ratio and actual pixel dimensions, usage, alt text, provenance/licensing and status (`planned` → `generated` → `approved` → `uploaded` → `integrated` → `archived`). The schema **does not claim** a planned path exists. A future registry may use an array of records validated against this schema; it will be added in Task 2, not Stage 1.
+`src/data/image-assets.json` is a JSON **array** of image records, validated against the properties/enums in `schemas/image-asset.schema.json`. Each entry needs a unique `id`, public `path`, `assetType`, `style`, and `status`. Add optional collection, variant, ratio, actual dimensions, usage, alt, source, license and notes. **Only confirmed files belong in uploaded/integrated statuses.**
 
-## Verification
+- `planned`: concept/future asset, not on disk.
+- `generated`: image created locally, not yet approved or uploaded.
+- `approved`: approved local file; path is reserved but cannot yet be resolved.
+- `uploaded`: file exists at the exact public path; not necessarily rendered by a page.
+- `integrated`: uploaded file is already referenced by the live application.
+- `archived`: excluded from regular use.
+
+Existing live hero URLs are registered as legacy `/images/...` paths; this is intentional and allowed by the schema. **Dimensions are omitted until actual image headers are checked; do not claim the layout's intended dimensions reflect the binary.** The validator compares declared dimensions against actual image metadata whenever supplied. The two registered hero entries are the only currently verified manual images on GitHub; the local collection artwork, logo and Studio promo are not uploaded by this change.
+
+`src/lib/assets.ts` exports `getAsset(id)`, `findAssets(filter)`, `selectAsset(filter)`, `resolveAssetPath(id)`, and `imageAssets`. Resolution is gated on `uploaded`/`integrated`; planned artwork never creates a broken URL.
+
+## Upload & integration workflow
+
+1. Place approved artwork under its purpose/ratio/collection folder in `public/assets/`.
+2. Add/update exactly one registry record with the **real file path** and verified metadata. For image files, the structural validator flags unregistered files (no silent orphans).
+3. Run `npm run assets:validate`; when dimensions are supplied, it checks the PNG/JPEG/WebP/AVIF/GIF pixel size using Sharp.
+4. Regenerate the human-facing inventory: `npm run assets:inventory -- --write`; commit the CSV with the registry.
+5. Integrate the path in Astro with `resolveAssetPath` or a typed selection. Supply alt text and accurate intrinsic size and responsive `sizes`.
+6. Run `npm run check`, `npm run build`, `npm test`. Review the generated page and CI before merging.
+
+### Optional optimization (originals preserved)
+
+```powershell
+# Read-only preview — default
+npm run assets:optimize -- --input public/assets/collections/01-wise-fool
+
+# Explicit opt-in creates a new, non-overwriting WebP derivative
+npm run assets:optimize -- --input public/assets/collections/01-wise-fool --format webp --width 1600 --quality 82 --write
+
+# Alternative AVIF
+npm run assets:optimize -- --input public/assets/images/heroes/example.png --format avif --width 1200 --write
+```
+
+The optimizer limits inputs to `public/assets/`, refuses symlinks, never enlarges, uses exclusive-create (no overwrite), and emits `*-optimized-1600w.webp` / `*.avif` next to the source. Generated derivatives **must be registered** before committing; the validator will otherwise flag them as orphaned images. This is intentionally an explicit local operator command, **not** a build-time or CI-side auto-transform.
+
+## Protected legacy assets
+
+No current live URLs changed. Keep `public/images/`'s two heroes, all `public/social/quotes/` generated PNGs, `public/og-jester-quotes.png`, `public/favicon.svg`, `public/apple-touch-icon.png`, `public/site.webmanifest` and existing `src/assets/` files at their working paths.
+
+The programmatic quote image generator is separate from the manual image registry; its 100 generated quote PNGs and the OG image are **not** individual records in `image-assets.json`.
+
+## Check commands
 
 ```powershell
 npm run assets:validate
+npm run assets:inventory
+npm run assets:optimize -- --help
 npm run check
 npm run build
 npm test
 ```
 
-The structural validator checks every expected directory, rejects unknown top-level asset categories, checks basic filename/format conventions for files in the new tree, enforces ratio-folder consistency and confirms legacy file locations exist. It **does not** inspect image contents, dimensions, licensing, or the future asset registry; those are Task 2 responsibilities.
-
-## Migration boundary — protect live site
-
-Existing URLs and consumers remain unchanged:
-- `/images/midnight-carnival-hero-16x9.png`
-- `/images/midnight-carnival-hero-4x5.png` (currently in `Hero.astro`)
-- `/social/quotes/jester-quote-001.png` through `100.png`
-- `/favicon.svg`, `/apple-touch-icon.png`, `/og-jester-quotes.png`, `/site.webmanifest`
-- `src/assets/` Astro component imports
-
-The newly committed `.gitkeep` files are not functional website assets. A production deploy may now include empty-category folders, but no site imagery is switched until explicit Task 2 approval.
+`npm run check` runs the asset validator before Astro checks. It will fail on missing registered files, duplicate IDs/paths, undeclared folders, ratio-folder naming mismatches, unregistered new image files and incorrect claimed pixel dimensions.

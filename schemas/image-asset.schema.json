@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/JFeimster/jester-quotes/blob/main/schemas/image-asset.schema.json",
   "title": "Jester Quotes — Image Asset Metadata v2.0",
-  "description": "Contract for future asset records. Does not create, assert, or publish a registry in Task 1.",
+  "description": "Metadata contract for the canonical asset registry. Legacy /images paths supported while migrations are deferred.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -19,7 +19,7 @@
     },
     "path": {
       "type": "string",
-      "pattern": "^/assets/(?!.*(?:\\.\\.|//))[a-z0-9/_-]+\\.[a-z0-9]+$"
+      "pattern": "^/(?:assets/[a-z0-9/_-]+|images/[a-z0-9/_-]+)\\.[a-z0-9]+$"
     },
     "assetType": {
       "type": "string",
@@ -45,7 +45,9 @@
         "studio-mockup",
         "studio-promo",
         "resource-asset",
-        "theme-art"
+        "theme-art",
+        "video-poster",
+        "social-preview"
       ]
     },
     "style": {
@@ -101,7 +103,8 @@
           "type": "integer",
           "minimum": 1
         }
-      }
+      },
+      "description": "Actual pixel dimensions only, not inferred from file names or HTML attributes; optional until verified."
     },
     "mimeType": {
       "type": "string"
