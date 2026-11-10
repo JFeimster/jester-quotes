@@ -41,8 +41,11 @@ if(!files.length)throw Error('No raster images found');
 for(const inputFile of files) {
   const ext=path.extname(inputFile);
   const base=inputFile.slice(0,-ext.length);
-  if(/-optimized-[0-9]+w$/.test(base))continue;
-  const destination=base+'-optimized-'+width+'w.'+format;
+  if(/-optimized-[0-9]+w(?:-(?:1x1|4x5|9x16|16x9))?$/.test(base))continue;
+  const folderRatio = path.relative(rootAssets,path.dirname(inputFile)).split(path.sep).find(part => /^(?:1x1|4x5|9x16|16x9)$/.test(part));
+  const ratioSuffix = folderRatio && base.endsWith('-' + folderRatio) ? '-' + folderRatio : '';
+  const stem = ratioSuffix ? base.slice(0, -ratioSuffix.length) : base;
+  const destination = stem + '-optimized-' + width + 'w' + ratioSuffix + '.' + format;
   if(await fs.stat(destination).catch(()=>null)) {
     console.log('SKIP (already exists): '+path.relative(root,destination));
     continue;
