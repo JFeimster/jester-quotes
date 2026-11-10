@@ -8,6 +8,12 @@
   --muted: #b8a9b9;
   --surface: #231b2c;
   --line: #4e3a4c;
+  --ink: #101115;
+  --warm-ink: #262128;
+  --paper: #f5ebdd;
+  --paper-shade: #e8ddc9;
+  --signal: #f26778;
+  --copper: #d8ac64;
   --radius: 16px;
   --max: 1240px;
 }

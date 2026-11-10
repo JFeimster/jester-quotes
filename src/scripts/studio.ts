@@ -22,6 +22,37 @@ const pageInfo = document.querySelector<HTMLElement>('#studio-page-info');
 const next = document.querySelector<HTMLButtonElement>('#studio-next');
 const prev = document.querySelector<HTMLButtonElement>('#studio-prev');
 
+const formatChoices = [...document.querySelectorAll<HTMLButtonElement>('[data-studio-format]')];
+const themeChoices = [...document.querySelectorAll<HTMLButtonElement>('[data-studio-theme]')];
+function syncChoiceButtons(): void {
+  for (const button of formatChoices) {
+    button.setAttribute('aria-pressed', String(button.dataset.studioFormat === formatSelect?.value));
+  }
+  for (const button of themeChoices) {
+    button.setAttribute('aria-pressed', String(button.dataset.studioTheme === themeSelect?.value));
+  }
+}
+for (const button of formatChoices) {
+  button.addEventListener('click', () => {
+    if (!formatSelect) return;
+    formatSelect.value = button.dataset.studioFormat ?? 'square';
+    formatSelect.dispatchEvent(new Event('change', { bubbles: true }));
+    syncChoiceButtons();
+  });
+}
+for (const button of themeChoices) {
+  button.addEventListener('click', () => {
+    if (!themeSelect) return;
+    themeSelect.value = button.dataset.studioTheme ?? 'midnight';
+    themeSelect.dispatchEvent(new Event('change', { bubbles: true }));
+    syncChoiceButtons();
+  });
+}
+formatSelect?.addEventListener('change', syncChoiceButtons);
+themeSelect?.addEventListener('change', syncChoiceButtons);
+syncChoiceButtons();
+
+
 const byId = new Map(quotes.map(quote => [quote.id, quote]));
 const labels = new Map(quotes.map((quote, index) => [
   quote.id, `#${String(index + 1).padStart(3, '0')} · ${quote.person} · ${quote.quote.replace(/\s+/g, ' ').slice(0, 80)}`

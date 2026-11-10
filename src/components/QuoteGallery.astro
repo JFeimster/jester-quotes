@@ -3,14 +3,14 @@ import { quotes } from '../lib/quote-data';
 import QuoteSearch from './QuoteSearch.astro';
 import QuoteCard from './QuoteCard.astro';
 ---
-<section id="explore" aria-labelledby="collection-title">
+<section id="explore" class="quotes-section" aria-labelledby="collection-title">
   <div class="section-title">
-    <div><p class="eyebrow">Explore the collection · Vol. I</p><h2 id="collection-title">The fool speaks.</h2></div>
-    <p class="byline">100 quotations / endless mischief</p>
+    <div><p class="eyebrow">The complete archive / 100 voices</p><h2 id="collection-title">The fool <em>speaks.</em></h2></div>
+    <a class="section-text-link" href="/studio/">Create art from any quote ↗</a>
   </div>
-  <p class="gallery-intro">A hundred borrowed observations on the absurdity of being human. Find one worth keeping, sharing, or arguing with.</p>
+  <p class="gallery-intro">Truth, satire, absurdity, and the occasional inconvenient laugh. Search the archive, keep your favorites, or make something with them.</p>
   <QuoteSearch />
-  <p class="result-count" id="result-count" aria-live="polite">{quotes.length} quotes</p>
+  <div class="gallery-heading"><p class="result-count" id="result-count" aria-live="polite">{quotes.length} quotes</p><span>SCROLL THE COURT ↓</span></div>
   <p class="sr-only" id="interaction-status" role="status" aria-live="polite"></p>
   <div class="gallery" id="quote-gallery">{quotes.map((q,index)=><QuoteCard quote={q} index={index}/>)}</div>
   <p id="empty-state" hidden>No quotes match those filters.</p>
