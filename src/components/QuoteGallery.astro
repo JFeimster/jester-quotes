@@ -3,8 +3,12 @@ import { quotes } from '../lib/quote-data';
 import QuoteSearch from './QuoteSearch.astro';
 import QuoteCard from './QuoteCard.astro';
 ---
-<section id="explore">
-  <div class="section-title"><div><p class="eyebrow">Explore the collection</p><h2>The fool speaks.</h2></div><p class="byline">100 voices · infinite mischief</p></div>
+<section id="explore" aria-labelledby="collection-title">
+  <div class="section-title">
+    <div><p class="eyebrow">Explore the collection · Vol. I</p><h2 id="collection-title">The fool speaks.</h2></div>
+    <p class="byline">100 quotations / endless mischief</p>
+  </div>
+  <p class="gallery-intro">A hundred borrowed observations on the absurdity of being human. Find one worth keeping, sharing, or arguing with.</p>
   <QuoteSearch />
   <p class="result-count" id="result-count" aria-live="polite">{quotes.length} quotes</p>
   <p class="sr-only" id="interaction-status" role="status" aria-live="polite"></p>

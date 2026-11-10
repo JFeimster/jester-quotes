@@ -2,13 +2,15 @@
 import type { Quote } from '../types/quote';
 const { quote, index } = Astro.props as { quote: Quote; index: number };
 ---
-<article class="quote-card" data-id={quote.id} data-search={`${quote.person} ${quote.reference ?? ''} ${quote.quote}`.toLowerCase()} data-reference={quote.reference ? 'yes' : 'no'}>
-  <p class="kicker">No. {String(index + 1).padStart(3, '0')}</p>
+<article class:list={['quote-card', { 'quote-card--long': quote.quote.length > 500 }]} data-id={quote.id} data-search={`${quote.person} ${quote.reference ?? ''} ${quote.quote}`.toLowerCase()} data-reference={quote.reference ? 'yes' : 'no'}>
+  <p class="kicker">No. {String(index + 1).padStart(3, '0')} <span class="sr-only">of 100</span></p>
   <h3>{quote.quote}</h3>
-  <div class="person">— {quote.person}</div>
-  {quote.reference && <div class="reference">{quote.reference}</div>}
+  <div class="card-attribution">
+    <div class="person">— {quote.person}</div>
+    {quote.reference && <div class="reference">{quote.reference}</div>}
+  </div>
   <div class="card-foot">
-    <a href={`/quotes/${quote.id}/`}>View quote ↗</a>
+    <a href={`/quotes/${quote.id}/`}>View quote <span aria-hidden="true">↗</span></a>
     <button class="mini-action favorite-toggle" type="button" data-quote-id={quote.id} data-person={quote.person} data-unsaved-label="♡ Save" data-saved-label="♥ Saved" aria-pressed="false" aria-label={`Save quote by ${quote.person} to favorites`}>♡ Save</button>
     <button class="mini-action copy-quote" type="button" data-quote-text={`${quote.quote}\n— ${quote.person}`}>Copy</button>
   </div>
