@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SavedQuoteShelf from '../components/SavedQuoteShelf.astro';
+import '../styles/utility-pages.css';
+---
+<BaseLayout
+  title="Your Saved Jester Quotes — Private Favorites Library"
+  description="A private, browser-only shelf for your favorite Jester quotations, with search, safe JSON import/export, and complete-quote image packs."
+  robots="noindex, follow"
+>
+  <div class="wrap discovery-page utility-page">
+    <header class="discovery-heading">
+      <p class="eyebrow">Your private shelf / Kept in this browser</p>
+      <h1>Keep the <em>good trouble.</em></h1>
+      <p class="lede">Save the lines that deserve a second look. Browse, search, back up, and create artwork packs—with no account or server-side storage.</p>
+    </header>
+    <SavedQuoteShelf />
+    <noscript><p class="utility-status">JavaScript is needed to view browser-saved favorites. <a href="/#explore">Explore quotations</a>.</p></noscript>
+  </div>
+  <script src="../scripts/saved-library.ts"></script>
+</BaseLayout>

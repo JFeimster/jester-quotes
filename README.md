@@ -16,6 +16,8 @@ A responsive, static quotation collection built with **Astro 7, TypeScript, CSS,
 - Browse a **Resource Vault of 9 verified links** at `/resources/` and a **Video Library of 5 verified YouTube lessons** at `/videos/`; searchable topic/publisher filters, related Trickster links, and user-initiated privacy-enhanced playback.
 - Search quote text, people, and references; filter quotes with/without references.
 - Save favorites in the browser (localStorage), with cross-tab synchronization; no account or server database.
+- View a deterministic shared-UTC Daily Quote at `/daily/`, save/copy it, and jump to related editorial themes or a random verified Trickster.
+- Open a private `/saved/` library with search, sorting, validated JSON import/export, clear/remove confirmations, and up to five selected quotes exported as complete PNG slides + a rights/attributions text file inside a ZIP. Existing `jester-quotes:favorites:v1` browser storage remains the sole favorites source.
 - Find a random quote, copy text, and share/copy a quotation link.
 - Download complete quotations and full author attribution as square **1080 × 1080** PNG artwork, or an automatic **ZIP of numbered PNG slides** when a quotation cannot fit legibly. Quote Studio supports four canvas dimensions and four palettes.
 - Download **1200 × 630** social/OG previews; long excerpts are explicitly labeled inside their artwork and never represented as complete-quote downloads.
@@ -98,6 +100,8 @@ src/
     collections/index.astro  Six editorial themes
     collections/[slug].astro Curated quote pages
     studio.astro             Client-side poster customization
+    daily.astro              Deterministic UTC daily selection (client-rendered)
+    saved.astro              Browser-only favorites shelf (noindex)
     tricksters/index.astro  Searchable sourced directory
     tricksters/[slug].astro Verified individual profiles
     resources/index.astro  Filterable Resource Vault
@@ -123,7 +127,8 @@ CREDITS.md                  Source and publication-rights information
 - **Identifiers:** `jester-quote-001` through `jester-quote-100`; do not renumber existing IDs or silently rewrite quotations, people, or references.
 - The collection currently has 100 quotations attributed to 92 distinct people. Reference metadata is provided for 14 entries; missing references must not be invented.
 - The social image generator emits `public/social/quote-layouts.json` with measured text-region dimensions, author fit and excerpt status for all 100 previews; the CI test asserts geometric integrity. Existing `public/social/quotes/` URLs remain unchanged.
-- `src/lib/artwork/` centralizes measured layout and local PNG/ZIP exports for Studio and individual quote pages. No client-side library or server endpoint is required.
+- `src/lib/artwork/` centralizes measured layout and local PNG/ZIP exports for Studio and individual quote pages; the Saved Library reuses the same renderer for small complete-quotation packs.
+- Daily selections are computed in the browser using one UTC date across time zones, not regenerated as indexed pages. Saved items stay in `localStorage` and can be backed up as a versioned JSON export; validation rejects bad imports before persistence. `/saved/` is deliberately noindex and excluded from the sitemap. No client-side library or server endpoint is required.
 - `src/data/collections.json` maps themes to existing quote IDs. Collections are intentionally non-exclusive editorial lists, and they must not duplicate or alter the canonical quote registry.
 - `src/data/resources.json` and `src/data/videos.json` are small curated link registries. Their summaries are original, video IDs and creators are verified, and all media stays with its source publisher. Videos embed through `youtube-nocookie.com` **only after the visitor presses Load player**; links remain usable without scripts. No `/public/videos/` directory or third-party video files are created.
 - The Trickster registry publishes only independently evidenced records. Each entry includes stable IDs, source URLs, verification date, original summary and contextual collection links. `data/trickster-candidates.csv` remains **unpublished**; no artwork is scraped or assumed licensed. Review `docs/TRICKSTER-EDITORIAL.md` before adding entries.

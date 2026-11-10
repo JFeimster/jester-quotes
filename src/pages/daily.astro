@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/utility-pages.css';
+---
+<BaseLayout
+  title="Daily Jester Quote — A Different Fool Every Day | Jester Quotes"
+  description="Discover a fresh daily selection from the canonical 100 Jester quotations. One shared UTC date, private favorites, and sourced Trickster discovery."
+>
+  <div class="wrap discovery-page utility-page">
+    <header class="discovery-heading">
+      <p class="eyebrow">The daily dispatch / 100 preserved voices</p>
+      <h1>Today's little <em>truth bomb.</em></h1>
+      <p class="lede">A different voice each UTC calendar day. The selection updates in your browser—no account, no fabricated daily content.</p>
+    </header>
+    <section class="utility-daily-grid" aria-labelledby="daily-selection-title">
+      <div class="utility-daily-poster">
+        <div class="utility-daily-heading">
+          <span class="eyebrow">The quotation of the day</span>
+          <span id="daily-utc-date">UTC date loading…</span>
+        </div>
+        <h2 id="daily-selection-title">Today's fool speaks.</h2>
+        <blockquote id="daily-quote-text">Enable JavaScript to see the daily quotation. <a href="/#explore">Browse the full archive instead.</a></blockquote>
+        <p id="daily-person" class="utility-daily-person">— Jester Quotes</p>
+        <div class="utility-daily-actions">
+          <button type="button" id="daily-save" class="btn secondary" aria-pressed="false" disabled>♡ Save today's quote</button>
+          <button type="button" id="daily-copy" class="btn secondary" disabled>Copy complete quote</button>
+          <a id="daily-detail" class="btn" href="/#explore">Read full quote ↗</a>
+          <a id="daily-studio" href="/studio/" class="utility-link">Make art from this quote ↗</a>
+        </div>
+        <p id="daily-status" class="utility-status" role="status" aria-live="polite"></p>
+      </div>
+      <aside class="utility-daily-side">
+        <p class="eyebrow">The rulebreaker's calendar</p>
+        <span class="utility-daily-glyph" aria-hidden="true">✳</span>
+        <h2>Same day. <em>Same voice.</em></h2>
+        <p>The selection uses midnight UTC rather than your device's local midnight. Readers worldwide see the same quote for a given UTC date.</p>
+        <button class="btn secondary" id="daily-random-trickster" type="button">Meet a random Trickster ✦</button>
+        <a class="utility-link" href="/tricksters/">Explore the researched Trickster Directory ↗</a>
+      </aside>
+    </section>
+    <div id="daily-related" aria-live="polite"></div>
+    <p class="curation-note">Quotations retain original supplied author/reference data. Attribution is not a reuse license. <a href="/sources/">Sources and rights guidance</a>.</p>
+  </div>
+  <script src="../scripts/daily-quote.ts"></script>
+</BaseLayout>
