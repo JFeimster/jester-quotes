@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { quotes } from '../lib/quote-data';
 import { collections } from '../lib/collections';
+import { tricksters } from '../lib/tricksters';
 
 const escapeXml = (text: string): string =>
   text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -10,7 +11,8 @@ export const GET: APIRoute = ({ site }) => {
   const paths = [
     '/', '/about/', '/collections/',
     ...collections.map((collection) => `/collections/${encodeURIComponent(collection.slug)}/`),
-    '/studio/', '/sources/',
+    '/studio/', '/sources/', '/tricksters/',
+    ...tricksters.map((record) => `/tricksters/${encodeURIComponent(record.slug)}/`),
     ...quotes.map((quote) => `/quotes/${encodeURIComponent(quote.id)}/`)
   ];
   const urls = paths

@@ -1,0 +1,26 @@
+---
+import type { Trickster } from '../types/trickster';
+import { tricksterKinds, tricksterUrl } from '../lib/tricksters';
+interface Props { record: Trickster; index: number; }
+const { record, index } = Astro.props;
+const symbols = ['✳','✦','◆','◈','✴','♜','✧'];
+const emblem = symbols[index % symbols.length];
+---
+<article
+  class:list={['trickster-card', `trickster-card--${record.kind}`]}
+  data-trickster-card
+  data-search={`${record.name} ${record.description} ${record.culture_or_origin} ${record.tags.join(' ')}`.toLowerCase()}
+  data-kind={record.kind}
+  data-media={record.media.join(' ')}
+  data-tags={record.tags.join(' ')}
+>
+  <div class="trickster-card-top"><span>FILE / {String(index + 1).padStart(2,'0')}</span><span class="trickster-card-kind">{tricksterKinds[record.kind]}</span></div>
+  <span class="trickster-emblem" aria-hidden="true">{emblem}</span>
+  <h3><a href={tricksterUrl(record)}>{record.name}</a></h3>
+  <p class="trickster-card-origin">{record.culture_or_origin}</p>
+  <p class="trickster-card-desc">{record.description}</p>
+  <div class="trickster-card-foot">
+    <span>{record.sources.length} documented {record.sources.length===1?'source':'sources'}</span>
+    <a href={tricksterUrl(record)} aria-label={`Explore verified profile for ${record.name}`}>Explore profile ↗</a>
+  </div>
+</article>

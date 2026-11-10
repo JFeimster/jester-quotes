@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { registry, quotes } from '../lib/quote-data';
 import { collections } from '../lib/collections';
+import { tricksters } from '../lib/tricksters';
 const withReferences = quotes.filter((quote) => Boolean(quote.reference)).length;
 const authors = new Set(quotes.map((quote) => quote.person)).size;
 ---
@@ -40,6 +41,12 @@ const authors = new Set(quotes.map((quote) => quote.person)).size;
         <h2>Attribution isn't a license.</h2>
         <p>Credit to an author or source does not establish permission to reproduce third-party text. Republishing, printing, merchandising, or wider redistribution may require rights clearance or another valid legal basis.</p>
         <p>Found a misattribution or correction? <a href="https://github.com/JFeimster/jester-quotes/issues/new" target="_blank" rel="noopener noreferrer">Submit an issue on GitHub</a> with the quotation number and supporting source. No corrections are automatically applied to the original registry.</p>
+      </section>
+      <section class="source-panel">
+        <p class="eyebrow">05 / Trickster directory</p>
+        <h2>Independent reference notes.</h2>
+        <p>The <a href="/tricksters/">Trickster Directory</a> contains {tricksters.length} short original profiles backed by external references. It is a curated introduction, not a reproduction of another researcher's list or a claim that every culture interprets these figures alike.</p>
+        <p><a href="https://www.aadip.com/trickster/" target="_blank" rel="noopener noreferrer">Aadip Desai’s Trickster Hit List!</a> contains 139 numbered research leads and is credited as inspiration, not reproduced. A separate unpublished research-candidate CSV is maintained. No third-party character pictures were copied.</p>
       </section>
     </div>
     <p class="curation-note">Original quotation records remain in <a href="https://github.com/JFeimster/jester-quotes/blob/main/src/data/jester-quotes.json" target="_blank" rel="noopener noreferrer">the public source registry</a>. The corresponding credit policy is in <a href="https://github.com/JFeimster/jester-quotes/blob/main/CREDITS.md" target="_blank" rel="noopener noreferrer">CREDITS.md</a>.</p>
