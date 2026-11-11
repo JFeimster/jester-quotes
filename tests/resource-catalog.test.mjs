@@ -97,15 +97,18 @@ test('Both public directories have working search/category/theme controls and re
   assert.ok(page.includes('rel="canonical" href="https://jester-quotes.vercel.app/videos/"'));
 });
 
-test('YouTube embed loads only on click and never downloads, autoplays, or proxies videos',()=>{
+test('YouTube players are embedded automatically, lazy-loaded, and do not autoplay or rehost media',()=>{
   const script=read('src/scripts/resource-filters.ts');
   const html=read('dist/videos/index.html');
-  assert.match(script,/addEventListener\('click'/);
-  assert.match(script,/youtube-nocookie\.com\/embed\//);
-  assert.match(script,/stage\.replaceChildren\(iframe\)/);
-  assert.ok(!script.includes('autoplay=1') && !html.includes('autoplay=1'));
-  assert.ok(!html.includes('<iframe'), 'No YouTube iframe until user clicks');
-  assert.ok(html.includes('Load player') && html.includes('Watch on YouTube'));
+  assert.equal([...html.matchAll(/<iframe\b/g)].length,videos.length,'Each video needs an embedded player');
+  for(const video of videos) {
+    assert.ok(html.includes(`https://www.youtube-nocookie.com/embed/${video.video_id}?`),video.id);
+    assert.ok(html.includes(`data-video-id="${video.video_id}"`),video.id);
+  }
+  assert.equal([...html.matchAll(/loading="lazy"/g)].length,videos.length);
+  assert.ok(!html.includes('Load player') && !html.includes('autoplay=1'));
+  assert.ok(!script.includes('stage.replaceChildren(iframe)'),'No click-to-load step');
+  assert.ok(html.includes('Watch on YouTube'));
   assert.ok(!existsSync(path.join(root,'public/videos')),'No unauthorized local video files');
   assert.match(script,/card\.hidden = !match/);
   assert.match(script,/if \(empty\) empty\.hidden = visible !== 0/);
