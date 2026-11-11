@@ -2,8 +2,15 @@ import type {ThemeSpec,ThemeId} from './theme-types';
 import {midnightCarnival} from './themes/midnight-carnival';
 import {neoBrutalist} from './themes/neo-brutalist';
 import {velvetGallery} from './themes/velvet-gallery';
+import {dadaRiot} from './themes/dada-riot';
+import {neonTrickster} from './themes/neon-trickster';
+import {impossibleCourt} from './themes/impossible-court';
+import {forbiddenLibrary} from './themes/forbidden-library';
 
-export const themeCatalog:readonly ThemeSpec[]=[midnightCarnival,neoBrutalist,velvetGallery];
+export const themeCatalog:readonly ThemeSpec[]=[
+  midnightCarnival,neoBrutalist,velvetGallery,
+  dadaRiot,neonTrickster,impossibleCourt,forbiddenLibrary
+];
 export const defaultThemeId:ThemeId='midnight-carnival';
 if(new Set(themeCatalog.map(theme=>theme.id)).size!==themeCatalog.length)
   throw new Error('Duplicate design Lab theme id');
