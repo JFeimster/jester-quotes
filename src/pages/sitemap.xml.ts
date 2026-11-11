@@ -9,7 +9,7 @@ const escapeXml = (text: string): string =>
 export const GET: APIRoute = ({ site }) => {
   const origin = site ?? new URL('https://jester-quotes.vercel.app');
   const paths = [
-    '/', '/about/', '/collections/',
+    '/', '/about/', '/quotes/', '/collections/',
     ...collections.map((collection) => `/collections/${encodeURIComponent(collection.slug)}/`),
     '/studio/', '/sources/', '/daily/', '/tricksters/', '/resources/', '/videos/',
     ...tricksters.map((record) => `/tricksters/${encodeURIComponent(record.slug)}/`),

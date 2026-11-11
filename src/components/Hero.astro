@@ -1,5 +1,6 @@
 ---
 import { resolveAssetPath } from '../lib/assets';
+import { quotes } from '../lib/quote-data';
 const heroWebp = resolveAssetPath('site-hero-portrait-webp');
 ---
 <section class="hero hero-2" aria-labelledby="hero-title">
@@ -8,8 +9,8 @@ const heroWebp = resolveAssetPath('site-hero-portrait-webp');
     <h1 id="hero-title"><span>Long live</span><em>the fool<span class="hero-period">.</span></em></h1>
     <p class="lede">A hundred voices. Six curious collections. One inconvenient truth: sometimes the joker is the only one telling the truth.</p>
     <div class="hero-actions">
-      <a class="btn" href="#explore">Explore 100 quotes <span aria-hidden="true">↗</span></a>
-      <button class="btn secondary" id="surprise-me" type="button">Surprise me <span aria-hidden="true">✳</span></button>
+      <a class="btn" href="/quotes/">Explore 100 quotes <span aria-hidden="true">↗</span></a>
+      <button class="btn secondary" id="surprise-me" data-quote-ids={quotes.map(q=>q.id).join(",")} type="button">Surprise me <span aria-hidden="true">✳</span></button>
     </div>
     <div class="hero-utility" aria-label="Discover the site">
       <a href="/collections/"><span class="utility-index">01 / DISCOVER</span><strong>Six sides of mischief</strong><span aria-hidden="true">↗</span></a>

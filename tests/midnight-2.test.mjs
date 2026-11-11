@@ -15,20 +15,23 @@ test('homepage contains a real image-backed hero and three meaningful card varia
   assert.match(html, /id="surprise-me"/);
   assert.match(html, /src="\/assets\/images\/heroes\/midnight-carnival-hero-4x5\.png"/);
   assert.ok(existsSync(path.join(root,'public/assets/images/heroes/midnight-carnival-hero-4x5.png')));
-  const variants = [...html.matchAll(/data-variant="(compact|editorial|poster)"/g)].map(x=>x[1]);
+  const archive = dist('quotes/index.html');
+  const variants = [...archive.matchAll(/data-variant="(compact|editorial|poster)"/g)].map(x=>x[1]);
   assert.equal(variants.length, registry.items.length, 'all 100 quotation cards must render');
   for (const kind of ['compact','editorial','poster']) {
     assert.ok(variants.filter(v=>v===kind).length>=5, `${kind} should be a real layout variant`);
   }
   assert.ok(html.includes('id="collections-teaser-title"'));
-  assert.ok(html.includes('id="quote-search"'));
+  assert.ok(archive.includes('id="quote-search"'));
+  assert.ok(html.includes('id="explore"'));
+  assert.ok(html.includes('href="/quotes/"'));
   assert.ok(html.includes('href="/studio/"'));
   assert.ok(html.includes('href="/sources/"'));
   assert.ok(html.includes('id="favorites-summary"'));
 });
 
 test('card interactions, quotation detail paths, and full text remain present', () => {
-  const html = dist('index.html');
+  const html = dist('quotes/index.html');
   const cards = read('src/components/QuoteCard.astro');
   const count = (piece) => [...html.matchAll(new RegExp(piece, 'g'))].length;
   assert.equal(count('class="[^"]*favorite-toggle'), registry.items.length);

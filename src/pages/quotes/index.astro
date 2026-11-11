@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import QuoteGallery from '../../components/QuoteGallery.astro';
+import FavoritesPanel from '../../components/FavoritesPanel.astro';
+import SourceAttribution from '../../components/SourceAttribution.astro';
+import { quotes } from '../../lib/quote-data';
+import { collectionSchema } from '../../lib/seo';
+const structuredData = collectionSchema(Astro.site ?? new URL('https://jester-quotes.vercel.app'), quotes);
+structuredData.url = new URL('/quotes/', Astro.site ?? new URL('https://jester-quotes.vercel.app')).toString();
+---
+<BaseLayout title="All Jester Quotes — Browse the Complete Archive" description="Search the complete archive of 100 Jester quotations by author, words, or reference. Save favorites, copy lines, and design quote artwork." structuredData={structuredData}>
+  <div class="wrap quote-archive-page">
+    <header class="quote-archive-intro">
+      <p class="eyebrow">The complete archive / Uncensored curiosity</p>
+      <h1>Every fool has <em>the floor.</em></h1>
+      <p class="lede">Browse all 100 collected quotations. Search the words, filter by reference, save your favorites, or put your favorite line on a poster.</p>
+      <div class="discovery-actions">
+        <a class="btn" href="/studio/">MAKE TROUBLE IN THE STUDIO ↗</a>
+        <a class="btn secondary" href="/collections/">Explore curated collections ↗</a>
+      </div>
+    </header>
+    <QuoteGallery />
+    <FavoritesPanel />
+    <SourceAttribution />
+  </div>
+  <script src="../../scripts/quote-explorer.ts"></script>
+</BaseLayout>

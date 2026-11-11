@@ -2,9 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import FeaturedQuote from '../components/FeaturedQuote.astro';
+import DiscoveryGateway from '../components/DiscoveryGateway.astro';
 import CollectionsTeaser from '../components/CollectionsTeaser.astro';
+import WatchAndLearn from '../components/WatchAndLearn.astro';
 import RiotPressTeaser from '../components/RiotPressTeaser.astro';
-import QuoteGallery from '../components/QuoteGallery.astro';
 import FavoritesPanel from '../components/FavoritesPanel.astro';
 import SourceAttribution from '../components/SourceAttribution.astro';
 import { quotes } from '../lib/quote-data';
@@ -12,12 +13,19 @@ import { collectionSchema } from '../lib/seo';
 const structuredData = collectionSchema(Astro.site ?? new URL('https://jester-quotes.vercel.app'), quotes);
 ---
 <BaseLayout structuredData={structuredData}>
-  <div class="wrap">
+  <div class="wrap home-discovery">
     <Hero />
     <FeaturedQuote quote={quotes[4] ?? quotes[0]} />
+    <DiscoveryGateway />
     <CollectionsTeaser />
+    <WatchAndLearn />
     <RiotPressTeaser />
-    <QuoteGallery />
+    <section class="home-archive-callout" aria-labelledby="home-archive-title">
+      <p class="eyebrow">The full court / All preserved voices</p>
+      <h2 id="home-archive-title">Got a little more <em>mischief</em> in you?</h2>
+      <p>The complete quote archive is waiting, with search, saved favorites, and poster-making tools.</p>
+      <a class="btn" href="/quotes/">EXPLORE ALL QUOTES ↗</a>
+    </section>
     <FavoritesPanel />
     <SourceAttribution />
   </div>

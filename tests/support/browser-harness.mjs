@@ -118,7 +118,7 @@ export async function openLocalBrowser(){
   const screenshots=path.join(projectRoot,'.qa-screenshots');
   await fs.mkdir(screenshots,{recursive:true});
   const {server,origin}=await startServer();
-  const child=spawn(executable,[
+  let child=spawn(executable,[
     '--headless=new','--no-sandbox','--disable-dev-shm-usage','--disable-gpu',
     '--no-first-run','--disable-extensions','--disable-background-networking',
     '--remote-allow-origins=*','--remote-debugging-port=0',
@@ -126,7 +126,23 @@ export async function openLocalBrowser(){
   ],{stdio:'ignore'});
   let page,browser;
   try{
-    const port=await chromeProfile(profile,child);
+    // A busy shared CI runner can occasionally fail to expose DevTools on first
+    // launch. Retry only Chrome startup, never browser assertions or site tests.
+    let port;
+    try {
+      port=await chromeProfile(profile,child);
+    } catch (firstLaunchError) {
+      child.kill();
+      await sleep(450);
+      await fs.rm(path.join(profile,'DevToolsActivePort'),{force:true}).catch(()=>{});
+      child=spawn(executable,[
+        '--headless=new','--no-sandbox','--disable-dev-shm-usage','--disable-gpu',
+        '--no-first-run','--disable-extensions','--disable-background-networking',
+        '--remote-allow-origins=*','--remote-debugging-port=0',
+        `--user-data-dir=${profile}`,'about:blank'
+      ],{stdio:'ignore'});
+      port=await chromeProfile(profile,child);
+    }
     const response=await fetch(`http://127.0.0.1:${port}/json/list`);
     assert.ok(response.ok,'Chrome target list');
     const target=(await response.json()).find(x=>x.type==='page');

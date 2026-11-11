@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { tricksters, tricksterKinds, tricksterMedia, tricksterUrl } from '../../lib/tricksters';
 import { collections } from '../../lib/collections';
 import type { Trickster } from '../../types/trickster';
+import { relatedMediaForTrickster } from '../../lib/content-connections';
 export function getStaticPaths() {
   return tricksters.filter(item=>item.verification_status==='verified').map(record=>({params:{slug:record.slug},props:{record}}));
 }
@@ -11,6 +12,7 @@ const { record } = Astro.props as { record: Trickster };
 const relatedCollections = record.related_collection_slugs
   .map(slug=>collections.find(item=>item.slug===slug))
   .filter((x):x is (typeof collections)[number]=>Boolean(x));
+const relatedMedia = relatedMediaForTrickster(record);
 const others = tricksters.filter(item=>item.id!==record.id && item.tags.some(tag=>record.tags.includes(tag))).slice(0,3);
 ---
 <BaseLayout
@@ -57,6 +59,15 @@ const others = tricksters.filter(item=>item.id!==record.id && item.tags.some(tag
       <p class="eyebrow">Continue researching</p>
       <h2 id="other-tricksters-title">Other curious figures.</h2>
       <div class="trickster-related-links">{others.map(other=><a href={tricksterUrl(other)}><span>{tricksterKinds[other.kind]}</span><strong>{other.name}</strong><span aria-hidden="true">↗</span></a>)}</div>
+    </section>}
+    {(relatedMedia.resources.length>0 || relatedMedia.videos.length>0) && <section class="trickster-related" aria-labelledby="trickster-media-title">
+      <p class="eyebrow">Keep exploring / Selected references</p>
+      <h2 id="trickster-media-title">Watch &amp; read more.</h2>
+      <div class="trickster-related-links">
+        {relatedMedia.videos.map(video=><a href={'/videos/#'+video.id}><span>Video · {video.channel_title}</span><strong>{video.title}</strong><span aria-hidden="true">↗</span></a>)}
+        {relatedMedia.resources.map(resource=><a href={'/resources/#'+resource.id}><span>Resource · {resource.source_name}</span><strong>{resource.title}</strong><span aria-hidden="true">↗</span></a>)}
+      </div>
+      <p class="trickster-relationship-note">These are topical reading and viewing connections, not claims that the original traditions or creators endorse one another.</p>
     </section>}
     <p class="curation-note">A short original index entry, not a substitute for the linked cultural and historical sources. <a href="/sources/">Read the source and corrections policy</a>.</p>
   </div>

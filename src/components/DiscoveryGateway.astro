@@ -1,0 +1,24 @@
+---
+const destinations = [
+  { href:'/quotes/', name:'Quotes', line:'Words worth a second look.', label:'THE ARCHIVE', mark:'“', className:'gateway-quotes' },
+  { href:'/tricksters/', name:'Tricksters', line:'Meet the rulebreakers of myth and story.', label:'THE CHARACTERS', mark:'✳', className:'gateway-tricksters' },
+  { href:'/videos/', name:'Videos', line:'Hear the stories behind the mischief.', label:'THE SCREENING ROOM', mark:'▷', className:'gateway-videos' },
+  { href:'/resources/', name:'Resources', line:'Research, essays, and strange wisdom.', label:'THE REFERENCE DESK', mark:'✦', className:'gateway-resources' }
+];
+---
+<section class="carnival-gateway" id="explore" aria-labelledby="carnival-gateway-heading">
+  <div class="section-title">
+    <div><p class="eyebrow">Four doors / No dress code</p><h2 id="carnival-gateway-heading">Discover the <em>carnival.</em></h2></div>
+    <a class="section-text-link" href="/search/">Search everything ↗</a>
+  </div>
+  <p class="gallery-intro">Read something sharp. Meet an old trickster. Watch an idea come alive. Find a rabbit hole worth falling into.</p>
+  <div class="gateway-grid">
+    {destinations.map(item=><a class:list={['gateway-tile',item.className]} href={item.href}>
+      <span class="gateway-kicker">{item.label}</span>
+      <span class="gateway-mark" aria-hidden="true">{item.mark}</span>
+      <strong>{item.name}</strong>
+      <span class="gateway-description">{item.line}</span>
+      <span class="gateway-arrow" aria-hidden="true">↗</span>
+    </a>)}
+  </div>
+</section>

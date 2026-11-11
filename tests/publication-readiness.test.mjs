@@ -24,6 +24,7 @@ test('sitemap covers all discovery tools, curated collections, and 100 quote URL
   const expected = [
     `${origin}/`,
     `${origin}/about/`,
+    `${origin}/quotes/`,
     `${origin}/collections/`,
     ...collections.map((collection) => `${origin}/collections/${collection.slug}/`),
     `${origin}/studio/`,
@@ -35,10 +36,11 @@ test('sitemap covers all discovery tools, curated collections, and 100 quote URL
     ...tricksters.map((item) => `${origin}/tricksters/${item.slug}/`),
     ...registry.items.map((item) => `${origin}/quotes/${item.id}/`)
   ];
-  assert.equal(urls.length, 102 + 3 + collections.length + 1 + tricksters.length + 2 + 1);
+  assert.equal(urls.length, 102 + 3 + collections.length + 1 + tricksters.length + 2 + 1 + 1);
   assert.equal(new Set(urls).size, urls.length);
   assert.deepEqual(urls, expected);
   assert.ok(!xml.includes('/404'), '404 route must not be indexed');
+  assert.ok(!xml.includes('/search/'), 'Client search results should be noindex');
 });
 
 test('robots.txt advertises the same production sitemap', () => {
