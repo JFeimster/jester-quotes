@@ -8,7 +8,7 @@
     "build": "npm run social:generate && astro build",
     "preview": "astro preview",
     "check": "node scripts/validate-dada-assets.mjs && astro check",
-    "test": "npm run build && node --test tests/dada-site.test.mjs tests/quote-data.test.mjs tests/interaction-logic.test.mjs tests/daily-saved.test.mjs tests/discovery-studio.test.mjs tests/social-images.test.mjs tests/site-integrity.test.mjs",
+    "test": "npm run build && node --test tests/dada-site.test.mjs tests/homepage-fidelity.test.mjs tests/quote-data.test.mjs tests/interaction-logic.test.mjs tests/daily-saved.test.mjs tests/discovery-studio.test.mjs tests/social-images.test.mjs tests/site-integrity.test.mjs",
     "social:generate": "node scripts/generate-social-images.mjs",
     "assets:validate": "node scripts/validate-assets.mjs",
     "assets:optimize": "node scripts/optimize-assets.mjs",
