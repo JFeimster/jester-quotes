@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RiotPressHero from '../../components/RiotPressHero.astro';
+import QuoteGallery from '../../components/QuoteGallery.astro';
+import {collections} from '../../lib/collections';
+import '../../styles/riot-press.css';
+---
+<BaseLayout pageTheme="riot-press" title="The Riot Press — Jester Quotes | Print Truth. Make Trouble." description="Explore all 100 Jester Quotes in The Riot Press: a real, searchable Dada-meets-neo-brutalist quotation archive with saved favorites and downloadable quote posters.">
+  <div class="wrap riot-press riot-press--public" data-theme="riot-press">
+    <RiotPressHero />
+    <section class="riot-manifesto" aria-labelledby="riot-manifesto-title">
+      <div class="riot-manifesto-heading"><span>EDITORIAL / 001</span><h2 id="riot-manifesto-title">THE FOOL HAS <em>THE FLOOR.</em></h2></div>
+      <p>We're not here to make wisdom respectable. We're here to make it impossible to ignore. Every quote is searchable, every source worth examining, and every poster yours to take away.</p>
+      <a href="/sources/">READ THE RECEIPTS ↗</a>
+    </section>
+    <section class="riot-issues" aria-labelledby="riot-issues-title">
+      <div class="riot-section-label"><span>THE UNAUTHORIZED INDEX / SIX ISSUES</span><h2 id="riot-issues-title">FIND YOUR KIND OF <em>TROUBLE.</em></h2></div>
+      <div class="riot-issue-grid">
+        {collections.map((collection,index) => (
+          <a class="riot-issue-card" href={`/collections/${collection.slug}/`}>
+            <span>ISSUE {String(index + 1).padStart(2,'0')} / JQ</span>
+            <strong>{collection.title}</strong>
+            <span class="riot-issue-arrow" aria-hidden="true">↗</span>
+          </a>
+        ))}
+      </div>
+    </section>
+    <div class="riot-archive-title"><span>THE ENTIRE PRESS RUN</span><strong>100 REAL QUOTES / SEARCH · SAVE · COPY · CREATE</strong></div>
+    <QuoteGallery />
+    <section class="riot-outro" aria-label="Make your own Riot Press artwork">
+      <div><span>YOUR WORDS. YOUR POSTER.</span><h2>MAKE SOME<br/>GOOD TROUBLE.</h2></div>
+      <p>Take any quotation into Quote Studio. Choose Riot Press, Dada Riot or Neo-Brutalist—and export the complete words as square, portrait, story or wide artwork.</p>
+      <a href="/studio/?theme=riot" class="riot-button riot-button--lime">OPEN THE POSTER PRESS ↗</a>
+    </section>
+  </div>
+  <script src="../../scripts/quote-explorer.ts"></script>
+</BaseLayout>
