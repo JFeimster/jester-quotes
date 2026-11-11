@@ -1,6 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import QuoteStudio from '../components/QuoteStudio.astro';
+import { getAsset, resolveAssetPath } from '../lib/assets';
+const promo = getAsset('quote-studio-promo');
+const promoPath = promo ? resolveAssetPath(promo.id) : undefined;
+const promoWebp = resolveAssetPath('quote-studio-promo-webp');
 ---
 <BaseLayout title="Quote Studio — Create Jester Quote Art | Jester Quotes" description="Create high-resolution quote posters in four formats and four Midnight Carnival color palettes. Browse 100 preserved quotations and download PNG artwork.">
   <div class="wrap discovery-page studio-page">
@@ -9,6 +13,7 @@ import QuoteStudio from '../components/QuoteStudio.astro';
       <h1>Make mischief <em>look good.</em></h1>
       <p class="lede">One hundred quotations. Four palettes. Four canvas sizes. A little trouble, beautifully typeset.</p>
     </header>
+    {promoPath && promo && <figure class="studio-promo"><picture><source srcset={promoWebp} type="image/webp" /><img src={promoPath} alt={promo.alt ?? 'Quote Studio promotional artwork'} width={promo.dimensions?.width ?? 1672} height={promo.dimensions?.height ?? 941} fetchpriority="high" decoding="async" /></picture><figcaption>Set the words. Choose the frame. Make it yours.</figcaption></figure>}
     <QuoteStudio />
     <div class="studio-next"><span>Still searching for the right words?</span><a href="/collections/">Explore curated collections ↗</a></div>
   </div>

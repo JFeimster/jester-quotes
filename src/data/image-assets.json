@@ -45,9 +45,9 @@
       "site-brand",
       "social-brand"
     ],
-    "status": "uploaded",
+    "status": "integrated",
     "alt": "Jester Quotes wordmark and ornate jester crest",
-    "notes": "Uploaded and registered. Not yet integrated into a website page."
+    "notes": "Integrated as the site header wordmark."
   },
   {
     "id": "quote-studio-promo",
@@ -64,9 +64,9 @@
     "usage": [
       "studio-promotion"
     ],
-    "status": "uploaded",
+    "status": "integrated",
     "alt": "Midnight Carnival quote studio promo",
-    "notes": "Uploaded and registered. Not yet integrated into a website page."
+    "notes": "Integrated as the Quote Studio page feature image."
   },
   {
     "id": "collection-06-editorial",
@@ -85,9 +85,9 @@
       "collection-detail",
       "feature-banner"
     ],
-    "status": "uploaded",
+    "status": "integrated",
     "alt": "Midnight Carnival collection artwork for art-of-the-jester",
-    "notes": "Uploaded and registered. Not yet integrated into a website page."
+    "notes": "Integrated on the collection card and detail page."
   },
   {
     "id": "collection-05-editorial",
@@ -106,9 +106,9 @@
       "collection-detail",
       "feature-banner"
     ],
-    "status": "uploaded",
+    "status": "integrated",
     "alt": "Midnight Carnival collection artwork for carnival-absurdity",
-    "notes": "Uploaded and registered. Not yet integrated into a website page."
+    "notes": "Integrated on the collection card and detail page."
   },
   {
     "id": "collection-04-clean",
@@ -126,9 +126,9 @@
     "usage": [
       "collection-card"
     ],
-    "status": "uploaded",
+    "status": "integrated",
     "alt": "Midnight Carnival collection artwork for masks-and-identity",
-    "notes": "Uploaded and registered. Not yet integrated into a website page."
+    "notes": "Integrated on the collection card."
   },
   {
     "id": "collection-04-editorial",
@@ -147,9 +147,9 @@
       "collection-detail",
       "feature-banner"
     ],
-    "status": "uploaded",
+    "status": "integrated",
     "alt": "Midnight Carnival collection artwork for masks-and-identity",
-    "notes": "Uploaded and registered. Not yet integrated into a website page."
+    "notes": "Integrated on the collection card and detail page."
   },
   {
     "id": "collection-03-editorial",
@@ -168,9 +168,9 @@
       "collection-detail",
       "feature-banner"
     ],
-    "status": "uploaded",
+    "status": "integrated",
     "alt": "Midnight Carnival collection artwork for laughter-and-life",
-    "notes": "Uploaded and registered. Not yet integrated into a website page."
+    "notes": "Integrated on the collection card and detail page."
   },
   {
     "id": "collection-03-clean",
@@ -188,9 +188,9 @@
     "usage": [
       "collection-card"
     ],
-    "status": "uploaded",
+    "status": "integrated",
     "alt": "Midnight Carnival collection artwork for laughter-and-life",
-    "notes": "Uploaded and registered. Not yet integrated into a website page."
+    "notes": "Integrated on the collection card."
   },
   {
     "id": "collection-02-editorial",
@@ -209,9 +209,9 @@
       "collection-detail",
       "feature-banner"
     ],
-    "status": "uploaded",
+    "status": "integrated",
     "alt": "Midnight Carnival collection artwork for truth-to-power",
-    "notes": "Uploaded and registered. Not yet integrated into a website page."
+    "notes": "Integrated on the collection card and detail page."
   },
   {
     "id": "collection-02-clean",
@@ -229,9 +229,9 @@
     "usage": [
       "collection-card"
     ],
-    "status": "uploaded",
+    "status": "integrated",
     "alt": "Midnight Carnival collection artwork for truth-to-power",
-    "notes": "Uploaded and registered. Not yet integrated into a website page."
+    "notes": "Integrated on the collection card."
   },
   {
     "id": "collection-01-editorial",
@@ -250,9 +250,9 @@
       "collection-detail",
       "feature-banner"
     ],
-    "status": "uploaded",
+    "status": "integrated",
     "alt": "Midnight Carnival collection artwork for wise-fools",
-    "notes": "Uploaded and registered. Not yet integrated into a website page."
+    "notes": "Integrated on the collection card and detail page."
   },
   {
     "id": "collection-01-clean",
@@ -270,9 +270,9 @@
     "usage": [
       "collection-card"
     ],
-    "status": "uploaded",
+    "status": "integrated",
     "alt": "Midnight Carnival collection artwork for wise-fools",
-    "notes": "Uploaded and registered. Not yet integrated into a website page."
+    "notes": "Integrated on the collection card."
   },
   {
     "id": "collections-featured",
@@ -290,8 +290,264 @@
       "collections-featured",
       "collections-promo"
     ],
-    "status": "uploaded",
-    "alt": "Midnight Carnival collections featured",
-    "notes": "Uploaded and registered. Not yet integrated into a website page."
+    "status": "integrated",
+    "alt": "Midnight Carnival collections featured artwork",
+    "notes": "Integrated as the Collections overview feature image."
+  },
+  {
+    "id": "brand-logo-horizontal-webp",
+    "path": "/assets/branding/logos/midnight-carnival-logo-horizontal-optimized-500w.webp",
+    "assetType": "logo",
+    "style": "midnight-carnival",
+    "variant": "optimized",
+    "dimensions": {
+      "width": 500,
+      "height": 281
+    },
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "status": "integrated",
+    "alt": "Jester Quotes wordmark and ornate jester crest",
+    "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: brand-logo-horizontal."
+  },
+  {
+    "id": "quote-studio-promo-webp",
+    "path": "/assets/studio/promotional/midnight-carnival-studio-16x9-optimized-1200w.webp",
+    "assetType": "studio-promo",
+    "style": "midnight-carnival",
+    "variant": "optimized",
+    "aspectRatio": "16x9",
+    "dimensions": {
+      "width": 1200,
+      "height": 675
+    },
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "status": "integrated",
+    "alt": "Midnight Carnival quote studio promo",
+    "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: quote-studio-promo."
+  },
+  {
+    "id": "collection-06-editorial-webp",
+    "path": "/assets/collections/06-art-of-jester/midnight-carnival-collection-06-art-of-jester-editorial-4x3-optimized-960w.webp",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "optimized",
+    "collection": "art-of-the-jester",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 960,
+      "height": 720
+    },
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "status": "integrated",
+    "alt": "Midnight Carnival collection artwork for art-of-the-jester",
+    "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: collection-06-editorial."
+  },
+  {
+    "id": "collection-05-editorial-webp",
+    "path": "/assets/collections/05-carnival-absurdity/midnight-carnival-collection-05-carnival-absurdity-editorial-4x3-optimized-960w.webp",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "optimized",
+    "collection": "carnival-absurdity",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 960,
+      "height": 720
+    },
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "status": "integrated",
+    "alt": "Midnight Carnival collection artwork for carnival-absurdity",
+    "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: collection-05-editorial."
+  },
+  {
+    "id": "collection-04-clean-webp",
+    "path": "/assets/collections/04-masks-identity/midnight-carnival-collection-04-masks-identity-4x3-optimized-960w.webp",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "optimized",
+    "collection": "masks-and-identity",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 960,
+      "height": 720
+    },
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "status": "integrated",
+    "alt": "Midnight Carnival collection artwork for masks-and-identity",
+    "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: collection-04-clean."
+  },
+  {
+    "id": "collection-04-editorial-webp",
+    "path": "/assets/collections/04-masks-identity/midnight-carnival-collection-04-masks-identity-editorial-4x3-optimized-960w.webp",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "optimized",
+    "collection": "masks-and-identity",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 960,
+      "height": 720
+    },
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "status": "integrated",
+    "alt": "Midnight Carnival collection artwork for masks-and-identity",
+    "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: collection-04-editorial."
+  },
+  {
+    "id": "collection-03-editorial-webp",
+    "path": "/assets/collections/03-laughter-life/midnight-carnival-collection-03-laughter-life-editorial-4x3-optimized-960w.webp",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "optimized",
+    "collection": "laughter-and-life",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 960,
+      "height": 720
+    },
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "status": "integrated",
+    "alt": "Midnight Carnival collection artwork for laughter-and-life",
+    "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: collection-03-editorial."
+  },
+  {
+    "id": "collection-03-clean-webp",
+    "path": "/assets/collections/03-laughter-life/midnight-carnival-collection-03-laughter-life-4x3-optimized-960w.webp",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "optimized",
+    "collection": "laughter-and-life",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 960,
+      "height": 720
+    },
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "status": "integrated",
+    "alt": "Midnight Carnival collection artwork for laughter-and-life",
+    "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: collection-03-clean."
+  },
+  {
+    "id": "collection-02-editorial-webp",
+    "path": "/assets/collections/02-truth-power/midnight-carnival-collection-02-truth-power-editorial-4x3-optimized-960w.webp",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "optimized",
+    "collection": "truth-to-power",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 960,
+      "height": 720
+    },
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "status": "integrated",
+    "alt": "Midnight Carnival collection artwork for truth-to-power",
+    "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: collection-02-editorial."
+  },
+  {
+    "id": "collection-02-clean-webp",
+    "path": "/assets/collections/02-truth-power/midnight-carnival-collection-02-truth-power-4x3-optimized-960w.webp",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "optimized",
+    "collection": "truth-to-power",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 960,
+      "height": 720
+    },
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "status": "integrated",
+    "alt": "Midnight Carnival collection artwork for truth-to-power",
+    "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: collection-02-clean."
+  },
+  {
+    "id": "collection-01-editorial-webp",
+    "path": "/assets/collections/01-wise-fool/midnight-carnival-collection-01-wise-fool-editorial-4x3-optimized-960w.webp",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "optimized",
+    "collection": "wise-fools",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 960,
+      "height": 720
+    },
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "status": "integrated",
+    "alt": "Midnight Carnival collection artwork for wise-fools",
+    "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: collection-01-editorial."
+  },
+  {
+    "id": "collection-01-clean-webp",
+    "path": "/assets/collections/01-wise-fool/midnight-carnival-collection-01-wise-fool-4x3-optimized-960w.webp",
+    "assetType": "collection-cover",
+    "style": "midnight-carnival",
+    "variant": "optimized",
+    "collection": "wise-fools",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 960,
+      "height": 720
+    },
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "status": "integrated",
+    "alt": "Midnight Carnival collection artwork for wise-fools",
+    "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: collection-01-clean."
+  },
+  {
+    "id": "collections-featured-webp",
+    "path": "/assets/images/featured/midnight-carnival-collection-4x3-optimized-1100w.webp",
+    "assetType": "featured",
+    "style": "midnight-carnival",
+    "variant": "optimized",
+    "aspectRatio": "4x3",
+    "dimensions": {
+      "width": 1100,
+      "height": 825
+    },
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "status": "integrated",
+    "alt": "Midnight Carnival collections featured artwork",
+    "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: collections-featured."
   }
 ]

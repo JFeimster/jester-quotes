@@ -31,6 +31,7 @@ h1,h2,h3,blockquote { font-family:"Iowan Old Style",Baskerville,"Palatino Linoty
 .site-header-2 { max-width:none; background:#101115; border-bottom:1px solid rgba(216,172,100,.28); }
 .site-header-2 .topbar { max-width:1236px; margin:auto; padding:15px 0; min-height:77px; border-bottom:0; }
 .site-header-2 .brand img { border:1px solid rgba(216,172,100,.48); background:#241b2b; padding:3px; border-radius:2px; }
+.site-header-2 .brand img.brand-logo { width:clamp(140px,16vw,176px); height:auto; max-height:84px; border:0; background:transparent; padding:0; object-fit:contain; }
 .site-header-2 .brand-lockup strong { font-size:1.4rem; font-weight:850; letter-spacing:.11em; }
 .site-header-2 .brand-dot { color:var(--coral); }
 .site-header-2 .brand-lockup small { color:var(--muted); letter-spacing:.15em; }
