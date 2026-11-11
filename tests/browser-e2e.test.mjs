@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import sharp from 'sharp';
 import { openLocalBrowser } from './support/browser-harness.mjs';
 
-const paths=['/','/collections/','/collections/wise-fools/','/tricksters/','/tricksters/anansi/','/resources/','/videos/','/studio/','/daily/','/saved/','/lab/'];
+const paths=['/','/collections/','/collections/wise-fools/','/tricksters/','/tricksters/anansi/','/resources/','/videos/','/studio/','/daily/','/saved/','/lab/','/riot-press/'];
 function zipEntries(buffer){
   const names=[];let position=0;
   while(position+30<=buffer.length&&buffer.readUInt32LE(position)===0x04034b50){
@@ -39,6 +39,21 @@ test('real headless Chrome exercises site routes, PNG/ZIP downloads and responsi
     await app.eval(`document.querySelector('[data-studio-theme="ivory"]').click()`);
     assert.equal(await app.eval(`document.querySelector('#studio-theme').value`),'ivory');
     await app.screenshot('studio-desktop');
+    // The hybrid and both parent designs have genuine, selectable Studio presets.
+    await app.navigate('/studio/?theme=riot');
+    await app.waitFor(`document.querySelector('#studio-theme').value==='riot' && !document.querySelector('#studio-download').disabled`,'riot artwork preset');
+    await app.screenshot('studio-riot-press');
+    await app.eval(`document.querySelector('[data-studio-theme="dada"]').click()`);
+    assert.equal(await app.eval(`document.querySelector('#studio-theme').value`),'dada');
+    await app.eval(`document.querySelector('[data-studio-theme="brutalist"]').click()`);
+    assert.equal(await app.eval(`document.querySelector('#studio-theme').value`),'brutalist');
+    await app.navigate('/riot-press/');
+    const press = await app.eval(`({cards:document.querySelectorAll('#quote-gallery .quote-card').length,issues:document.querySelectorAll('.riot-issue-card').length,search:!!document.querySelector('#quote-search'),studio:!!document.querySelector('a[href="/studio/?theme=riot"]')})`);
+    assert.deepEqual(press,{cards:100,issues:6,search:true,studio:true});
+    await app.eval(`document.querySelector('#quote-search').value='xyznotamatch';document.querySelector('#quote-search').dispatchEvent(new Event('input',{bubbles:true}))`);
+    await app.waitFor(`!document.querySelector('#empty-state').hidden`,'riot press filters');
+    await app.screenshot('riot-press-desktop');
+
 
     // Actual PNG artwork download — the screenshot is NOT treated as proof of PNG download.
     await app.navigate('/quotes/jester-quote-016/');
@@ -129,7 +144,7 @@ test('real headless Chrome exercises site routes, PNG/ZIP downloads and responsi
         const dims=await app.eval(`({width:document.documentElement.scrollWidth,viewport:innerWidth})`);
         assert.ok(dims.width<=dims.viewport+2,route+' horizontal scroll at '+width+'px: '+JSON.stringify(dims));
         if(route==='/lab/'){
-          for(const theme of ['dada-riot','neon-trickster','impossible-court','forbidden-library']){
+          for(const theme of ['dada-riot','neon-trickster','impossible-court','forbidden-library','riot-press']){
             await app.eval(`document.querySelector('[data-lab-tab="${theme}"]').click()`);
             await app.waitFor(`!document.querySelector('[data-lab-panel="${theme}"]').hidden`,'mobile theme '+theme);
             const panel=await app.eval(`({width:document.documentElement.scrollWidth,viewport:innerWidth})`);
