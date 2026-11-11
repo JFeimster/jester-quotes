@@ -5,13 +5,13 @@ import { videos, videoTags } from '../../lib/resource-catalog';
 import '../../styles/resource-vault.css';
 ---
 <BaseLayout title="Trickster Video Library — Curated YouTube Lessons | Jester Quotes"
- description="A curated directory of verified Crash Course and TED-Ed videos on Anansi, Loki, Sun Wukong, and the trickster archetype. Players load only when you choose.">
+ description="A curated library of videos on tricksters, fools, the Joker archetype, mythology, psychology and creative expression. YouTube players load only after a click.">
 <div class="wrap vault-page">
   <header class="vault-hero vault-video-hero">
     <div class="vault-hero-copy">
       <p class="eyebrow">The screening room / Storytelling in motion</p>
       <h1>Watch the <em>mischief unfold.</em></h1>
-      <p class="lede">Five verified lessons from real creators. Follow the threads from myth to character, or load a YouTube player only when you choose to watch.</p>
+      <p class="lede">{videos.length} curated videos from verified source listings, spanning folklore, philosophy, film and the Joker archetype. Load a YouTube player when you choose to watch.</p>
       <div class="vault-hero-actions"><a class="btn" href="#vault-list">Browse {videos.length} videos ↗</a>
         <a class="btn secondary" href="/resources/">Explore reading ↗</a></div>
     </div>
@@ -25,14 +25,14 @@ import '../../styles/resource-vault.css';
   <section id="vault-list" class="vault-list" aria-labelledby="vault-title" data-catalog="videos">
     <div class="section-title"><div><p class="eyebrow">Screening notes / Verified channels</p><h2 id="vault-title">The screening <em>room.</em></h2></div>
       <a class="section-text-link" href="/resources/">Open Reference Vault ↗</a></div>
-    <p class="vault-intro">Filter by creator or topic. The player is never requested until you click; you can always open the original video on YouTube instead.</p>
+    <p class="vault-intro">Filter by creator or topic. Players load only when clicked; some uploads may be unavailable or restricted by their original publishers. Open the original on YouTube if playback is blocked.</p>
     <div class="vault-controls" role="search" aria-label="Filter videos">
-      <div class="vault-field vault-search"><label for="catalog-search">Search video lessons</label><input id="catalog-search" type="search" autocomplete="off" placeholder="Try Loki, Anansi, Crash Course…"/></div>
+      <div class="vault-field vault-search"><label for="catalog-search">Search video lessons</label><input id="catalog-search" type="search" autocomplete="off" placeholder="Try Joker, Alan Watts, Loki, tricksters…"/></div>
       <div class="vault-field"><label for="catalog-channel">Channel</label><select id="catalog-channel"><option value="all">All channels</option>{[...new Set(videos.map(v=>v.channel_title))].map(channel=><option value={channel}>{channel}</option>)}</select></div>
       <div class="vault-field"><label for="catalog-tag">Theme</label><select id="catalog-tag"><option value="all">All themes</option>{videoTags.map(tag=><option value={tag}>{tag.replaceAll('-',' ')}</option>)}</select></div>
       <button id="catalog-reset" type="button">Clear filters</button>
     </div>
-    <div class="vault-results"><span id="catalog-count" aria-live="polite">{videos.length} verified lessons</span><span>EXTERNAL VIDEO · USER-CONTROLLED PLAYER</span></div>
+    <div class="vault-results"><span id="catalog-count" aria-live="polite">{videos.length} curated videos</span><span>EXTERNAL VIDEO · USER-CONTROLLED PLAYER</span></div>
     <div class="vault-grid vault-grid--videos" id="catalog-grid">{videos.map((entry,index)=><VideoCard entry={entry} index={index}/>)}</div>
     <p id="catalog-empty" class="vault-empty" hidden>No videos match those filters. Clear filters to see all lessons.</p>
   </section>
