@@ -178,5 +178,239 @@
       "trickster-loki"
     ],
     "related_quote_ids": []
+  },
+  {
+    "id": "resource-jung-trickster-in-the-arts",
+    "slug": "jung-trickster-in-the-arts",
+    "title": "The Trickster in the Arts",
+    "url": "https://www.jstor.org/stable/10.1525/jung.1.1981.2.2.47",
+    "source_name": "The San Francisco Jung Institute Library Journal / JSTOR",
+    "type": "reference",
+    "summary": "A 1981 article by John Beebe addressing the trickster in the arts. Bibliographic details are verified, but the full text was not independently accessible; JSTOR access may be restricted.",
+    "tags": [
+      "trickster",
+      "jungian-psychology",
+      "arts",
+      "scholarship"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": true,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-curator-trickster-tragicomedian",
+    "slug": "curator-trickster-tragicomedian",
+    "title": "“Trickster” and Tragicomedian",
+    "url": "https://www.curatormagazine.com/julie-hamilton/trickster-and-tragicomedian/",
+    "source_name": "The Curator",
+    "type": "essay",
+    "summary": "Julie Hamilton examines Woody Allen's films through comedy, tragedy, moral ambiguity and questions of existence, considering the modern tragicomedian as a cultural provocateur.",
+    "tags": [
+      "tragicomedy",
+      "film",
+      "satire",
+      "criticism"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-alan-watts-the-joker-transcription",
+    "slug": "alan-watts-the-joker-transcription",
+    "title": "Alan Watts – The Joker",
+    "url": "https://theilluminatedshowman.blogspot.com/2012/07/alan-watts-joker.html",
+    "source_name": "The Illuminated Showman",
+    "type": "article",
+    "summary": "A 2012 post presenting an audio excerpt and unofficial transcription of Alan Watts on the Joker and Fool as outsiders who expose the social games that people take seriously.",
+    "tags": [
+      "alan-watts",
+      "joker",
+      "philosophy",
+      "fool"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": true,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-gurdjieff-sly-man",
+    "slug": "gurdjieff-sly-man",
+    "title": "A Note on the “Sly Man”",
+    "url": "https://gurdjieffandbeelzebub.wordpress.com/2019/02/23/a-note-on-the-sly-man/",
+    "source_name": "The Tapestry of Beelzebub’s Tales",
+    "type": "essay",
+    "summary": "A discussion of Gurdjieff's 'sly man' method: noticing habitual reactions, deliberately acting otherwise, and directing the resulting inner friction toward conscious aims.",
+    "tags": [
+      "gurdjieff",
+      "spiritual-practice",
+      "self-inquiry",
+      "paradox"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-3am-jesters-banquet",
+    "slug": "3am-jesters-banquet",
+    "title": "The Jester’s Banquet",
+    "url": "https://www.3ammagazine.com/3am/the-jesters-banquet/",
+    "source_name": "3:AM Magazine",
+    "type": "essay",
+    "summary": "Max Dunbar reviews Russell Brand's Revolution through the tension between political satire, celebrity and serious dissent, asking whether the public provocateur is reformer or performer.",
+    "tags": [
+      "jester",
+      "satire",
+      "politics",
+      "book-review"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-ariel-hudnall-jester",
+    "slug": "ariel-hudnall-jester",
+    "title": "Archetypes: Jester",
+    "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+    "source_name": "Ariel Hudnall",
+    "type": "article",
+    "summary": "Writer Ariel Hudnall profiles the Jester as an archetype in fiction, covering motivations, comic relief, shadow traits, humor as a defense, and illustrative characters.",
+    "tags": [
+      "jester",
+      "fiction",
+      "character-writing",
+      "archetypes"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-stottilien-crazy-wisdom",
+    "slug": "stottilien-crazy-wisdom",
+    "title": "Crazy Wisdom — Fool, Clown, Jester and Trickster",
+    "url": "https://stottilien.com/2013/04/03/crazy-wisdom-the-archetype-of-the-fool-the-clown-the-jester-and-the-trickster/",
+    "source_name": "stOttilien",
+    "type": "essay",
+    "summary": "A comparative essay on the fool, clown, jester and trickster, exploring their different roles in exposing hypocrisy, challenging convention and offering forms of 'crazy wisdom.'",
+    "tags": [
+      "fool",
+      "clown",
+      "jester",
+      "trickster",
+      "jungian-psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-toby-ingham-joker-shadow-persona",
+    "slug": "toby-ingham-joker-shadow-persona",
+    "title": "Joker — Shadow and Persona Issues",
+    "url": "https://tobyingham.com/joker-shadow-and-persona-issues/",
+    "source_name": "Toby Ingham",
+    "type": "article",
+    "summary": "Psychotherapist Toby Ingham uses the film Joker to explain Jungian shadow and persona, exploring the tension between the face presented to the world and concealed aspects of personality.",
+    "tags": [
+      "joker",
+      "shadow",
+      "persona",
+      "jungian-psychology",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-blackwell-joker-jungs-shadow",
+    "slug": "blackwell-joker-jungs-shadow",
+    "title": "The Joker and Jung’s Shadow",
+    "url": "https://andphilosophy.com/2019/10/15/the-joker-and-jungs-shadow/",
+    "source_name": "The Blackwell Philosophy and Pop Culture Series",
+    "type": "essay",
+    "summary": "Ashley L. Whitaker interprets Arthur Fleck's Joker through the Jungian shadow, considering disorder, social marginalization and the consequences of refusing to confront destructive impulses.",
+    "tags": [
+      "joker",
+      "shadow",
+      "jungian-psychology",
+      "film",
+      "philosophy"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": true,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-astute-brand-jester",
+    "slug": "astute-brand-jester",
+    "title": "Brand Archetypes: The Jester",
+    "url": "https://astute.co/resource/brand-archetypes-the-jester/",
+    "source_name": "Astute Communication",
+    "type": "article",
+    "summary": "An applied branding guide to the Jester archetype, explaining how humor and perspective-shifting shape marketing, with examples including M&M's, Geico, Old Spice and Taco Bell.",
+    "tags": [
+      "jester",
+      "branding",
+      "marketing",
+      "archetypes"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-fractal-gray-jedi-jester-guru",
+    "slug": "fractal-gray-jedi-jester-guru",
+    "title": "Gray Jedi and the Subtle Art of Gray-walking",
+    "url": "https://fractalenlightenment.com/33450/issues/gray-jedi-and-the-subtle-art-of-gray-walking-jester-guru-chronicles-part-5",
+    "source_name": "Fractal Enlightenment",
+    "type": "essay",
+    "summary": "A speculative Jester Guru Chronicles essay using Gray Jedi imagery to explore sacred humor, nuance, paradox and challenges to ideological extremes rather than historical Star Wars canon.",
+    "tags": [
+      "sacred-humor",
+      "jester",
+      "spirituality",
+      "pop-culture"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-aadip-desai-the-trickster",
+    "slug": "aadip-desai-the-trickster",
+    "title": "The Trickster",
+    "url": "https://www.aadip.com/trickster/",
+    "source_name": "Aadip Desai",
+    "type": "reference",
+    "summary": "Screenwriter Aadip Desai collects trickster characters across mythology and popular culture, emphasizing boundary crossing, mischief, moral ambiguity and truth-to-power storytelling.",
+    "tags": [
+      "trickster",
+      "mythology",
+      "popular-culture",
+      "character-writing"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-loki",
+      "trickster-maui"
+    ],
+    "related_quote_ids": []
   }
 ]

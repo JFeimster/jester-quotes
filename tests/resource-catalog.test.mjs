@@ -13,7 +13,7 @@ const validResourceTypes=new Set(['reference','article','book','essay','podcast'
 const idRegex=/^[A-Za-z0-9_-]{11}$/;
 
 test('Resource Vault has original, verified publisher references and valid relationships',()=>{
-  assert.equal(resources.length,9);
+  assert.equal(resources.length,21);
   assert.equal(new Set(resources.map(x=>x.id)).size,resources.length);
   assert.equal(new Set(resources.map(x=>x.slug)).size,resources.length);
   assert.equal(new Set(resources.map(x=>x.url)).size,resources.length);
@@ -31,7 +31,10 @@ test('Resource Vault has original, verified publisher references and valid relat
   }
   assert.ok(resources.some(x=>x.source_name==='Library of Congress'));
   assert.ok(resources.some(x=>x.source_name==='UNESCO Intangible Cultural Heritage'));
-  assert.equal(resources.filter(x=>x.featured).length,3);
+  assert.equal(resources.filter(x=>x.featured).length,6);
+  assert.ok(resources.some(x=>x.tags.includes('jungian-psychology')));
+  assert.ok(resources.some(x=>x.tags.includes('branding')));
+  assert.ok(resources.some(x=>x.tags.includes('satire')));
 });
 
 test('Video Library has real YouTube URLs, correct credited channels and source evidence',()=>{
