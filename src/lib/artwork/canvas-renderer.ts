@@ -2,6 +2,7 @@ import { studioFormats, studioThemes, studioTextArea } from '../studio-config';
 import type { StudioFormat, StudioTheme } from '../studio-config';
 import { fitPosterText } from '../poster-layout';
 import { paginateText } from './text-layout.mjs';
+import {drawPressTreatment} from './press-treatment';
 
 export interface ArtworkSpec {
   text: string;
@@ -71,6 +72,7 @@ export function drawArtwork(ctx: CanvasRenderingContext2D, plan: ArtworkPlan, pa
   gradient.addColorStop(1, theme.secondary);
   ctx.fillStyle = gradient;
   ctx.fillRect(0, 0, width, height);
+  drawPressTreatment(ctx,width,height,spec.theme);
 
   const frame = Math.round(Math.min(width, height) * .055);
   if (spec.border) {

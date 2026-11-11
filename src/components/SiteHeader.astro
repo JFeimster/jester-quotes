@@ -2,6 +2,8 @@
 import { resolveAssetPath } from '../lib/assets';
 const brandLogo = resolveAssetPath('brand-logo-horizontal');
 const brandLogoWebp = resolveAssetPath('brand-logo-horizontal-webp');
+interface Props {riot?:boolean}
+const {riot=false}=Astro.props;
 const links = [
   { href: '/#explore', label: 'Explore' },
   { href: '/daily/', label: 'Daily' },
@@ -17,7 +19,8 @@ const links = [
 <header class="wrap site-header site-header-2">
   <div class="topbar">
     <a class="brand" href="/" aria-label="Jester Quotes — Home">
-      {brandLogo ? <picture>{brandLogoWebp && <source srcset={brandLogoWebp} type="image/webp" />}<img class="brand-logo" src={brandLogo} alt="Jester Quotes" width="150" height="84" /></picture> : <span class="brand-lockup"><strong>JESTER<span class="brand-dot">.</span></strong><small>Quotes / The Carnival</small></span>}
+      {brandLogo ? <picture>{brandLogoWebp && <source srcset={brandLogoWebp} type="image/webp" />}<img class="brand-logo" src={brandLogo} alt="Jester Quotes" width="150" height="84" /></picture> : <span class="brand-lockup"><strong>JESTER<span class="brand-dot">.</span></strong><small>{riot ? 'Quotes / The Riot Press' : 'Quotes / The Carnival'}</small></span>}
+      {riot && <span class="riot-brand-supplement" aria-hidden="true">RIOT PRESS / 001</span>}
     </a>
     <nav class="desktop-nav" aria-label="Main navigation">
       {links.map((link) => (

@@ -6,12 +6,12 @@ const promo = getAsset('quote-studio-promo');
 const promoPath = promo ? resolveAssetPath(promo.id) : undefined;
 const promoWebp = resolveAssetPath('quote-studio-promo-webp');
 ---
-<BaseLayout title="Quote Studio — Create Jester Quote Art | Jester Quotes" description="Create high-resolution quote posters in four formats and four Midnight Carnival color palettes. Browse 100 preserved quotations and download PNG artwork.">
+<BaseLayout title="Quote Studio — Create Jester Quote Art | Jester Quotes" description="Create high-resolution quote posters in four formats and seven styles, including Riot Press, Dada Riot and Neo-Brutalist. Browse 100 preserved quotations and download PNG artwork.">
   <div class="wrap discovery-page studio-page">
     <header class="discovery-heading">
-      <p class="eyebrow">Midnight Carnival / Creator tools</p>
+      <p class="eyebrow">Jester Quotes / Poster press and creator tools</p>
       <h1>Make mischief <em>look good.</em></h1>
-      <p class="lede">One hundred quotations. Four palettes. Four canvas sizes. A little trouble, beautifully typeset.</p>
+      <p class="lede">One hundred quotations. Seven visual styles. Four canvas sizes. A little trouble, beautifully typeset.</p>
     </header>
     {promoPath && promo && <figure class="studio-promo"><picture><source srcset={promoWebp} type="image/webp" /><img src={promoPath} alt={promo.alt ?? 'Quote Studio promotional artwork'} width={promo.dimensions?.width ?? 1672} height={promo.dimensions?.height ?? 941} fetchpriority="high" decoding="async" /></picture><figcaption>Set the words. Choose the frame. Make it yours.</figcaption></figure>}
     <QuoteStudio />

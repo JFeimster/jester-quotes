@@ -17,6 +17,7 @@ interface Props {
   openGraphType?: 'website' | 'article';
   robots?: string;
   structuredData?: Record<string, unknown>;
+  pageTheme?: 'default' | 'riot-press';
 }
 
 const {
@@ -26,7 +27,8 @@ const {
   imageAlt = 'Midnight Carnival artwork for Jester Quotes',
   openGraphType = 'website',
   robots,
-  structuredData
+  structuredData,
+  pageTheme = 'default'
 } = Astro.props;
 const origin = Astro.site ?? new URL('https://jester-quotes.vercel.app');
 const canonical = new URL(Astro.url.pathname, origin).toString();
@@ -61,9 +63,9 @@ const preview = new URL(image, origin).toString();
     {structuredData && <script type="application/ld+json" set:html={safeJsonLd(structuredData)} />}
     <title>{title}</title>
   </head>
-  <body>
+  <body class={pageTheme==='riot-press' ? 'theme-riot-press' : undefined}>
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <SiteHeader />
+    <SiteHeader riot={pageTheme==='riot-press'} />
     <main id="main-content"><slot /></main>
     <SiteFooter />
   </body>

@@ -8,12 +8,14 @@ import DadaRiotLayout from '../../design/layouts/DadaRiotLayout.astro';
 import NeonTricksterLayout from '../../design/layouts/NeonTricksterLayout.astro';
 import ImpossibleCourtLayout from '../../design/layouts/ImpossibleCourtLayout.astro';
 import ForbiddenLibraryLayout from '../../design/layouts/ForbiddenLibraryLayout.astro';
+import RiotPressLayout from '../../design/layouts/RiotPressLayout.astro';
 import {themeCatalog,getTheme} from '../../design/theme-registry';
 import {quotes} from '../../lib/quote-data';
 import type {Quote} from '../../types/quote';
 import type {ThemeId} from '../../design/theme-types';
 import '../../styles/design-variants.css';
 import '../../styles/lab-new-themes.css';
+import '../../styles/riot-press.css';
 
 function samplesFor(ids:readonly string[]):[Quote,Quote,Quote] {
   if(ids.length!==3) throw new Error('Each theme needs three distinct canonical quotes');
@@ -31,6 +33,7 @@ const dadaSamples=samplesForTheme('dada-riot');
 const neonSamples=samplesForTheme('neon-trickster');
 const courtSamples=samplesForTheme('impossible-court');
 const librarySamples=samplesForTheme('forbidden-library');
+const riotSamples=samplesForTheme('riot-press');
 ---
 <BaseLayout
   title="Design Lab — Jester Quotes (Private Visual Preview)"
@@ -40,8 +43,8 @@ const librarySamples=samplesForTheme('forbidden-library');
 <div class="wrap theme-lab">
   <header class="lab-page-header">
     <p class="eyebrow">Internal visual experiment / {String(themeCatalog.length).padStart(2,'0')} directions</p>
-    <h1>Seven worlds. <em>One irreverent voice.</em></h1>
-    <p class="lede">Same 100 quotations, real actions, and shared content—seven radically different ways to display them. Choose a world below.</p>
+    <h1>Eight worlds. <em>One irreverent voice.</em></h1>
+    <p class="lede">Same 100 quotations, real actions, and shared content—eight radically different ways to display them. Choose a world below.</p>
     <p class="lab-page-disclaimer">Preview only · Not in the sitemap · Public site remains Midnight Carnival</p>
   </header>
   <ThemeSwitcher />
@@ -66,8 +69,11 @@ const librarySamples=samplesForTheme('forbidden-library');
   <div id="lab-panel-forbidden-library" role="tabpanel" aria-labelledby="lab-tab-forbidden-library" data-lab-panel="forbidden-library" hidden>
     <ForbiddenLibraryLayout samples={librarySamples}/>
   </div>
+  <div id="lab-panel-riot-press" role="tabpanel" aria-labelledby="lab-tab-riot-press" data-lab-panel="riot-press" hidden>
+    <RiotPressLayout samples={riotSamples}/>
+  </div>
   <p id="interaction-status" class="sr-only" role="status" aria-live="polite"></p>
-  <aside class="lab-endnote"><strong>One laboratory. Seven distinct worlds.</strong> Quote cards use the same canonical IDs and working Save, Copy and Create Art actions. No competing quote database, replacement Studio or published routes.</aside>
+  <aside class="lab-endnote"><strong>One laboratory. Eight distinct worlds.</strong> Quote cards use the same canonical IDs and working Save, Copy and Create Art actions. No competing quote database, replacement Studio or published routes.</aside>
 </div>
 <script src="../../scripts/theme-lab.ts"></script>
 <script src="../../scripts/quote-explorer.ts"></script>

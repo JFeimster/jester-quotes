@@ -6,10 +6,11 @@ import {dadaRiot} from './themes/dada-riot';
 import {neonTrickster} from './themes/neon-trickster';
 import {impossibleCourt} from './themes/impossible-court';
 import {forbiddenLibrary} from './themes/forbidden-library';
+import {riotPress} from './themes/riot-press';
 
 export const themeCatalog:readonly ThemeSpec[]=[
   midnightCarnival,neoBrutalist,velvetGallery,
-  dadaRiot,neonTrickster,impossibleCourt,forbiddenLibrary
+  dadaRiot,neonTrickster,impossibleCourt,forbiddenLibrary,riotPress
 ];
 export const defaultThemeId:ThemeId='midnight-carnival';
 if(new Set(themeCatalog.map(theme=>theme.id)).size!==themeCatalog.length)
