@@ -35,7 +35,7 @@ test('Resource Vault has original, verified publisher references and valid relat
 });
 
 test('Video Library has real YouTube URLs, correct credited channels and source evidence',()=>{
-  assert.equal(videos.length,5);
+  assert.equal(videos.length,26);
   assert.equal(new Set(videos.map(x=>x.id)).size,videos.length);
   assert.equal(new Set(videos.map(x=>x.slug)).size,videos.length);
   assert.equal(new Set(videos.map(x=>x.video_id)).size,videos.length);
@@ -43,15 +43,27 @@ test('Video Library has real YouTube URLs, correct credited channels and source 
   for(const video of videos){
     assert.equal(video.id,`video-${video.slug}`);
     assert.ok(idRegex.test(video.video_id));
-    assert.ok(expected.has(video.video_id),'Video ID must be among independently confirmed references');
+    if (!video.playlist_id) assert.ok(expected.has(video.video_id),'Original video ID changed');
+    else {
+      assert.equal(video.playlist_id,'PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq');
+      assert.ok(Number.isInteger(video.playlist_position) && video.playlist_position>=1 && video.playlist_position<=30);
+    }
     assert.equal(video.youtube_url,`https://www.youtube.com/watch?v=${video.video_id}`);
-    assert.ok(['CrashCourse','TED-Ed'].includes(video.channel_title));
+    assert.ok(video.channel_title.trim().length>0);
     assert.ok(video.summary.length>80 && video.tags.length>0);
     assert.equal(video.verified_at,'2026-11-10');
     assert.ok(video.related_trickster_ids.every(id=>validTricksters.has(id)));
   }
   assert.ok(videos.some(x=>x.channel_title==='CrashCourse'));
   assert.ok(videos.some(x=>x.channel_title==='TED-Ed'));
+  const snapshot=JSON.parse(read('data/playlist-joker-first30.json'));
+  assert.equal(snapshot.entries.length,30);
+  const included=new Set(videos.filter(x=>x.playlist_id===snapshot.playlist_id).map(x=>x.video_id));
+  assert.equal(included.size,21);
+  for(const item of snapshot.entries) {
+    if(item.imported) assert.ok(included.has(item.video_id),'Missing playlist entry at '+item.position);
+    else assert.ok(!included.has(item.video_id),'Unavailable source was added to playable registry');
+  }
 });
 
 test('resource and video CSV archives match their canonical JSON record IDs',()=>{

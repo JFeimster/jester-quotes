@@ -94,5 +94,425 @@
     "related_trickster_ids": [
       "trickster-sun-wukong"
     ]
+  },
+  {
+    "id": "video-joker-playlist-01",
+    "slug": "joker-playlist-01",
+    "title": "Alan Watts -- The role of the trickster",
+    "video_id": "97Z6EmNy4VY",
+    "youtube_url": "https://www.youtube.com/watch?v=97Z6EmNy4VY",
+    "channel_title": "LucidMaui",
+    "summary": "Alan Watts is presented discussing the role of the trickster as a teacher. The uploader notes that a teacher may also be an encounter, situation, or book.",
+    "tags": [
+      "alan-watts",
+      "trickster",
+      "philosophy"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 1,
+    "duration_seconds": 318
+  },
+  {
+    "id": "video-joker-playlist-02",
+    "slug": "joker-playlist-02",
+    "title": "JOKER - Alan Watts",
+    "video_id": "e9cBWpydHVg",
+    "youtube_url": "https://www.youtube.com/watch?v=e9cBWpydHVg",
+    "channel_title": "Sincere Montage",
+    "summary": "An Alan Watts-focused video titled JOKER from Sincere Montage. The playlist identifies the creator, but a publisher description was unavailable during this extraction.",
+    "tags": [
+      "alan-watts",
+      "joker",
+      "philosophy"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 2,
+    "duration_seconds": 446
+  },
+  {
+    "id": "video-joker-playlist-03",
+    "slug": "joker-playlist-03",
+    "title": "The Path of The Fool (Trickster)",
+    "video_id": "nnfiYjn4A9Q",
+    "youtube_url": "https://www.youtube.com/watch?v=nnfiYjn4A9Q",
+    "channel_title": "Mind Mastery",
+    "summary": "The creator frames the fool/trickster path around the tension between wisdom and foolishness and links to related material on the archetype and personal growth.",
+    "tags": [
+      "fool",
+      "trickster",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 3,
+    "duration_seconds": 671
+  },
+  {
+    "id": "video-joker-playlist-04",
+    "slug": "joker-playlist-04",
+    "title": "Joaquin Phoenix on Playing Joker + Exclusive Outtake",
+    "video_id": "tZNBy-BdM2A",
+    "youtube_url": "https://www.youtube.com/watch?v=tZNBy-BdM2A",
+    "channel_title": "Jimmy Kimmel Live",
+    "summary": "An interview featuring Joaquin Phoenix discussing his portrayal of the Joker, with an exclusive outtake identified in the publisher's title.",
+    "tags": [
+      "joker",
+      "film",
+      "interview"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 4,
+    "duration_seconds": 665
+  },
+  {
+    "id": "video-joker-playlist-06",
+    "slug": "joker-playlist-06",
+    "title": "DMT Trip Report | JESTER/TRICKSTER Archetypes",
+    "video_id": "L-O772dKBiw",
+    "youtube_url": "https://www.youtube.com/watch?v=L-O772dKBiw",
+    "channel_title": "Your Mate Tom",
+    "summary": "A first-person DMT trip report presented through jester and trickster archetype imagery. Details beyond the title were unavailable during the extraction.",
+    "tags": [
+      "jester",
+      "trickster",
+      "dmt"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 6,
+    "duration_seconds": 1150
+  },
+  {
+    "id": "video-joker-playlist-07",
+    "slug": "joker-playlist-07",
+    "title": "The Dark Fool Archetype",
+    "video_id": "tftIoRymP1c",
+    "youtube_url": "https://www.youtube.com/watch?v=tftIoRymP1c",
+    "channel_title": "DarkF00L",
+    "summary": "The uploader presents the Dark Fool archetype in the context of Middle Path Dionysian theory, citing influence from Thomas LeRoy.",
+    "tags": [
+      "fool",
+      "archetype",
+      "philosophy"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 7,
+    "duration_seconds": 195
+  },
+  {
+    "id": "video-joker-playlist-08",
+    "slug": "joker-playlist-08",
+    "title": "DMT Jesters: An Archetype of our Subconscious?",
+    "video_id": "0IF9jWJBico",
+    "youtube_url": "https://www.youtube.com/watch?v=0IF9jWJBico",
+    "channel_title": "Mind Escape",
+    "summary": "A video asking whether DMT jesters reflect an archetype of the subconscious. The topic is derived from the verified title; further description was not available.",
+    "tags": [
+      "jester",
+      "dmt",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 8,
+    "duration_seconds": 197
+  },
+  {
+    "id": "video-joker-playlist-09",
+    "slug": "joker-playlist-09",
+    "title": "Archetypal Branding: The Jester",
+    "video_id": "bTIZzMVRGvU",
+    "youtube_url": "https://www.youtube.com/watch?v=bTIZzMVRGvU",
+    "channel_title": "Project M Emotional Branding",
+    "summary": "A branding-focused video about the Jester archetype from Project M Emotional Branding. The source listing did not expose a full publisher description.",
+    "tags": [
+      "jester",
+      "branding",
+      "archetype"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 9,
+    "duration_seconds": 359
+  },
+  {
+    "id": "video-joker-playlist-10",
+    "slug": "joker-playlist-10",
+    "title": "The Fool's Story",
+    "video_id": "zy9vcLzt1i0",
+    "youtube_url": "https://www.youtube.com/watch?v=zy9vcLzt1i0",
+    "channel_title": "Amy Sabatino",
+    "summary": "A narrative following the Fool on a journey through life and Tarot, as described in Amy Sabatino's publisher description.",
+    "tags": [
+      "fool",
+      "tarot",
+      "storytelling"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 10,
+    "duration_seconds": 1441
+  },
+  {
+    "id": "video-joker-playlist-14",
+    "slug": "joker-playlist-14",
+    "title": "Joker (2019) - Review & Psychological Analysis | Self-Archeology",
+    "video_id": "xSpybwDi9jM",
+    "youtube_url": "https://www.youtube.com/watch?v=xSpybwDi9jM",
+    "channel_title": "Self-Archeology",
+    "summary": "A review and psychological analysis of the 2019 film Joker from Self-Archeology, as indicated by its verified YouTube title.",
+    "tags": [
+      "joker",
+      "film",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 14,
+    "duration_seconds": 2781
+  },
+  {
+    "id": "video-joker-playlist-15",
+    "slug": "joker-playlist-15",
+    "title": "The Wise Fool Archetype",
+    "video_id": "kJ7MH9eO5Wk",
+    "youtube_url": "https://www.youtube.com/watch?v=kJ7MH9eO5Wk",
+    "channel_title": "Adam Weinreb",
+    "summary": "An introduction to the Wise Fool archetype by Adam Weinreb. The title and creator were verified from the playlist; a fuller description was not available.",
+    "tags": [
+      "fool",
+      "archetype",
+      "wisdom"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 15,
+    "duration_seconds": 476
+  },
+  {
+    "id": "video-joker-playlist-16",
+    "slug": "joker-playlist-16",
+    "title": "Am I Becoming a Fool, Sadhguru?",
+    "video_id": "ihuzEuecBZ4",
+    "youtube_url": "https://www.youtube.com/watch?v=ihuzEuecBZ4",
+    "channel_title": "Sadhguru",
+    "summary": "Sadhguru responds to a question framed as Am I Becoming a Fool? The original video supplies the creator's full context.",
+    "tags": [
+      "fool",
+      "spirituality",
+      "wisdom"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 16,
+    "duration_seconds": 346
+  },
+  {
+    "id": "video-joker-playlist-17",
+    "slug": "joker-playlist-17",
+    "title": "Alan Watts - The Joker",
+    "video_id": "mJfPLXZ-0bM",
+    "youtube_url": "https://www.youtube.com/watch?v=mJfPLXZ-0bM",
+    "channel_title": "Intellectual Deep Web",
+    "summary": "A long-form Alan Watts recording titled The Joker, shared by Intellectual Deep Web. The playlist records a duration of nearly three hours.",
+    "tags": [
+      "alan-watts",
+      "joker",
+      "philosophy"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 17,
+    "duration_seconds": 10627
+  },
+  {
+    "id": "video-joker-playlist-22",
+    "slug": "joker-playlist-22",
+    "title": "The True Story Of Heath Ledger's Joker",
+    "video_id": "XhWvFQaz9hk",
+    "youtube_url": "https://www.youtube.com/watch?v=XhWvFQaz9hk",
+    "channel_title": "ScreenRant",
+    "summary": "ScreenRant looks back at Heath Ledger's performance as the Joker in The Dark Knight and discusses the actor's legacy.",
+    "tags": [
+      "joker",
+      "heath-ledger",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 22,
+    "duration_seconds": 1142
+  },
+  {
+    "id": "video-joker-playlist-23",
+    "slug": "joker-playlist-23",
+    "title": "Trap Music 2018 🌀 Bass Boosted Trap Mix 🌀 Best EDM Gaming Music",
+    "video_id": "Rv1Zh2b-z7I",
+    "youtube_url": "https://www.youtube.com/watch?v=Rv1Zh2b-z7I",
+    "channel_title": "Magic Music",
+    "summary": "An extended trap and EDM gaming music mix from Magic Music. This entry is retained because it appears in the curator's playlist, not because a mythological link is established.",
+    "tags": [
+      "music",
+      "mix",
+      "playlist"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 23,
+    "duration_seconds": 3682
+  },
+  {
+    "id": "video-joker-playlist-24",
+    "slug": "joker-playlist-24",
+    "title": "TRICKSTER",
+    "video_id": "ckpZcjeNd3E",
+    "youtube_url": "https://www.youtube.com/watch?v=ckpZcjeNd3E",
+    "channel_title": "This Jungian Life",
+    "summary": "A video titled TRICKSTER from This Jungian Life. Its title and publisher are confirmed, but the source description was not accessible during extraction.",
+    "tags": [
+      "trickster",
+      "psychology",
+      "jung"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 24,
+    "duration_seconds": 3051
+  },
+  {
+    "id": "video-joker-playlist-25",
+    "slug": "joker-playlist-25",
+    "title": "Lewis Hyde: The Disjointed Art of Tricksters",
+    "video_id": "QSka5bcKaqA",
+    "youtube_url": "https://www.youtube.com/watch?v=QSka5bcKaqA",
+    "channel_title": "Minnesota Men's Conference",
+    "summary": "Lewis Hyde examines tricksters as boundary-crossers whose mischief keeps social and cultural structures flexible, drawing on mythology, literature and art.",
+    "tags": [
+      "trickster",
+      "lecture",
+      "literature"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 25,
+    "duration_seconds": 1848
+  },
+  {
+    "id": "video-joker-playlist-26",
+    "slug": "joker-playlist-26",
+    "title": "A Joker Tribute  | Light 'Em Up 「MV」",
+    "video_id": "1dEO4t0b8Uk",
+    "youtube_url": "https://www.youtube.com/watch?v=1dEO4t0b8Uk",
+    "channel_title": "sessyfan791",
+    "summary": "A Joker fan-tribute music video titled Light 'Em Up. The verified source title identifies the format, though the publisher's description was unavailable.",
+    "tags": [
+      "joker",
+      "fan-edit",
+      "music"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 26,
+    "duration_seconds": 205
+  },
+  {
+    "id": "video-joker-playlist-28",
+    "slug": "joker-playlist-28",
+    "title": "Archetypes of the Collective Unconscious | My Favorite Chapter in ALL of Jung's Work",
+    "video_id": "pf1mzRhlVdc",
+    "youtube_url": "https://www.youtube.com/watch?v=pf1mzRhlVdc",
+    "channel_title": "Uberboyo",
+    "summary": "Uberboyo discusses Jung's Archetypes of the Collective Unconscious and focuses on a personally favored chapter, as indicated by the source title.",
+    "tags": [
+      "jung",
+      "archetype",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 28,
+    "duration_seconds": 5922
+  },
+  {
+    "id": "video-joker-playlist-29",
+    "slug": "joker-playlist-29",
+    "title": "The Joker | Chaos",
+    "video_id": "ZZfSm1u7YmM",
+    "youtube_url": "https://www.youtube.com/watch?v=ZZfSm1u7YmM",
+    "channel_title": "Ilia TS",
+    "summary": "A tribute edit focused on Heath Ledger's Joker and the theme of chaos, as described by the video publisher Ilia TS.",
+    "tags": [
+      "joker",
+      "heath-ledger",
+      "fan-edit"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 29,
+    "duration_seconds": 161
+  },
+  {
+    "id": "video-joker-playlist-30",
+    "slug": "joker-playlist-30",
+    "title": "Joker tribute Madness",
+    "video_id": "ALpMHtiQ7Tc",
+    "youtube_url": "https://www.youtube.com/watch?v=ALpMHtiQ7Tc",
+    "channel_title": "Mirimania Productions",
+    "summary": "A Heath Ledger Joker tribute centered on the theme of madness. The uploader credits other footage and music sources in the original video description.",
+    "tags": [
+      "joker",
+      "heath-ledger",
+      "fan-edit"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 30,
+    "duration_seconds": 188
   }
 ]
