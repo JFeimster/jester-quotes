@@ -100,7 +100,7 @@ test('YouTube embed loads only on click and never downloads, autoplays, or proxi
 });
 
 test('Navigation and editorial source descriptions document both new site sections',()=>{
-  const menu=read('src/components/SiteHeader.astro');
+  const menu=read('dist/index.html');
   const sitemap=read('dist/sitemap.xml');
   const sources=read('dist/sources/index.html');
   const css=read('src/styles/resource-vault.css');
