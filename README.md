@@ -10,7 +10,7 @@ A responsive, static quotation collection built with **Astro 7, TypeScript, CSS,
 
 - Browse 100 individually addressable quotation pages, with preserved authors and any supplied references.
 - Explore six hand-curated themes across 96 distinct quotations at `/collections/` (quotes may appear in multiple themes).
-- Create custom quote artwork in the browser at `/studio/` (4 canvas formats × 4 palettes; full-resolution PNG export).
+- Create custom quote artwork in the browser at `/studio/` (4 canvas formats × 7 visual styles, including Riot Press, Dada, and Neo-Brutalist; full-resolution PNG export).
 - Review provenance, citation coverage, correction reporting, and reuse guidance at `/sources/`.
 - Browse **11 independently sourced, original short Trickster profiles** at `/tricksters/`, with search, figure/media/tag filters, random discovery, and contextual source links.
 - Browse a **Resource Vault of 9 verified links** at `/resources/` and a **Video Library of 5 verified YouTube lessons** at `/videos/`; searchable topic/publisher filters, related Trickster links, and user-initiated privacy-enhanced playback.
@@ -19,7 +19,7 @@ A responsive, static quotation collection built with **Astro 7, TypeScript, CSS,
 - View a deterministic shared-UTC Daily Quote at `/daily/`, save/copy it, and jump to related editorial themes or a random verified Trickster.
 - Open a private `/saved/` library with search, sorting, validated JSON import/export, clear/remove confirmations, and up to five selected quotes exported as complete PNG slides + a rights/attributions text file inside a ZIP. Existing `jester-quotes:favorites:v1` browser storage remains the sole favorites source.
 - Find a random quote, copy text, and share/copy a quotation link.
-- Download complete quotations and full author attribution as square **1080 × 1080** PNG artwork, or an automatic **ZIP of numbered PNG slides** when a quotation cannot fit legibly. Quote Studio supports four canvas dimensions and four palettes.
+- Download complete quotations and full author attribution as square **1080 × 1080** PNG artwork, or an automatic **ZIP of numbered PNG slides** when a quotation cannot fit legibly. Quote Studio supports four canvas dimensions and seven selectable looks, including three original printshop-inspired poster treatments.
 - Download **1200 × 630** social/OG previews; long excerpts are explicitly labeled inside their artwork and never represented as complete-quote downloads.
 - Generate canonical URLs, XML sitemap, robots rules, Open Graph/Twitter metadata, and schema.org quotation structured data.
 - Responsive desktop/mobile layout, accessible controls, keyboard skip link, and reduced-motion support.
@@ -39,7 +39,7 @@ Open the local URL printed by Astro (normally `http://localhost:4321`).
 
 ### Browser and release validation
 
-The final QA suite uses **headless Chrome DevTools via Node.js 22**, with no Playwright dependency or protected CI workflow changes. Tests navigate the real generated pages, verify layout and JS behavior, and exercise actual complete-quote PNG/ZIP downloads and saved-pack exports. Desktop, tablet, mobile, and all three Design Lab variants are captured in local `.qa-screenshots/` (gitignored). GitHub Actions treats a missing Chrome browser as a test failure; local machines without Chrome report a skip until configured.
+The final QA suite uses **headless Chrome DevTools via Node.js 22**, with no Playwright dependency or protected CI workflow changes. Tests navigate the real generated pages, verify layout and JS behavior, and exercise actual complete-quote PNG/ZIP downloads and saved-pack exports. Desktop, tablet, mobile, and all eight Design Lab variants are captured in local `.qa-screenshots/` (gitignored). GitHub Actions treats a missing Chrome browser as a test failure; local machines without Chrome report a skip until configured.
 
 Read [Release and Browser QA Checklist](docs/RELEASE-CHECKLIST.md) and [Editorial Standards](docs/EDITORIAL-STANDARDS.md). These browser checks are a complement to editorial review, not a substitute for copyright clearance.
 
@@ -124,7 +124,8 @@ src/
     tricksters/[slug].astro Verified individual profiles
     resources/index.astro  Filterable Resource Vault
     videos/index.astro     Privacy-conscious YouTube directory
-    lab/index.astro        Unindexed, unlinked design variations (draft preview)
+    lab/index.astro        Eight unindexed design directions (comparison)
+    riot-press/index.astro  Public, usable alternative archive (noindex candidate)
     sources.astro            Provenance and correction information
     sitemap.xml.ts          XML index of public routes
     robots.txt.ts           Robots policy and sitemap URL
@@ -158,13 +159,21 @@ CREDITS.md                  Source and publication-rights information
 
 Keep manual artwork organized in `public/assets/` by purpose and collection, including the two migrated hero images in `public/assets/images/heroes/`. The former `/images/midnight-carnival-hero-*.png` URLs permanently redirect to their new URLs for backward compatibility. All 100 generated quote previews remain at `public/social/quotes/`. See [Image assets and naming](docs/IMAGE-ASSETS.md).
 
+## The Riot Press — usable production contender
+
+The Dada Riot × Neo-Brutalist hybrid is implemented at **`/riot-press/`**, with original artwork geometry, a six-issue collection directory, all 100 original quotes, working search, saved favorites, copy actions and full-resolution poster creation. The homepage and footer link to this alternate experience. The existing Midnight Carnival design remains the flagship pending final comparison.
+
+- **Live experience:** `/riot-press/` (intentionally `noindex, follow` while under review).
+- **Artwork exports:** `/studio/?theme=riot`, plus `?theme=dada` and `?theme=brutalist`.
+- **Decision and imagery:** [Riot Press design brief and asset production shortlist](docs/RIOT-PRESS-DESIGN.md).
+
 ## Design Lab (unindexed preview)
 
-The design system has seven fully implemented preview worlds. Four recent additions use unique illustrated CSS scenes, typography, layouts and quote-card skins; all reuse the existing quote and Studio functionality. Source lives in `src/design/` with isolated styles in `src/styles/lab-new-themes.css`. See [Four new design worlds](docs/DESIGN-LAB-EXPANSION.md) for details.
+The design system has eight implemented visual worlds, including The Riot Press hybrid. Four recent additions use unique illustrated CSS scenes, typography, layouts and quote-card skins; all reuse the existing quote and Studio functionality. Source lives in `src/design/` with isolated styles in `src/styles/lab-new-themes.css`. See [Four new design worlds](docs/DESIGN-LAB-EXPANSION.md) for details.
 
-The optional `/lab/` route previews **seven independent page compositions**: Midnight Carnival, Neo-Brutalist Jester, Velvet Gallery, Dada Riot, Neon Trickster, The Impossible Court, and The Forbidden Library—not seven color swaps. The lab uses the same canonical quotations, quote-card actions, source registries and `/studio/` downloads as the published site. Theme specifications live in `src/design/themes/`; `src/design/layouts/` holds the three component compositions, with one scoped design stylesheet and an accessible no-storage tab selector.
+The optional `/lab/` route previews **eight independent page compositions**: Midnight Carnival, Neo-Brutalist Jester, Velvet Gallery, Dada Riot, Neon Trickster, The Impossible Court, The Forbidden Library, and The Riot Press—not eight color swaps. The lab uses the same canonical quotations, quote-card actions, source registries and `/studio/` downloads as the published site. Theme specifications live in `src/design/themes/`; `src/design/layouts/` holds all eight component compositions, with one scoped design stylesheet and an accessible no-storage tab selector.
 
-The Lab remains **`noindex, nofollow`**, is excluded from the sitemap and public navigation, and does not change the public Midnight Carnival default. No new frameworks, CMS, root `assets/` folder, or cloned quote datasets are introduced.
+The Lab remains **`noindex, nofollow`**, is excluded from the sitemap and public navigation, and does not change the public Midnight Carnival default. The new `/riot-press/` route is independently usable with all 100 quotes and real Studio links but deliberately `noindex` until the flagship design is selected. No new frameworks, CMS, root `assets/` folder, or cloned quote datasets are introduced.
 
 ## Deployment and automation
 
