@@ -40,7 +40,8 @@ test('real headless Chrome exercises site routes, PNG/ZIP downloads and responsi
     assert.equal(await app.eval(`document.querySelector('#studio-theme').value`),'ivory');
     await app.screenshot('studio-desktop');
     // The hybrid and both parent designs have genuine, selectable Studio presets.
-    await app.navigate('/studio/?theme=riot');
+    await app.navigate('/studio/');
+    await app.eval(`document.querySelector('[data-studio-theme="riot"]').click()`);
     await app.waitFor(`document.querySelector('#studio-theme').value==='riot' && !document.querySelector('#studio-download').disabled`,'riot artwork preset');
     await app.screenshot('studio-riot-press');
     await app.eval(`document.querySelector('[data-studio-theme="dada"]').click()`);

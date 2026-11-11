@@ -64,7 +64,8 @@ test('all eight compositions have distinct hero artwork treatments and reuse rea
   const html=read('dist/lab/index.html');
   for(const [file,hero,art,grid] of layouts){
     const source=read('src/design/layouts/'+file);
-    for(const hook of [hero,art,grid])assert.ok(source.includes(hook),file+':'+hook);
+    const sharedHero=file==='RiotPressLayout.astro' ? read('src/components/RiotPressHero.astro') : '';
+    for(const hook of [hero,art,grid])assert.ok(source.includes(hook)||sharedHero.includes(hook),file+':'+hook);
     assert.match(source,/QuoteCard quote=\{samples\[0\]\} index=\{0\}/);
     assert.match(source,/QuoteCard quote=\{samples\[1\]\} index=\{3\}/);
     assert.match(source,/QuoteCard quote=\{samples\[2\]\} index=\{5\}/);
