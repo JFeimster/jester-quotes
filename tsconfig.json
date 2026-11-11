@@ -1,1 +1,11 @@
-{"extends":"astro/tsconfigs/strict","compilerOptions":{"resolveJsonModule":true}}
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "sites/**"
+  ]
+}

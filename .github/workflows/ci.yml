@@ -6,6 +6,7 @@ permissions:
   contents: read
 jobs:
   build:
+    name: Root website
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,5 +17,24 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm run build
+      - run: npm test
+      - run: npm audit --audit-level=high
+
+  dada-riot:
+    name: Dada Riot standalone site
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: sites/dada-riot
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: sites/dada-riot/package-lock.json
+      - run: npm ci
+      - run: npm run check
+      # The standalone project's test command builds the Astro site first.
       - run: npm test
       - run: npm audit --audit-level=high
