@@ -18,13 +18,13 @@ function tagScore(a: string[], b: string[]): number {
   return common.length * 4 + common.filter(tag => distinctive.has(tag)).length * 3;
 }
 export function relatedReadingForVideo(video: VideoEntry, count = 2): ResourceEntry[] {
-  return resources.map(resource => ({resource,score:tagScore(video.tags,resource.tags)+(resource.featured?1:0)}))
+  return resources.map(resource => { const match=tagScore(video.tags,resource.tags); return {resource,score:match>0?match+(resource.featured?1:0):0}; })
     .filter(item => item.score>0)
     .sort((a,b)=>b.score-a.score || a.resource.id.localeCompare(b.resource.id))
     .slice(0,count).map(item=>item.resource);
 }
 export function relatedVideosForResource(resource: ResourceEntry, count = 2): VideoEntry[] {
-  return videos.map(video => ({video,score:tagScore(resource.tags,video.tags)+(video.featured?1:0)}))
+  return videos.map(video => { const match=tagScore(resource.tags,video.tags); return {video,score:match>0?match+(video.featured?1:0):0}; })
     .filter(item => item.score>0)
     .sort((a,b)=>b.score-a.score || a.video.id.localeCompare(b.video.id))
     .slice(0,count).map(item=>item.video);
