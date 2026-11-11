@@ -5,6 +5,8 @@ on:
   workflow_run:
     workflows: ["Validate and build"]
     types: [completed]
+  pull_request_target:
+    types: [ready_for_review]
 
 permissions:
   contents: read
@@ -16,23 +18,33 @@ concurrency:
 jobs:
   auto-squash:
     if: >-
-      github.event.workflow_run.event == 'pull_request' &&
-      github.event.workflow_run.conclusion == 'success' &&
-      github.event.workflow_run.head_repository.full_name == github.repository
+      (github.event_name == 'pull_request_target' && github.event.action == 'ready_for_review') ||
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.event == 'pull_request' &&
+       github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
+      checks: read
+      actions: read
     steps:
       - name: Squash merge unchanged, validated same-repo PRs
         env:
           GH_TOKEN: ${{ github.token }}
           RUN_SHA: ${{ github.event.workflow_run.head_sha }}
           RUN_ID: ${{ github.event.workflow_run.id }}
+          EVENT_NAME: ${{ github.event_name }}
+          READY_PR: ${{ github.event.pull_request.number }}
         run: |
           set -euo pipefail
 
-          prs="$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$RUN_ID" --jq '.pull_requests[]?.number')"
+          if [[ "$EVENT_NAME" == "workflow_run" ]]; then
+            prs="$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$RUN_ID" --jq '.pull_requests[]?.number')"
+          else
+            prs="$READY_PR"
+          fi
           if [[ -z "$prs" ]]; then
             echo "No PR associated with completed CI run; nothing to merge."
             exit 0
@@ -50,8 +62,12 @@ jobs:
               echo "Skipping #$number: not an open, ready PR targeting main."
               continue
             fi
-            if [[ "$head_repo" != "$GITHUB_REPOSITORY" || "$head_sha" != "$RUN_SHA" ]]; then
-              echo "Skipping #$number: untrusted fork or head changed after CI."
+            if [[ "$head_repo" != "$GITHUB_REPOSITORY" ]]; then
+              echo "Skipping #$number: untrusted fork."
+              continue
+            fi
+            if [[ "$EVENT_NAME" == "workflow_run" && "$head_sha" != "$RUN_SHA" ]]; then
+              echo "Skipping #$number: head changed after CI."
               continue
             fi
 
@@ -62,7 +78,17 @@ jobs:
               continue
             fi
 
+            # A previously draft PR may have passed CI already. Require a completed
+            # successful GitHub Actions build on its exact current commit.
+            if [[ "$EVENT_NAME" == "pull_request_target" ]]; then
+              passed="$(gh api "repos/$GITHUB_REPOSITORY/commits/$head_sha/check-runs?per_page=100" --jq '[.check_runs[] | select(.name == "build" and .status == "completed" and .conclusion == "success" and .app.slug == "github-actions")] | length')"
+              if [[ "$passed" -lt 1 ]]; then
+                echo "Skipping #$number: no successful CI check on current head."
+                continue
+              fi
+            fi
+
             gh pr merge "$number" --repo "$GITHUB_REPOSITORY" \
-              --squash --delete-branch --match-head-commit "$RUN_SHA"
+              --squash --delete-branch --match-head-commit "$head_sha"
             echo "Squash-merged validated PR #$number."
           done
