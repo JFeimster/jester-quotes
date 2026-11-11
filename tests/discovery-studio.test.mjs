@@ -71,7 +71,7 @@ test('Studio format dimensions, color themes, and text regions remain valid', as
   });
   const settings = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
   assert.deepEqual(Object.keys(settings.studioFormats), ['square', 'portrait', 'story', 'landscape']);
-  assert.deepEqual(Object.keys(settings.studioThemes), ['midnight', 'velvet', 'ivory', 'coral']);
+  assert.deepEqual(Object.keys(settings.studioThemes), ['midnight', 'velvet', 'ivory', 'coral','brutalist','dada','riot']);
   assert.deepEqual([settings.studioFormats.square.width, settings.studioFormats.square.height], [1080,1080]);
   assert.deepEqual([settings.studioFormats.portrait.width, settings.studioFormats.portrait.height], [1080,1350]);
   assert.deepEqual([settings.studioFormats.story.width, settings.studioFormats.story.height], [1080,1920]);

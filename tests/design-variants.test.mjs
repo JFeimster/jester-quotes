@@ -7,7 +7,7 @@ const root=fileURLToPath(new URL('../', import.meta.url));
 const read=p=>readFileSync(path.join(root,p),'utf8');
 const quoteRegistry=JSON.parse(read('src/data/jester-quotes.json'));
 const quotes=new Map(quoteRegistry.items.map(q=>[q.id,q]));
-const IDs=['midnight-carnival','neo-brutalist','velvet-gallery','dada-riot','neon-trickster','impossible-court','forbidden-library'];
+const IDs=['midnight-carnival','neo-brutalist','velvet-gallery','dada-riot','neon-trickster','impossible-court','forbidden-library','riot-press'];
 const files=Object.fromEntries(IDs.map(id=>[id,'src/design/themes/'+id+'.ts']));
 const layouts=[
   ['EditorialLayout.astro','lab-editorial-hero','lab-editorial-portrait','lab-quote-grid--editorial'],
@@ -16,10 +16,11 @@ const layouts=[
   ['DadaRiotLayout.astro','lab-dada-hero','lab-dada-collage','lab-quote-grid--dada'],
   ['NeonTricksterLayout.astro','lab-neon-hero','lab-neon-hologram','lab-quote-grid--neon'],
   ['ImpossibleCourtLayout.astro','lab-court-hero','lab-court-stage','lab-quote-grid--court'],
-  ['ForbiddenLibraryLayout.astro','lab-library-hero','lab-library-scene','lab-quote-grid--library']
+  ['ForbiddenLibraryLayout.astro','lab-library-hero','lab-library-scene','lab-quote-grid--library'],
+  ['RiotPressLayout.astro','riot-hero','riot-hero-art','lab-quote-grid--riot']
 ];
 
-test('seven unique theme contracts reference only canonical 100-quote records',()=>{
+test('eight unique theme contracts reference only canonical 100-quote records',()=>{
   assert.equal(quotes.size,100);
   for(const id of IDs){
     const spec=read(files[id]);
@@ -33,14 +34,14 @@ test('seven unique theme contracts reference only canonical 100-quote records',(
     quotedIds.forEach(q=>assert.ok(quotes.has(q),`${id}: unknown quote ${q}`));
   }
   const registry=read('src/design/theme-registry.ts');
-  for(const name of ['midnightCarnival','neoBrutalist','velvetGallery','dadaRiot','neonTrickster','impossibleCourt','forbiddenLibrary'])
+  for(const name of ['midnightCarnival','neoBrutalist','velvetGallery','dadaRiot','neonTrickster','impossibleCourt','forbiddenLibrary','riotPress'])
     assert.ok(registry.includes(name),name);
   assert.match(registry,/labThemeStyle/);
   assert.match(registry,/Duplicate design Lab theme id/);
   assert.ok(!existsSync(path.join(root,'src/data/lab-quotes.json')));
 });
 
-test('/lab/ renders exactly seven unique accessible panels and stays unindexed',()=>{
+test('/lab/ renders exactly eight unique accessible panels and stays unindexed',()=>{
   const html=read('dist/lab/index.html');
   assert.match(html,/name="robots" content="noindex, nofollow"/);
   assert.match(html,/rel="canonical" href="https:\/\/jester-quotes\.vercel\.app\/lab\/"/);
@@ -59,7 +60,7 @@ test('/lab/ renders exactly seven unique accessible panels and stays unindexed',
   assert.ok(!read('src/components/SiteHeader.astro').includes('href="/lab/"'),'experiment must not be in public nav');
 });
 
-test('all seven compositions have distinct hero artwork treatments and reuse real quote actions',()=>{
+test('all eight compositions have distinct hero artwork treatments and reuse real quote actions',()=>{
   const html=read('dist/lab/index.html');
   for(const [file,hero,art,grid] of layouts){
     const source=read('src/design/layouts/'+file);
@@ -86,9 +87,15 @@ test('new worlds are visually distinct in their own scoped responsive styles',()
     assert.ok(css.includes(width),width);
   assert.ok(css.includes('prefers-reduced-motion:reduce'));
   assert.ok(!css.includes('url(http'),'No external images or font fetches for the design lab');
+  const hybrid=read('src/styles/riot-press.css');
+  assert.ok(hybrid.includes('.riot-hero-grid'));
+  assert.ok(hybrid.includes('.riot-press .quote-card'));
+  assert.ok(hybrid.includes('prefers-reduced-motion:reduce'));
+  assert.ok(!hybrid.includes('url(http'));
+
 });
 
-test('Lab keyboard switcher remains storage-free and uses the seven-tab interface',()=>{
+test('Lab keyboard switcher remains storage-free and uses the eight-tab interface',()=>{
   const script=read('src/scripts/theme-lab.ts');
   const css=read('src/styles/design-variants.css');
   for(const name of ['ArrowRight','ArrowLeft','Home','End','aria-selected','data-lab-panel'])

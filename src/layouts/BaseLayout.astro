@@ -65,7 +65,7 @@ const preview = new URL(image, origin).toString();
   </head>
   <body class={pageTheme==='riot-press' ? 'theme-riot-press' : undefined}>
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <SiteHeader />
+    <SiteHeader riot={pageTheme==='riot-press'} />
     <main id="main-content"><slot /></main>
     <SiteFooter />
   </body>

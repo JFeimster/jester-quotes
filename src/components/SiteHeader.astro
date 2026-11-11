@@ -1,8 +1,12 @@
+---
+interface Props {riot?:boolean}
+const {riot=false}=Astro.props;
+---
 <header class="wrap site-header site-header-2">
   <div class="topbar">
     <a class="brand" href="/" aria-label="Jester Quotes — Home">
       <img src="/favicon.svg" alt="" width="42" height="42" />
-      <span class="brand-lockup"><strong>JESTER<span class="brand-dot">.</span></strong><small>Quotes / The Carnival</small></span>
+      <span class="brand-lockup"><strong>JESTER<span class="brand-dot">.</span></strong><small>{riot ? 'Quotes / The Riot Press' : 'Quotes / The Carnival'}</small></span>
     </a>
     <nav aria-label="Main navigation">
       <a href="/#explore">Explore</a>
