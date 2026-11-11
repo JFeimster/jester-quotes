@@ -138,6 +138,11 @@ function filteredOptions(): void {
 if (picker && canvas && download) {
   const initial = new URL(window.location.href).searchParams.get('quote');
   picker.value = initial && byId.has(initial) ? initial : 'jester-quote-003';
+  const requestedTheme = new URL(window.location.href).searchParams.get('theme');
+  if (themeSelect && requestedTheme && Object.prototype.hasOwnProperty.call(studioThemes,requestedTheme)) {
+    themeSelect.value = requestedTheme;
+    syncChoiceButtons();
+  }
   render();
   search?.addEventListener('input', filteredOptions);
   picker.addEventListener('change', render);
