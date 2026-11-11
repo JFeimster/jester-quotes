@@ -2,23 +2,22 @@
 import type { Quote } from '../types/quote';
 const { quote } = Astro.props as { quote: Quote };
 ---
-<section class="featured featured-2 feature-broadside" aria-label="Featured quote" data-id={quote.id}>
+<section class="featured featured-2 feature-broadside dada-home-feature" aria-label="Featured quote" data-id={quote.id}>
+  <div class="dada-feature-stamp" aria-hidden="true"><strong>FEATURED<br/>QUOTE</strong><span>JQ / 006</span></div>
   <div class="feature-broadside-copy">
-    <div class="feature-register"><span>RIOT PRESS / FEATURED DISPATCH</span><span>№ 005 / 100</span></div>
-    <p class="kicker">An inconvenient observation</p>
+    <div class="feature-register"><span>THE UNAUTHORIZED PRESS</span><span>ISSUE 001 / 100</span></div>
+    <p class="kicker">AN INCONVENIENT OBSERVATION</p>
     <blockquote><span aria-hidden="true">“</span>{quote.quote}<span aria-hidden="true">”</span></blockquote>
-    <div class="featured-bottom">
-      <p class="byline">— {quote.person}{quote.reference ? ` · ${quote.reference}` : ''}</p>
-      <div class="feature-actions">
-        <button class="mini-action favorite-toggle" type="button" data-quote-id={quote.id} data-person={quote.person} data-unsaved-label="♡ Save" data-saved-label="♥ Saved" aria-pressed="false" aria-label={`Save quote by ${quote.person} to favorites`}>♡ Save</button>
-        <button class="mini-action copy-quote" type="button" data-quote-text={`${quote.quote}\n— ${quote.person}`}>Copy</button>
-        <a class="mini-action" href={`/quotes/${quote.id}/`}>View quote ↗</a>
-        <a class="mini-action feature-create" href={`/studio/?quote=${quote.id}`}>Create art ↗</a>
-      </div>
-    </div>
+    <p class="byline">— {quote.person}{quote.reference ? ` · ${quote.reference}` : ''}</p>
   </div>
   <figure class="featured-art">
-    <img src={`/social/quotes/${quote.id}.png`} alt={`Social artwork preview for the featured quote by ${quote.person}; the complete quotation is printed beside it`} width="1200" height="630" loading="lazy" decoding="async"/>
-    <figcaption>THE FULL THOUGHT / CANONICAL ARCHIVE</figcaption>
+    <img src="/assets/dada-riot-v2/cover-truth-to-power.webp" alt="Distressed Dada collage artwork accompanying a quotation about kings and jesters" width="960" height="720" loading="lazy" decoding="async"/>
+    <figcaption>FOOLS SPEAK / KINGS LISTEN</figcaption>
   </figure>
+  <div class="feature-actions" aria-label="Featured quote actions">
+    <button class="mini-action favorite-toggle" type="button" data-quote-id={quote.id} data-person={quote.person} data-unsaved-label="♡ Save" data-saved-label="♥ Saved" aria-pressed="false" aria-label={`Save quote by ${quote.person} to favorites`}>♡ Save</button>
+    <button class="mini-action copy-quote" type="button" data-quote-text={`${quote.quote}\n— ${quote.person}`}>Copy</button>
+    <a class="mini-action" href={`/quotes/${quote.id}/`}>View quote ↗</a>
+    <a class="mini-action feature-create" href={`/studio/?quote=${quote.id}&theme=dada`}>Create art ↗</a>
+  </div>
 </section>

@@ -1,14 +1,19 @@
 ---
-import { collections } from '../lib/collections';
-import CollectionCard from './CollectionCard.astro';
+import { collections, collectionArtworkPath } from '../lib/collections';
 ---
-<section class="collections-teaser" aria-labelledby="collections-teaser-title">
-  <div class="section-title">
-    <div><p class="eyebrow">Not all jesters tell the same joke</p><h2 id="collections-teaser-title">Pick your <em>mischief.</em></h2></div>
-    <a class="section-text-link" href="/collections/">View all six collections ↗</a>
+<section class="collections-teaser dada-cover-section" aria-labelledby="collections-teaser-title">
+  <div class="dada-section-heading">
+    <h2 id="collections-teaser-title"><span>EXPLORE</span> COLLECTIONS</h2>
+    <a href="/collections/">VIEW ALL COLLECTIONS <span aria-hidden="true">↗</span></a>
   </div>
-  <p class="gallery-intro">Six editorial doorways into the same 100 quotations. Choose the kind of trouble you came for.</p>
-  <div class="collection-grid collection-grid--teaser">
-    {collections.slice(0, 3).map((collection, index) => <CollectionCard collection={collection} index={index} />)}
+  <div class="dada-cover-grid">
+    {collections.map((collection,index) => (
+      <a class="dada-cover" href={`/collections/${collection.slug}/`} aria-label={`Explore ${collection.title}, ${collection.quotes.length} quotations`}>
+        <img src={collectionArtworkPath(collection.slug)} alt="" width="960" height="720" loading="lazy" decoding="async"/>
+        <span class="dada-cover-top">NO. {String(index+1).padStart(2,'0')} / JESTER QUOTES</span>
+        <strong>{collection.title}</strong>
+        <span class="dada-cover-count">{collection.quotes.length} QUOTES <span aria-hidden="true">↗</span></span>
+      </a>
+    ))}
   </div>
 </section>
