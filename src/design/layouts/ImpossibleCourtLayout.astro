@@ -1,0 +1,35 @@
+---
+import QuoteCard from '../../components/QuoteCard.astro';
+import {getTheme,labThemeStyle} from '../theme-registry';
+import type {Quote} from '../../types/quote';
+const {samples}=Astro.props as {samples:[Quote,Quote,Quote]};
+const theme=getTheme('impossible-court');
+---
+<section class="lab-composition lab-composition--court" data-theme="impossible-court" style={labThemeStyle(theme)} aria-label="The Impossible Court surreal labyrinth">
+  <div class="lab-court-mast"><span>THE IMPOSSIBLE COURT</span><span>PROCEEDINGS / 006</span><span>↜ ↝</span></div>
+  <div class="lab-court-hero">
+    <div class="lab-court-copy">
+      <span class="lab-court-eyebrow">A JUDGMENT ON REALITY</span>
+      <h2>THE WORLD<br/>IS <em>UPSIDE</em><br/>DOWN.</h2>
+      <p>Excellent. Now perhaps we can finally see it clearly.</p>
+      <div class="lab-court-actions"><a href="/collections/carnival-absurdity/">ENTER THE PARADOX ↗</a><a href="/tricksters/">MEET THE TROUBLEMAKERS ✦</a></div>
+      <div class="lab-court-case"><span>CASE № 006 / THE PEOPLE v. CERTAINTY</span><strong>VERDICT: QUESTION EVERYTHING</strong></div>
+    </div>
+    <div class="lab-court-stage" role="img" aria-label="A surreal court of impossible arches, floating symbols and a checkerboard floor">
+      <div class="lab-court-moon" aria-hidden="true"></div>
+      <div class="lab-court-arch lab-court-arch--outer" aria-hidden="true"></div>
+      <div class="lab-court-arch lab-court-arch--inner" aria-hidden="true"><span>?</span></div>
+      <div class="lab-court-floor" aria-hidden="true"></div>
+      <div class="lab-court-floating lab-court-floating--one" aria-hidden="true">♟</div>
+      <div class="lab-court-floating lab-court-floating--two" aria-hidden="true">✧</div>
+      <div class="lab-court-floating lab-court-floating--three" aria-hidden="true">♜</div>
+      <div class="lab-court-stage-note" aria-hidden="true">THE EXIT IS THE ENTRANCE</div>
+    </div>
+  </div>
+  <div class="lab-court-caption"><span>EXHIBIT A / NOTHING IS WHAT IT SEEMS</span><span>THE WISDOM CHAMBERS</span></div>
+    <div class="lab-quote-grid lab-quote-grid--court" aria-label="Selected quotations">
+    <QuoteCard quote={samples[0]} index={0}/><QuoteCard quote={samples[1]} index={3}/><QuoteCard quote={samples[2]} index={5}/>
+  </div>
+
+  <div class="lab-court-footer"><span>ALL RULINGS SUBJECT TO REVERSAL</span><a href="/studio/">CREATE AN IMPOSSIBLE POSTER ↗</a></div>
+</section>

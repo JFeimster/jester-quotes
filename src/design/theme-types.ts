@@ -1,11 +1,11 @@
-export type ThemeId='midnight-carnival'|'neo-brutalist'|'velvet-gallery';
+export type ThemeId='midnight-carnival'|'neo-brutalist'|'velvet-gallery'|'dada-riot'|'neon-trickster'|'impossible-court'|'forbidden-library';
 export interface ThemeSpec {
  id:ThemeId;
  label:string;
  eyebrow:string;
  tagline:string;
  description:string;
- treatment:'editorial'|'brutalist'|'bento';
+ treatment:'editorial'|'brutalist'|'bento'|'dada'|'neon'|'surreal'|'library';
  heroAlignment:'split'|'stacked'|'asymmetric';
  tokens:{
   ink:string;paper:string;accent:string;contrast:string;surface:string;

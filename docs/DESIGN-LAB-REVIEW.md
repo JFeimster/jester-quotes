@@ -1,5 +1,7 @@
 # B03 Design Lab — approval brief
 
+> Historical initial three-theme review. For the current seven-theme expansion see [Design Lab Expansion](DESIGN-LAB-EXPANSION.md).
+
 **RUN:** 04/06 · **Issue:** #12 · **Status:** DRAFT until the user explicitly approves the three visual directions.
 
 ## Architecture

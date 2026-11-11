@@ -121,19 +121,27 @@ test('real headless Chrome exercises site routes, PNG/ZIP downloads and responsi
     assert.match(await app.eval(`document.querySelector('#daily-utc-date').textContent`),/^\d{4}-\d{2}-\d{2} · UTC$/);
     assert.ok((await app.eval(`document.querySelector('#daily-quote-text').textContent`)).length>30);
 
-    // Capture layout evidence at mobile/tablet and each of the three actual Lab compositions.
+    // Capture layout evidence at mobile/tablet and each of the seven distinct Lab compositions.
     for(const [width,height] of [[390,844],[768,1024]]){
       await app.viewport(width,height);
       for(const route of ['/','/studio/','/saved/','/lab/']){
         await app.navigate(route);
         const dims=await app.eval(`({width:document.documentElement.scrollWidth,viewport:innerWidth})`);
         assert.ok(dims.width<=dims.viewport+2,route+' horizontal scroll at '+width+'px: '+JSON.stringify(dims));
+        if(route==='/lab/'){
+          for(const theme of ['dada-riot','neon-trickster','impossible-court','forbidden-library']){
+            await app.eval(`document.querySelector('[data-lab-tab="${theme}"]').click()`);
+            await app.waitFor(`!document.querySelector('[data-lab-panel="${theme}"]').hidden`,'mobile theme '+theme);
+            const panel=await app.eval(`({width:document.documentElement.scrollWidth,viewport:innerWidth})`);
+            assert.ok(panel.width<=panel.viewport+2,theme+' horizontal scroll at '+width+'px: '+JSON.stringify(panel));
+          }
+        }
         await app.screenshot(`${route==='/'?'home':route.slice(1,-1)}-${width}`);
       }
     }
     await app.viewport(1440,900);
     await app.navigate('/lab/');
-    for(const theme of ['midnight-carnival','neo-brutalist','velvet-gallery']){
+    for(const theme of ['midnight-carnival','neo-brutalist','velvet-gallery','dada-riot','neon-trickster','impossible-court','forbidden-library']){
       await app.eval(`document.querySelector('[data-lab-tab="${theme}"]').click()`);
       await app.waitFor(`!document.querySelector('[data-lab-panel="${theme}"]').hidden`,'theme '+theme);
       assert.equal(await app.eval(`document.querySelector('[data-lab-tab="${theme}"]').getAttribute('aria-selected')`),'true');
