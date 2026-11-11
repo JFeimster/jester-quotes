@@ -1,0 +1,73 @@
+---
+import '../styles/global.css';
+import '../styles/publication.css';
+import '../styles/discovery.css';
+import '../styles/motion.css';
+import '../styles/dada-riot.css';
+import '../styles/navigation-discovery.css';
+import '../styles/dada-riot-finish.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { defaultDescription, safeJsonLd } from '../lib/seo';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  openGraphType?: 'website' | 'article';
+  robots?: string;
+  structuredData?: Record<string, unknown>;
+  pageTheme?: 'default' | 'riot-press';
+}
+
+const {
+  title = 'Jester Quotes — The Riot Press',
+  description = defaultDescription,
+  image = '/og-jester-quotes.png',
+  imageAlt = 'Dada Riot collage artwork for Jester Quotes',
+  openGraphType = 'website',
+  robots,
+  structuredData,
+  pageTheme = 'default'
+} = Astro.props;
+const origin = Astro.site ?? new URL('https://jester-quotes.vercel.app');
+const canonical = new URL(Astro.url.pathname, origin).toString();
+const preview = new URL(image, origin).toString();
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171310" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="canonical" href={canonical} />
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots ?? 'noindex, nofollow, noarchive'} />
+    <meta property="og:site_name" content="Jester Quotes" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content={openGraphType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={preview} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={preview} />
+    {structuredData && <script type="application/ld+json" set:html={safeJsonLd(structuredData)} />}
+    <title>{title}</title>
+  </head>
+  <body class={pageTheme==='riot-press' ? 'theme-riot-press' : undefined}>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <SiteHeader riot={true} />
+    <main id="main-content"><slot /></main>
+    <SiteFooter />
+  </body>
+</html>

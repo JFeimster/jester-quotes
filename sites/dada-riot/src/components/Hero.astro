@@ -1,0 +1,20 @@
+---
+import { quotes } from '../lib/quote-data';
+---
+<section class="hero hero-2" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow hero-eyebrow"><span class="hero-tiny-sigil" aria-hidden="true">✳</span> The unauthorized jester publication / issue 001</p>
+    <h1 id="hero-title"><span>Quotes for</span><span>people who</span><em>think <strong>differently.</strong></em></h1>
+    <p class="lede">Wit with a purpose. Wisdom without permission. One hundred sharp voices for anyone who refuses to think in straight lines.</p>
+    <div class="hero-actions">
+      <a class="btn" href="/quotes/">Explore quotes <span aria-hidden="true">↗</span></a>
+      <a class="btn secondary" href="/studio/">Create art <span aria-hidden="true">↗</span></a>
+    </div>
+    <button class="hero-surprise" id="surprise-me" data-quote-ids={quotes.map(q=>q.id).join(",")} type="button">Or let the archive choose for you <span aria-hidden="true">↗</span></button>
+  </div>
+  <figure class="hero-visual hero-visual-2">
+    <picture class="hero-art-picture"><source media="(max-width:700px)" srcset="/assets/dada-riot-v2/hero-mobile.webp" type="image/webp"/><img class="hero-art" src="/assets/dada-riot-v2/hero-desktop.webp" alt="An engraved court jester assembled from torn newspaper, vermilion paper and cobalt collage fragments" width="2000" height="1125" fetchpriority="high" decoding="async" /></picture>
+    <figcaption class="hero-art-caption"><span>Plate 001 — The fool</span><span>Wisdom has teeth / Riot Press</span></figcaption>
+    <div class="hero-stamp" aria-hidden="true"><span>UNAUTHORIZED</span><strong>JESTER<br/>PRESS</strong><span>ISSUE 001 / EST. TODAY</span></div>
+  </figure>
+</section>

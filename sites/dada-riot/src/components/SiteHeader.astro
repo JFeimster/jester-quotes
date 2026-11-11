@@ -1,0 +1,60 @@
+---
+interface Props { riot?: boolean; }
+const { riot = false } = Astro.props;
+const path = Astro.url.pathname;
+const quoteLinks = [
+  { href: '/quotes/', label: 'All Quotes', detail: 'The complete archive' },
+  { href: '/collections/', label: 'Collections', detail: 'Six ways into mischief' },
+  { href: '/daily/', label: 'Quote of the Day', detail: 'A little daily trouble' }
+];
+const mainLinks = [
+  { href: '/tricksters/', label: 'Tricksters' },
+  { href: '/videos/', label: 'Videos' },
+  { href: '/resources/', label: 'Resources' }
+];
+const current = (href: string) => path === href || (href !== '/' && path.startsWith(href));
+---
+<header class="site-header site-header-2 nav-v3 dada-masthead" data-edition={riot ? 'riot-press' : 'dada-riot'}>
+  <div class="topbar">
+    <a class="brand" href="/" aria-label="Jester Quotes — The Riot Press home">
+      <span class="brand-lockup"><img class="riot-wordmark" src="/assets/dada-riot-wordmark-light.svg" alt="Jester Quotes — The Riot Press" width="490" height="90"/><small>WISDOM. ABSURDITY. FREEDOM.</small></span>
+      <span class="riot-brand-supplement" aria-hidden="true">UNAUTHORIZED / 001</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <details class="desktop-quotes-menu">
+        <summary class:list={[{'is-current':current('/quotes/') || current('/collections/') || current('/daily/')}]} aria-label="Quotes navigation, expand submenu">
+          Quotes <span aria-hidden="true" class="nav-chevron">⌄</span>
+        </summary>
+        <div class="quotes-menu-panel">
+          <p class="menu-kicker">THE QUOTE ARCHIVE</p>
+          {quoteLinks.map(link=><a href={link.href} aria-current={current(link.href) ? 'page' : undefined}><strong>{link.label}</strong><small>{link.detail}</small></a>)}
+        </div>
+      </details>
+      {mainLinks.map(link=><a href={link.href} aria-current={current(link.href) ? 'page' : undefined}>{link.label}</a>)}
+      <a class="nav-icon nav-search-link" href="/search/" aria-label="Search the entire site" title="Search the site" aria-current={current('/search/') ? 'page' : undefined}>
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10.7" cy="10.7" r="6.3"/><path d="m15.5 15.5 5 5"/></svg>
+      </a>
+      <a class="nav-icon nav-saved-link" href="/saved/" aria-label="Your saved quotes" title="Saved quotes" aria-current={current('/saved/') ? 'page' : undefined}>
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v17l-6-4-6 4z"/></svg>
+      </a>
+      <a href="/studio/" class="nav-studio-cta" aria-label="Open Quote Studio and design a poster">MAKE TROUBLE <span aria-hidden="true">↗</span></a>
+    </nav>
+    <details class="mobile-nav">
+      <summary aria-label="Toggle navigation menu">
+        <span>Menu</span>
+        <span class="mobile-menu-open" aria-hidden="true">☰</span>
+        <span class="mobile-menu-close" aria-hidden="true">✕</span>
+      </summary>
+      <nav aria-label="Mobile navigation">
+        <span class="mobile-nav-heading">QUOTES</span>
+        {quoteLinks.map(link=><a href={link.href} aria-current={current(link.href) ? 'page' : undefined}>{link.label}</a>)}
+        <span class="mobile-nav-heading">EXPLORE</span>
+        {mainLinks.map(link=><a href={link.href} aria-current={current(link.href) ? 'page' : undefined}>{link.label}</a>)}
+        <a href="/search/" aria-current={current('/search/') ? 'page' : undefined}>Search the Site</a>
+        <a href="/saved/" aria-current={current('/saved/') ? 'page' : undefined}>Saved Quotes</a>
+        <a href="/studio/" class="nav-studio-cta" aria-label="Open Quote Studio and design a poster">MAKE TROUBLE <span aria-hidden="true">↗</span></a>
+      </nav>
+    </details>
+  </div>
+  <script src="../scripts/site-navigation.ts"></script>
+</header>

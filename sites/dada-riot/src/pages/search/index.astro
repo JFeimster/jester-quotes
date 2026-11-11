@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/site-search.css';
+---
+<BaseLayout title="Search Jester Quotes — Quotes, Tricksters, Videos & Resources" description="Search the entire Jester Quotes carnival: the quotation archive, curated collections, mythology, videos, and reference resources." robots="noindex, follow">
+  <div class="wrap site-search-page">
+    <header class="site-search-hero">
+      <p class="eyebrow">The index of beautiful trouble</p>
+      <h1>Find your <em>rabbit hole.</em></h1>
+      <p class="lede">One search across quotes, collections, tricksters, videos, and the Resource Vault. No account. No algorithm deciding what you should find.</p>
+    </header>
+    <section class="site-search-panel" aria-label="Search all site content">
+      <form role="search" id="site-search-form">
+        <label for="site-search-input">What's on your mind?</label>
+        <div class="site-search-field">
+          <input type="search" id="site-search-input" name="q" placeholder="Try Alan Watts, Joker, Anansi, shadow, satire…" autocomplete="off" spellcheck="false"/>
+          <button class="site-search-submit" type="submit">SEARCH ↗</button>
+        </div>
+      </form>
+      <div class="site-search-filter" role="group" aria-label="Filter search by type">
+        <button type="button" data-site-filter="all" aria-pressed="true">Everything</button>
+        <button type="button" data-site-filter="quotes" aria-pressed="false">Quotes</button>
+        <button type="button" data-site-filter="collections" aria-pressed="false">Collections</button>
+        <button type="button" data-site-filter="tricksters" aria-pressed="false">Tricksters</button>
+        <button type="button" data-site-filter="videos" aria-pressed="false">Videos</button>
+        <button type="button" data-site-filter="resources" aria-pressed="false">Resources</button>
+      </div>
+      <div class="site-search-status" id="site-search-status" role="status" aria-live="polite">Preparing the index…</div>
+      <ul id="site-search-results" class="site-search-results" aria-label="Search results"></ul>
+      <p id="site-search-empty" class="site-search-empty" hidden>No matching content. Try a different phrase or select Everything.</p>
+      <noscript><p class="site-search-noscript">Search needs JavaScript. You can still <a href="/quotes/">browse quotes</a>, <a href="/tricksters/">meet tricksters</a>, <a href="/videos/">watch videos</a>, or <a href="/resources/">explore resources</a>.</p></noscript>
+    </section>
+  </div>
+  <script src="../../scripts/site-search.ts"></script>
+</BaseLayout>

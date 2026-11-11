@@ -1,0 +1,74 @@
+---
+import '../../styles/tricksters.css';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { tricksters, tricksterKinds, tricksterMedia, tricksterUrl } from '../../lib/tricksters';
+import { collections } from '../../lib/collections';
+import type { Trickster } from '../../types/trickster';
+import { relatedMediaForTrickster } from '../../lib/content-connections';
+export function getStaticPaths() {
+  return tricksters.filter(item=>item.verification_status==='verified').map(record=>({params:{slug:record.slug},props:{record}}));
+}
+const { record } = Astro.props as { record: Trickster };
+const relatedCollections = record.related_collection_slugs
+  .map(slug=>collections.find(item=>item.slug===slug))
+  .filter((x):x is (typeof collections)[number]=>Boolean(x));
+const relatedMedia = relatedMediaForTrickster(record);
+const others = tricksters.filter(item=>item.id!==record.id && item.tags.some(tag=>record.tags.includes(tag))).slice(0,3);
+---
+<BaseLayout
+  title={`${record.name} — Sourced Trickster Profile | Jester Quotes`}
+  description={record.description}
+>
+  <div class="wrap trickster-detail">
+    <nav aria-label="Trickster breadcrumb" class="trickster-breadcrumb"><a href="/tricksters/">← All tricksters</a><span aria-hidden="true">/</span><span>{record.name}</span></nav>
+    <header class="trickster-detail-head">
+      <div>
+        <p class="eyebrow">The trickster files / Verified profile</p>
+        <h1>{record.name}</h1>
+        <p class="trickster-origin">{record.culture_or_origin}</p>
+        <div class="trickster-tags">
+          <span class="trickster-type">{tricksterKinds[record.kind]}</span>
+          {record.media.map(type=><span>{tricksterMedia[type]}</span>)}
+        </div>
+      </div>
+      <div class="trickster-portrait-placeholder" aria-hidden="true"><span>✳</span><small>NO UNLICENSED ARTWORK</small></div>
+    </header>
+    <div class="trickster-detail-grid">
+      <section class="trickster-detail-main" aria-labelledby="trickster-story-heading">
+        <p class="eyebrow">The story behind the mask</p>
+        <h2 id="trickster-story-heading">Beyond the label.</h2>
+        <p class="trickster-introduction">{record.description}</p>
+        <p>“Trickster” is an editorial discovery category, not a claim that every community or original text uses the same term. Follow the sources for fuller context and interpretive differences.</p>
+        <h3>Research themes</h3>
+        <div class="trickster-tags">{record.tags.map(tag=><span>{tag.replaceAll('-',' ')}</span>)}</div>
+      </section>
+      <aside class="trickster-sources" aria-labelledby="trickster-sources-heading">
+        <p class="eyebrow">Documentation</p>
+        <h2 id="trickster-sources-heading">Follow the evidence.</h2>
+        <ol>{record.sources.map(source=><li><strong>{source.publisher}</strong><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a></li>)}</ol>
+        <p>Editorially verified on {record.verified_at}. No third-party character images are hosted for this profile.</p>
+      </aside>
+    </div>
+    {relatedCollections.length>0 && <section class="trickster-related" aria-labelledby="related-collection-title">
+      <p class="eyebrow">Curated connections / Editorial only</p>
+      <h2 id="related-collection-title">Explore the same questions.</h2>
+      <div class="trickster-related-links">{relatedCollections.map(collection=><a href={`/collections/${collection.slug}/`}><span>{collection.eyebrow}</span><strong>{collection.title}</strong><span aria-hidden="true">↗</span></a>)}</div>
+      <p class="trickster-relationship-note">These links represent broad themes, not a claim that the quoted authors discussed {record.name}.</p>
+    </section>}
+    {others.length>0 && <section class="trickster-related" aria-labelledby="other-tricksters-title">
+      <p class="eyebrow">Continue researching</p>
+      <h2 id="other-tricksters-title">Other curious figures.</h2>
+      <div class="trickster-related-links">{others.map(other=><a href={tricksterUrl(other)}><span>{tricksterKinds[other.kind]}</span><strong>{other.name}</strong><span aria-hidden="true">↗</span></a>)}</div>
+    </section>}
+    {(relatedMedia.resources.length>0 || relatedMedia.videos.length>0) && <section class="trickster-related" aria-labelledby="trickster-media-title">
+      <p class="eyebrow">Keep exploring / Selected references</p>
+      <h2 id="trickster-media-title">Watch &amp; read more.</h2>
+      <div class="trickster-related-links">
+        {relatedMedia.videos.map(video=><a href={'/videos/#'+video.id}><span>Video · {video.channel_title}</span><strong>{video.title}</strong><span aria-hidden="true">↗</span></a>)}
+        {relatedMedia.resources.map(resource=><a href={'/resources/#'+resource.id}><span>Resource · {resource.source_name}</span><strong>{resource.title}</strong><span aria-hidden="true">↗</span></a>)}
+      </div>
+      <p class="trickster-relationship-note">These are topical reading and viewing connections, not claims that the original traditions or creators endorse one another.</p>
+    </section>}
+    <p class="curation-note">A short original index entry, not a substitute for the linked cultural and historical sources. <a href="/sources/">Read the source and corrections policy</a>.</p>
+  </div>
+</BaseLayout>

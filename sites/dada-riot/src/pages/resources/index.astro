@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ResourceCard from '../../components/ResourceCard.astro';
+import { resources, resourceTypes, resourceTags } from '../../lib/resource-catalog';
+import '../../styles/resource-vault.css';
+---
+<BaseLayout title="Jester & Trickster Resource Vault | Jester Quotes"
+ description="Curated research and essays on tricksters, fools, mythology, Jungian psychology, satire, philosophy, and Jester branding.">
+<div class="wrap vault-page">
+  <header class="vault-hero">
+    <div class="vault-hero-copy">
+      <p class="eyebrow">The reference desk / Behind the mythology</p>
+      <h1>Knowledge has <em>no dress code.</em></h1>
+      <p class="lede">Explore folklore archives, scholarly research, independent criticism, philosophy, and Jester branding. Every source links to its original publisher.</p>
+      <div class="vault-hero-actions"><a class="btn" href="#vault-list">Explore {resources.length} sources ↗</a>
+        <a class="btn secondary" href="/tricksters/">Meet the Tricksters ↗</a></div>
+    </div>
+    <aside class="vault-hero-art" aria-label="Research collection notes">
+      <span class="vault-hero-icon" aria-hidden="true">✳</span>
+      <p class="eyebrow">THE OPEN ARCHIVE</p>
+      <h2>Read beyond <em>the punchline.</em></h2>
+      <p>Every card points to its publisher. Every summary is original. We link to sources; we do not republish their articles.</p>
+      <a href="/sources/">How this collection is researched ↗</a>
+    </aside>
+  </header>
+  <section id="vault-list" class="vault-list" aria-labelledby="vault-title" data-catalog="resources">
+    <div class="section-title"><div><p class="eyebrow">Curated reading / No paywalled content reproduced</p><h2 id="vault-title">The reference <em>vault.</em></h2></div>
+      <a class="section-text-link" href="/videos/">Switch to videos ↗</a></div>
+    <p class="vault-intro">Search by topic or publisher, then filter by source type and subject. Scholarly research, independent essays, and personal interpretations are distinguished by their publishers; external access may change.</p>
+    <div class="vault-controls" role="search" aria-label="Filter resource collection">
+      <div class="vault-field vault-search"><label for="catalog-search">Search reference materials</label><input id="catalog-search" type="search" autocomplete="off" placeholder="Try Joker, Jung, Alan Watts, Anansi…"/></div>
+      <div class="vault-field"><label for="catalog-type">Source type</label><select id="catalog-type"><option value="all">All source types</option>{Object.entries(resourceTypes).filter(([key])=>resources.some(r=>r.type===key)).map(([key,label])=><option value={key}>{label}</option>)}</select></div>
+      <div class="vault-field"><label for="catalog-tag">Topic</label><select id="catalog-tag"><option value="all">All topics</option>{resourceTags.map(tag=><option value={tag}>{tag.replaceAll('-',' ')}</option>)}</select></div>
+      <button id="catalog-reset" type="button">Clear filters</button>
+    </div>
+    <div class="vault-results"><span id="catalog-count" aria-live="polite">{resources.length} curated sources</span><span>ORIGINAL LINKS · NO REHOSTING</span></div>
+    <div class="vault-grid" id="catalog-grid">{resources.map((entry,index)=><ResourceCard entry={entry} index={index}/>)}</div>
+    <p id="catalog-empty" class="vault-empty" hidden>No sources match these filters. Try another topic or clear filters.</p>
+  </section>
+  <aside class="vault-policy"><strong>Source-first, not scraper-first.</strong> Inclusion here does not imply publisher endorsement or permission to reproduce articles, images, transcripts, or videos. <a href="/sources/">View editorial policy</a>.</aside>
+</div>
+<script src="../../scripts/resource-filters.ts"></script>
+</BaseLayout>

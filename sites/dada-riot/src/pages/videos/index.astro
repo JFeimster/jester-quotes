@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import VideoCard from '../../components/VideoCard.astro';
+import { videos, videoTags } from '../../lib/resource-catalog';
+import '../../styles/resource-vault.css';
+---
+<BaseLayout title="Jester Video Library — Tricksters, Fools & Archetypes | Jester Quotes"
+ description="A curated library of videos on tricksters, fools, the Joker archetype, mythology, psychology and creative expression. YouTube players load automatically when near the viewport; playback starts only when you press Play.">
+<div class="wrap vault-page">
+  <header class="vault-hero vault-video-hero">
+    <div class="vault-hero-copy">
+      <p class="eyebrow">The screening room / Storytelling in motion</p>
+      <h1>Watch the <em>mischief unfold.</em></h1>
+      <p class="lede">{videos.length} curated videos from verified source listings, spanning folklore, philosophy, film and the Joker archetype. Players are embedded on the page and ready to play without an extra loading step.</p>
+      <div class="vault-hero-actions"><a class="btn" href="#vault-list">Browse {videos.length} videos ↗</a>
+        <a class="btn secondary" href="/resources/">Explore reading ↗</a></div>
+    </div>
+    <aside class="vault-hero-art vault-hero-art--video" aria-label="Video viewing and privacy">
+      <span class="vault-hero-icon" aria-hidden="true">▷</span>
+      <p class="eyebrow">YOUR PLAYLIST, YOUR CALL</p>
+      <h2>Play stories. <em>Keep control.</em></h2>
+      <p>No autoplay. Videos are streamed from YouTube, never downloaded or rehosted. Embedded players may contact YouTube when they approach the viewport.</p>
+    </aside>
+  </header>
+  <section id="vault-list" class="vault-list" aria-labelledby="vault-title" data-catalog="videos">
+    <div class="section-title"><div><p class="eyebrow">Screening notes / Verified channels</p><h2 id="vault-title">The screening <em>room.</em></h2></div>
+      <a class="section-text-link" href="/resources/">Open Reference Vault ↗</a></div>
+    <p class="vault-intro">Filter by creator or topic. Embedded players load automatically as you scroll. Some uploads may restrict third-party embedding; use the YouTube link if playback is blocked.</p>
+    <div class="vault-controls" role="search" aria-label="Filter videos">
+      <div class="vault-field vault-search"><label for="catalog-search">Search video lessons</label><input id="catalog-search" type="search" autocomplete="off" placeholder="Try Joker, Alan Watts, Loki, tricksters…"/></div>
+      <div class="vault-field"><label for="catalog-channel">Channel</label><select id="catalog-channel"><option value="all">All channels</option>{[...new Set(videos.map(v=>v.channel_title))].map(channel=><option value={channel}>{channel}</option>)}</select></div>
+      <div class="vault-field"><label for="catalog-tag">Theme</label><select id="catalog-tag"><option value="all">All themes</option>{videoTags.map(tag=><option value={tag}>{tag.replaceAll('-',' ')}</option>)}</select></div>
+      <button id="catalog-reset" type="button">Clear filters</button>
+    </div>
+    <div class="vault-results"><span id="catalog-count" aria-live="polite">{videos.length} curated videos</span><span>EMBEDDED YOUTUBE · NO AUTOPLAY</span></div>
+    <div class="vault-grid vault-grid--videos" id="catalog-grid">{videos.map((entry,index)=><VideoCard entry={entry} index={index}/>)}</div>
+    <p id="catalog-empty" class="vault-empty" hidden>No videos match those filters. Clear filters to see all lessons.</p>
+  </section>
+  <aside class="vault-policy"><strong>Respect the creators.</strong> Videos remain hosted by their publishers. Privacy-enhanced YouTube players may load when near the viewport; playback never autostarts. Nothing is downloaded or rehosted. <a href="/sources/">Source policy</a>.</aside>
+</div>
+<script src="../../scripts/resource-filters.ts"></script>
+</BaseLayout>

@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+# Public publishing safeguards
+*.pem
+*.p12
+*.pfx
+*.key
+
+
+# Browser regression capture output (local only)
+.qa-screenshots/
+.playwright-cli/

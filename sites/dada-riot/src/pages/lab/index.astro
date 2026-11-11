@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ThemeSwitcher from '../../components/ThemeSwitcher.astro';
+import EditorialLayout from '../../design/layouts/EditorialLayout.astro';
+import BrutalistLayout from '../../design/layouts/BrutalistLayout.astro';
+import BentoLayout from '../../design/layouts/BentoLayout.astro';
+import DadaRiotLayout from '../../design/layouts/DadaRiotLayout.astro';
+import NeonTricksterLayout from '../../design/layouts/NeonTricksterLayout.astro';
+import ImpossibleCourtLayout from '../../design/layouts/ImpossibleCourtLayout.astro';
+import ForbiddenLibraryLayout from '../../design/layouts/ForbiddenLibraryLayout.astro';
+import RiotPressLayout from '../../design/layouts/RiotPressLayout.astro';
+import {themeCatalog,getTheme} from '../../design/theme-registry';
+import {quotes} from '../../lib/quote-data';
+import type {Quote} from '../../types/quote';
+import type {ThemeId} from '../../design/theme-types';
+import '../../styles/design-variants.css';
+import '../../styles/lab-new-themes.css';
+import '../../styles/riot-press.css';
+
+function samplesFor(ids:readonly string[]):[Quote,Quote,Quote] {
+  if(ids.length!==3) throw new Error('Each theme needs three distinct canonical quotes');
+  const list=ids.map(id=>quotes.find(q=>q.id===id));
+  if(list.some(value=>!value)) throw new Error('Theme references a missing canonical quote');
+  return list as [Quote,Quote,Quote];
+}
+function samplesForTheme(id:ThemeId):[Quote,Quote,Quote] {
+  return samplesFor(getTheme(id).sampleQuoteIds);
+}
+const midnightSamples=samplesForTheme('midnight-carnival');
+const brutalistSamples=samplesForTheme('neo-brutalist');
+const velvetSamples=samplesForTheme('velvet-gallery');
+const dadaSamples=samplesForTheme('dada-riot');
+const neonSamples=samplesForTheme('neon-trickster');
+const courtSamples=samplesForTheme('impossible-court');
+const librarySamples=samplesForTheme('forbidden-library');
+const riotSamples=samplesForTheme('riot-press');
+---
+<BaseLayout
+  title="Design Lab — Jester Quotes (Private Visual Preview)"
+  description="Explore seven experimental Jester Quotes design worlds built from one verified quotation archive."
+  robots="noindex, nofollow"
+>
+<div class="wrap theme-lab">
+  <header class="lab-page-header">
+    <p class="eyebrow">Internal visual experiment / {String(themeCatalog.length).padStart(2,'0')} directions</p>
+    <h1>Eight worlds. <em>One irreverent voice.</em></h1>
+    <p class="lede">Same 100 quotations, real actions, and shared content—eight radically different ways to display them. Choose a world below.</p>
+    <p class="lab-page-disclaimer">Preview only · Not in the sitemap · Public site remains Midnight Carnival</p>
+  </header>
+  <ThemeSwitcher />
+  <div id="lab-panel-midnight-carnival" role="tabpanel" aria-labelledby="lab-tab-midnight-carnival" data-lab-panel="midnight-carnival">
+    <EditorialLayout samples={midnightSamples}/>
+  </div>
+  <div id="lab-panel-neo-brutalist" role="tabpanel" aria-labelledby="lab-tab-neo-brutalist" data-lab-panel="neo-brutalist" hidden>
+    <BrutalistLayout samples={brutalistSamples}/>
+  </div>
+  <div id="lab-panel-velvet-gallery" role="tabpanel" aria-labelledby="lab-tab-velvet-gallery" data-lab-panel="velvet-gallery" hidden>
+    <BentoLayout samples={velvetSamples}/>
+  </div>
+  <div id="lab-panel-dada-riot" role="tabpanel" aria-labelledby="lab-tab-dada-riot" data-lab-panel="dada-riot" hidden>
+    <DadaRiotLayout samples={dadaSamples}/>
+  </div>
+  <div id="lab-panel-neon-trickster" role="tabpanel" aria-labelledby="lab-tab-neon-trickster" data-lab-panel="neon-trickster" hidden>
+    <NeonTricksterLayout samples={neonSamples}/>
+  </div>
+  <div id="lab-panel-impossible-court" role="tabpanel" aria-labelledby="lab-tab-impossible-court" data-lab-panel="impossible-court" hidden>
+    <ImpossibleCourtLayout samples={courtSamples}/>
+  </div>
+  <div id="lab-panel-forbidden-library" role="tabpanel" aria-labelledby="lab-tab-forbidden-library" data-lab-panel="forbidden-library" hidden>
+    <ForbiddenLibraryLayout samples={librarySamples}/>
+  </div>
+  <div id="lab-panel-riot-press" role="tabpanel" aria-labelledby="lab-tab-riot-press" data-lab-panel="riot-press" hidden>
+    <RiotPressLayout samples={riotSamples}/>
+  </div>
+  <p id="interaction-status" class="sr-only" role="status" aria-live="polite"></p>
+  <aside class="lab-endnote"><strong>One laboratory. Eight distinct worlds.</strong> Quote cards use the same canonical IDs and working Save, Copy and Create Art actions. No competing quote database, replacement Studio or published routes.</aside>
+</div>
+<script src="../../scripts/theme-lab.ts"></script>
+<script src="../../scripts/quote-explorer.ts"></script>
+</BaseLayout>

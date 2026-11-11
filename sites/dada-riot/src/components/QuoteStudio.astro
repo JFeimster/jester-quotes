@@ -1,0 +1,82 @@
+---
+import { quotes } from '../lib/quote-data';
+import { studioFormats, studioThemes } from '../lib/studio-config';
+import '../styles/quote-poster.css';
+---
+<section class="studio-grid studio-grid-2" aria-label="Quote artwork studio">
+  <div class="studio-workbench studio-workbench-2">
+    <p class="eyebrow">01 / Creative controls</p>
+    <h2>Make a little <em>trouble.</em></h2>
+    <p class="studio-intro">Pick a voice, a canvas, and a mood. Every word survives. Long quotations become numbered, downloadable slides.</p>
+    <div class="studio-field">
+      <label for="studio-search">Find your voice</label>
+      <input id="studio-search" type="search" autocomplete="off" placeholder="Search 100 quotes by words or author…" />
+      <span class="studio-helper" id="studio-result-count">100 quotes available</span>
+    </div>
+    <div class="studio-field">
+      <label for="studio-quote">Selected quotation</label>
+      <select id="studio-quote">
+        {quotes.map((quote,index) => <option value={quote.id} selected={quote.id === 'jester-quote-003'}>#{String(index+1).padStart(3,'0')} · {quote.person} · {quote.quote.replace(/\s+/g,' ').slice(0,80)}</option>)}
+      </select>
+      <a id="studio-source" class="studio-source-link" href="/quotes/jester-quote-003/">Read the complete quote and attribution ↗</a>
+    </div>
+    <fieldset class="studio-choice-fieldset">
+      <legend>Choose your canvas</legend>
+      <div class="studio-choice-grid studio-choice-grid--formats" role="group" aria-label="Canvas format">
+        {Object.entries(studioFormats).map(([key, value]) => (
+          <button class="studio-choice studio-format-choice" type="button" data-studio-format={key} aria-pressed={key === 'square' ? 'true' : 'false'} aria-label={value.label}>
+            <span class:list={['format-glyph', `format-glyph--${key}`]} aria-hidden="true"></span>
+            <strong>{key === 'landscape' ? 'Wide' : key.charAt(0).toUpperCase() + key.slice(1)}</strong>
+            <small>{key === 'landscape' ? '1.91:1' : key === 'portrait' ? '4:5' : key === 'story' ? '9:16' : '1:1'}</small>
+          </button>
+        ))}
+      </div>
+    </fieldset>
+    <fieldset class="studio-choice-fieldset">
+      <legend>Choose your artwork style</legend>
+      <div class="studio-choice-grid studio-choice-grid--themes" role="group" aria-label="Artwork style">
+        {Object.entries(studioThemes).map(([key, value]) => (
+          <button class="studio-choice studio-theme-choice" type="button" data-studio-theme={key} aria-pressed={key === 'dada' ? 'true' : 'false'}>
+            <span class="theme-swatch" style={`--swatch-bg:${value.background};--swatch-accent:${value.accent}`} aria-hidden="true"></span>
+            <strong>{value.label}</strong>
+          </button>
+        ))}
+      </div>
+    </fieldset>
+    <details class="studio-native-panel">
+      <summary>Prefer dropdown controls?</summary>
+      <div class="studio-field-row">
+        <div class="studio-field">
+          <label for="studio-format">Canvas format</label>
+          <select id="studio-format">
+            {Object.entries(studioFormats).map(([key,value]) => <option value={key}>{value.label}</option>)}
+          </select>
+        </div>
+        <div class="studio-field">
+          <label for="studio-theme">Artwork style</label>
+          <select id="studio-theme">
+            {Object.entries(studioThemes).map(([key,value]) => <option value={key} selected={key === 'dada'}>{value.label}</option>)}
+          </select>
+        </div>
+      </div>
+    </details>
+    <label class="studio-check"><input type="checkbox" id="studio-border" checked /> Include decorative frame</label>
+    <div class="studio-action-row">
+      <button type="button" class="btn secondary" id="studio-random">Surprise me ✳</button>
+      <button type="button" class="btn" id="studio-download">Download complete PNG ↓</button>
+    </div>
+    <p id="studio-status" class="studio-status" role="status" aria-live="polite">Ready to render artwork.</p>
+    <p class="studio-fineprint">Every export includes the complete quote and author. Long text becomes a ZIP of numbered PNG slides, never a clipped card. Sharing previews can be labeled excerpts. <a href="/sources/">Source information ↗</a></p>
+  </div>
+  <div class="studio-stage studio-stage-2">
+    <div class="studio-stage-heading"><span>02 / Live artwork</span><span id="studio-dimensions">1080 × 1080 pixels</span></div>
+    <div class="studio-canvas-frame"><canvas id="studio-canvas" width="1080" height="1080" role="img" aria-label="Preview of the selected quote artwork"></canvas></div>
+    <nav class="studio-slide-nav" aria-label="Quote artwork slides">
+      <button type="button" id="studio-prev" class="mini-action" disabled>← Previous</button>
+      <span id="studio-page-info" aria-live="polite">Slide 1 of 1</span>
+      <button type="button" id="studio-next" class="mini-action" disabled>Next →</button>
+    </nav>
+    <p class="studio-stage-caption"><span class="stage-pulse" aria-hidden="true"></span> Real-size PNG output · No signup · No watermark</p>
+  </div>
+</section>
+<script src="../scripts/studio.ts"></script>

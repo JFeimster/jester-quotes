@@ -1,0 +1,32 @@
+---
+import QuoteCard from '../../components/QuoteCard.astro';
+import {getTheme,labThemeStyle} from '../theme-registry';
+import type {Quote} from '../../types/quote';
+const {samples}=Astro.props as {samples:[Quote,Quote,Quote]};
+const theme=getTheme('neon-trickster');
+---
+<section class="lab-composition lab-composition--neon" data-theme="neon-trickster" style={labThemeStyle(theme)} aria-label="Neon Trickster futuristic signal deck">
+  <div class="lab-neon-status"><span><span class="lab-neon-dot" aria-hidden="true"></span> JESTER//NET</span><span>CHANNEL 05 — INDEPENDENT SIGNAL</span><span>ACCESS: PUBLIC</span></div>
+  <div class="lab-neon-hero">
+    <div class="lab-neon-copy">
+      <div class="lab-neon-kicker">[ SYSTEM NOTICE: PERCEPTION UPDATED ]</div>
+      <h2>HACK THE<br/><span>NARRATIVE</span><span class="lab-neon-period">.</span></h2>
+      <p>Ideas can be dangerous. Good ones should come with a warning label.</p>
+      <div class="lab-neon-actions"><a href="/collections/truth-to-power/">ENTER THE FEED ↗</a><a href="/studio/">GENERATE ART ✳</a></div>
+      <div class="lab-neon-stats" aria-label="Archive statistics"><span>100 <small>VOICES</small></span><span>06 <small>COLLECTIONS</small></span><span>∞ <small>QUESTIONS</small></span></div>
+    </div>
+    <div class="lab-neon-hologram" aria-label="Abstract neon jester signal illustration" role="img">
+      <div class="lab-neon-orbit lab-neon-orbit--one" aria-hidden="true"></div>
+      <div class="lab-neon-orbit lab-neon-orbit--two" aria-hidden="true"></div>
+      <div class="lab-neon-diamond" aria-hidden="true"><span>✳</span></div>
+      <div class="lab-neon-crosshair" aria-hidden="true"></div>
+      <div class="lab-neon-hud"><span>FREQUENCY  //  004.777</span><strong>TRICKSTER<br/>PROTOCOL</strong><small>SIGNAL STABLE  ◆  NO KINGS DETECTED</small></div>
+    </div>
+  </div>
+  <div class="lab-neon-ticker"><span>◉ UNFILTERED WISDOM</span><span>✳ THE COURT HAS BEEN DISCONNECTED</span><span>◇ TRANSMISSION 005</span></div>
+    <div class="lab-quote-grid lab-quote-grid--neon" aria-label="Selected quotations">
+    <QuoteCard quote={samples[0]} index={0}/><QuoteCard quote={samples[1]} index={3}/><QuoteCard quote={samples[2]} index={5}/>
+  </div>
+
+  <div class="lab-neon-footer"><span>ENCRYPTED? NO. INCONVENIENT? CERTAINLY.</span><a href="/videos/">EXPLORE THE SIGNAL ↗</a></div>
+</section>
