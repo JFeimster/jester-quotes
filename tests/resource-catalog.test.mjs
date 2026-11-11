@@ -38,7 +38,7 @@ test('Resource Vault has original, verified publisher references and valid relat
 });
 
 test('Video Library has real YouTube URLs, correct credited channels and source evidence',()=>{
-  assert.equal(videos.length,26);
+  assert.equal(videos.length,87);
   assert.equal(new Set(videos.map(x=>x.id)).size,videos.length);
   assert.equal(new Set(videos.map(x=>x.slug)).size,videos.length);
   assert.equal(new Set(videos.map(x=>x.video_id)).size,videos.length);
@@ -49,7 +49,7 @@ test('Video Library has real YouTube URLs, correct credited channels and source 
     if (!video.playlist_id) assert.ok(expected.has(video.video_id),'Original video ID changed');
     else {
       assert.equal(video.playlist_id,'PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq');
-      assert.ok(Number.isInteger(video.playlist_position) && video.playlist_position>=1 && video.playlist_position<=30);
+      assert.ok(Number.isInteger(video.playlist_position) && video.playlist_position>=1 && video.playlist_position<=92);
     }
     assert.equal(video.youtube_url,`https://www.youtube.com/watch?v=${video.video_id}`);
     assert.ok(video.channel_title.trim().length>0);
@@ -66,6 +66,18 @@ test('Video Library has real YouTube URLs, correct credited channels and source 
   for(const item of snapshot.entries) {
     if(item.imported) assert.ok(included.has(item.video_id),'Missing playlist entry at '+item.position);
     else assert.ok(!included.has(item.video_id),'Unavailable source was added to playable registry');
+  }
+  const remainder=JSON.parse(read('data/playlist-joker-remaining.json'));
+  assert.equal(remainder.playlist_id,snapshot.playlist_id);
+  assert.equal(remainder.original_playlist_count,92);
+  assert.equal(remainder.entries.length,62);
+  assert.deepEqual(remainder.entries.map(x=>x.position),Array.from({length:62},(_,i)=>i+31));
+  const additions=videos.filter(x=>x.playlist_id===remainder.playlist_id && x.playlist_position>30);
+  assert.equal(additions.length,61);
+  for(const record of remainder.entries) {
+    const found=additions.find(x=>x.video_id===record.video_id);
+    assert.equal(Boolean(found),record.imported, 'Playlist remainder discrepancy at '+record.position);
+    if(found) assert.equal(found.playlist_position,record.position);
   }
 });
 
