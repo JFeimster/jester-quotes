@@ -2,22 +2,43 @@
 import { resolveAssetPath } from '../lib/assets';
 const brandLogo = resolveAssetPath('brand-logo-horizontal');
 const brandLogoWebp = resolveAssetPath('brand-logo-horizontal-webp');
+const links = [
+  { href: '/#explore', label: 'Explore' },
+  { href: '/daily/', label: 'Daily' },
+  { href: '/collections/', label: 'Collections' },
+  { href: '/tricksters/', label: 'Tricksters' },
+  { href: '/resources/', label: 'Resources' },
+  { href: '/videos/', label: 'Videos' },
+  { href: '/saved/', label: 'Saved' },
+  { href: '/about/', label: 'The Archetype' },
+  { href: '/studio/', label: 'Open Quote Studio', cta: true },
+];
 ---
 <header class="wrap site-header site-header-2">
   <div class="topbar">
     <a class="brand" href="/" aria-label="Jester Quotes — Home">
       {brandLogo ? <picture>{brandLogoWebp && <source srcset={brandLogoWebp} type="image/webp" />}<img class="brand-logo" src={brandLogo} alt="Jester Quotes" width="150" height="84" /></picture> : <span class="brand-lockup"><strong>JESTER<span class="brand-dot">.</span></strong><small>Quotes / The Carnival</small></span>}
     </a>
-    <nav aria-label="Main navigation">
-      <a href="/#explore">Explore</a>
-      <a href="/daily/">Daily</a>
-      <a href="/collections/">Collections</a>
-      <a href="/tricksters/">Tricksters</a>
-      <a href="/resources/">Resources</a>
-      <a href="/videos/">Videos</a>
-      <a href="/saved/">Saved</a>
-      <a href="/about/">The Archetype</a>
-      <a class="nav-studio-cta" href="/studio/">Open Quote Studio <span aria-hidden="true">↗</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      {links.map((link) => (
+        <a href={link.href} class={link.cta ? 'nav-studio-cta' : undefined}>
+          {link.label}{link.cta && <span aria-hidden="true">↗</span>}
+        </a>
+      ))}
     </nav>
+    <details class="mobile-nav">
+      <summary aria-label="Toggle navigation menu">
+        <span>Menu</span>
+        <span class="mobile-menu-open" aria-hidden="true">☰</span>
+        <span class="mobile-menu-close" aria-hidden="true">✕</span>
+      </summary>
+      <nav aria-label="Mobile navigation">
+        {links.map((link) => (
+          <a href={link.href} class={link.cta ? 'nav-studio-cta' : undefined}>
+            {link.label}{link.cta && <span aria-hidden="true">↗</span>}
+          </a>
+        ))}
+      </nav>
+    </details>
   </div>
 </header>

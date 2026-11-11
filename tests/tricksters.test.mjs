@@ -101,7 +101,7 @@ test('all verified profile pages have full source references, canonical and orig
 });
 
 test('site navigation, policy and CSS cover the directory without modifying quote registry',()=>{
-  const nav=read('src/components/SiteHeader.astro');
+  const nav=read('dist/index.html');
   const sourcePage=read('dist/sources/index.html');
   const css=read('src/styles/tricksters.css');
   assert.match(nav,/href="\/tricksters\/"/);
