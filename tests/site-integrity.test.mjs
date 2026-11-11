@@ -59,6 +59,8 @@ test('sitemap, canonical, noindex and robots describe the intended public surfac
   assert.ok(!urls.includes('https://jester-quotes.vercel.app/lab/'));
   assert.ok(read('dist/saved/index.html').includes('name="robots" content="noindex, follow"'));
   assert.ok(read('dist/lab/index.html').includes('name="robots" content="noindex, nofollow"'));
+  assert.ok(!urls.includes('https://jester-quotes.vercel.app/riot-press/'));
+  assert.ok(read('dist/riot-press/index.html').includes('name="robots" content="noindex, follow"'));
   assert.equal(existsSync(path.join(root,'public/robots.txt')),false);
   assert.ok(existsSync(path.join(root,'src/pages/robots.txt.ts')));
   assert.ok(read('dist/robots.txt').includes('https://jester-quotes.vercel.app/sitemap.xml'));
