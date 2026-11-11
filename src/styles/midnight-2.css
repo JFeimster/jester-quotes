@@ -136,10 +136,10 @@ h1,h2,h3,blockquote { font-family:"Iowan Old Style",Baskerville,"Palatino Linoty
 .collection-card .collection-ornament {font-size:clamp(7.5rem,14vw,12rem);right:10px;top:-24px;line-height:1;opacity:.11;transform:rotate(-12deg);}
 .collection-card .collection-card-foot {border-top:1px solid currentColor;opacity:.93;}
 .collection-card--coral {--collection-accent:#f26778;background:linear-gradient(140deg,#713242,#281e29);}
-.collection-card--ivory {--collection-accent:#5e2b42;background:var(--mc-paper);color:#272027;border-top-color:var(--coral);}
+.collection-card--ivory {--collection-accent:var(--ivory);background:linear-gradient(147deg,#322039,#1d1928 82%);color:var(--ivory);border-top-color:var(--ivory);}
 .collection-card--ivory::before {background:radial-gradient(ellipse at 90% 15%,rgba(216,172,100,.35),transparent 68%);}
-.collection-card--ivory h3,.collection-card--ivory p,.collection-card--ivory .collection-card-foot,.collection-card--ivory .collection-number,.collection-card--ivory .collection-intro {color:#262026;}
-.collection-card--ivory .collection-card-foot strong {color:#792f4c;}
+.collection-card--ivory h3,.collection-card--ivory p,.collection-card--ivory .collection-card-foot,.collection-card--ivory .collection-number,.collection-card--ivory .collection-intro {color:var(--ivory);}
+.collection-card--ivory .collection-card-foot strong {color:var(--ivory);}
 .collection-card--velvet {--collection-accent:#d8ac64;background:linear-gradient(150deg,#622e48,#2b2230);}
 .collection-card:hover {transform:translate(-3px,-3px);box-shadow:8px 8px 0 rgba(216,172,100,.24);border-color:var(--collection-accent);}
 

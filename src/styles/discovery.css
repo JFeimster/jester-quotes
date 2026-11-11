@@ -14,7 +14,8 @@
 .collection-card-art,.collection-card-shade {position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .collection-card-art {z-index:-2;overflow:hidden}
 .collection-card-art img {display:block;width:100%;height:100%;object-fit:cover;object-position:center 38%;transition:transform .45s ease}
-.collection-card-shade {z-index:-1;background:linear-gradient(90deg,rgba(21,17,31,.96) 0%,rgba(21,17,31,.83) 53%,rgba(21,17,31,.3) 100%),linear-gradient(0deg,rgba(21,17,31,.72),transparent 55%)}
+.collection-card-shade {z-index:-1;background:linear-gradient(90deg,rgba(21,17,31,.96) 0%,rgba(21,17,31,.9) 60%,rgba(21,17,31,.82) 100%),linear-gradient(0deg,rgba(21,17,31,.76),transparent 55%)}
+.collection-card--ivory .collection-card-shade {background:linear-gradient(90deg,rgba(21,17,31,.97) 0%,rgba(21,17,31,.93) 62%,rgba(21,17,31,.88) 100%),linear-gradient(0deg,rgba(21,17,31,.78),transparent 55%)}
 .collection-card:hover .collection-card-art img {transform:scale(1.045)}
 .collection-card--coral { --collection-accent:var(--coral); background:linear-gradient(145deg,#402035,#211827 85%); }
 .collection-card--ivory { --collection-accent:var(--ivory); }
@@ -25,7 +26,7 @@
 .collection-ornament { position: absolute; right: 15px; top: -8px; font: 8rem/1 Georgia,serif; color: var(--collection-accent); opacity: .1; pointer-events: none; }
 .collection-card h3 { position: relative; z-index: 1; margin: 18px 0 0; font-size: clamp(1.8rem,3vw,2.75rem); line-height: 1.08; letter-spacing: -.04em; }
 .collection-card p { position: relative; z-index: 1; color: #cebfce; margin: 0; font-size: .95rem; line-height: 1.7; }
-.collection-card-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 24px; border-top: 1px solid rgba(216,172,100,.21); font-size: .7rem; color: var(--muted); }
+.collection-card-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 24px; border-top: 1px solid rgba(216,172,100,.32); font-size: .7rem; color: #d7cbd8; }
 .collection-card-foot strong { color: var(--collection-accent); text-transform: uppercase; font-size: .68rem; letter-spacing: .08em; }
 .collections-teaser { margin: 0 0 clamp(76px,9vw,120px); }
 .collections-teaser .section-title { margin-bottom: 18px; }
