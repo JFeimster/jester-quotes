@@ -24,3 +24,26 @@ jobs:
           print(json.dumps({'playlist_id':data.get('id'), 'title':data.get('title'), 'channel':data.get('uploader'), 'playlist_count':data.get('playlist_count'), 'extracted_count':len(rows), 'entries':[{'position':n,'video_id':v.get('id'),'title':v.get('title'),'channel_title':v.get('channel') or v.get('uploader'),'description':v.get('description'),'duration_seconds':v.get('duration'),'url':v.get('url'), 'availability':v.get('availability')} for n,v in enumerate(rows,31) if v]},ensure_ascii=False))
           print('PLAYLIST_REMAINDER_END')
           PY
+
+      - name: Inspect individual publisher descriptions and explicit video blocks
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, subprocess, concurrent.futures
+          entries=[v for v in (json.load(open('/tmp/remainder.json')).get('entries') or []) if v and v.get('title') and v.get('id')]
+          def detail(v):
+            vid=v['id']
+            try:
+              p=subprocess.run(['yt-dlp','--no-playlist','--skip-download','--dump-single-json','--no-warnings','https://www.youtube.com/watch?v='+vid],capture_output=True,text=True,timeout=27)
+              if p.returncode:
+                error=p.stderr.strip().splitlines()[-1] if p.stderr.strip() else 'nonzero exit'
+                return {'id':vid,'error':error[-480:]}
+              x=json.loads(p.stdout)
+              return {'id':vid,'title':x.get('title'),'channel':x.get('channel') or x.get('uploader'),'description':(x.get('description') or '')[:1100],'duration':x.get('duration'), 'live_status':x.get('live_status'), 'availability':x.get('availability')}
+            except Exception as e: return {'id':vid,'error':str(e)[:240]}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=10) as pool:
+            details=list(pool.map(detail,entries))
+          print('PLAYLIST_REMAINDER_DETAILS_BEGIN')
+          print(json.dumps(details,ensure_ascii=False))
+          print('PLAYLIST_REMAINDER_DETAILS_END')
+          PY
