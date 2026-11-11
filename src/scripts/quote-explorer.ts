@@ -63,7 +63,7 @@ function clearFilters(): void {
 
 function showFavorites(): void {
   if (!favoritesFilter) {
-    window.location.href = '/#explore';
+    window.location.href = '/quotes/#explore';
     return;
   }
   if (search) search.value = '';
@@ -110,7 +110,9 @@ document.querySelector('#clear-filters')?.addEventListener('click', clearFilters
 document.querySelector('#show-favorites')?.addEventListener('click', showFavorites);
 
 document.querySelector('#surprise-me')?.addEventListener('click', () => {
-  const id = chooseRandomQuoteId(cards.map((card) => card.dataset.id ?? '').filter(Boolean));
+  const cardIds = cards.map((card) => card.dataset.id ?? '').filter(Boolean);
+  const fallbackIds = (document.querySelector<HTMLButtonElement>('#surprise-me')?.dataset.quoteIds ?? '').split(',').filter(Boolean);
+  const id = chooseRandomQuoteId(cardIds.length ? cardIds : fallbackIds);
   if (id) window.location.href = `/quotes/${encodeURIComponent(id)}/`;
 });
 
