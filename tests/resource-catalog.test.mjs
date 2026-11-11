@@ -61,7 +61,7 @@ test('Video Library has real YouTube URLs, correct credited channels and source 
   assert.ok(videos.some(x=>x.channel_title==='TED-Ed'));
   const snapshot=JSON.parse(read('data/playlist-joker-first30.json'));
   assert.equal(snapshot.entries.length,30);
-  const included=new Set(videos.filter(x=>x.playlist_id===snapshot.playlist_id).map(x=>x.video_id));
+  const included=new Set(videos.filter(x=>x.playlist_id===snapshot.playlist_id && x.playlist_position<=30).map(x=>x.video_id));
   assert.equal(included.size,21);
   for(const item of snapshot.entries) {
     if(item.imported) assert.ok(included.has(item.video_id),'Missing playlist entry at '+item.position);
