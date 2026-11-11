@@ -1,5 +1,6 @@
 ---
-/* Retain the current, approved public image and stable random-quote hook. */
+import { resolveAssetPath } from '../lib/assets';
+const heroWebp = resolveAssetPath('site-hero-portrait-webp');
 ---
 <section class="hero hero-2" aria-labelledby="hero-title">
   <div class="hero-copy">
@@ -17,7 +18,7 @@
   </div>
   <figure class="hero-visual hero-visual-2">
     <div class="hero-frame hero-frame-2">
-      <img class="hero-art" src="/assets/images/heroes/midnight-carnival-hero-4x5.png" alt="Midnight Carnival jester artwork in a richly theatrical, editorial style" width="1600" height="2000" fetchpriority="high" decoding="async" />
+      <picture>{heroWebp && <source srcset={heroWebp} type="image/webp" />}<img class="hero-art" src="/assets/images/heroes/midnight-carnival-hero-4x5.png" alt="Midnight Carnival jester artwork in a richly theatrical, editorial style" width="1122" height="1402" fetchpriority="high" decoding="async" /></picture>
     </div>
     <figcaption class="hero-art-caption"><span>Fig. 001 — The Fool</span><span>Wisdom wears a mask</span></figcaption>
     <div class="hero-stamp" aria-hidden="true"><span>THE</span><strong>JOKER</strong><span>IS WILD</span></div>

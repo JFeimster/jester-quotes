@@ -60,7 +60,7 @@ Existing hero URLs now use canonical `/assets/images/heroes/...` paths; the old 
 
 ## Midnight Carnival artwork integration
 
-The 13 approved PNGs (logo, Studio promo, collection covers, and Collections feature art) are present at their canonical paths and integrated into the site header, collection cards/details, Collections overview, and Quote Studio. Their registry entries use `integrated` only where the application renders them. Registered WebP derivatives reduce transfer weight while preserving each approved PNG as the `<picture>` fallback. The separate wide hero remains `uploaded` because it is not currently rendered.
+The 13 approved PNGs (logo, Studio promo, collection covers, and Collections feature art) are present at their canonical paths and integrated into the site header, collection cards/details, Collections overview, and Quote Studio. Their registry entries use `integrated` only where the application renders them. Registered WebP derivatives reduce transfer weight while preserving each approved PNG as the `<picture>` fallback. The existing homepage portrait hero also has a registered WebP derivative; its verified original dimensions are 1122 × 1402. The separate wide hero remains `uploaded` because it is not currently rendered.
 
 No avatar, profile/bio illustration, favicon source, standalone carousel slide or separate social post image was included in this set. Those folders remain reserved.
 

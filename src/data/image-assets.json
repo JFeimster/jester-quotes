@@ -28,7 +28,11 @@
     ],
     "alt": "Midnight Carnival jester artwork in a theatrical editorial style",
     "status": "integrated",
-    "notes": "Canonical v2 hero path used by Hero.astro and EditorialLayout.astro; source pixels not independently verified."
+    "notes": "Canonical v2 hero path used by Hero.astro and EditorialLayout.astro; actual PNG dimensions verified.",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    }
   },
   {
     "id": "brand-logo-horizontal",
@@ -549,5 +553,24 @@
     "status": "integrated",
     "alt": "Midnight Carnival collections featured artwork",
     "notes": "WebP derivative (quality 84); original PNG retained as fallback. Source asset: collections-featured."
+  },
+  {
+    "id": "site-hero-portrait-webp",
+    "path": "/assets/images/heroes/midnight-carnival-hero-4x5-optimized-1200w.webp",
+    "assetType": "hero",
+    "style": "midnight-carnival",
+    "aspectRatio": "4x5",
+    "variant": "optimized",
+    "mimeType": "image/webp",
+    "usage": [
+      "responsive-derivative"
+    ],
+    "alt": "Midnight Carnival jester artwork in a theatrical editorial style",
+    "status": "integrated",
+    "notes": "WebP derivative (quality 84) used for the homepage hero and editorial preview; original PNG retained as fallback.",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    }
   }
 ]
