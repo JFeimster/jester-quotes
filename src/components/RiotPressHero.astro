@@ -1,0 +1,36 @@
+---
+interface Props { headingLevel?: 1 | 2; preview?: boolean }
+const { headingLevel=1, preview=false } = Astro.props;
+const Heading = headingLevel===2 ? 'h2' : 'h1';
+---
+<section class="riot-hero" aria-labelledby="riot-hero-title">
+  <div class="riot-masthead">
+    <span class="riot-mastbrand"><span class="riot-burst" aria-hidden="true">✳</span> JESTER QUOTES / THE RIOT PRESS</span>
+    <span>VOL. 001 <span aria-hidden="true">◆</span> THINKING IS A CONTACT SPORT</span>
+    <span>UNLICENSED SINCE FOREVER</span>
+  </div>
+  <div class="riot-hero-grid">
+    <div class="riot-hero-type">
+      <div class="riot-overprint">INDEPENDENT WISDOM / ZERO ROYAL APPROVAL</div>
+      <Heading id="riot-hero-title">NO KINGS.<br/><span class="riot-type-lime">NO CLOWNS.</span><br/><span class="riot-type-red">JUST TRUTH.</span></Heading>
+      <p class="riot-hero-intro">A hundred sharp observations. Six collections of inconvenient wisdom. One rebellious little printing press.</p>
+      <div class="riot-hero-cta">
+        <a class="riot-button riot-button--black" href={preview ? '/riot-press/' : '#explore'}>{preview ? 'OPEN THE LIVE RIOT PRESS ↗' : 'READ THE ARCHIVE ↗'}</a>
+        <a class="riot-button riot-button--paper" href="/studio/?theme=riot">MAKE A POSTER ✳</a>
+      </div>
+      <div class="riot-hero-stats"><span><strong>100</strong> UNFILTERED QUOTES</span><span><strong>06</strong> COLLECTIONS</span><span><strong>01</strong> FOOL'S COURT</span></div>
+    </div>
+    <div class="riot-hero-art" role="img" aria-label="Original Dada and neo-brutalist paper collage: a red jester mark, bold stamps, and a distorted court card">
+      <div class="riot-poster-paper">
+        <span class="riot-paper-label">THE UNOFFICIAL EDITION</span>
+        <span class="riot-jester-symbol" aria-hidden="true">✳</span>
+        <strong>FOOL<br/>PROOF<span class="riot-dot">.</span></strong>
+        <span class="riot-paper-sub">THE TRUTH DOESN'T NEED A CROWN.</span>
+      </div>
+      <span class="riot-hero-stamp" aria-hidden="true">NOT APPROVED<br/>BY THE KING</span>
+      <span class="riot-hero-ticket" aria-hidden="true">JQ_001 / KEEP THINKING</span>
+      <span class="riot-hero-scratch" aria-hidden="true">///////</span>
+    </div>
+  </div>
+  <div class="riot-ticker"><span>NO ROYAL PERMISSION REQUIRED</span><span>✳</span><span>WORD TO THE WISE FOOL</span><span>✳</span><span>LONG LIVE THE TROUBLEMAKERS</span></div>
+</section>
