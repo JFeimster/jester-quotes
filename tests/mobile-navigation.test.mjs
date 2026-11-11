@@ -15,10 +15,9 @@ test('accessible responsive navigation has matching desktop and mobile destinati
   assert.match(header, /<summary aria-label="Toggle navigation menu">/);
   for(const href of pages) {
     const expected = href === '/' ? '/#explore' : href;
-    const escaped = expected.replace(/[.*+?^\$\{\}()|[\]\\]/g, '\\$&');
-    const match = new RegExp('href="' + escaped + '"', 'g');
-    assert.equal([...desktop.matchAll(match)].length, 1, 'desktop '+expected);
-    assert.equal([...mobile.matchAll(match)].length, 1, 'mobile '+expected);
+    const needle = 'href="' + expected + '"';
+    assert.equal(desktop.split(needle).length - 1, 1, 'desktop '+expected);
+    assert.equal(mobile.split(needle).length - 1, 1, 'mobile '+expected);
   }
   assert.match(mobile, /nav-studio-cta/);
   const css = read('../src/styles/midnight-2.css');
