@@ -5,13 +5,13 @@ import { resources, resourceTypes, resourceTags } from '../../lib/resource-catal
 import '../../styles/resource-vault.css';
 ---
 <BaseLayout title="Jester & Trickster Resource Vault | Jester Quotes"
- description="A curated, source-linked collection of reliable reading on fools, tricksters, oral storytelling, cultural heritage, and mythology.">
+ description="Curated research and essays on tricksters, fools, mythology, Jungian psychology, satire, philosophy, and Jester branding.">
 <div class="wrap vault-page">
   <header class="vault-hero">
     <div class="vault-hero-copy">
       <p class="eyebrow">The reference desk / Behind the mythology</p>
       <h1>Knowledge has <em>no dress code.</em></h1>
-      <p class="lede">Follow the evidence behind the mischief. Primary collections, institutional references, and original teaching resources—not a wall of recycled search results.</p>
+      <p class="lede">Explore folklore archives, scholarly research, independent criticism, philosophy, and Jester branding. Every source links to its original publisher.</p>
       <div class="vault-hero-actions"><a class="btn" href="#vault-list">Explore {resources.length} sources ↗</a>
         <a class="btn secondary" href="/tricksters/">Meet the Tricksters ↗</a></div>
     </div>
@@ -26,9 +26,9 @@ import '../../styles/resource-vault.css';
   <section id="vault-list" class="vault-list" aria-labelledby="vault-title" data-catalog="resources">
     <div class="section-title"><div><p class="eyebrow">Curated reading / No paywalled content reproduced</p><h2 id="vault-title">The reference <em>vault.</em></h2></div>
       <a class="section-text-link" href="/videos/">Switch to videos ↗</a></div>
-    <p class="vault-intro">Search by topic or publisher, then filter by document type and subject. Some external sites may control access or change their content.</p>
+    <p class="vault-intro">Search by topic or publisher, then filter by source type and subject. Scholarly research, independent essays, and personal interpretations are distinguished by their publishers; external access may change.</p>
     <div class="vault-controls" role="search" aria-label="Filter resource collection">
-      <div class="vault-field vault-search"><label for="catalog-search">Search reference materials</label><input id="catalog-search" type="search" autocomplete="off" placeholder="Try Anansi, UNESCO, oral stories…"/></div>
+      <div class="vault-field vault-search"><label for="catalog-search">Search reference materials</label><input id="catalog-search" type="search" autocomplete="off" placeholder="Try Joker, Jung, Alan Watts, Anansi…"/></div>
       <div class="vault-field"><label for="catalog-type">Source type</label><select id="catalog-type"><option value="all">All source types</option>{Object.entries(resourceTypes).filter(([key])=>resources.some(r=>r.type===key)).map(([key,label])=><option value={key}>{label}</option>)}</select></div>
       <div class="vault-field"><label for="catalog-tag">Topic</label><select id="catalog-tag"><option value="all">All topics</option>{resourceTags.map(tag=><option value={tag}>{tag.replaceAll('-',' ')}</option>)}</select></div>
       <button id="catalog-reset" type="button">Clear filters</button>
