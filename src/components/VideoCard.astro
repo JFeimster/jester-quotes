@@ -1,13 +1,15 @@
 ---
 import type { VideoEntry } from '../types/resource';
 import { tricksters, tricksterUrl } from '../lib/tricksters';
+import { relatedReadingForVideo } from '../lib/content-connections';
 interface Props { entry: VideoEntry; index: number; }
 const { entry, index } = Astro.props;
+const relatedReading = relatedReadingForVideo(entry);
 const related = entry.related_trickster_ids
   .map(id=>tricksters.find(record=>record.id===id))
   .filter((item):item is (typeof tricksters)[number]=>Boolean(item));
 ---
-<article class:list={['vault-card','video-card',{'vault-card--featured':entry.featured}]} data-catalog-card
+<article id={entry.id} class:list={['vault-card','video-card',{'vault-card--featured':entry.featured}]} data-catalog-card
   data-search={`${entry.title} ${entry.summary} ${entry.channel_title} ${entry.tags.join(' ')}`.toLowerCase()}
   data-channel={entry.channel_title} data-tags={entry.tags.join(' ')}>
   <div class="vault-card-top"><span class="vault-item-number">SCREENING / {String(index+1).padStart(2,'0')}</span><span class="vault-kind">{entry.channel_title}</span></div>
@@ -27,6 +29,9 @@ const related = entry.related_trickster_ids
   <p class="vault-summary">{entry.summary}</p>
   {related.length>0 && <div class="vault-related"><span>EXPLORE RELATED PROFILES</span>
     {related.map(record=><a href={tricksterUrl(record)}>{record.name}</a>)}
+  </div>}
+  {relatedReading.length>0 && <div class="vault-related vault-related--media"><span>RELATED READING</span>
+    {relatedReading.map(resource=><a href={'/resources/#'+resource.id}>{resource.title}</a>)}
   </div>}
   <div class="vault-card-foot">
     <span>Checked {entry.verified_at}</span>
