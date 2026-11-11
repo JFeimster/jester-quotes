@@ -50,6 +50,17 @@ test('required original and responsive Dada artwork files exist', () => {
     const path = `public/assets/dada-riot-collection-${String(index).padStart(2, '0')}-cover-4x3.webp`;
     assert.ok(existsSync(resolve(root, path)), `${path} exists`);
   }
+  for (const path of [
+    'public/assets/dada-riot-v2/hero-desktop.webp',
+    'public/assets/dada-riot-v2/hero-mobile.webp',
+    'public/assets/dada-riot-v2/cover-wise-fools.webp',
+    'public/assets/dada-riot-v2/cover-truth-to-power.webp',
+    'public/assets/dada-riot-v2/cover-laughter-and-life.webp',
+    'public/assets/dada-riot-v2/cover-masks-and-identity.webp',
+    'public/assets/dada-riot-v2/cover-carnival-absurdity.webp',
+    'public/assets/dada-riot-v2/cover-art-of-the-jester.webp',
+    'public/assets/dada-riot-wordmark-light.svg'
+  ]) assert.ok(existsSync(resolve(root, path)), `${path} exists`);
 });
 
 test('built site includes quote, collection, directory, policy, and studio routes', () => {

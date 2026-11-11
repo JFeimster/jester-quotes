@@ -14,11 +14,11 @@ const mainLinks = [
 ];
 const current = (href: string) => path === href || (href !== '/' && path.startsWith(href));
 ---
-<header class="wrap site-header site-header-2 nav-v3">
+<header class="site-header site-header-2 nav-v3 dada-masthead" data-edition={riot ? 'riot-press' : 'dada-riot'}>
   <div class="topbar">
-    <a class="brand" href="/" aria-label="Jester Quotes — Home">
-      <span class="brand-lockup"><img class="riot-wordmark" src="/assets/dada-riot-wordmark-horizontal.svg" alt="Jester Quotes — The Riot Press" width="196" height="36"/><small>EDITION 001 · THE UNAUTHORIZED PRESS</small></span>
-      {riot && <span class="riot-brand-supplement" aria-hidden="true">RIOT PRESS / 001</span>}
+    <a class="brand" href="/" aria-label="Jester Quotes — The Riot Press home">
+      <span class="brand-lockup"><img class="riot-wordmark" src="/assets/dada-riot-wordmark-light.svg" alt="Jester Quotes — The Riot Press" width="490" height="90"/><small>WISDOM. ABSURDITY. FREEDOM.</small></span>
+      <span class="riot-brand-supplement" aria-hidden="true">UNAUTHORIZED / 001</span>
     </a>
     <nav class="desktop-nav" aria-label="Main navigation">
       <details class="desktop-quotes-menu">

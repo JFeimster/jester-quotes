@@ -26,3 +26,17 @@ export const collections: CuratedCollection[] = definitions.map((definition) => 
 export function getCollection(slug: string): CuratedCollection | undefined {
   return collections.find((collection) => collection.slug === slug);
 }
+
+const dadaArtworkBySlug: Record<string, string> = {
+  'wise-fools': 'cover-wise-fools.webp',
+  'truth-to-power': 'cover-truth-to-power.webp',
+  'laughter-and-life': 'cover-laughter-and-life.webp',
+  'masks-and-identity': 'cover-masks-and-identity.webp',
+  'carnival-absurdity': 'cover-carnival-absurdity.webp',
+  'art-of-the-jester': 'cover-art-of-the-jester.webp'
+};
+
+export function collectionArtworkPath(slug: string): string | undefined {
+  const filename = dadaArtworkBySlug[slug];
+  return filename ? `/assets/dada-riot-v2/${filename}` : undefined;
+}

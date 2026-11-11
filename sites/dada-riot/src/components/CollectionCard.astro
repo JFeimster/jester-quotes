@@ -1,15 +1,16 @@
 ---
 import type { CuratedCollection } from '../lib/collections';
+import { collectionArtworkPath } from '../lib/collections';
 interface Props { collection: CuratedCollection; index: number; }
 const { collection, index } = Astro.props;
-const coverPath = `/assets/dada-riot-collection-${String(index + 1).padStart(2, '0')}-cover-4x3.webp`;
+const coverPath = collectionArtworkPath(collection.slug);
 const sigils: Record<string, string> = {
   'wise-fools': '♛', 'truth-to-power': '✴', 'laughter-and-life': '☺',
   'masks-and-identity': '◈', 'carnival-absurdity': '✳', 'art-of-the-jester': '♠'
 };
 ---
 <a class:list={['collection-card', `collection-card--${collection.tone}`]} href={`/collections/${collection.slug}/`}>
-  <picture class="collection-card-art"><img src={coverPath} alt={`Original Dada Riot collage artwork for ${collection.title}`} width="960" height="720" loading="lazy" decoding="async" /></picture>
+  {coverPath && <picture class="collection-card-art"><img src={coverPath} alt={`Original Dada Riot collage artwork for ${collection.title}`} width="1200" height="900" loading="lazy" decoding="async" /></picture>}
   <span class="collection-card-shade" aria-hidden="true"></span>
   <span class="collection-number">VOLUME {String(index + 1).padStart(2, '0')} <span aria-hidden="true">/</span> {collection.eyebrow}</span>
   <span class="collection-ornament" aria-hidden="true">{sigils[collection.slug] ?? '✦'}</span>

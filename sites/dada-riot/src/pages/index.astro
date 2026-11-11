@@ -18,7 +18,14 @@ const structuredData = collectionSchema(Astro.site ?? new URL('https://jester-qu
     <FeaturedQuote quote={quotes[4] ?? quotes[0]} />
     <DiscoveryGateway />
     <CollectionsTeaser />
-    <section class="home-studio-promo" aria-labelledby="home-studio-title"><div><p class="eyebrow">The Riot Press / poster studio</p><h2 id="home-studio-title">Turn a line<br/>into a <em>signal.</em></h2><p>Choose any canonical quote. Make a poster that keeps every word and credits its author.</p><a class="btn" href="/studio/">Make your poster ↗</a></div><img src="/assets/dada-riot-poster-square.webp" alt="Dada Riot collage poster background" width="1080" height="1080" loading="lazy"/></section>
+    <section class="home-studio-promo" aria-labelledby="home-studio-title">
+      <div class="studio-promo-copy"><p class="eyebrow">The quote studio / artist's proof</p><h2 id="home-studio-title">Turn any quote<br/>into <em>a statement.</em></h2><p>Choose a canonical voice. Set the type. Make complete quote art, posters, and social graphics with attribution intact.</p><a class="btn" href="/studio/">Enter the printshop ↗</a><span class="studio-promo-note">100 voices / 4 formats / your words stay whole</span></div>
+      <div class="studio-print-collage" aria-label="Examples of quote artwork made in the studio">
+        <figure class="print-proof print-proof--one"><img src="/social/quotes/jester-quote-003.png" alt="Jester Quotes social poster preview, sample one" width="1200" height="630" loading="lazy"/><figcaption>PROOF / 01</figcaption></figure>
+        <figure class="print-proof print-proof--two"><img src="/social/quotes/jester-quote-006.png" alt="Jester Quotes social poster preview, sample two" width="1200" height="630" loading="lazy"/><figcaption>PROOF / 02</figcaption></figure>
+        <figure class="print-proof print-proof--three"><img src="/social/quotes/jester-quote-012.png" alt="Jester Quotes social poster preview, sample three" width="1200" height="630" loading="lazy"/><figcaption>PROOF / 03</figcaption></figure>
+      </div>
+    </section>
     <WatchAndLearn />
     <RiotPressTeaser />
     <section class="home-archive-callout" aria-labelledby="home-archive-title">

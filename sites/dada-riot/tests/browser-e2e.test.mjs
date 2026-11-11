@@ -25,7 +25,7 @@ test('real headless Chrome exercises site routes, PNG/ZIP downloads and responsi
     await app.viewport(1440,900);
     for(const route of paths){
       await app.navigate(route);
-      const check=await app.eval(`({title:document.title,hasMain:!!document.querySelector('#main-content'),width:document.documentElement.scrollWidth,viewport:innerWidth,imagesWithoutAlt:document.querySelectorAll('img:not([alt])').length})`);
+      const check=await app.eval(`({title:document.title,hasMain:!!document.querySelector('#main-content'),width:document.documentElement.scrollWidth,viewport:document.documentElement.clientWidth,imagesWithoutAlt:document.querySelectorAll('img:not([alt])').length})`);
       assert.ok(check.title && check.hasMain,route+' missing basic semantics');
       assert.ok(check.width<=check.viewport+2,route+' desktop horizontal overflow: '+JSON.stringify(check));
       assert.equal(check.imagesWithoutAlt,0,route+' image missing alt attribute');
@@ -90,7 +90,7 @@ test('real headless Chrome exercises site routes, PNG/ZIP downloads and responsi
     await app.eval(`document.querySelector('[data-studio-format="landscape"]').click()`);
     await app.waitFor(`/Slide 1 of [2-9][0-9]*/.test(document.querySelector('#studio-page-info').textContent)`,'landscape pagination');
     await app.eval(`document.querySelector('#studio-download').click()`);
-    const studioZip=await app.waitDownload(/^jester-quote-069-landscape-midnight-complete-\d+-slides\.zip$/,24000);
+    const studioZip=await app.waitDownload(/^jester-quote-069-landscape-dada-complete-\d+-slides\.zip$/,24000);
     const studioNames=zipEntries(await fs.readFile(studioZip));
     assert.ok(studioNames.length>=2,'Studio landscape must export every paginated slide');
     assert.ok(studioNames.every(name=>/\.png$/.test(name)),'Studio ZIP must contain PNG slides');
@@ -142,13 +142,13 @@ test('real headless Chrome exercises site routes, PNG/ZIP downloads and responsi
       await app.viewport(width,height);
       for(const route of ['/','/studio/','/saved/','/lab/']){
         await app.navigate(route);
-        const dims=await app.eval(`({width:document.documentElement.scrollWidth,viewport:innerWidth})`);
+        const dims=await app.eval(`({width:document.documentElement.scrollWidth,viewport:document.documentElement.clientWidth})`);
         assert.ok(dims.width<=dims.viewport+2,route+' horizontal scroll at '+width+'px: '+JSON.stringify(dims));
         if(route==='/lab/'){
           for(const theme of ['dada-riot','neon-trickster','impossible-court','forbidden-library','riot-press']){
             await app.eval(`document.querySelector('[data-lab-tab="${theme}"]').click()`);
             await app.waitFor(`!document.querySelector('[data-lab-panel="${theme}"]').hidden`,'mobile theme '+theme);
-            const panel=await app.eval(`({width:document.documentElement.scrollWidth,viewport:innerWidth})`);
+          const panel=await app.eval(`({width:document.documentElement.scrollWidth,viewport:document.documentElement.clientWidth})`);
             assert.ok(panel.width<=panel.viewport+2,theme+' horizontal scroll at '+width+'px: '+JSON.stringify(panel));
           }
         }

@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import QuoteCard from '../../components/QuoteCard.astro';
 import QuoteSearch from '../../components/QuoteSearch.astro';
-import { collections } from '../../lib/collections';
+import { collections, collectionArtworkPath } from '../../lib/collections';
 import { quotes } from '../../lib/quote-data';
 import type { CuratedCollection } from '../../lib/collections';
 
@@ -11,8 +11,7 @@ export function getStaticPaths() {
 }
 const { collection } = Astro.props as { collection: CuratedCollection };
 const indices = new Map(quotes.map((quote, index) => [quote.id, index]));
-const collectionIndex = collections.findIndex((item) => item.slug === collection.slug) + 1;
-const coverPath = `/assets/dada-riot-collection-${String(collectionIndex).padStart(2, '0')}-cover-4x3.webp`;
+const coverPath = collectionArtworkPath(collection.slug);
 ---
 <BaseLayout title={`${collection.title} — Curated Jester Quotes`} description={collection.description}>
   <div class="wrap discovery-page">
@@ -21,7 +20,7 @@ const coverPath = `/assets/dada-riot-collection-${String(collectionIndex).padSta
       <p class="eyebrow">{collection.eyebrow} · {collection.quotes.length} quotes</p>
       <h1>{collection.title}<span class="heading-dot" aria-hidden="true">.</span></h1>
       <p class="lede">{collection.description}</p>
-      <figure class="collection-feature-art"><img src={coverPath} alt={`Original Dada Riot collage artwork for ${collection.title}`} width="960" height="720" fetchpriority="high" decoding="async" /><figcaption>{collection.title} / a Dada Riot edition</figcaption></figure>
+      {coverPath && <figure class="collection-feature-art"><img src={coverPath} alt={`Original Dada Riot collage artwork for ${collection.title}`} width="1200" height="900" fetchpriority="high" decoding="async" /><figcaption>{collection.title} / an original Dada Riot cover</figcaption></figure>}
       <div class="discovery-actions"><a class="btn" href={`/studio/?quote=${collection.quotes[0]?.id}`}>Create artwork from this collection ↗</a><a class="btn secondary" href="/sources/">Source notes ↗</a></div>
     </header>
     <section id="explore" aria-label={`Quotes in ${collection.title}`}>
