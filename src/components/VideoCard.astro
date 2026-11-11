@@ -11,12 +11,16 @@ const related = entry.related_trickster_ids
   data-search={`${entry.title} ${entry.summary} ${entry.channel_title} ${entry.tags.join(' ')}`.toLowerCase()}
   data-channel={entry.channel_title} data-tags={entry.tags.join(' ')}>
   <div class="vault-card-top"><span class="vault-item-number">SCREENING / {String(index+1).padStart(2,'0')}</span><span class="vault-kind">{entry.channel_title}</span></div>
-  <div class="video-stage" data-video-stage>
-    <div class="video-stage-poster" aria-hidden="true"><span>▶</span><small>SELECT TO LOAD PLAYER</small></div>
-    <button class="video-load" type="button" data-video-id={entry.video_id} data-video-title={entry.title}
-      aria-label={`Load YouTube player for ${entry.title}`}>
-      <span>Load player</span><small>YouTube only after click</small>
-    </button>
+  <div class="video-stage">
+    <iframe
+      data-video-id={entry.video_id}
+      title={`YouTube video: ${entry.title}`}
+      src={`https://www.youtube-nocookie.com/embed/${entry.video_id}?rel=0&playsinline=1`}
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="encrypted-media; picture-in-picture; fullscreen"
+      allowfullscreen
+    ></iframe>
   </div>
   <h3>{entry.title}</h3>
   <p class="vault-source">{entry.channel_title}</p>

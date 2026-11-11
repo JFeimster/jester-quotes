@@ -63,11 +63,6 @@
 .vault-grid--videos .vault-card{grid-column:span 1}
 .vault-grid--videos .vault-card--featured{grid-column:span 2}
 .video-stage{position:relative;display:grid;place-items:center;aspect-ratio:16/9;background:radial-gradient(ellipse at 70% 28%,#613b52 0,#291e2b 56%,#14171b 100%);border:1px solid rgba(216,172,100,.43);margin:24px 0 23px;min-height:130px;overflow:hidden}
-.video-stage-poster{display:flex;flex-direction:column;align-items:center;gap:5px;color:rgba(245,235,221,.12);font-size:6rem;line-height:.9}
-.video-stage-poster small{font:850 .58rem/1.6 Arial,sans-serif;letter-spacing:.12em;color:#d8ac64}
-.video-load{position:absolute;inset:auto;z-index:2;display:grid;gap:4px;text-align:center;padding:11px 16px;min-width:135px;background:var(--coral);color:#171116;border:2px solid #151115;box-shadow:4px 4px 0 rgba(0,0,0,.44);font-weight:900;letter-spacing:.06em;text-transform:uppercase;font-size:.7rem}
-.video-load small{font-size:.57rem;font-weight:750;letter-spacing:0;text-transform:none}
-.video-load:hover{background:#ffc0c8}
 .video-stage iframe{width:100%;height:100%;display:block;position:absolute;inset:0;border:0;aspect-ratio:16/9}
 .vault-grid--videos .video-card h3{font-size:clamp(1.5rem,2.35vw,2.35rem)}
 @media(max-width:1060px){.vault-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.vault-card--featured,.vault-grid--videos .vault-card--featured{grid-column:span 2}}

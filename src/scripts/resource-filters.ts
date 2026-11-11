@@ -37,22 +37,5 @@ if (catalog) {
     search?.focus();
   });
 
-  for (const button of catalog.querySelectorAll<HTMLButtonElement>('[data-video-id]')) {
-    button.addEventListener('click', () => {
-      const id = button.dataset.videoId ?? '';
-      const title = button.dataset.videoTitle ?? 'YouTube video';
-      if (!/^[A-Za-z0-9_-]{11}$/.test(id)) return;
-      const stage = button.closest<HTMLElement>('[data-video-stage]');
-      if (!stage) return;
-      const iframe = document.createElement('iframe');
-      iframe.title = title;
-      iframe.loading = 'lazy';
-      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?rel=0&playsinline=1`;
-      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-      iframe.allow = 'encrypted-media; picture-in-picture; fullscreen';
-      iframe.allowFullscreen = true;
-      stage.replaceChildren(iframe);
-    });
-  }
   filter();
 }
