@@ -27,3 +27,25 @@ jobs:
           print('PLAYLIST_SNAPSHOT_END')
           if len(items)<30: raise SystemExit(f'Only {len(items)} entries recovered; not safe to publish as 30')
           PY
+
+      - name: Inspect publisher descriptions where accessible
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, subprocess, concurrent.futures
+          entries=[v for v in (json.load(open('/tmp/playlist.json')).get('entries') or []) if v and v.get('title') and v.get('id')]
+          def detail(item):
+            vid=item['id']
+            try:
+              p=subprocess.run(['yt-dlp','--no-playlist','--skip-download','--dump-single-json','--no-warnings','https://www.youtube.com/watch?v='+vid],capture_output=True,text=True,timeout=24)
+              if p.returncode!=0:
+                return {'id':vid,'description':None,'error':p.stderr.strip()[-240:]}
+              value=json.loads(p.stdout)
+              return {'id':vid,'title':value.get('title'),'channel':value.get('channel') or value.get('uploader'),'description':(value.get('description') or '')[:1800], 'duration':value.get('duration')}
+            except Exception as e:
+              return {'id':vid,'description':None,'error':str(e)[:180]}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool: results=list(pool.map(detail,entries))
+          print('PLAYLIST_DETAILS_BEGIN')
+          print(json.dumps(results,ensure_ascii=False))
+          print('PLAYLIST_DETAILS_END')
+          PY
