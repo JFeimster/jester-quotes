@@ -1,6 +1,6 @@
 # Asset Migration Map — v2.0
 
-**Status: hero migration complete.** Both hero PNGs are at their v2 locations. Existing public URLs receive permanent Vercel redirects. Remaining brand/collection integration is a separate task.
+**Status: hero migration and Batch 1 artwork integration complete.** Both hero PNGs are at their v2 locations. Existing public URLs receive permanent Vercel redirects. The logo, collection art, Collections feature image and Quote Studio promo are integrated through the canonical asset registry.
 
 ## Existing paths → intended v2 destinations
 
@@ -15,14 +15,14 @@
 | `/site.webmanifest` | **Remain at current URL** | Active manifest |
 | `src/assets/*.svg` | **Remain in Astro source tree** | Imported SVG assets |
 
-## Other artwork and future integration
+## Other artwork and reserved categories
 
-- Horizontal logo → `public/assets/branding/logos/`
+- Horizontal logo → `public/assets/branding/logos/` (integrated in the site header)
 - Profile/bio → `public/assets/branding/profiles/`
 - Avatar → `public/assets/branding/avatars/`
 - Favicon design source → `public/assets/branding/favicons/`; active root favicon stays unchanged until reviewed
-- Six collections: clean and editorial pair → `public/assets/collections/01-wise-fool/` through `06-art-of-jester/`
-- Quote Studio banner → `public/assets/studio/promotional/`
+- Six collections: available clean/editorial covers → `public/assets/collections/01-wise-fool/` through `06-art-of-jester/` (integrated in cards/details)
+- Quote Studio banner → `public/assets/studio/promotional/` (integrated on `/studio/`)
 - Social carousels and story/post formats → matching ratio-specific `public/assets/social/` folders
 - Video thumbnails → `public/assets/videos/thumbnails/`
 
