@@ -1,0 +1,29 @@
+name: One-time YouTube playlist metadata snapshot
+on:
+  push:
+    branches: [feat/videos-playlist-first-30]
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract first 30 entries without downloading media
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check -q yt-dlp
+          yt-dlp --version
+          yt-dlp --flat-playlist --playlist-items 1:30 --dump-single-json --no-warnings --ignore-errors 'https://www.youtube.com/playlist?list=PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq' > /tmp/playlist.json
+          python - <<'PY'
+          import json
+          data=json.load(open('/tmp/playlist.json'))
+          items=data.get('entries') or []
+          print('PLAYLIST_SNAPSHOT_BEGIN')
+          print(json.dumps({'playlist_id':data.get('id'), 'playlist_title':data.get('title'),'channel':data.get('uploader'), 'entries':[
+            {'position':n,'video_id':v.get('id'),'title':v.get('title'),'channel_title':v.get('channel') or v.get('uploader'),'description':v.get('description'),'duration':v.get('duration'), 'url':v.get('url'),'availability':v.get('availability')} for n,v in enumerate(items,1) if v]},ensure_ascii=False))
+          print('PLAYLIST_SNAPSHOT_END')
+          if len(items)<30: raise SystemExit(f'Only {len(items)} entries recovered; not safe to publish as 30')
+          PY
