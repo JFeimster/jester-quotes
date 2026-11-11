@@ -1,0 +1,19 @@
+---
+import { relatedToQuote } from '../lib/related-content';
+import '../styles/utility-pages.css';
+import type { Quote } from '../types/quote';
+const { quote } = Astro.props as { quote: Quote };
+const matches = relatedToQuote(quote.id);
+const hasAny = matches.collections.length + matches.tricksters.length + matches.resources.length + matches.videos.length > 0;
+---
+{hasAny && <aside class="utility-related" aria-labelledby="related-title">
+  <p class="eyebrow">Follow the thread / Curated connections</p>
+  <h2 id="related-title">More of this <em>mischief.</em></h2>
+  <div class="utility-related-grid">
+    {matches.collections.map(c=><a href={`/collections/${c.slug}/`}><span>Quote collection</span><strong>{c.title}</strong><span aria-hidden="true">↗</span></a>)}
+    {matches.tricksters.map(t=><a href={`/tricksters/${t.slug}/`}><span>Related editorial theme · Trickster</span><strong>{t.name}</strong><span aria-hidden="true">↗</span></a>)}
+    {matches.videos.map(v=><a href={'/videos/#'+v.id}><span>Related theme · Video</span><strong>{v.title}</strong><span aria-hidden="true">↗</span></a>)}
+    {matches.resources.map(r=><a href={r.url} rel="noopener noreferrer" target="_blank"><span>Documented external resource</span><strong>{r.title}</strong><span aria-hidden="true">↗</span></a>)}
+  </div>
+  <p class="utility-related-note">Connections use curated themes and verified source links. They do not imply the quoted author discussed a listed Trickster figure or endorsed these resources.</p>
+</aside>}

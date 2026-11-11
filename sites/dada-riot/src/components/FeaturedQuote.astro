@@ -1,0 +1,19 @@
+---
+import type { Quote } from '../types/quote';
+const { quote } = Astro.props as { quote: Quote };
+---
+<section class="featured featured-2" aria-label="Featured quote">
+  <div class="featured-rail">
+    <p class="kicker">An inconvenient observation</p>
+    <span class="rail-mark" aria-hidden="true">✳</span>
+    <span class="feature-number">THE COURT / 001</span>
+  </div>
+  <div class="featured-main">
+    <p class="featured-overline">A thought worth keeping</p>
+    <blockquote>{quote.quote}</blockquote>
+    <div class="featured-bottom">
+      <p class="byline">— {quote.person}{quote.reference ? ` · ${quote.reference}` : ''}</p>
+      <a class="featured-link" href={`/quotes/${quote.id}/`}>Meet the thought <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>

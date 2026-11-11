@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import QuoteActions from '../../components/QuoteActions.astro';
+import QuotePoster from '../../components/QuotePoster.astro';
+import RelatedItems from '../../components/RelatedItems.astro';
+import SourceAttribution from '../../components/SourceAttribution.astro';
+import { quotes, registry } from '../../lib/quote-data';
+import { quotationSchema, quotePageTitle } from '../../lib/seo';
+import type { Quote } from '../../types/quote';
+
+export function getStaticPaths() {
+  return quotes.map((quote) => ({ params: { id: quote.id }, props: { quote } }));
+}
+const { quote } = Astro.props as { quote: Quote };
+const summaryText = quote.quote.replace(/\s+/g, ' ').trim();
+const summary = `${summaryText.slice(0, 148)}${summaryText.length > 148 ? '…' : ''}`;
+const structuredData = quotationSchema(
+  Astro.site ?? new URL('https://jester-quotes.vercel.app'),
+  quote,
+  registry.source.url ?? 'https://knowyourarchetypes.com/jester-quotes/'
+);
+---
+<BaseLayout
+  title={quotePageTitle(quote)}
+  description={summary}
+  image={`/social/quotes/${quote.id}.png`}
+  imageAlt={`Social image of a quotation attributed to ${quote.person}`}
+  openGraphType="article"
+  structuredData={structuredData}
+>
+  <article class="detail" aria-labelledby="quote-title">
+    <p class="eyebrow"><a href="/quotes/">← All 100 quotes</a></p>
+    <h1 class="kicker quote-page-title" id="quote-title">{quote.name}</h1>
+    <blockquote>“{quote.quote}”</blockquote>
+    <p class="credit">— {quote.person}</p>
+    {quote.reference && <p class="byline">Reference: {quote.reference}</p>}
+    <QuoteActions quote={quote} />
+    <QuotePoster quote={quote} />
+    <RelatedItems quote={quote} />
+    <div style="margin-top:70px"><SourceAttribution /></div>
+  </article>
+  <script src="../../scripts/quote-explorer.ts"></script>
+</BaseLayout>

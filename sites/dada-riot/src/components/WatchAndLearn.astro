@@ -1,0 +1,35 @@
+---
+import { videos, resources } from '../lib/resource-catalog';
+const selectedVideoIds = ['video-crashcourse-tricksters','video-joker-playlist-01','video-joker-playlist-28'];
+const selectedResourceIds = ['resource-jung-trickster-in-the-arts','resource-blackwell-joker-jungs-shadow'];
+const featuredVideos = selectedVideoIds.map(id => videos.find(item => item.id === id)).filter((v): v is (typeof videos)[number] => Boolean(v));
+const featuredResources = selectedResourceIds.map(id => resources.find(item => item.id === id)).filter((r): r is (typeof resources)[number] => Boolean(r));
+---
+<section class="watch-learn" aria-labelledby="watch-learn-title">
+  <div class="section-title">
+    <div><p class="eyebrow">The screening room meets the reading room</p><h2 id="watch-learn-title">Watch &amp; <em>learn.</em></h2></div>
+    <a class="section-text-link" href="/videos/">View the video library ↗</a>
+  </div>
+  <p class="gallery-intro">A few ways into the archetype, from myth and philosophy to the psychology of the mask. Follow the original sources.</p>
+  <div class="watch-learn-grid">
+    <div class="watch-video-list">
+      {featuredVideos.map(video=><a class="watch-video-card" href={'/videos/#'+video.id}>
+        <span class="watch-thumb">
+          <img src="/assets/dada-riot-poster-square.webp" alt="" width="480" height="360" loading="lazy" decoding="async"/>
+          <span aria-hidden="true" class="watch-play">▶</span>
+        </span>
+        <span class="watch-video-copy"><span class="watch-kind">WATCH / {video.channel_title}</span><strong>{video.title}</strong><span>Open in the Screening Room ↗</span></span>
+      </a>)}
+    </div>
+    <aside class="watch-reading">
+      <p class="eyebrow">FROM THE REFERENCE VAULT</p>
+      <h3>Keep pulling <em>the thread.</em></h3>
+      {featuredResources.map(resource=><a class="watch-resource-link" href={'/resources/#'+resource.id}>
+        <span>{resource.source_name}</span>
+        <strong>{resource.title}</strong>
+        <small>Read source notes ↗</small>
+      </a>)}
+      <a class="watch-read-all" href="/resources/">Explore all resources ↗</a>
+    </aside>
+  </div>
+</section>

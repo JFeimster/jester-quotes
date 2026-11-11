@@ -1,0 +1,14 @@
+---
+import { collections } from '../lib/collections';
+import CollectionCard from './CollectionCard.astro';
+---
+<section class="collections-teaser" aria-labelledby="collections-teaser-title">
+  <div class="section-title">
+    <div><p class="eyebrow">Not all jesters tell the same joke</p><h2 id="collections-teaser-title">Pick your <em>mischief.</em></h2></div>
+    <a class="section-text-link" href="/collections/">View all six collections ↗</a>
+  </div>
+  <p class="gallery-intro">Six editorial doorways into the same 100 quotations. Choose the kind of trouble you came for.</p>
+  <div class="collection-grid collection-grid--teaser">
+    {collections.slice(0, 3).map((collection, index) => <CollectionCard collection={collection} index={index} />)}
+  </div>
+</section>

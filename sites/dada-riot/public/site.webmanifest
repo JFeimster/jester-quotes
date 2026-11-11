@@ -1,0 +1,15 @@
+{
+  "name": "Jester Quotes — Dada Riot",
+  "short_name": "Jester Quotes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5e9cf",
+  "theme_color": "#171310",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

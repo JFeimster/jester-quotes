@@ -1,0 +1,74 @@
+---
+import '../../styles/tricksters.css';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TricksterCard from '../../components/TricksterCard.astro';
+import { tricksters, tricksterKinds, tricksterMedia } from '../../lib/tricksters';
+const tags = [...new Set(tricksters.flatMap(item=>item.tags))].sort();
+---
+<BaseLayout
+ title="Trickster Directory — Myth, Folklore & Literary Figures | Jester Quotes"
+ description="Explore an independently sourced, curated directory of trickster figures across folklore, mythology and literature. Search and filter verified profiles."
+>
+  <div class="wrap discovery-page trickster-page">
+    <header class="trickster-header">
+      <div>
+        <p class="eyebrow">Beyond the court / A research archive</p>
+        <h1>The trickster <em>files.</em></h1>
+        <p class="lede">Not just court jesters. Meet figures who turn the rules inside out—from divine messengers to unruly storytellers. Each entry links to independently checked references.</p>
+        <div class="trickster-header-actions">
+          <a class="btn" href="#trickster-directory">Explore {tricksters.length} researched profiles ↗</a>
+          <a class="btn secondary" href="/collections/">Explore quote collections ↗</a>
+        </div>
+      </div>
+      <aside class="trickster-hero-aside" aria-label="Directory research policy">
+        <span class="trickster-hero-symbol" aria-hidden="true">✳</span>
+        <p class="eyebrow">The archives are open</p>
+        <h2>Every trick has <em>a source.</em></h2>
+        <p>These original short profiles summarize linked references. Cultural traditions differ, and a label like “trickster” never tells the whole story.</p>
+        <a href="/sources/">Read the editorial policy ↗</a>
+      </aside>
+    </header>
+    <section id="trickster-directory" aria-labelledby="trickster-directory-title">
+      <div class="section-title">
+        <div><p class="eyebrow">The verified selection</p><h2 id="trickster-directory-title">Meet the <em>rulebreakers.</em></h2></div>
+        <span class="byline">{tricksters.length} independently sourced entries · more under research</span>
+      </div>
+      <div class="trickster-controls" role="search" aria-label="Search Trickster profiles">
+        <div class="trickster-field trickster-field--search">
+          <label for="trickster-search">Search names, origins and themes</label>
+          <input id="trickster-search" type="search" placeholder="Try Loki, storyteller, shapeshifting…" autocomplete="off" />
+        </div>
+        <div class="trickster-field">
+          <label for="trickster-kind">Figure type</label>
+          <select id="trickster-kind"><option value="all">All figure types</option>{Object.entries(tricksterKinds).map(([id,label]) => <option value={id}>{label}</option>)}</select>
+        </div>
+        <div class="trickster-field">
+          <label for="trickster-medium">Where stories appear</label>
+          <select id="trickster-medium"><option value="all">All media</option>{Object.entries(tricksterMedia).map(([id,label]) => <option value={id}>{label}</option>)}</select>
+        </div>
+        <div class="trickster-field">
+          <label for="trickster-tag">Theme</label>
+          <select id="trickster-tag"><option value="all">All themes</option>{tags.map(tag=><option value={tag}>{tag.replaceAll('-',' ')}</option>)}</select>
+        </div>
+        <button id="trickster-reset" class="trickster-reset" type="button">Clear filters</button>
+      </div>
+      <div class="trickster-results-row">
+        <p id="trickster-count" aria-live="polite">{tricksters.length} documented profiles</p>
+        <button id="trickster-random" class="mini-action" type="button">Random trickster ✳</button>
+      </div>
+      <div id="trickster-grid" class="trickster-grid">
+        {tricksters.map((record,index)=><TricksterCard record={record} index={index} />)}
+      </div>
+      <p id="trickster-empty" class="trickster-empty" hidden>No profiles match those filters. Try clearing them.</p>
+      <p id="trickster-status" role="status" class="sr-only" aria-live="polite"></p>
+    </section>
+    <aside class="trickster-research-note">
+      <span class="trickster-note-mark" aria-hidden="true">i</span>
+      <div>
+        <h2>Why only {tricksters.length}?</h2>
+        <p>The wider Trickster research list spans 139 numbered possibilities, but this directory is not a copy of that compilation. Only profiles with independently checked sources and original editorial descriptions appear here. Research candidates remain unpublished pending review. <a href="/sources/">Sources, context and corrections ↗</a></p>
+      </div>
+    </aside>
+  </div>
+  <script src="../../scripts/trickster-explorer.ts"></script>
+</BaseLayout>

@@ -1,0 +1,23 @@
+/* Deliberate micro-interactions; no scroll-trapping, animation libs or layout shifts. */
+@keyframes mc-arrive { from { opacity:0; transform:translateY(15px); } to { opacity:1; transform:translateY(0); } }
+@keyframes mc-glow { 0%,100% {opacity:.45;} 50% {opacity:.9;} }
+@media (prefers-reduced-motion:no-preference) {
+  .hero-2 .hero-copy {animation:mc-arrive .7s ease-out both;}
+  .hero-2 .hero-visual {animation:mc-arrive .75s ease-out .12s both;}
+  .featured-2 {animation:mc-arrive .6s ease-out .12s both;}
+  .gallery .quote-card:nth-child(-n+9) {animation:mc-arrive .35s ease-out both;}
+  .gallery .quote-card:nth-child(2) {animation-delay:.04s;}
+  .gallery .quote-card:nth-child(3) {animation-delay:.08s;}
+  .gallery .quote-card:nth-child(4) {animation-delay:.12s;}
+  .gallery .quote-card:nth-child(5) {animation-delay:.16s;}
+  .gallery .quote-card:nth-child(6) {animation-delay:.2s;}
+  .gallery .quote-card:nth-child(7) {animation-delay:.24s;}
+  .gallery .quote-card:nth-child(8) {animation-delay:.28s;}
+  .gallery .quote-card:nth-child(9) {animation-delay:.32s;}
+  .hero-stamp {animation:mc-glow 5s ease-in-out infinite;}
+}
+@media (prefers-reduced-motion:reduce) {
+  html {scroll-behavior:auto;}
+  .hero-2 .hero-copy,.hero-2 .hero-visual,.featured-2,.gallery .quote-card,.hero-stamp {animation:none!important;}
+  .btn,.quote-card,.collection-card,.studio-choice,.site-header nav a {transition:none!important;}
+}

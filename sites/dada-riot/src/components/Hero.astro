@@ -1,0 +1,25 @@
+---
+import { quotes } from '../lib/quote-data';
+---
+<section class="hero hero-2" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow hero-eyebrow"><span class="hero-tiny-sigil" aria-hidden="true">✳</span> The Riot Press / edition 001</p>
+    <h1 id="hero-title"><span>Make a</span><em>beautiful<br/>racket<span class="hero-period">.</span></em></h1>
+    <p class="lede">A hundred sharp voices. Six unruly collections. An archive for the wise fool, the contrary thinker, and anyone who knows laughter can tell the truth.</p>
+    <div class="hero-actions">
+      <a class="btn" href="/quotes/">Enter the archive <span aria-hidden="true">↗</span></a>
+      <button class="btn secondary" id="surprise-me" data-quote-ids={quotes.map(q=>q.id).join(",")} type="button">Surprise me <span aria-hidden="true">✳</span></button>
+    </div>
+    <div class="hero-utility" aria-label="Discover the site">
+      <a href="/collections/"><span class="utility-index">01 / SORT THE NOISE</span><strong>Six ways into the archive</strong><span aria-hidden="true">↗</span></a>
+      <a href="/studio/"><span class="utility-index">02 / MAKE A POSTER</span><strong>Take a line. Make a statement.</strong><span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <figure class="hero-visual hero-visual-2">
+    <div class="hero-frame hero-frame-2">
+      <picture><source media="(max-width:700px)" srcset="/assets/dada-riot-hero-mobile-4x5.webp" type="image/webp"/><source srcset="/assets/dada-riot-hero-clean-16x9.webp" type="image/webp"/><img class="hero-art" src="/assets/dada-riot-hero-clean-16x9.png" alt="A surreal jester assembled from torn newspaper, red paper ruffles, and bright geometric collage" width="1672" height="941" fetchpriority="high" decoding="async" /></picture>
+    </div>
+    <figcaption class="hero-art-caption"><span>Plate 001 — The Fool</span><span>Wisdom has teeth</span></figcaption>
+    <div class="hero-stamp" aria-hidden="true"><span>QUESTION</span><strong>THE<br/>CROWN</strong><span>KEEP LAUGHING</span></div>
+  </figure>
+</section>

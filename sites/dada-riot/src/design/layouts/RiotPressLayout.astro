@@ -1,0 +1,16 @@
+---
+import RiotPressHero from '../../components/RiotPressHero.astro';
+import QuoteCard from '../../components/QuoteCard.astro';
+import {getTheme,labThemeStyle} from '../theme-registry';
+import type {Quote} from '../../types/quote';
+const {samples}=Astro.props as {samples:[Quote,Quote,Quote]};
+const theme=getTheme('riot-press');
+---
+<section class="lab-composition lab-composition--riot riot-press" data-theme="riot-press" style={labThemeStyle(theme)} aria-label="The Riot Press hybrid editorial layout preview">
+  <RiotPressHero headingLevel={2} preview />
+  <div class="riot-section-label"><span>THE PRESS RUN / THREE QUOTES</span><strong>ISSUE 001 — UNAUTHORIZED WISDOM</strong></div>
+  <div class="lab-quote-grid lab-quote-grid--riot">
+    <QuoteCard quote={samples[0]} index={0}/><QuoteCard quote={samples[1]} index={3}/><QuoteCard quote={samples[2]} index={5}/>
+  </div>
+  <div class="riot-lab-bottom"><span>60% BRUTALIST GRID / 40% DADA COLLAGE</span><a href="/riot-press/">EXPLORE ALL 100 QUOTES ↗</a></div>
+</section>

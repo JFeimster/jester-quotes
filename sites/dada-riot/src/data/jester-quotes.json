@@ -1,0 +1,720 @@
+{
+  "id": "jester-quotes",
+  "name": "Jester Quotes",
+  "description": "A curated collection of 100 quotes exploring the Jester archetype's irreverent humor, unconventional spirit, carefree nature, and potential for cruelty or irresponsibility.",
+  "source": {
+    "type": "document",
+    "name": "100 Jester Quotes - Know Your Archetypes",
+    "url": "https://knowyourarchetypes.com/jester-quotes/"
+  },
+  "visibility": "private",
+  "schema": {
+    "id": "string",
+    "name": "string",
+    "person": "string",
+    "reference": "string | null",
+    "quote": "string"
+  },
+  "items": [
+    {
+      "id": "jester-quote-001",
+      "name": "Jester Quote 001",
+      "person": "Thomas Ligotti",
+      "reference": "American Fantastic Tales: Terror and the Uncanny from the 1940’s Until Now",
+      "quote": "The clown figure has had so many meanings in different times and cultures. The jolly, well-loved joker familiar to most people is actually but one aspect of this protean creature. Madmen, hunchbacks, amputees, and other abnormals were once considered natural clowns; they were elected to fulfill a comic role which could allow others to see them as ludicrous rather than as terrible reminders of the forces of disorder in the world. But sometimes a cheerless jester was required to draw attention to this same disorder, as in the case of King Lear’s morbid and honest fool, who of course was eventually hanged, and so much for his clownish wisdom. Clowns have often had ambiguous and sometimes contradictory roles to play. (“The Last Feast Of The Harlequin”)"
+    },
+    {
+      "id": "jester-quote-002",
+      "name": "Jester Quote 002",
+      "person": "Mikhail Bakhtin",
+      "reference": null,
+      "quote": "The principle of laughter and the carnival spirit on which the grotesque is based destroys this limited seriousness and all pretense of an extratemporal meaning and unconditional value of necessity. It frees human consciousness, thought, and imagination for new potentialities. For this reason, great changes, even in the field of science, are always preceded by a certain carnival consciousness that prepares the way."
+    },
+    {
+      "id": "jester-quote-003",
+      "name": "Jester Quote 003",
+      "person": "Isaac Asimov",
+      "reference": null,
+      "quote": "The secret of the successful fool is that he’s no fool at all."
+    },
+    {
+      "id": "jester-quote-004",
+      "name": "Jester Quote 004",
+      "person": "Danny Kaye",
+      "reference": "The Court Jester",
+      "quote": "A jester unemployed is nobody’s fool!"
+    },
+    {
+      "id": "jester-quote-005",
+      "name": "Jester Quote 005",
+      "person": "Harrison Wheeler",
+      "reference": "Jesters Incognito: Live Like a King. Hire a Jester.",
+      "quote": "Are you an evolutionist?\n\nI’m an absurdist, ma’am. But let’s suppose evolution is true; what about the monkeys today? Why can’t we see them evolving? Are they still evolving?"
+    },
+    {
+      "id": "jester-quote-006",
+      "name": "Jester Quote 006",
+      "person": "Mehmet Murat Ildan",
+      "reference": null,
+      "quote": "Kings kill; jesters don’t; therefore the jesters of the kings are more valuable than the kings!"
+    },
+    {
+      "id": "jester-quote-007",
+      "name": "Jester Quote 007",
+      "person": "Karl Wiggins",
+      "reference": null,
+      "quote": "The laughing, joking court jester, who is in reality a Shaman, has all the respect of a king, for there has always been an element of danger lurking about beneath the surface of his smile"
+    },
+    {
+      "id": "jester-quote-008",
+      "name": "Jester Quote 008",
+      "person": "Ljupka Cvetanova",
+      "reference": "The New Land",
+      "quote": "Listen! The court jester’s cap and bells. The King is coming!"
+    },
+    {
+      "id": "jester-quote-009",
+      "name": "Jester Quote 009",
+      "person": "Amruta Patil",
+      "reference": "Kari",
+      "quote": "There are so many ways to exit towards the Light, but with my luck, I’d be the one electrocuted by Diwali lights. Or the one who cracks her head falling off a footstool. I’d still be a jester, leaving the audience with a stitch in their sides."
+    },
+    {
+      "id": "jester-quote-010",
+      "name": "Jester Quote 010",
+      "person": "Michael Bassey Johnson",
+      "reference": null,
+      "quote": "If heaven was created only for the most stupid clown, then Mr Bean could have been the only righteous man on earth."
+    },
+    {
+      "id": "jester-quote-011",
+      "name": "Jester Quote 011",
+      "person": "William Shakespeare",
+      "reference": null,
+      "quote": "Jesters do oft prove prophets."
+    },
+    {
+      "id": "jester-quote-012",
+      "name": "Jester Quote 012",
+      "person": "Pseudonymous Bosch",
+      "reference": "This Isn’t What It Looks Like: The Secret Series",
+      "quote": "Despite my vanity, I fear for my sanity."
+    },
+    {
+      "id": "jester-quote-013",
+      "name": "Jester Quote 013",
+      "person": "Joe Randazzo",
+      "reference": null,
+      "quote": "Satire must always accompany any free society. It is an absolute necessity. Even in the most repressive medieval kingdoms, they understood the need for the court jester, the one soul allowed to tell the truth through laughter."
+    },
+    {
+      "id": "jester-quote-014",
+      "name": "Jester Quote 014",
+      "person": "Richard Simmons",
+      "reference": null,
+      "quote": "When the king gets depressed, he doesn’t call for his wife. He doesn’t call for the cook. He calls for the court jester."
+    },
+    {
+      "id": "jester-quote-015",
+      "name": "Jester Quote 015",
+      "person": "Ted Koppel",
+      "reference": null,
+      "quote": "In the days of Caesar, kings had fools and jesters. Now network presidents have anchormen."
+    },
+    {
+      "id": "jester-quote-016",
+      "name": "Jester Quote 016",
+      "person": "Gordon Lightfoot",
+      "reference": null,
+      "quote": "Think about the fool who by his virtue can be found in a most unusual situation playing jester to the clown."
+    },
+    {
+      "id": "jester-quote-017",
+      "name": "Jester Quote 017",
+      "person": "Marcus Tullius Cicero",
+      "reference": null,
+      "quote": "Cicero is dead! Cicero is born! The laughter has filled me, filled me so very completely. I am the laughter. I am the jester. The soul that has served as my constant companion for so long has breached the veil of the Void finally and forever. It is now in me. It is me. The world has seen the last of Cicero the man. Behold Cicero, Fool of Hearts – laughter incarnate!"
+    },
+    {
+      "id": "jester-quote-018",
+      "name": "Jester Quote 018",
+      "person": "William Shakespeare",
+      "reference": null,
+      "quote": "How ill white hairs become a fool and jester!"
+    },
+    {
+      "id": "jester-quote-019",
+      "name": "Jester Quote 019",
+      "person": "Rick Riordan",
+      "reference": null,
+      "quote": "Humor was a good way to hide the pain."
+    },
+    {
+      "id": "jester-quote-020",
+      "name": "Jester Quote 020",
+      "person": "Arthur Koestler",
+      "reference": null,
+      "quote": "The jester is brother to the sage."
+    },
+    {
+      "id": "jester-quote-021",
+      "name": "Jester Quote 021",
+      "person": "Lisa Kleypas",
+      "reference": null,
+      "quote": "Fate is the malevolent little jester sitting up in the heavens and pondering over how ridiculous we humans are and he does his best to make fools out of all of us. And sooner or later he succeeds."
+    },
+    {
+      "id": "jester-quote-022",
+      "name": "Jester Quote 022",
+      "person": "Seth Godin",
+      "reference": null,
+      "quote": "As our society gets more complex and our people get more complacent, the role of the jester is more vital than ever before. Please stop sitting around. We need you to make a ruckus."
+    },
+    {
+      "id": "jester-quote-023",
+      "name": "Jester Quote 023",
+      "person": "Joseph Addison",
+      "reference": null,
+      "quote": "Jesters do often prove prophets."
+    },
+    {
+      "id": "jester-quote-024",
+      "name": "Jester Quote 024",
+      "person": "Joseph Wood Krutch",
+      "reference": null,
+      "quote": "The advertiser is the overrewarded court jester and court pander at the democratic court."
+    },
+    {
+      "id": "jester-quote-025",
+      "name": "Jester Quote 025",
+      "person": "Danny Kaye",
+      "reference": null,
+      "quote": "The pellet with the poison’s in the vessel with the pestle; the chalice from the palace has the brew that is true!"
+    },
+    {
+      "id": "jester-quote-026",
+      "name": "Jester Quote 026",
+      "person": "Umberto Eco",
+      "reference": null,
+      "quote": "The court jester had the right to say the most outrageous things to the king. Everything was permitted during carnival, even the songs that the Roman legionnaires would sing, calling Julius Caesar “queen”, alluding, in a very transparent way, to his real, or presumed, homosexual escapades."
+    },
+    {
+      "id": "jester-quote-027",
+      "name": "Jester Quote 027",
+      "person": "Pseudonymous Bosch",
+      "reference": null,
+      "quote": "Oh, talking is not so bad as that,” said the Jester. “True, most people say only silly things when they speak. But it’s easier to ignore them if you’re saying silly things yourself."
+    },
+    {
+      "id": "jester-quote-028",
+      "name": "Jester Quote 028",
+      "person": "Richard Simmons",
+      "reference": null,
+      "quote": "I’m a real paradox. Because I’m a very serious person, and I take my work very seriously. But I wrap it up in a court jester and a clown and make people laugh and make them feel good about themselves."
+    },
+    {
+      "id": "jester-quote-029",
+      "name": "Jester Quote 029",
+      "person": "Richard Simmons",
+      "reference": null,
+      "quote": "I do consider myself a clown and a court jester, and I do love to make people laugh, whether they’re laughing with me or at me."
+    },
+    {
+      "id": "jester-quote-030",
+      "name": "Jester Quote 030",
+      "person": "Bob Black",
+      "reference": null,
+      "quote": "I’m the out-of-court jester who won’t settle, I up the vigilante, I’m a law unto myself but break it anyway! I made a forced landing on the Moebius Strip and now I want to know, which side are you on?"
+    },
+    {
+      "id": "jester-quote-031",
+      "name": "Jester Quote 031",
+      "person": "Henri Langlois",
+      "reference": null,
+      "quote": "An art form requires genius. People of genius are always troublemakers, meaning they start from scratch, demolish accepted norms and rebuild a new world. The problem with cinema today is the dearth of troublemakers. There’s not a rabble-rouser in sight. There was still one, but he went beyond troublemaker to court jester. He clobbered the status quo. That’s Godard. We’re fresh out of ‘bad students.’ You’ll find students masquerading as bad ones, but you won’t find the real article, because a genuine bad student upends everything."
+    },
+    {
+      "id": "jester-quote-032",
+      "name": "Jester Quote 032",
+      "person": "Isidore Ducasse Lautreamont",
+      "reference": null,
+      "quote": "Although according to certain philosophers it is quite difficult to distinguish the jester from the melancholic, life itself being a comic drama or a dramatic comedy."
+    },
+    {
+      "id": "jester-quote-033",
+      "name": "Jester Quote 033",
+      "person": "John Baldessari",
+      "reference": null,
+      "quote": "The idea of vaudeville clowns and court jesters is always to show the flaw, to point out what’s not working and why it’s not coherent."
+    },
+    {
+      "id": "jester-quote-034",
+      "name": "Jester Quote 034",
+      "person": "Blaise Pascal",
+      "reference": null,
+      "quote": "A jester, a bad character."
+    },
+    {
+      "id": "jester-quote-035",
+      "name": "Jester Quote 035",
+      "person": "William Faulkner",
+      "reference": null,
+      "quote": "The artist is still a little like the old court jester. He’s supposed to speak his vicious paradoxes with some sense in them, but he isn’t part of whatever the fabric is that makes a nation."
+    },
+    {
+      "id": "jester-quote-036",
+      "name": "Jester Quote 036",
+      "person": "Ines de La Fressange",
+      "reference": null,
+      "quote": "One thing Della Valle taught me is the power to say no if something isn’t right. That mattered even over sales. Now it’s rolling and finally, after having been PR, boutique director, operator, messenger, and everything else, I’m finally in the role I like the most – court jester. And that’s what I was doing at Chanel before."
+    },
+    {
+      "id": "jester-quote-037",
+      "name": "Jester Quote 037",
+      "person": "Saul Bellow",
+      "reference": null,
+      "quote": "Our society, like decadent Rome, has turned into an amusement society, with writers chief among the court jesters"
+    },
+    {
+      "id": "jester-quote-038",
+      "name": "Jester Quote 038",
+      "person": "Rick Riordan",
+      "reference": null,
+      "quote": "He was the class clown, the court jester, because he’d learn early that if you cracked jokes and pretended you weren’t scared, you usually didn’t get beat up. Even the baddest gangster kids would tolerate you, keep you around for laughs."
+    },
+    {
+      "id": "jester-quote-039",
+      "name": "Jester Quote 039",
+      "person": "G.K. Chesterton",
+      "reference": null,
+      "quote": "It is unpardonable conceit not to laugh at your own jokes. Joking is undignified; that is why it is so good for one’s soul. Do not fancy you can be a detached wit and avoid being a buffoon; you cannot. If you are the Court Jester you must be the Court Fool."
+    },
+    {
+      "id": "jester-quote-040",
+      "name": "Jester Quote 040",
+      "person": "Bruce Sterling",
+      "reference": null,
+      "quote": "If poets are the unacknowledged legislators of the world, science fiction writers are its court jesters. We are Wise Fools who can leap, caper, utter prophecies, and scratch ourselves in public. We can play with Big Ideas because the garish motley of our pulp origins make us seem harmless."
+    },
+    {
+      "id": "jester-quote-041",
+      "name": "Jester Quote 041",
+      "person": "Minimaks",
+      "reference": null,
+      "quote": "I’m ready to forgive him for the desire to be a king, but not for wanting to have 23 million court jesters."
+    },
+    {
+      "id": "jester-quote-042",
+      "name": "Jester Quote 042",
+      "person": "Patricia Highsmith",
+      "reference": null,
+      "quote": "January. It was all things. And it was one thing, like a solid door. Its cold sealed the city in a gray capsule. January was moments, and January was a year. January rained the moments down, and froze them in her memory: […]Every human action seemed to yield a magic. January was a two-faced month, jangling like jester’s bells, crackling like snow crust, pure as any beginning, grim as an old man, mysteriously familiar yet unknown, like a word one can almost but not quite define."
+    },
+    {
+      "id": "jester-quote-043",
+      "name": "Jester Quote 043",
+      "person": "Jim Gaffigan",
+      "reference": null,
+      "quote": "There is this false perception that comedians can never be serious. It’s like from like the era of court jesters."
+    },
+    {
+      "id": "jester-quote-044",
+      "name": "Jester Quote 044",
+      "person": "Sharon Stone",
+      "reference": null,
+      "quote": "A lot of people think that fame is the Band-Aid that cures their ills. I’m no kid, and I knew long before I got famous that wasn’t the deal. I’m the court jester, not the queen."
+    },
+    {
+      "id": "jester-quote-045",
+      "name": "Jester Quote 045",
+      "person": "Christoph Wilhelm Hufeland",
+      "reference": null,
+      "quote": "Laughter is a most healthful exertion; it is one of the greatest helps to digestion with which I am acquainted."
+    },
+    {
+      "id": "jester-quote-046",
+      "name": "Jester Quote 046",
+      "person": "RuPaul",
+      "reference": null,
+      "quote": "It’s been important to cultures throughout history with the court jester and the witch doctor and the shaman – all preach the same thing."
+    },
+    {
+      "id": "jester-quote-047",
+      "name": "Jester Quote 047",
+      "person": "Diablo Cody",
+      "reference": null,
+      "quote": "I didn’t even know how to talk to people, I didn’t know how to talk to the press. I was just a jester. And I still feel that way. But, I mean, what haven’t I learned? Everything that I know is new information because I was starting with nothing."
+    },
+    {
+      "id": "jester-quote-048",
+      "name": "Jester Quote 048",
+      "person": "Steven Wright",
+      "reference": null,
+      "quote": "My father was a small claims court jester."
+    },
+    {
+      "id": "jester-quote-049",
+      "name": "Jester Quote 049",
+      "person": "Steve Stockman",
+      "reference": null,
+      "quote": "If you’re demanding a rodeo jester be thrown in the dungeons for mocking the king, don’t pretend you support a free country."
+    },
+    {
+      "id": "jester-quote-050",
+      "name": "Jester Quote 050",
+      "person": "Harold B Lee",
+      "reference": null,
+      "quote": "I am reminded of the old court jester who was supposed to entertain his king with interesting stories and antics. He looked at the king who was lolling on his throne, a drunken, filthy rascal, doffed his cap and bells, and said with a mock gesture of obeisance, “O king, be loyal to the royal within you.” And so I say to you young people today, remember your heritage, and be loyal to that royal lineage that you have as members of the church and kingdom of God on the earth."
+    },
+    {
+      "id": "jester-quote-051",
+      "name": "Jester Quote 051",
+      "person": "Percy Bysshe Shelley",
+      "reference": null,
+      "quote": "Poets are the unacknowledged legislators of the world."
+    },
+    {
+      "id": "jester-quote-052",
+      "name": "Jester Quote 052",
+      "person": "Max Beerbohm",
+      "reference": null,
+      "quote": "Few, as I have said, are the humorists who can induce this state. To master and dissolve us, to give us the joy of being worn down and tired out with laughter, is a success to be won by no man save in virtue of a rare staying-power. Laughter becomes extreme only if it be consecutive. There must be no pauses for recovery. Touch-and-go humour, however happy, is not enough. The jester must be able to grapple his theme and hang on to it, twisting it this way and that, and making it yield magically all manner of strange and precious things."
+    },
+    {
+      "id": "jester-quote-053",
+      "name": "Jester Quote 053",
+      "person": "James Burnham",
+      "reference": null,
+      "quote": "There is no one force, no group, and no class that is the preserver of liberty. Liberty is preserved by those who are against the existing chief power. Oppositions which do not express genuine social forces are as trivial, in relation to entrenched power, as the old court jesters."
+    },
+    {
+      "id": "jester-quote-054",
+      "name": "Jester Quote 054",
+      "person": "Ambrose Bierce",
+      "reference": null,
+      "quote": "A king’s staff of office, the sign and symbol of his authority. It was originally a mace with which the sovereign admonished his jester and vetoed ministerial measures by breaking the bones of their proponents."
+    },
+    {
+      "id": "jester-quote-055",
+      "name": "Jester Quote 055",
+      "person": "Goldie",
+      "reference": null,
+      "quote": "Oftentimes, actors are looked at as court jesters. They are not looked at as deep-thinking, smart people who do many other things or have gifts in other areas."
+    },
+    {
+      "id": "jester-quote-056",
+      "name": "Jester Quote 056",
+      "person": "E.B. White",
+      "reference": null,
+      "quote": "The essayist . . . can pull on any sort of shirt, be any sort of person, according to his mood or his subject matter – philosopher, scold, jester, raconteur, confidant, pundit, devil’s advocate, enthusiast."
+    },
+    {
+      "id": "jester-quote-057",
+      "name": "Jester Quote 057",
+      "person": "Ambrose Bierce",
+      "reference": null,
+      "quote": "JESTER, n. An officer attached to the king’s household to amuse the court by ludicrous actions and utterances . . . the king’s own conduct and decrees [being] sufficiently ridiculous for the amusement not only of his court but of all mankind."
+    },
+    {
+      "id": "jester-quote-058",
+      "name": "Jester Quote 058",
+      "person": "Walter Scott",
+      "reference": null,
+      "quote": "In the name of God!” said Gurth, “how came they prisoners? and to whom?” “Our master was too ready to fight,” said the Jester, “and Athelstane was not ready enough, and no other person was ready at all."
+    },
+    {
+      "id": "jester-quote-059",
+      "name": "Jester Quote 059",
+      "person": "Valeria Luiselli",
+      "reference": null,
+      "quote": "Writers tend to think they occupy a much more relevant place in society than we actually do. But we really are closer to buffoons and jesters than we are to whistle-blowers or moral guides. Accepting our rather insignificant place in society can be depressing – but it’s also freeing."
+    },
+    {
+      "id": "jester-quote-060",
+      "name": "Jester Quote 060",
+      "person": "Tariq Ali",
+      "reference": null,
+      "quote": "The judgement makes no sense at all. It exposes the country, Turkey, to ridicule. It would have been so much better if Ahmet Davotgulu had behaved like a medieval jester, but no such luck for poor Turkey. Its Prime Minister is not taken seriously by too many people."
+    },
+    {
+      "id": "jester-quote-061",
+      "name": "Jester Quote 061",
+      "person": "Dick Cavett",
+      "reference": null,
+      "quote": "Obviously those who burn to be professional jesters mean that they want to be successful comedians. And those are always an elite, microscopic portion of the population. But oh, how they try."
+    },
+    {
+      "id": "jester-quote-062",
+      "name": "Jester Quote 062",
+      "person": "Robert E Howard",
+      "reference": null,
+      "quote": "There comes, even to kings, the time of great weariness. Then the gold of the throne is brass, the silk of the palace becomes drab. The gems in the diadem and upon the fingers of the women sparkle drearily like the ice of white seas; the speech of men is as the empty rattle of a jester’s bell and the feel comes of things unreal; even the sun is copper in the sky and the breath of the green ocean is no longer fresh."
+    },
+    {
+      "id": "jester-quote-063",
+      "name": "Jester Quote 063",
+      "person": "Charlie Higson",
+      "reference": null,
+      "quote": "There was always a slug on the lettuce. This was too good to be true. He had never trusted Jester, and didn’t trust David. He wasn’t going to let his gaurd down just yet. Being carful had kept him alive this far. There was no reason to stop being careful now."
+    },
+    {
+      "id": "jester-quote-064",
+      "name": "Jester Quote 064",
+      "person": "Rachel Caine",
+      "reference": null,
+      "quote": "From Shane’s Point of View: Jester talking to Shane: “What’s the matter? You afraid you’d bite your skinny little girlfriend?” Jester laughed. “She’s already someone else’s, you know. I can smell the bite on her. He’s marked her.” Myrnin. “Shut up,” I said, and kicked him in the face."
+    },
+    {
+      "id": "jester-quote-065",
+      "name": "Jester Quote 065",
+      "person": "Janna Cachola",
+      "reference": null,
+      "quote": "Goals and dreams are not purposed to please others. I’d rather be the jester who adds value to those around me than a King with no vision or intention of making a difference."
+    },
+    {
+      "id": "jester-quote-066",
+      "name": "Jester Quote 066",
+      "person": "Julia Quinn",
+      "reference": null,
+      "quote": "It was easier to play the jester. No one expected as much from fools."
+    },
+    {
+      "id": "jester-quote-067",
+      "name": "Jester Quote 067",
+      "person": "Michel Foucault",
+      "reference": null,
+      "quote": "Death as the destruction of all things no longer had meaning when life was revealed to be a fatuous sequence of empty words, the hollow jingle of a jester’s cap and bells."
+    },
+    {
+      "id": "jester-quote-068",
+      "name": "Jester Quote 068",
+      "person": "Seinfeld 2000",
+      "reference": null,
+      "quote": "SHUT UP,” Carrot Top say, the cocaine now taking effect. “This isn’t Poetry 101. People want to laugh. Your supposed to be a ‘King’ of Prop Comedy. But you’ve been acting more like a jester of prop comedy."
+    },
+    {
+      "id": "jester-quote-069",
+      "name": "Jester Quote 069",
+      "person": "Lady Gaga",
+      "reference": null,
+      "quote": "This is the Manifesto of Little Monster\nThere is something heroic about the way my fans operate their cameras. So precisely, so intricately and so proudly. Like Kings writing the history of their people, is their prolific nature that both creates and procures what will later be percieved as the kingdom. So the real truth about Lady Gaga fans, my little monsters, lies in this sentiment: They are the Kings. They are the Queens. They write the hisory of the kingdom and I am something of a devoted Jester. It is in the theory of perception that we have established our bond, or the lie I should say, for which we kill. We are nothing without our image. Without our projection. Without the spiritual hologram of who we percieve ourselves to be or rather to become, in the future.\nWhen you are lonely,\nI will be lonely too.\nAnd this is the fame."
+    },
+    {
+      "id": "jester-quote-070",
+      "name": "Jester Quote 070",
+      "person": "Emma Stone",
+      "reference": null,
+      "quote": "I was just a ham since about the age of five. If I was performing at Medieval Times or something, I’d be the court jester. That was always my defense mechanism. I was never all that funny; I was just obnoxious and loud."
+    },
+    {
+      "id": "jester-quote-071",
+      "name": "Jester Quote 071",
+      "person": "Mark Waid",
+      "reference": null,
+      "quote": "I’m a master of story. Almost a living fiction myself, so resilient am I! Spider-Man beats me down, I rise! Daredevil imprisons me, I escape! That’s because stories have power! He who controls the narrative controls the audience, and you’re all the audience, every one of you. As they say, the world’s a stage …"
+    },
+    {
+      "id": "jester-quote-072",
+      "name": "Jester Quote 072",
+      "person": "Sun Ra",
+      "reference": null,
+      "quote": "First of all I express sincerity. There’s also that sense of humor, by which people sometimes learn to laugh about themselves. I mean, the situation is so serious that the people could go crazy because of it. They need to smile and realize how ridiculous everything is. A race without a sense of humor is in bad shape. A race needs clowns. In earlier days people knew that. Kings always had a court jester around. In that way he was always reminded how ridiculous things are. I believe that nations too should have jesters, in the congress, near the president, everywhere … You could call me the jester of the Creator. The whole world, all the disease and misery, it’s all ridiculous."
+    },
+    {
+      "id": "jester-quote-073",
+      "name": "Jester Quote 073",
+      "person": "Sarah M Eden",
+      "reference": null,
+      "quote": "When a person is dying inside, she doesn’t need a jester.” Biddy set the bandages in his hands. “She needs a champion."
+    },
+    {
+      "id": "jester-quote-074",
+      "name": "Jester Quote 074",
+      "person": "Gloria Steinem",
+      "reference": null,
+      "quote": "Thanks to her, I began to learn about the Trickster, a common figure in Native mythologies, a boundary crosser who can go anywhere. Unlike the Jester and the Clown, who are at the bottom of a hierarchical pile and survive only by making the king laugh, the Trickster is free, a paradox, a break of boundaries who makes us laugh- and laughter lets the sacred it."
+    },
+    {
+      "id": "jester-quote-075",
+      "name": "Jester Quote 075",
+      "person": "Briana Godawa",
+      "reference": null,
+      "quote": "Jesus’ throat hurt to speak. “I see you are disguising yourself in more humble appearance these days. Afraid of something?” “The jester from Galilee. I am impressed you can maintain your wits after so many days in my little home away from home.” Belial spread his hands out, gesturing to the dry deadly expanse around them. “I will admit that the advance of civilization has made it somewhat disadvantageous for the Watchers to reveal our true nature or presence. Yes, we are working more behind the veil than we did in primeval days. On the other hand, the way things are going, I can foresee an age when humanity has turned religion into pretty fictions, and blinded themselves to our reality. Imagine the influence we will then have on ignorant fools who no longer believe in us."
+    },
+    {
+      "id": "jester-quote-076",
+      "name": "Jester Quote 076",
+      "person": "Peter David",
+      "reference": null,
+      "quote": "I remember so many things [. . .] The problem is, only half of them are true . . . and the half which is true keeps changing places with the half which is false."
+    },
+    {
+      "id": "jester-quote-077",
+      "name": "Jester Quote 077",
+      "person": "Phillippe Petit",
+      "reference": null,
+      "quote": "My parents wanted me to have an honorable profession and not to be a jester."
+    },
+    {
+      "id": "jester-quote-078",
+      "name": "Jester Quote 078",
+      "person": "Miguel De Cervantes Saavedra",
+      "reference": null,
+      "quote": "Friend to friend no more draws near, and the jester’s cane has become a spear"
+    },
+    {
+      "id": "jester-quote-079",
+      "name": "Jester Quote 079",
+      "person": "Jennifer L Armentrout",
+      "reference": null,
+      "quote": "Just so you know, I get incredibly bored quite easily and you will be forced to be my source of entertainment. You’ll kind of be like my own personal jester.”\nI flipped him off.\n“Well that wasn’t funny at all."
+    },
+    {
+      "id": "jester-quote-080",
+      "name": "Jester Quote 080",
+      "person": "Frank Caliendo",
+      "reference": null,
+      "quote": "ESPN takes itself very seriously, but for some reason, I’m allowed to be the court jester."
+    },
+    {
+      "id": "jester-quote-081",
+      "name": "Jester Quote 081",
+      "person": "Comte De Lautreamont",
+      "reference": null,
+      "quote": "Although according to certain philosophers it is quite difficult to distinguish the jester from the melancholic, life itself being a comic drama or a dramatic comedy."
+    },
+    {
+      "id": "jester-quote-082",
+      "name": "Jester Quote 082",
+      "person": "Emi Iyalla",
+      "reference": null,
+      "quote": "Whether you sweep the toilet of a school or you make cloths. Whether you take pictures of dancers or you are a full-time house wife.\n\nWhether you are a village jester or the president of a company, never trivialize what you do. Your work, no matter how small you think it is can make a difference in someone’s life. It all begins with you. It’s not what you do, it’s how you do it.\n\nI have seen a traffic police bring minutes of joy and happiness to people’s lives in a way that Presidents of nations cannot. Anytime you trivialize what gives you an income, you sell yourself cheap and lose your dignity. Do your work with all excitement, joy and positivity. Learn and grow from it. And if you haven’t found a job to do, look for one with the same zeal as you would do the actual work. Good morning and may God bless our efforts."
+    },
+    {
+      "id": "jester-quote-083",
+      "name": "Jester Quote 083",
+      "person": "Peter Fryer",
+      "reference": null,
+      "quote": "Because of your arrogance you have become nothing but a puppet, a court jester who believes that he has no choice other than what you remembered you could do a long time ago. Your only reason for existence now is to keep men in fear of what we see as Demons. They are the ones who control what may happen to them if they choose to take, what we are led to believe is the wrong path. The trail leads us away from his protection.\n\nYou are arrogant and because of your vanity, you have become blinded to the truth. Do you not know that you cannot take a soul from a man whose future has already been set? I also know this is someone you cannot overrule have the power to overrule? Even if you tried to take me from here, your power would be overruled. You are the tool of the carpenter, not the carpenter."
+    },
+    {
+      "id": "jester-quote-084",
+      "name": "Jester Quote 084",
+      "person": "Paul Beatty",
+      "reference": null,
+      "quote": "This traffic-court jester did more than tell jokes; he plucked out your subconscious and beat you silly with it, not until you were unrecognizable, but until you were recognizable."
+    },
+    {
+      "id": "jester-quote-085",
+      "name": "Jester Quote 085",
+      "person": "Dean Koontz",
+      "reference": null,
+      "quote": "Her husband, Rafael, who’d left her and who’d contributed not one penny to his children’s welfare, was a fool of such dimensions that he should have been required to dress like a jester, complete with silly hat and curled-toe shoes"
+    },
+    {
+      "id": "jester-quote-086",
+      "name": "Jester Quote 086",
+      "person": "Jostein Gaarder",
+      "reference": "The Solitaire Mystery",
+      "quote": "A joker is a little fool who is different from everyone else. He’s not a club, diamond, heart, or spade. He’s not an eight or a nine, a king or a jack. He is an outsider. He is placed in the same pack as the other cards, but he doesn’t belong there. Therefore, he can be removed without anybody missing him."
+    },
+    {
+      "id": "jester-quote-087",
+      "name": "Jester Quote 087",
+      "person": "Friedrich von Schiller",
+      "reference": "Die Verschwörung des Fiesco zu Genua",
+      "quote": "The joke loses everything when the joker laughs himself."
+    },
+    {
+      "id": "jester-quote-088",
+      "name": "Jester Quote 088",
+      "person": "Grant Morrison",
+      "reference": null,
+      "quote": "Laugh and the world laughs with you!"
+    },
+    {
+      "id": "jester-quote-089",
+      "name": "Jester Quote 089",
+      "person": "Joaquin Phoenix",
+      "reference": null,
+      "quote": "Is it just me or is it getting crazier out there?"
+    },
+    {
+      "id": "jester-quote-090",
+      "name": "Jester Quote 090",
+      "person": "Mokokoma Mokhonoana",
+      "reference": null,
+      "quote": "Our seriousness prevents us from enjoying the circus of life."
+    },
+    {
+      "id": "jester-quote-091",
+      "name": "Jester Quote 091",
+      "person": "P.S. Jagadeesh Kumar",
+      "reference": null,
+      "quote": "Don’t play with the power of a joker, he can give your life on your hand and he can take your life on the others hand"
+    },
+    {
+      "id": "jester-quote-092",
+      "name": "Jester Quote 092",
+      "person": "Mokokoma Mokhonoana",
+      "reference": "The Confessions of a Misfit",
+      "quote": "When a joker dies, the joke remains."
+    },
+    {
+      "id": "jester-quote-093",
+      "name": "Jester Quote 093",
+      "person": "Faraaz Kazi",
+      "reference": null,
+      "quote": "I fell, she laughed. I fell hard, she laughed harder. Seeing that I kept falling till I fell in love."
+    },
+    {
+      "id": "jester-quote-094",
+      "name": "Jester Quote 094",
+      "person": "Ags Orachimaruu",
+      "reference": null,
+      "quote": "I don’t wanna be the joker who makes eyes full of tears in the end"
+    },
+    {
+      "id": "jester-quote-095",
+      "name": "Jester Quote 095",
+      "person": "Vineet Raj Kapoor",
+      "reference": "no tunnel too dark",
+      "quote": "God is just one more Clown\nIn this Circus of mine"
+    },
+    {
+      "id": "jester-quote-096",
+      "name": "Jester Quote 096",
+      "person": "Criss Jami",
+      "reference": "Killosophy",
+      "quote": "Everyone has a sense of humor. If you don’t laugh at jokes, you probably laugh at opinions."
+    },
+    {
+      "id": "jester-quote-097",
+      "name": "Jester Quote 097",
+      "person": "Bob Monkhouse",
+      "reference": "Crying With Laughter: My Life Story",
+      "quote": "They all laughed when I said I’d become a comedian. Well, they’re not laughing now."
+    },
+    {
+      "id": "jester-quote-098",
+      "name": "Jester Quote 098",
+      "person": "Aristotle",
+      "reference": null,
+      "quote": "The gods too are fond of a joke."
+    },
+    {
+      "id": "jester-quote-099",
+      "name": "Jester Quote 099",
+      "person": "Georg Christoph Lichtenberg",
+      "reference": "The Waste Books",
+      "quote": "A person reveals his character by nothing so clearly as the joke he resents."
+    },
+    {
+      "id": "jester-quote-100",
+      "name": "Jester Quote 100",
+      "person": "Lorrie Moore",
+      "reference": "Like Life",
+      "quote": "Nothing is a joke with me. It just all comes out like one."
+    }
+  ]
+}

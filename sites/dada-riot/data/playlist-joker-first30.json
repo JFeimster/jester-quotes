@@ -1,0 +1,310 @@
+{
+  "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+  "playlist_title": "The JOKER Archetype",
+  "playlist_channel": "Jason Feimster",
+  "source_url": "https://www.youtube.com/playlist?list=PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+  "extracted_at": "2026-11-10",
+  "note": "Exact first 30 playlist positions. Missing metadata stays null; copyright-blocked entries are not published as playable site cards. This is a metadata snapshot, not evidence that embedding is permitted.",
+  "entries": [
+    {
+      "position": 1,
+      "video_id": "97Z6EmNy4VY",
+      "title": "Alan Watts -- The role of the trickster",
+      "channel_title": "LucidMaui",
+      "youtube_url": "https://www.youtube.com/watch?v=97Z6EmNy4VY",
+      "duration_seconds": 318,
+      "metadata_status": "publisher-description-retrieved",
+      "imported": true
+    },
+    {
+      "position": 2,
+      "video_id": "e9cBWpydHVg",
+      "title": "JOKER - Alan Watts",
+      "channel_title": "Sincere Montage",
+      "youtube_url": "https://www.youtube.com/watch?v=e9cBWpydHVg",
+      "duration_seconds": 446,
+      "metadata_status": "playlist-metadata-only",
+      "imported": true
+    },
+    {
+      "position": 3,
+      "video_id": "nnfiYjn4A9Q",
+      "title": "The Path of The Fool (Trickster)",
+      "channel_title": "Mind Mastery",
+      "youtube_url": "https://www.youtube.com/watch?v=nnfiYjn4A9Q",
+      "duration_seconds": 671,
+      "metadata_status": "publisher-description-retrieved",
+      "imported": true
+    },
+    {
+      "position": 4,
+      "video_id": "tZNBy-BdM2A",
+      "title": "Joaquin Phoenix on Playing Joker + Exclusive Outtake",
+      "channel_title": "Jimmy Kimmel Live",
+      "youtube_url": "https://www.youtube.com/watch?v=tZNBy-BdM2A",
+      "duration_seconds": 665,
+      "metadata_status": "playlist-metadata-only",
+      "imported": true
+    },
+    {
+      "position": 5,
+      "video_id": "QDQX8pm3FMg",
+      "title": null,
+      "channel_title": null,
+      "youtube_url": "https://www.youtube.com/watch?v=QDQX8pm3FMg",
+      "duration_seconds": null,
+      "metadata_status": "metadata-unavailable",
+      "imported": false
+    },
+    {
+      "position": 6,
+      "video_id": "L-O772dKBiw",
+      "title": "DMT Trip Report | JESTER/TRICKSTER Archetypes",
+      "channel_title": "Your Mate Tom",
+      "youtube_url": "https://www.youtube.com/watch?v=L-O772dKBiw",
+      "duration_seconds": 1150,
+      "metadata_status": "playlist-metadata-only",
+      "imported": true
+    },
+    {
+      "position": 7,
+      "video_id": "tftIoRymP1c",
+      "title": "The Dark Fool Archetype",
+      "channel_title": "DarkF00L",
+      "youtube_url": "https://www.youtube.com/watch?v=tftIoRymP1c",
+      "duration_seconds": 195,
+      "metadata_status": "publisher-description-retrieved",
+      "imported": true
+    },
+    {
+      "position": 8,
+      "video_id": "0IF9jWJBico",
+      "title": "DMT Jesters: An Archetype of our Subconscious?",
+      "channel_title": "Mind Escape",
+      "youtube_url": "https://www.youtube.com/watch?v=0IF9jWJBico",
+      "duration_seconds": 197,
+      "metadata_status": "playlist-metadata-only",
+      "imported": true
+    },
+    {
+      "position": 9,
+      "video_id": "bTIZzMVRGvU",
+      "title": "Archetypal Branding: The Jester",
+      "channel_title": "Project M Emotional Branding",
+      "youtube_url": "https://www.youtube.com/watch?v=bTIZzMVRGvU",
+      "duration_seconds": 359,
+      "metadata_status": "playlist-metadata-only",
+      "imported": true
+    },
+    {
+      "position": 10,
+      "video_id": "zy9vcLzt1i0",
+      "title": "The Fool's Story",
+      "channel_title": "Amy Sabatino",
+      "youtube_url": "https://www.youtube.com/watch?v=zy9vcLzt1i0",
+      "duration_seconds": 1441,
+      "metadata_status": "publisher-description-retrieved",
+      "imported": true
+    },
+    {
+      "position": 11,
+      "video_id": "AR20StuOaTA",
+      "title": null,
+      "channel_title": null,
+      "youtube_url": "https://www.youtube.com/watch?v=AR20StuOaTA",
+      "duration_seconds": null,
+      "metadata_status": "metadata-unavailable",
+      "imported": false
+    },
+    {
+      "position": 12,
+      "video_id": "tlH9e5QJMJ0",
+      "title": null,
+      "channel_title": null,
+      "youtube_url": "https://www.youtube.com/watch?v=tlH9e5QJMJ0",
+      "duration_seconds": null,
+      "metadata_status": "metadata-unavailable",
+      "imported": false
+    },
+    {
+      "position": 13,
+      "video_id": "GOO6Nn7e93I",
+      "title": null,
+      "channel_title": null,
+      "youtube_url": "https://www.youtube.com/watch?v=GOO6Nn7e93I",
+      "duration_seconds": null,
+      "metadata_status": "metadata-unavailable",
+      "imported": false
+    },
+    {
+      "position": 14,
+      "video_id": "xSpybwDi9jM",
+      "title": "Joker (2019) - Review & Psychological Analysis | Self-Archeology",
+      "channel_title": "Self-Archeology",
+      "youtube_url": "https://www.youtube.com/watch?v=xSpybwDi9jM",
+      "duration_seconds": 2781,
+      "metadata_status": "playlist-metadata-only",
+      "imported": true
+    },
+    {
+      "position": 15,
+      "video_id": "kJ7MH9eO5Wk",
+      "title": "The Wise Fool Archetype",
+      "channel_title": "Adam Weinreb",
+      "youtube_url": "https://www.youtube.com/watch?v=kJ7MH9eO5Wk",
+      "duration_seconds": 476,
+      "metadata_status": "playlist-metadata-only",
+      "imported": true
+    },
+    {
+      "position": 16,
+      "video_id": "ihuzEuecBZ4",
+      "title": "Am I Becoming a Fool, Sadhguru?",
+      "channel_title": "Sadhguru",
+      "youtube_url": "https://www.youtube.com/watch?v=ihuzEuecBZ4",
+      "duration_seconds": 346,
+      "metadata_status": "playlist-metadata-only",
+      "imported": true
+    },
+    {
+      "position": 17,
+      "video_id": "mJfPLXZ-0bM",
+      "title": "Alan Watts - The Joker",
+      "channel_title": "Intellectual Deep Web",
+      "youtube_url": "https://www.youtube.com/watch?v=mJfPLXZ-0bM",
+      "duration_seconds": 10627,
+      "metadata_status": "publisher-description-retrieved",
+      "imported": true
+    },
+    {
+      "position": 18,
+      "video_id": "wSYRw9bQFFc",
+      "title": "Alan Watts~ The Joker",
+      "channel_title": "Alan Wattsify (Fan Page)",
+      "youtube_url": "https://www.youtube.com/watch?v=wSYRw9bQFFc",
+      "duration_seconds": 10630,
+      "metadata_status": "copyright-blocked",
+      "imported": false
+    },
+    {
+      "position": 19,
+      "video_id": "etYmg1_k-Dk",
+      "title": null,
+      "channel_title": null,
+      "youtube_url": "https://www.youtube.com/watch?v=etYmg1_k-Dk",
+      "duration_seconds": null,
+      "metadata_status": "metadata-unavailable",
+      "imported": false
+    },
+    {
+      "position": 20,
+      "video_id": "KUmvOdrwkKE",
+      "title": null,
+      "channel_title": null,
+      "youtube_url": "https://www.youtube.com/watch?v=KUmvOdrwkKE",
+      "duration_seconds": null,
+      "metadata_status": "metadata-unavailable",
+      "imported": false
+    },
+    {
+      "position": 21,
+      "video_id": "o8C49kg5HfM",
+      "title": null,
+      "channel_title": null,
+      "youtube_url": "https://www.youtube.com/watch?v=o8C49kg5HfM",
+      "duration_seconds": null,
+      "metadata_status": "metadata-unavailable",
+      "imported": false
+    },
+    {
+      "position": 22,
+      "video_id": "XhWvFQaz9hk",
+      "title": "The True Story Of Heath Ledger's Joker",
+      "channel_title": "ScreenRant",
+      "youtube_url": "https://www.youtube.com/watch?v=XhWvFQaz9hk",
+      "duration_seconds": 1142,
+      "metadata_status": "publisher-description-retrieved",
+      "imported": true
+    },
+    {
+      "position": 23,
+      "video_id": "Rv1Zh2b-z7I",
+      "title": "Trap Music 2018 🌀 Bass Boosted Trap Mix 🌀 Best EDM Gaming Music",
+      "channel_title": "Magic Music",
+      "youtube_url": "https://www.youtube.com/watch?v=Rv1Zh2b-z7I",
+      "duration_seconds": 3682,
+      "metadata_status": "publisher-description-retrieved",
+      "imported": true
+    },
+    {
+      "position": 24,
+      "video_id": "ckpZcjeNd3E",
+      "title": "TRICKSTER",
+      "channel_title": "This Jungian Life",
+      "youtube_url": "https://www.youtube.com/watch?v=ckpZcjeNd3E",
+      "duration_seconds": 3051,
+      "metadata_status": "playlist-metadata-only",
+      "imported": true
+    },
+    {
+      "position": 25,
+      "video_id": "QSka5bcKaqA",
+      "title": "Lewis Hyde: The Disjointed Art of Tricksters",
+      "channel_title": "Minnesota Men's Conference",
+      "youtube_url": "https://www.youtube.com/watch?v=QSka5bcKaqA",
+      "duration_seconds": 1848,
+      "metadata_status": "publisher-description-retrieved",
+      "imported": true
+    },
+    {
+      "position": 26,
+      "video_id": "1dEO4t0b8Uk",
+      "title": "A Joker Tribute  | Light 'Em Up 「MV」",
+      "channel_title": "sessyfan791",
+      "youtube_url": "https://www.youtube.com/watch?v=1dEO4t0b8Uk",
+      "duration_seconds": 205,
+      "metadata_status": "playlist-metadata-only",
+      "imported": true
+    },
+    {
+      "position": 27,
+      "video_id": "0V6C8EWMHXM",
+      "title": null,
+      "channel_title": null,
+      "youtube_url": "https://www.youtube.com/watch?v=0V6C8EWMHXM",
+      "duration_seconds": null,
+      "metadata_status": "metadata-unavailable",
+      "imported": false
+    },
+    {
+      "position": 28,
+      "video_id": "pf1mzRhlVdc",
+      "title": "Archetypes of the Collective Unconscious | My Favorite Chapter in ALL of Jung's Work",
+      "channel_title": "Uberboyo",
+      "youtube_url": "https://www.youtube.com/watch?v=pf1mzRhlVdc",
+      "duration_seconds": 5922,
+      "metadata_status": "playlist-metadata-only",
+      "imported": true
+    },
+    {
+      "position": 29,
+      "video_id": "ZZfSm1u7YmM",
+      "title": "The Joker | Chaos",
+      "channel_title": "Ilia TS",
+      "youtube_url": "https://www.youtube.com/watch?v=ZZfSm1u7YmM",
+      "duration_seconds": 161,
+      "metadata_status": "publisher-description-retrieved",
+      "imported": true
+    },
+    {
+      "position": 30,
+      "video_id": "ALpMHtiQ7Tc",
+      "title": "Joker tribute Madness",
+      "channel_title": "Mirimania Productions",
+      "youtube_url": "https://www.youtube.com/watch?v=ALpMHtiQ7Tc",
+      "duration_seconds": 188,
+      "metadata_status": "publisher-description-retrieved",
+      "imported": true
+    }
+  ]
+}

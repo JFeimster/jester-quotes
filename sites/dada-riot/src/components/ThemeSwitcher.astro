@@ -1,0 +1,16 @@
+---
+import {themeCatalog} from '../design/theme-registry';
+---
+<div class="lab-theme-selector" role="tablist" aria-label="Choose a Jester Quotes design">
+  {themeCatalog.map((theme,i)=>(
+    <button
+      class:list={['lab-theme-button',`lab-theme-button--${theme.id}`]}
+      type="button" role="tab" id={`lab-tab-${theme.id}`}
+      aria-controls={`lab-panel-${theme.id}`}
+      aria-selected={i===0?'true':'false'} tabindex={i===0?0:-1}
+      data-lab-tab={theme.id}>
+      <span class="lab-theme-order">0{i+1} / {theme.eyebrow.split('/')[1]?.trim()}</span>
+      <strong>{theme.label}</strong><small>{theme.tagline}</small>
+    </button>
+  ))}
+</div>

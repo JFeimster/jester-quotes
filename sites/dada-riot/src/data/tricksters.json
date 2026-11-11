@@ -1,0 +1,363 @@
+[
+  {
+    "id": "trickster-anansi",
+    "slug": "anansi",
+    "name": "Anansi",
+    "kind": "folklore",
+    "media": [
+      "oral-tradition",
+      "literature"
+    ],
+    "tags": [
+      "cleverness",
+      "stories",
+      "shapeshifting"
+    ],
+    "culture_or_origin": "Akan storytelling traditions; also told across West Africa and the Caribbean",
+    "description": "A spider storyteller whose clever moves shape tales across Akan and Caribbean traditions. Anansi can win through resourcefulness, but the stories do not always reward every scheme.",
+    "source_list_number": 5,
+    "sources": [
+      {
+        "publisher": "Bowling Green State University Library",
+        "title": "Ananse — Folktale and Fairy Tale Resources",
+        "url": "https://libguides.bgsu.edu/fairytales/ananse"
+      }
+    ],
+    "related_collection_slugs": [
+      "wise-fools",
+      "carnival-absurdity"
+    ],
+    "verification_status": "verified",
+    "verified_at": "2026-11-10",
+    "image": null
+  },
+  {
+    "id": "trickster-brer-rabbit",
+    "slug": "brer-rabbit",
+    "name": "Br'er Rabbit",
+    "kind": "folklore",
+    "media": [
+      "oral-tradition",
+      "literature"
+    ],
+    "tags": [
+      "cleverness",
+      "survival",
+      "reversals"
+    ],
+    "culture_or_origin": "African American and African diaspora folktale traditions",
+    "description": "A small animal protagonist who repeatedly outthinks stronger opponents. The appeal of these tales lies in how a vulnerable character survives through imagination rather than force.",
+    "source_list_number": null,
+    "sources": [
+      {
+        "publisher": "Library of Congress",
+        "title": "Animal and Trickster Tales — American Folklife Center",
+        "url": "https://guides.loc.gov/folktales-oral-storytelling/animal-trickster-tales"
+      }
+    ],
+    "related_collection_slugs": [
+      "wise-fools",
+      "laughter-and-life"
+    ],
+    "verification_status": "verified",
+    "verified_at": "2026-11-10",
+    "image": null
+  },
+  {
+    "id": "trickster-coyote",
+    "slug": "coyote",
+    "name": "Coyote (selected traditions)",
+    "kind": "folklore",
+    "media": [
+      "oral-tradition"
+    ],
+    "tags": [
+      "reversals",
+      "mischief",
+      "stories"
+    ],
+    "culture_or_origin": "Several distinct Indigenous storytelling traditions of North America",
+    "description": "Coyote features in stories shared by different Native communities, often upsetting expectations through unconventional choices. Those traditions have distinct voices and should not be collapsed into a single version.",
+    "source_list_number": 19,
+    "sources": [
+      {
+        "publisher": "National Museum of the American Indian",
+        "title": "Cherokee Days: Storyteller Robert Lewis",
+        "url": "https://americanindian.si.edu/collections-search/object/yt_WMs1CIVzInM"
+      },
+      {
+        "publisher": "Library of Congress",
+        "title": "Animal and Trickster Tales",
+        "url": "https://guides.loc.gov/folktales-oral-storytelling/animal-trickster-tales"
+      }
+    ],
+    "related_collection_slugs": [
+      "carnival-absurdity"
+    ],
+    "verification_status": "verified",
+    "verified_at": "2026-11-10",
+    "image": null
+  },
+  {
+    "id": "trickster-eshu",
+    "slug": "eshu",
+    "name": "Èṣù (Eshu)",
+    "kind": "deity",
+    "media": [
+      "mythology",
+      "oral-tradition"
+    ],
+    "tags": [
+      "crossroads",
+      "communication",
+      "reversals"
+    ],
+    "culture_or_origin": "Yoruba religious traditions",
+    "description": "A divine messenger associated with thresholds, crossroads and the possibility of change. Describing Èṣù solely as a prankster would flatten a much broader spiritual role.",
+    "source_list_number": 29,
+    "sources": [
+      {
+        "publisher": "Smithsonian National Museum of African Art",
+        "title": "Staff — Èṣù (Eshu or Elegba)",
+        "url": "https://www.si.edu/es/object/staff%3Anmafa_2005-6-354"
+      }
+    ],
+    "related_collection_slugs": [
+      "masks-and-identity",
+      "truth-to-power"
+    ],
+    "verification_status": "verified",
+    "verified_at": "2026-11-10",
+    "image": null
+  },
+  {
+    "id": "trickster-hermes",
+    "slug": "hermes",
+    "name": "Hermes",
+    "kind": "deity",
+    "media": [
+      "mythology"
+    ],
+    "tags": [
+      "communication",
+      "cleverness",
+      "crossroads"
+    ],
+    "culture_or_origin": "Ancient Greek mythology",
+    "description": "The Greek messenger of the gods is also associated with travelers and movement between worlds. Stories about his ingenuity and deception give this boundary-crossing deity a trickster dimension.",
+    "source_list_number": 46,
+    "sources": [
+      {
+        "publisher": "The Metropolitan Museum of Art",
+        "title": "Marble relief with Hermes",
+        "url": "https://www.metmuseum.org/art/collection/search/255983"
+      },
+      {
+        "publisher": "Encyclopedia.com",
+        "title": "Tricksters — mythology reference",
+        "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/tricksters"
+      }
+    ],
+    "related_collection_slugs": [
+      "masks-and-identity"
+    ],
+    "verification_status": "verified",
+    "verified_at": "2026-11-10",
+    "image": null
+  },
+  {
+    "id": "trickster-loki",
+    "slug": "loki",
+    "name": "Loki",
+    "kind": "deity",
+    "media": [
+      "mythology"
+    ],
+    "tags": [
+      "shapeshifting",
+      "mischief",
+      "reversals"
+    ],
+    "culture_or_origin": "Norse mythology",
+    "description": "Loki is both a source of crises among the Norse gods and an occasional solver of their problems. His shapechanging and verbal ingenuity make the line between help and trouble difficult to hold.",
+    "source_list_number": 68,
+    "sources": [
+      {
+        "publisher": "Encyclopedia.com",
+        "title": "Loki — Norse mythology",
+        "url": "https://www.encyclopedia.com/philosophy-and-religion/ancient-religions/ancient-religion/loki"
+      }
+    ],
+    "related_collection_slugs": [
+      "carnival-absurdity",
+      "masks-and-identity"
+    ],
+    "verification_status": "verified",
+    "verified_at": "2026-11-10",
+    "image": null
+  },
+  {
+    "id": "trickster-maui",
+    "slug": "maui",
+    "name": "Māui",
+    "kind": "culture-hero",
+    "media": [
+      "mythology",
+      "oral-tradition"
+    ],
+    "tags": [
+      "cleverness",
+      "reversals",
+      "heroism"
+    ],
+    "culture_or_origin": "Māori traditions within the wider Polynesian world",
+    "description": "Māui's daring feats in Māori stories include bringing islands from the sea and capturing the sun. He is a culture hero whose audacity does more than simply create mischief.",
+    "source_list_number": 73,
+    "sources": [
+      {
+        "publisher": "Te Ara — Encyclopedia of New Zealand",
+        "title": "First peoples in Māori tradition",
+        "url": "https://teara.govt.nz/en/first-peoples-in-maori-tradition"
+      }
+    ],
+    "related_collection_slugs": [
+      "truth-to-power",
+      "wise-fools"
+    ],
+    "verification_status": "verified",
+    "verified_at": "2026-11-10",
+    "image": null
+  },
+  {
+    "id": "trickster-nasreddin-hodja",
+    "slug": "nasreddin-hodja",
+    "name": "Nasreddin Hodja",
+    "kind": "folklore",
+    "media": [
+      "oral-tradition",
+      "literature"
+    ],
+    "tags": [
+      "wit",
+      "wisdom",
+      "reversals"
+    ],
+    "culture_or_origin": "Shared anecdote traditions across Azerbaijan, Central Asia and Türkiye",
+    "description": "In anecdotes carried across multiple communities, Nasreddin uses a surprising reply or upside-down solution to expose an assumption. The fool and the teacher can sound remarkably alike.",
+    "source_list_number": null,
+    "sources": [
+      {
+        "publisher": "UNESCO Intangible Cultural Heritage",
+        "title": "Telling tradition of Nasreddin anecdotes",
+        "url": "https://ich.unesco.org/en/RL/telling-tradition-of-nasreddin-hodja-molla-nasreddin-juha-01705"
+      }
+    ],
+    "related_collection_slugs": [
+      "wise-fools",
+      "laughter-and-life"
+    ],
+    "verification_status": "verified",
+    "verified_at": "2026-11-10",
+    "image": null
+  },
+  {
+    "id": "trickster-raven-tlingit",
+    "slug": "raven-tlingit",
+    "name": "Raven (Tlingit storytelling)",
+    "kind": "folklore",
+    "media": [
+      "oral-tradition"
+    ],
+    "tags": [
+      "shapeshifting",
+      "stories",
+      "reversals"
+    ],
+    "culture_or_origin": "Tlingit storytelling traditions, Pacific Northwest",
+    "description": "In a Tlingit account of the world's light, Raven transforms himself and tricks his way toward releasing celestial lights. This entry presents one documented tradition, not every Raven narrative.",
+    "source_list_number": 96,
+    "sources": [
+      {
+        "publisher": "Smithsonian National Postal Museum",
+        "title": "Raven Story",
+        "url": "https://postalmuseum.si.edu/exhibition/the-american-indian-in-postage-stamps-american-indian-lifeways/raven-story"
+      },
+      {
+        "publisher": "National Museum of the American Indian",
+        "title": "How Raven Stole the Sun",
+        "url": "https://americanindian.si.edu/shop/publications/books-and-products"
+      }
+    ],
+    "related_collection_slugs": [
+      "masks-and-identity",
+      "carnival-absurdity"
+    ],
+    "verification_status": "verified",
+    "verified_at": "2026-11-10",
+    "image": null
+  },
+  {
+    "id": "trickster-reynard",
+    "slug": "reynard",
+    "name": "Reynard the Fox",
+    "kind": "literary",
+    "media": [
+      "literature",
+      "oral-tradition"
+    ],
+    "tags": [
+      "wit",
+      "satire",
+      "authority"
+    ],
+    "culture_or_origin": "Medieval European beast epics, especially French and Low Countries traditions",
+    "description": "The eloquent fox of medieval beast narratives repeatedly turns a world of stronger animals to his advantage. His exploits became a way to mock institutions and displays of power.",
+    "source_list_number": 98,
+    "sources": [
+      {
+        "publisher": "Encyclopaedia Britannica (1911), via Wikisource",
+        "title": "Reynard the Fox",
+        "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Reynard_the_Fox"
+      }
+    ],
+    "related_collection_slugs": [
+      "truth-to-power",
+      "art-of-the-jester"
+    ],
+    "verification_status": "verified",
+    "verified_at": "2026-11-10",
+    "image": null
+  },
+  {
+    "id": "trickster-sun-wukong",
+    "slug": "sun-wukong",
+    "name": "Sun Wukong (Monkey King)",
+    "kind": "literary",
+    "media": [
+      "literature",
+      "mythology"
+    ],
+    "tags": [
+      "shapeshifting",
+      "authority",
+      "heroism"
+    ],
+    "culture_or_origin": "Chinese literary tradition, notably Journey to the West",
+    "description": "The Monkey King of Journey to the West changes form, resists authority and seeks freedom from limits. His fantastic abilities make him both an unruly figure and a formidable traveling companion.",
+    "source_list_number": null,
+    "sources": [
+      {
+        "publisher": "National Geographic",
+        "title": "The history behind Sun Wukong, China's Monkey King",
+        "url": "https://www.nationalgeographic.com/history/article/who-is-sun-wukong-monkey-king"
+      }
+    ],
+    "related_collection_slugs": [
+      "truth-to-power",
+      "carnival-absurdity"
+    ],
+    "verification_status": "verified",
+    "verified_at": "2026-11-10",
+    "image": null
+  }
+]

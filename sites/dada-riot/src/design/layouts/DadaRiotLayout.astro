@@ -1,0 +1,31 @@
+---
+import QuoteCard from '../../components/QuoteCard.astro';
+import {getTheme,labThemeStyle} from '../theme-registry';
+import type {Quote} from '../../types/quote';
+const {samples}=Astro.props as {samples:[Quote,Quote,Quote]};
+const theme=getTheme('dada-riot');
+---
+<section class="lab-composition lab-composition--dada" data-theme="dada-riot" style={labThemeStyle(theme)} aria-label="Dada Riot collage and quote gallery">
+  <div class="lab-dada-mast"><span>JESTER / UNDERGROUND EDITION</span><strong>NO. 004</strong><span>UNAUTHORIZED PUBLICATION</span></div>
+  <div class="lab-dada-hero">
+    <div class="lab-dada-paper">
+      <span class="lab-dada-overline">WARNING: ORDINARY THINKING PROHIBITED</span>
+      <h2><span>RIP</span><span class="lab-dada-shift">UP THE</span><span class="lab-dada-outlined">RULES.</span></h2>
+      <p>Truth is a collage. Cut away the polite parts and see what survives.</p>
+      <div class="lab-dada-actions"><a href="/collections/truth-to-power/">READ THE DISSENT ↗</a><a href="/studio/">PRINT YOUR PROTEST ✳</a></div>
+      <span class="lab-dada-stamp" aria-hidden="true">JQ<br/>✳<br/>04</span>
+    </div>
+    <aside class="lab-dada-collage" aria-label="Dada Riot illustrated zine poster">
+      <div class="lab-dada-ticket" aria-hidden="true"><span>PUBLIC NOTICE</span><strong>THE FOOL<br/>IS RIGHT.</strong><small>ADMIT ONE / THINK TWICE</small></div>
+      <div class="lab-dada-lettering" aria-hidden="true"><span>WHO</span><span>MADE</span><span>THE</span><span>RULES?</span></div>
+      <div class="lab-dada-cutout" aria-hidden="true">!</div>
+      <div class="lab-dada-seal" aria-hidden="true">APPROVED<br/>BY NO ONE</div>
+    </aside>
+  </div>
+  <div class="lab-dada-strip"><span>CLIP / QUOTE / DISRUPT</span><span>THE ARCHIVE IS NOT NEUTRAL</span><span>ISSUE 004</span></div>
+    <div class="lab-quote-grid lab-quote-grid--dada" aria-label="Selected quotations">
+    <QuoteCard quote={samples[0]} index={0}/><QuoteCard quote={samples[1]} index={3}/><QuoteCard quote={samples[2]} index={5}/>
+  </div>
+
+  <div class="lab-dada-footer"><span>PRINTED IN THE MARGINS OF COMMON SENSE</span><a href="/sources/">CHECK THE SOURCES ↗</a></div>
+</section>

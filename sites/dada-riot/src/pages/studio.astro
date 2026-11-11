@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import QuoteStudio from '../components/QuoteStudio.astro';
+---
+<BaseLayout title="Quote Studio — Create Jester Quote Art | Jester Quotes" description="Create high-resolution quote posters in four formats and seven styles, including Riot Press, Dada Riot and Neo-Brutalist. Browse 100 preserved quotations and download PNG artwork.">
+  <div class="wrap discovery-page studio-page">
+    <header class="discovery-heading">
+      <p class="eyebrow">Jester Quotes / Poster press and creator tools</p>
+      <h1>Make mischief <em>look good.</em></h1>
+      <p class="lede">One hundred quotations. Seven visual styles. Four canvas sizes. A little trouble, beautifully typeset.</p>
+    </header>
+    <figure class="studio-promo"><img src="/assets/dada-riot-hero-clean-16x9.webp" alt="Dada Riot editorial collage artwork" width="1440" height="812" loading="lazy" decoding="async"/><figcaption>Set the words. Choose the frame. Make it yours.</figcaption></figure>
+    <QuoteStudio />
+    <div class="studio-next"><span>Still searching for the right words?</span><a href="/collections/">Explore curated collections ↗</a></div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,1711 @@
+[
+  {
+    "id": "video-crashcourse-tricksters",
+    "slug": "crashcourse-tricksters",
+    "title": "Tricksters: An Introduction — Crash Course World Mythology #20",
+    "video_id": "RW1ChiWyiZQ",
+    "youtube_url": "https://www.youtube.com/watch?v=RW1ChiWyiZQ",
+    "channel_title": "CrashCourse",
+    "summary": "An introduction to the trickster across myth traditions, from Anansi to Br’er Rabbit; useful for comparing the category before exploring individual stories.",
+    "tags": [
+      "overview",
+      "folklore",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": true,
+    "related_trickster_ids": [
+      "trickster-anansi",
+      "trickster-brer-rabbit"
+    ]
+  },
+  {
+    "id": "video-teded-anansi",
+    "slug": "teded-anansi",
+    "title": "The Myth of Anansi, the Trickster Spider",
+    "video_id": "6nWba9Ii5Lo",
+    "youtube_url": "https://www.youtube.com/watch?v=6nWba9Ii5Lo",
+    "channel_title": "TED-Ed",
+    "summary": "Emily Zobel Marshall tells an Akan story about Anansi’s bid to acquire stories. Use the linked lesson for context and creator credits.",
+    "tags": [
+      "anansi",
+      "african-diaspora",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": true,
+    "related_trickster_ids": [
+      "trickster-anansi"
+    ]
+  },
+  {
+    "id": "video-teded-loki-builder",
+    "slug": "teded-loki-builder",
+    "title": "The Myth of Loki and the Master Builder",
+    "video_id": "MTz2f9yjmK8",
+    "youtube_url": "https://www.youtube.com/watch?v=MTz2f9yjmK8",
+    "channel_title": "TED-Ed",
+    "summary": "An animated retelling of Loki and a bargain involving the defenses of Asgard. Compare the plot with other Norse sources.",
+    "tags": [
+      "loki",
+      "norse",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-loki"
+    ]
+  },
+  {
+    "id": "video-teded-loki-mistletoe",
+    "slug": "teded-loki-mistletoe",
+    "title": "The Myth of Loki and the Deadly Mistletoe",
+    "video_id": "8Poklx9Ifz4",
+    "youtube_url": "https://www.youtube.com/watch?v=8Poklx9Ifz4",
+    "channel_title": "TED-Ed",
+    "summary": "A separate Norse narrative centering on Baldur and Loki; it offers a darker view of the figure’s disruptive role.",
+    "tags": [
+      "loki",
+      "norse",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-loki"
+    ]
+  },
+  {
+    "id": "video-teded-monkey-king",
+    "slug": "teded-monkey-king",
+    "title": "The Monkey King and the Realm of the Dead",
+    "video_id": "Xs-9vfWDJfU",
+    "youtube_url": "https://www.youtube.com/watch?v=Xs-9vfWDJfU",
+    "channel_title": "TED-Ed",
+    "summary": "An animated story of Sun Wukong and his resistance to the rules of the underworld, emphasizing the Monkey King’s extraordinary powers.",
+    "tags": [
+      "monkey-king",
+      "literature",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-sun-wukong"
+    ]
+  },
+  {
+    "id": "video-joker-playlist-01",
+    "slug": "joker-playlist-01",
+    "title": "Alan Watts -- The role of the trickster",
+    "video_id": "97Z6EmNy4VY",
+    "youtube_url": "https://www.youtube.com/watch?v=97Z6EmNy4VY",
+    "channel_title": "LucidMaui",
+    "summary": "Alan Watts is presented discussing the role of the trickster as a teacher. The uploader notes that a teacher may also be an encounter, situation, or book.",
+    "tags": [
+      "alan-watts",
+      "trickster",
+      "philosophy"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 1,
+    "duration_seconds": 318
+  },
+  {
+    "id": "video-joker-playlist-02",
+    "slug": "joker-playlist-02",
+    "title": "JOKER - Alan Watts",
+    "video_id": "e9cBWpydHVg",
+    "youtube_url": "https://www.youtube.com/watch?v=e9cBWpydHVg",
+    "channel_title": "Sincere Montage",
+    "summary": "An Alan Watts-focused video titled JOKER from Sincere Montage. The playlist identifies the creator, but a publisher description was unavailable during this extraction.",
+    "tags": [
+      "alan-watts",
+      "joker",
+      "philosophy"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 2,
+    "duration_seconds": 446
+  },
+  {
+    "id": "video-joker-playlist-03",
+    "slug": "joker-playlist-03",
+    "title": "The Path of The Fool (Trickster)",
+    "video_id": "nnfiYjn4A9Q",
+    "youtube_url": "https://www.youtube.com/watch?v=nnfiYjn4A9Q",
+    "channel_title": "Mind Mastery",
+    "summary": "The creator frames the fool/trickster path around the tension between wisdom and foolishness and links to related material on the archetype and personal growth.",
+    "tags": [
+      "fool",
+      "trickster",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 3,
+    "duration_seconds": 671
+  },
+  {
+    "id": "video-joker-playlist-04",
+    "slug": "joker-playlist-04",
+    "title": "Joaquin Phoenix on Playing Joker + Exclusive Outtake",
+    "video_id": "tZNBy-BdM2A",
+    "youtube_url": "https://www.youtube.com/watch?v=tZNBy-BdM2A",
+    "channel_title": "Jimmy Kimmel Live",
+    "summary": "An interview featuring Joaquin Phoenix discussing his portrayal of the Joker, with an exclusive outtake identified in the publisher's title.",
+    "tags": [
+      "joker",
+      "film",
+      "interview"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 4,
+    "duration_seconds": 665
+  },
+  {
+    "id": "video-joker-playlist-06",
+    "slug": "joker-playlist-06",
+    "title": "DMT Trip Report | JESTER/TRICKSTER Archetypes",
+    "video_id": "L-O772dKBiw",
+    "youtube_url": "https://www.youtube.com/watch?v=L-O772dKBiw",
+    "channel_title": "Your Mate Tom",
+    "summary": "A first-person DMT trip report presented through jester and trickster archetype imagery. Details beyond the title were unavailable during the extraction.",
+    "tags": [
+      "jester",
+      "trickster",
+      "dmt"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 6,
+    "duration_seconds": 1150
+  },
+  {
+    "id": "video-joker-playlist-07",
+    "slug": "joker-playlist-07",
+    "title": "The Dark Fool Archetype",
+    "video_id": "tftIoRymP1c",
+    "youtube_url": "https://www.youtube.com/watch?v=tftIoRymP1c",
+    "channel_title": "DarkF00L",
+    "summary": "The uploader presents the Dark Fool archetype in the context of Middle Path Dionysian theory, citing influence from Thomas LeRoy.",
+    "tags": [
+      "fool",
+      "archetype",
+      "philosophy"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 7,
+    "duration_seconds": 195
+  },
+  {
+    "id": "video-joker-playlist-08",
+    "slug": "joker-playlist-08",
+    "title": "DMT Jesters: An Archetype of our Subconscious?",
+    "video_id": "0IF9jWJBico",
+    "youtube_url": "https://www.youtube.com/watch?v=0IF9jWJBico",
+    "channel_title": "Mind Escape",
+    "summary": "A video asking whether DMT jesters reflect an archetype of the subconscious. The topic is derived from the verified title; further description was not available.",
+    "tags": [
+      "jester",
+      "dmt",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 8,
+    "duration_seconds": 197
+  },
+  {
+    "id": "video-joker-playlist-09",
+    "slug": "joker-playlist-09",
+    "title": "Archetypal Branding: The Jester",
+    "video_id": "bTIZzMVRGvU",
+    "youtube_url": "https://www.youtube.com/watch?v=bTIZzMVRGvU",
+    "channel_title": "Project M Emotional Branding",
+    "summary": "A branding-focused video about the Jester archetype from Project M Emotional Branding. The source listing did not expose a full publisher description.",
+    "tags": [
+      "jester",
+      "branding",
+      "archetype"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 9,
+    "duration_seconds": 359
+  },
+  {
+    "id": "video-joker-playlist-10",
+    "slug": "joker-playlist-10",
+    "title": "The Fool's Story",
+    "video_id": "zy9vcLzt1i0",
+    "youtube_url": "https://www.youtube.com/watch?v=zy9vcLzt1i0",
+    "channel_title": "Amy Sabatino",
+    "summary": "A narrative following the Fool on a journey through life and Tarot, as described in Amy Sabatino's publisher description.",
+    "tags": [
+      "fool",
+      "tarot",
+      "storytelling"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 10,
+    "duration_seconds": 1441
+  },
+  {
+    "id": "video-joker-playlist-14",
+    "slug": "joker-playlist-14",
+    "title": "Joker (2019) - Review & Psychological Analysis | Self-Archeology",
+    "video_id": "xSpybwDi9jM",
+    "youtube_url": "https://www.youtube.com/watch?v=xSpybwDi9jM",
+    "channel_title": "Self-Archeology",
+    "summary": "A review and psychological analysis of the 2019 film Joker from Self-Archeology, as indicated by its verified YouTube title.",
+    "tags": [
+      "joker",
+      "film",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 14,
+    "duration_seconds": 2781
+  },
+  {
+    "id": "video-joker-playlist-15",
+    "slug": "joker-playlist-15",
+    "title": "The Wise Fool Archetype",
+    "video_id": "kJ7MH9eO5Wk",
+    "youtube_url": "https://www.youtube.com/watch?v=kJ7MH9eO5Wk",
+    "channel_title": "Adam Weinreb",
+    "summary": "An introduction to the Wise Fool archetype by Adam Weinreb. The title and creator were verified from the playlist; a fuller description was not available.",
+    "tags": [
+      "fool",
+      "archetype",
+      "wisdom"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 15,
+    "duration_seconds": 476
+  },
+  {
+    "id": "video-joker-playlist-16",
+    "slug": "joker-playlist-16",
+    "title": "Am I Becoming a Fool, Sadhguru?",
+    "video_id": "ihuzEuecBZ4",
+    "youtube_url": "https://www.youtube.com/watch?v=ihuzEuecBZ4",
+    "channel_title": "Sadhguru",
+    "summary": "Sadhguru responds to a question framed as Am I Becoming a Fool? The original video supplies the creator's full context.",
+    "tags": [
+      "fool",
+      "spirituality",
+      "wisdom"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 16,
+    "duration_seconds": 346
+  },
+  {
+    "id": "video-joker-playlist-17",
+    "slug": "joker-playlist-17",
+    "title": "Alan Watts - The Joker",
+    "video_id": "mJfPLXZ-0bM",
+    "youtube_url": "https://www.youtube.com/watch?v=mJfPLXZ-0bM",
+    "channel_title": "Intellectual Deep Web",
+    "summary": "A long-form Alan Watts recording titled The Joker, shared by Intellectual Deep Web. The playlist records a duration of nearly three hours.",
+    "tags": [
+      "alan-watts",
+      "joker",
+      "philosophy"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 17,
+    "duration_seconds": 10627
+  },
+  {
+    "id": "video-joker-playlist-22",
+    "slug": "joker-playlist-22",
+    "title": "The True Story Of Heath Ledger's Joker",
+    "video_id": "XhWvFQaz9hk",
+    "youtube_url": "https://www.youtube.com/watch?v=XhWvFQaz9hk",
+    "channel_title": "ScreenRant",
+    "summary": "ScreenRant looks back at Heath Ledger's performance as the Joker in The Dark Knight and discusses the actor's legacy.",
+    "tags": [
+      "joker",
+      "heath-ledger",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 22,
+    "duration_seconds": 1142
+  },
+  {
+    "id": "video-joker-playlist-23",
+    "slug": "joker-playlist-23",
+    "title": "Trap Music 2018 🌀 Bass Boosted Trap Mix 🌀 Best EDM Gaming Music",
+    "video_id": "Rv1Zh2b-z7I",
+    "youtube_url": "https://www.youtube.com/watch?v=Rv1Zh2b-z7I",
+    "channel_title": "Magic Music",
+    "summary": "An extended trap and EDM gaming music mix from Magic Music. This entry is retained because it appears in the curator's playlist, not because a mythological link is established.",
+    "tags": [
+      "music",
+      "mix",
+      "playlist"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 23,
+    "duration_seconds": 3682
+  },
+  {
+    "id": "video-joker-playlist-24",
+    "slug": "joker-playlist-24",
+    "title": "TRICKSTER",
+    "video_id": "ckpZcjeNd3E",
+    "youtube_url": "https://www.youtube.com/watch?v=ckpZcjeNd3E",
+    "channel_title": "This Jungian Life",
+    "summary": "A video titled TRICKSTER from This Jungian Life. Its title and publisher are confirmed, but the source description was not accessible during extraction.",
+    "tags": [
+      "trickster",
+      "psychology",
+      "jung"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 24,
+    "duration_seconds": 3051
+  },
+  {
+    "id": "video-joker-playlist-25",
+    "slug": "joker-playlist-25",
+    "title": "Lewis Hyde: The Disjointed Art of Tricksters",
+    "video_id": "QSka5bcKaqA",
+    "youtube_url": "https://www.youtube.com/watch?v=QSka5bcKaqA",
+    "channel_title": "Minnesota Men's Conference",
+    "summary": "Lewis Hyde examines tricksters as boundary-crossers whose mischief keeps social and cultural structures flexible, drawing on mythology, literature and art.",
+    "tags": [
+      "trickster",
+      "lecture",
+      "literature"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 25,
+    "duration_seconds": 1848
+  },
+  {
+    "id": "video-joker-playlist-26",
+    "slug": "joker-playlist-26",
+    "title": "A Joker Tribute  | Light 'Em Up 「MV」",
+    "video_id": "1dEO4t0b8Uk",
+    "youtube_url": "https://www.youtube.com/watch?v=1dEO4t0b8Uk",
+    "channel_title": "sessyfan791",
+    "summary": "A Joker fan-tribute music video titled Light 'Em Up. The verified source title identifies the format, though the publisher's description was unavailable.",
+    "tags": [
+      "joker",
+      "fan-edit",
+      "music"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 26,
+    "duration_seconds": 205
+  },
+  {
+    "id": "video-joker-playlist-28",
+    "slug": "joker-playlist-28",
+    "title": "Archetypes of the Collective Unconscious | My Favorite Chapter in ALL of Jung's Work",
+    "video_id": "pf1mzRhlVdc",
+    "youtube_url": "https://www.youtube.com/watch?v=pf1mzRhlVdc",
+    "channel_title": "Uberboyo",
+    "summary": "Uberboyo discusses Jung's Archetypes of the Collective Unconscious and focuses on a personally favored chapter, as indicated by the source title.",
+    "tags": [
+      "jung",
+      "archetype",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 28,
+    "duration_seconds": 5922
+  },
+  {
+    "id": "video-joker-playlist-29",
+    "slug": "joker-playlist-29",
+    "title": "The Joker | Chaos",
+    "video_id": "ZZfSm1u7YmM",
+    "youtube_url": "https://www.youtube.com/watch?v=ZZfSm1u7YmM",
+    "channel_title": "Ilia TS",
+    "summary": "A tribute edit focused on Heath Ledger's Joker and the theme of chaos, as described by the video publisher Ilia TS.",
+    "tags": [
+      "joker",
+      "heath-ledger",
+      "fan-edit"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 29,
+    "duration_seconds": 161
+  },
+  {
+    "id": "video-joker-playlist-30",
+    "slug": "joker-playlist-30",
+    "title": "Joker tribute Madness",
+    "video_id": "ALpMHtiQ7Tc",
+    "youtube_url": "https://www.youtube.com/watch?v=ALpMHtiQ7Tc",
+    "channel_title": "Mirimania Productions",
+    "summary": "A Heath Ledger Joker tribute centered on the theme of madness. The uploader credits other footage and music sources in the original video description.",
+    "tags": [
+      "joker",
+      "heath-ledger",
+      "fan-edit"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 30,
+    "duration_seconds": 188
+  },
+  {
+    "id": "video-joker-playlist-31",
+    "slug": "joker-playlist-31",
+    "title": "8 Signs You’re an ENTP like The Joker  - Batman's Joker Personality",
+    "video_id": "eWA4pMrBrTA",
+    "youtube_url": "https://www.youtube.com/watch?v=eWA4pMrBrTA",
+    "channel_title": "Psychology Element",
+    "summary": "A personality-focused comparison of the Joker with ENTP characteristics, using Batman's infamous antagonist as the reference point.",
+    "tags": [
+      "joker",
+      "psychology",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 31,
+    "duration_seconds": 624
+  },
+  {
+    "id": "video-joker-playlist-32",
+    "slug": "joker-playlist-32",
+    "title": "Dark MBTI: ENTP - The Perfect Antihero",
+    "video_id": "KViybJEgozk",
+    "youtube_url": "https://www.youtube.com/watch?v=KViybJEgozk",
+    "channel_title": "Carsten T. MacDonald",
+    "summary": "A discussion of the darker side of the ENTP personality type and its portrayal through the antihero archetype.",
+    "tags": [
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 32,
+    "duration_seconds": 978
+  },
+  {
+    "id": "video-joker-playlist-33",
+    "slug": "joker-playlist-33",
+    "title": "Writing ENTP Villains",
+    "video_id": "jGB2wjY-Oik",
+    "youtube_url": "https://www.youtube.com/watch?v=jGB2wjY-Oik",
+    "channel_title": "Psychology and Chill w/ Michi",
+    "summary": "A creator-focused look at writing antagonists associated with the ENTP personality type, framed around villain characterization.",
+    "tags": [
+      "psychology",
+      "storytelling"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 33,
+    "duration_seconds": 1064
+  },
+  {
+    "id": "video-joker-playlist-34",
+    "slug": "joker-playlist-34",
+    "title": "Villain Therapy: JOKER",
+    "video_id": "EFZA8v5WCzU",
+    "youtube_url": "https://www.youtube.com/watch?v=EFZA8v5WCzU",
+    "channel_title": "Cinema Therapy",
+    "summary": "Cinema Therapy considers the Joker through the lens of its recurring villain-therapy format and character psychology.",
+    "tags": [
+      "joker",
+      "psychology",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 34,
+    "duration_seconds": 2111
+  },
+  {
+    "id": "video-joker-playlist-35",
+    "slug": "joker-playlist-35",
+    "title": "The Philosophy of The Joker – Wisecrack Edition",
+    "video_id": "YPvI2rLCIFc",
+    "youtube_url": "https://www.youtube.com/watch?v=YPvI2rLCIFc",
+    "channel_title": "Wisecrack",
+    "summary": "Wisecrack's philosophical examination of the Joker, framed around ideas and arguments associated with the character.",
+    "tags": [
+      "joker",
+      "philosophy",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 35,
+    "duration_seconds": 876
+  },
+  {
+    "id": "video-joker-playlist-36",
+    "slug": "joker-playlist-36",
+    "title": "JOKER | Psychology & Philosophy (based on Carl Jung & Albert Camus)",
+    "video_id": "3wCYi3EbNnA",
+    "youtube_url": "https://www.youtube.com/watch?v=3wCYi3EbNnA",
+    "channel_title": "Einzelgänger",
+    "summary": "Einzelgänger interprets the film Joker using psychological and philosophical themes associated with Carl Jung and Albert Camus.",
+    "tags": [
+      "joker",
+      "psychology",
+      "philosophy",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 36,
+    "duration_seconds": 676
+  },
+  {
+    "id": "video-joker-playlist-37",
+    "slug": "joker-playlist-37",
+    "title": "The Joker: A Psychoanalysis of the Clown Prince of Crime",
+    "video_id": "qzhsm-2VmQQ",
+    "youtube_url": "https://www.youtube.com/watch?v=qzhsm-2VmQQ",
+    "channel_title": "Brummeo",
+    "summary": "A psychoanalytic reading of Batman's Clown Prince of Crime, positioning the Joker as a subject of character analysis.",
+    "tags": [
+      "joker",
+      "psychology",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 37,
+    "duration_seconds": 463
+  },
+  {
+    "id": "video-joker-playlist-38",
+    "slug": "joker-playlist-38",
+    "title": "Joker's Wild: Clown Prince of Crime",
+    "video_id": "71dHYFwVgC8",
+    "youtube_url": "https://www.youtube.com/watch?v=71dHYFwVgC8",
+    "channel_title": "Edward Teach",
+    "summary": "A short feature centered on the Joker's role as the Clown Prince of Crime, as identified in the original title.",
+    "tags": [
+      "joker",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 38,
+    "duration_seconds": 157
+  },
+  {
+    "id": "video-joker-playlist-39",
+    "slug": "joker-playlist-39",
+    "title": "Joker- A Tribute to The Clown Prince Of Crime",
+    "video_id": "8zpGYaQSj7Y",
+    "youtube_url": "https://www.youtube.com/watch?v=8zpGYaQSj7Y",
+    "channel_title": "MovieTributes00",
+    "summary": "An edited tribute to the Joker and his Clown Prince of Crime persona, presented as a fan-oriented character feature.",
+    "tags": [
+      "joker",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 39,
+    "duration_seconds": 345
+  },
+  {
+    "id": "video-joker-playlist-40",
+    "slug": "joker-playlist-40",
+    "title": "A Real Lawyer Defends Animated Joker | Fandom IRL",
+    "video_id": "G9P16XlhNE0",
+    "youtube_url": "https://www.youtube.com/watch?v=G9P16XlhNE0",
+    "channel_title": "Fandom Entertainment",
+    "summary": "Fandom Entertainment puts an animated Joker scenario before a lawyer, using a legal-defense premise for an entertainment discussion.",
+    "tags": [
+      "joker",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 40,
+    "duration_seconds": 407
+  },
+  {
+    "id": "video-joker-playlist-41",
+    "slug": "joker-playlist-41",
+    "title": "The Joker | 4K Short Film",
+    "video_id": "SVze7PjRtVw",
+    "youtube_url": "https://www.youtube.com/watch?v=SVze7PjRtVw",
+    "channel_title": "Camgoat",
+    "summary": "A standalone short film featuring the Joker, identified by its creator as a 4K production rather than a character-analysis essay.",
+    "tags": [
+      "joker",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 41,
+    "duration_seconds": 874
+  },
+  {
+    "id": "video-joker-playlist-42",
+    "slug": "joker-playlist-42",
+    "title": "The Joker's Farewell - Adam Bartholomew",
+    "video_id": "EFlI2ZKyYYg",
+    "youtube_url": "https://www.youtube.com/watch?v=EFlI2ZKyYYg",
+    "channel_title": "Hand Me Down Films",
+    "summary": "A short video titled The Joker's Farewell, credited to Adam Bartholomew and published through Hand Me Down Films.",
+    "tags": [
+      "joker",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 42,
+    "duration_seconds": 267
+  },
+  {
+    "id": "video-joker-playlist-44",
+    "slug": "joker-playlist-44",
+    "title": "The Trickster Archetype (and why our world needs it)",
+    "video_id": "BrTL9b1Mock",
+    "youtube_url": "https://www.youtube.com/watch?v=BrTL9b1Mock",
+    "channel_title": "Eric Dodson",
+    "summary": "Eric Dodson examines the trickster archetype and frames its disruptive role as something contemporary society may still need.",
+    "tags": [
+      "trickster",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 44,
+    "duration_seconds": 1833
+  },
+  {
+    "id": "video-joker-playlist-45",
+    "slug": "joker-playlist-45",
+    "title": "The Trickster \"Archetype\": The Truth about Your Shadow",
+    "video_id": "FKJJuQ8Esag",
+    "youtube_url": "https://www.youtube.com/watch?v=FKJJuQ8Esag",
+    "channel_title": "James P Dowling",
+    "summary": "James P Dowling considers the trickster archetype in relation to the shadow, with the video's title questioning conventional interpretations.",
+    "tags": [
+      "trickster",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 45,
+    "duration_seconds": 1707
+  },
+  {
+    "id": "video-joker-playlist-46",
+    "slug": "joker-playlist-46",
+    "title": "Court Jesters: Robin Williams, Gene Wilder and Bill Murray",
+    "video_id": "itC4IBGmTUQ",
+    "youtube_url": "https://www.youtube.com/watch?v=itC4IBGmTUQ",
+    "channel_title": "Blank on Blank",
+    "summary": "Blank on Blank brings together Robin Williams, Gene Wilder and Bill Murray to explore comedy, court jesters and the depth behind humor.",
+    "tags": [
+      "fool"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 46,
+    "duration_seconds": 832
+  },
+  {
+    "id": "video-joker-playlist-47",
+    "slug": "joker-playlist-47",
+    "title": "The Fool and the Journey of Self Discovery",
+    "video_id": "s61JJd5T_o0",
+    "youtube_url": "https://www.youtube.com/watch?v=s61JJd5T_o0",
+    "channel_title": "Gaia",
+    "summary": "A self-discovery discussion framed as the Fool's journey, linking the archetypal traveler to personal exploration.",
+    "tags": [
+      "fool"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 47,
+    "duration_seconds": 621
+  },
+  {
+    "id": "video-joker-playlist-48",
+    "slug": "joker-playlist-48",
+    "title": "Sadhguru at Berkeley Haas | Leader Is a Fool",
+    "video_id": "Bvg_ZCOeYvM",
+    "youtube_url": "https://www.youtube.com/watch?v=Bvg_ZCOeYvM",
+    "channel_title": "UC Berkeley Haas",
+    "summary": "At Berkeley Haas, Sadhguru discusses leadership, questioning conventions and what it means for a leader to embrace being a fool.",
+    "tags": [
+      "fool",
+      "philosophy",
+      "lecture"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 48,
+    "duration_seconds": 5577
+  },
+  {
+    "id": "video-joker-playlist-49",
+    "slug": "joker-playlist-49",
+    "title": "How to Get Wisdom: Become a Fool",
+    "video_id": "xRU_IhLTQNw",
+    "youtube_url": "https://www.youtube.com/watch?v=xRU_IhLTQNw",
+    "channel_title": "Desiring God",
+    "summary": "An exploration of the apparent paradox between foolishness and wisdom, framed around becoming a fool to learn.",
+    "tags": [
+      "fool",
+      "philosophy"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 49,
+    "duration_seconds": 2222
+  },
+  {
+    "id": "video-joker-playlist-50",
+    "slug": "joker-playlist-50",
+    "title": "What's So Great About Russian Literature - A Look at the 'Fool in Christ' Figure",
+    "video_id": "tltZ-qqNAcs",
+    "youtube_url": "https://www.youtube.com/watch?v=tltZ-qqNAcs",
+    "channel_title": "Dinesh D'Souza",
+    "summary": "A look at the 'Fool in Christ' figure as a theme in Russian literature, presented as part of a broader literary discussion.",
+    "tags": [
+      "fool",
+      "storytelling"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 50,
+    "duration_seconds": 397
+  },
+  {
+    "id": "video-joker-playlist-51",
+    "slug": "joker-playlist-51",
+    "title": "Fool Control",
+    "video_id": "QO8TPIqJPms",
+    "youtube_url": "https://www.youtube.com/watch?v=QO8TPIqJPms",
+    "channel_title": "HG Tudor - Knowing The Narcissist : Ultra",
+    "summary": "A creator video titled Fool Control from HG Tudor's Knowing the Narcissist channel; the original provides context for the term.",
+    "tags": [
+      "fool"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 51,
+    "duration_seconds": 652
+  },
+  {
+    "id": "video-joker-playlist-52",
+    "slug": "joker-playlist-52",
+    "title": "The Fool's Journey | 2 | Golden Shadow Podcast",
+    "video_id": "7Y_TqtyrFd0",
+    "youtube_url": "https://www.youtube.com/watch?v=7Y_TqtyrFd0",
+    "channel_title": "Golden Shadow",
+    "summary": "An installment of the Golden Shadow podcast addressing the Fool's Journey as part of its ongoing archetypal discussion.",
+    "tags": [
+      "fool"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 52,
+    "duration_seconds": 2817
+  },
+  {
+    "id": "video-joker-playlist-53",
+    "slug": "joker-playlist-53",
+    "title": "Alan Watts - The Joker",
+    "video_id": "tAQwT2W_aO4",
+    "youtube_url": "https://www.youtube.com/watch?v=tAQwT2W_aO4",
+    "channel_title": "blimp",
+    "summary": "An Alan Watts recording titled The Joker from the uploader blimp; this is a distinct playlist entry from the earlier Watts uploads.",
+    "tags": [
+      "joker",
+      "philosophy",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 53,
+    "duration_seconds": 1842
+  },
+  {
+    "id": "video-joker-playlist-54",
+    "slug": "joker-playlist-54",
+    "title": "Alan Watts - The Social Institution",
+    "video_id": "uLSYnS5WG3I",
+    "youtube_url": "https://www.youtube.com/watch?v=uLSYnS5WG3I",
+    "channel_title": "Desmond",
+    "summary": "An Alan Watts-focused upload titled The Social Institution, included in the playlist alongside discussions of the Fool and Joker.",
+    "tags": [
+      "joker",
+      "fool",
+      "philosophy",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 54,
+    "duration_seconds": 836
+  },
+  {
+    "id": "video-joker-playlist-55",
+    "slug": "joker-playlist-55",
+    "title": "Where is the Joker? The Institution of the Fool, with Alan Watts",
+    "video_id": "mC9pixtehj4",
+    "youtube_url": "https://www.youtube.com/watch?v=mC9pixtehj4",
+    "channel_title": "R E Burrillo",
+    "summary": "A discussion of the institution of the Fool through Alan Watts, using the question Where Is the Joker? as its organizing theme.",
+    "tags": [
+      "joker",
+      "fool",
+      "philosophy",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 55,
+    "duration_seconds": 241
+  },
+  {
+    "id": "video-joker-playlist-56",
+    "slug": "joker-playlist-56",
+    "title": "The Dark Knight - How to Be a Hero in an Upside Down World.",
+    "video_id": "6tCdjA6aknQ",
+    "youtube_url": "https://www.youtube.com/watch?v=6tCdjA6aknQ",
+    "channel_title": "Jonathan Pageau",
+    "summary": "Jonathan Pageau discusses heroism and an inverted moral world using The Dark Knight as a cultural and cinematic reference.",
+    "tags": [
+      "joker",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 56,
+    "duration_seconds": 747
+  },
+  {
+    "id": "video-joker-playlist-57",
+    "slug": "joker-playlist-57",
+    "title": "Horace De Vere Cole: The Patron Saint of April Fools' Day",
+    "video_id": "kQcelzFZGA4",
+    "youtube_url": "https://www.youtube.com/watch?v=kQcelzFZGA4",
+    "channel_title": "Biographics",
+    "summary": "A biographical feature on Horace de Vere Cole, whose reputation as a prankster connects him with April Fools' Day.",
+    "tags": [
+      "fool"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 57,
+    "duration_seconds": 1136
+  },
+  {
+    "id": "video-joker-playlist-58",
+    "slug": "joker-playlist-58",
+    "title": "The Fool is Your Personal Hero | Jordan Peterson",
+    "video_id": "2z1vRF4L-sE",
+    "youtube_url": "https://www.youtube.com/watch?v=2z1vRF4L-sE",
+    "channel_title": "ManOfAllCreation",
+    "summary": "A Jordan Peterson-focused video portraying the Fool as a personal hero, emphasizing the archetype in its title.",
+    "tags": [
+      "fool",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 58,
+    "duration_seconds": 428
+  },
+  {
+    "id": "video-joker-playlist-59",
+    "slug": "joker-playlist-59",
+    "title": "The Jester | A Short Horror Film",
+    "video_id": "HLHjyGNmm5U",
+    "youtube_url": "https://www.youtube.com/watch?v=HLHjyGNmm5U",
+    "channel_title": "MakeDo Entertainment",
+    "summary": "A short horror film titled The Jester, offered as a fictional interpretation rather than an explanatory lecture on the archetype.",
+    "tags": [
+      "fool",
+      "psychology",
+      "film",
+      "lecture"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 59,
+    "duration_seconds": 605
+  },
+  {
+    "id": "video-joker-playlist-60",
+    "slug": "joker-playlist-60",
+    "title": "Trickster Archetype in Society",
+    "video_id": "BfS77DCJYj0",
+    "youtube_url": "https://www.youtube.com/watch?v=BfS77DCJYj0",
+    "channel_title": "Recapsulate",
+    "summary": "A discussion explicitly framed around the trickster archetype's place in society and the ways it appears in cultural life.",
+    "tags": [
+      "trickster",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 60,
+    "duration_seconds": 583
+  },
+  {
+    "id": "video-joker-playlist-61",
+    "slug": "joker-playlist-61",
+    "title": "Joseph Campbell--Mythology of the Trickster",
+    "video_id": "JM10AvJ3bsM",
+    "youtube_url": "https://www.youtube.com/watch?v=JM10AvJ3bsM",
+    "channel_title": "Joseph Campbell Foundation",
+    "summary": "Joseph Campbell discusses the trickster in Native American mythology, including the figure's roles as shadow, creator and fool.",
+    "tags": [
+      "fool",
+      "trickster",
+      "mythology",
+      "lecture"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 61,
+    "duration_seconds": 293
+  },
+  {
+    "id": "video-joker-playlist-62",
+    "slug": "joker-playlist-62",
+    "title": "Royal Order of Jesters? What are they?",
+    "video_id": "ZtWUpXuhils",
+    "youtube_url": "https://www.youtube.com/watch?v=ZtWUpXuhils",
+    "channel_title": "Coolest Life",
+    "summary": "An explanatory video asking about the Royal Order of Jesters, an organization whose name overlaps with the site's wider jester theme.",
+    "tags": [
+      "fool"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 62,
+    "duration_seconds": 393
+  },
+  {
+    "id": "video-joker-playlist-63",
+    "slug": "joker-playlist-63",
+    "title": "Myth in Human Culture - 02 - Introduction to Trickster Heroes",
+    "video_id": "1x1MYIJk3qo",
+    "youtube_url": "https://www.youtube.com/watch?v=1x1MYIJk3qo",
+    "channel_title": "Allan Di Donato",
+    "summary": "Allan Di Donato introduces trickster heroes and their place in human culture, including a brief connection to creation myths.",
+    "tags": [
+      "trickster",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 63,
+    "duration_seconds": 3272
+  },
+  {
+    "id": "video-joker-playlist-64",
+    "slug": "joker-playlist-64",
+    "title": "The Trickster: Consciousness, Meaning and Culture",
+    "video_id": "YK1ofY_COpE",
+    "youtube_url": "https://www.youtube.com/watch?v=YK1ofY_COpE",
+    "channel_title": "The Machiavellians",
+    "summary": "An exploration of the trickster as a boundary-crosser in myth and folklore, connected with consciousness, meaning and culture.",
+    "tags": [
+      "trickster",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 64,
+    "duration_seconds": 793
+  },
+  {
+    "id": "video-joker-playlist-65",
+    "slug": "joker-playlist-65",
+    "title": "Animism: The Trickster Spirit",
+    "video_id": "jQdZzxwsDzU",
+    "youtube_url": "https://www.youtube.com/watch?v=jQdZzxwsDzU",
+    "channel_title": "Arith Härger",
+    "summary": "A presentation on the trickster spirit in animist traditions, identified through its mythology and religion-focused title.",
+    "tags": [
+      "trickster",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 65,
+    "duration_seconds": 1668
+  },
+  {
+    "id": "video-joker-playlist-66",
+    "slug": "joker-playlist-66",
+    "title": "The Clown Prince Of Crime - The Joker",
+    "video_id": "QMGpLyukMPU",
+    "youtube_url": "https://www.youtube.com/watch?v=QMGpLyukMPU",
+    "channel_title": "Just Plain Creepy",
+    "summary": "A Joker video emphasizing Batman's Clown Prince of Crime, presented as a character-focused selection from the original curator's playlist.",
+    "tags": [
+      "joker",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 66,
+    "duration_seconds": 175
+  },
+  {
+    "id": "video-joker-playlist-67",
+    "slug": "joker-playlist-67",
+    "title": "The Clown Prince Of Gotham ∆ Won't Stop ∆ 😂",
+    "video_id": "Lhep2VkFfho",
+    "youtube_url": "https://www.youtube.com/watch?v=Lhep2VkFfho",
+    "channel_title": "Priyojit Saha",
+    "summary": "A Gotham-themed Joker character edit titled Won't Stop, distinguished from the playlist's longer psychological analyses.",
+    "tags": [
+      "joker",
+      "psychology",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 67,
+    "duration_seconds": 169
+  },
+  {
+    "id": "video-joker-playlist-68",
+    "slug": "joker-playlist-68",
+    "title": "The Art of the Trickster",
+    "video_id": "eb3krPAAhjU",
+    "youtube_url": "https://www.youtube.com/watch?v=eb3krPAAhjU",
+    "channel_title": "Dartington Trust",
+    "summary": "Lewis Hyde and Martin Shaw discuss trickster figures as boundary-crossers whose mischief is both disruptive and culturally important.",
+    "tags": [
+      "trickster",
+      "lecture"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 68,
+    "duration_seconds": 5224
+  },
+  {
+    "id": "video-joker-playlist-69",
+    "slug": "joker-playlist-69",
+    "title": "Lewis Hyde: Trickster Makes This World (1 of 2)",
+    "video_id": "PkV9tCgI0gs",
+    "youtube_url": "https://www.youtube.com/watch?v=PkV9tCgI0gs",
+    "channel_title": "Minnesota Men's Conference",
+    "summary": "In part one of his talk, Lewis Hyde connects trickster narratives, including Raven and Hermes, to creativity and contradiction.",
+    "tags": [
+      "trickster",
+      "mythology",
+      "lecture"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-hermes"
+    ],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 69,
+    "duration_seconds": 2847
+  },
+  {
+    "id": "video-joker-playlist-70",
+    "slug": "joker-playlist-70",
+    "title": "The Psychology of The Trickster",
+    "video_id": "38hwk0BgGNU",
+    "youtube_url": "https://www.youtube.com/watch?v=38hwk0BgGNU",
+    "channel_title": "Eternalised",
+    "summary": "A psychological account of the trickster archetype, presented as an exploration of the figure's possible inner meanings.",
+    "tags": [
+      "trickster",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 70,
+    "duration_seconds": 1885
+  },
+  {
+    "id": "video-joker-playlist-71",
+    "slug": "joker-playlist-71",
+    "title": "Trickster Gods and the Mortals Who Love Them | Fate & Fabled",
+    "video_id": "gjJ5Vr8Tzvs",
+    "youtube_url": "https://www.youtube.com/watch?v=gjJ5Vr8Tzvs",
+    "channel_title": "Storied",
+    "summary": "A mythology-focused presentation on trickster gods and their relationships with mortals from the Fate & Fabled series.",
+    "tags": [
+      "trickster",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 71,
+    "duration_seconds": 569
+  },
+  {
+    "id": "video-joker-playlist-72",
+    "slug": "joker-playlist-72",
+    "title": "The Joker Archetype and Personal Growth (Practical Tips)",
+    "video_id": "NbrLo-tohEo",
+    "youtube_url": "https://www.youtube.com/watch?v=NbrLo-tohEo",
+    "channel_title": "Mind Mastery",
+    "summary": "Mind Mastery connects the Joker archetype with personal development and practical reflection, extending its earlier trickster discussions.",
+    "tags": [
+      "joker",
+      "trickster",
+      "psychology",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 72,
+    "duration_seconds": 523
+  },
+  {
+    "id": "video-joker-playlist-73",
+    "slug": "joker-playlist-73",
+    "title": "Lewis Hyde: Trickster Makes This World (2 of 2)",
+    "video_id": "u91oztZxNJg",
+    "youtube_url": "https://www.youtube.com/watch?v=u91oztZxNJg",
+    "channel_title": "Minnesota Men's Conference",
+    "summary": "Part two of Lewis Hyde's presentation on Trickster Makes This World, continuing the discussion from the companion recording.",
+    "tags": [
+      "trickster",
+      "lecture"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 73,
+    "duration_seconds": 1523
+  },
+  {
+    "id": "video-joker-playlist-74",
+    "slug": "joker-playlist-74",
+    "title": "Coyote Plays Dead",
+    "video_id": "HiOYADzsRzo",
+    "youtube_url": "https://www.youtube.com/watch?v=HiOYADzsRzo",
+    "channel_title": "Story Crow",
+    "summary": "A short Coyote trickster story titled Coyote Plays Dead, presented as a narrative entry in the curator's myth collection.",
+    "tags": [
+      "trickster",
+      "mythology",
+      "storytelling"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-coyote"
+    ],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 74,
+    "duration_seconds": 668
+  },
+  {
+    "id": "video-joker-playlist-75",
+    "slug": "joker-playlist-75",
+    "title": "Anansi wins all stories",
+    "video_id": "Of50qerX8uQ",
+    "youtube_url": "https://www.youtube.com/watch?v=Of50qerX8uQ",
+    "channel_title": "Story Crow",
+    "summary": "A retelling involving Anansi winning the stories, centering the West African trickster spider's role as a collector of tales.",
+    "tags": [
+      "trickster",
+      "mythology",
+      "storytelling"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-anansi"
+    ],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 75,
+    "duration_seconds": 518
+  },
+  {
+    "id": "video-joker-playlist-76",
+    "slug": "joker-playlist-76",
+    "title": "Trickster Makes This World - Brian Abbott",
+    "video_id": "8vyFFNT7ZLQ",
+    "youtube_url": "https://www.youtube.com/watch?v=8vyFFNT7ZLQ",
+    "channel_title": "simulatedgod",
+    "summary": "A presentation titled Trickster Makes This World credited to Brian Abbott, linked by theme to Lewis Hyde's discussion of tricksters.",
+    "tags": [
+      "trickster",
+      "lecture"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 76,
+    "duration_seconds": 786
+  },
+  {
+    "id": "video-joker-playlist-77",
+    "slug": "joker-playlist-77",
+    "title": "Crow does bad magic",
+    "video_id": "ikRX65URN7A",
+    "youtube_url": "https://www.youtube.com/watch?v=ikRX65URN7A",
+    "channel_title": "Story Crow",
+    "summary": "A short Crow story titled Crow Does Bad Magic, using the trickster-bird figure as its central narrative subject.",
+    "tags": [
+      "trickster",
+      "magician",
+      "mythology",
+      "storytelling"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 77,
+    "duration_seconds": 4
+  },
+  {
+    "id": "video-joker-playlist-78",
+    "slug": "joker-playlist-78",
+    "title": "Top 10 Tricksters in the Universe",
+    "video_id": "xBFyx7so_t0",
+    "youtube_url": "https://www.youtube.com/watch?v=xBFyx7so_t0",
+    "channel_title": "SL Made",
+    "summary": "A ranked selection of ten tricksters, useful for discovering how a creator groups different cunning mythic figures.",
+    "tags": [
+      "trickster",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 78,
+    "duration_seconds": 357
+  },
+  {
+    "id": "video-joker-playlist-79",
+    "slug": "joker-playlist-79",
+    "title": "Hermes: Greek God, Trickster and Messenger to the Gods",
+    "video_id": "TlcqiJu6S9o",
+    "youtube_url": "https://www.youtube.com/watch?v=TlcqiJu6S9o",
+    "channel_title": "World History Encyclopedia",
+    "summary": "An introduction to Hermes as Greek messenger and trickster god, connecting his roles and attributes within ancient mythology.",
+    "tags": [
+      "trickster",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [
+      "trickster-hermes"
+    ],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 79,
+    "duration_seconds": 580
+  },
+  {
+    "id": "video-joker-playlist-80",
+    "slug": "joker-playlist-80",
+    "title": "Jordan Peterson: Heath Ledger's Joker, Batman & archetypes",
+    "video_id": "HfGnEWPRQis",
+    "youtube_url": "https://www.youtube.com/watch?v=HfGnEWPRQis",
+    "channel_title": "Essential Truth",
+    "summary": "A Jordan Peterson-focused discussion of Heath Ledger's Joker, Batman and archetypal patterns in The Dark Knight.",
+    "tags": [
+      "joker",
+      "psychology",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 80,
+    "duration_seconds": 451
+  },
+  {
+    "id": "video-joker-playlist-81",
+    "slug": "joker-playlist-81",
+    "title": "Dark Knight's Joker (Psychology Analysis)",
+    "video_id": "GMcOX9RMmQY",
+    "youtube_url": "https://www.youtube.com/watch?v=GMcOX9RMmQY",
+    "channel_title": "Willarious The Therapist",
+    "summary": "A therapist-style psychological interpretation of the Joker from The Dark Knight, centered on the character's behavior.",
+    "tags": [
+      "joker",
+      "psychology",
+      "film"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 81,
+    "duration_seconds": 601
+  },
+  {
+    "id": "video-joker-playlist-82",
+    "slug": "joker-playlist-82",
+    "title": "The Magician Archetype: Rediscovering The Sacred Beyond the Mundane",
+    "video_id": "Vi7g6tWBhHc",
+    "youtube_url": "https://www.youtube.com/watch?v=Vi7g6tWBhHc",
+    "channel_title": "Future Thinkers",
+    "summary": "Future Thinkers examines the Magician archetype as a route toward recognizing the sacred within everyday experience.",
+    "tags": [
+      "magician",
+      "psychology",
+      "philosophy"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 82,
+    "duration_seconds": 2367
+  },
+  {
+    "id": "video-joker-playlist-83",
+    "slug": "joker-playlist-83",
+    "title": "The Magician Archetype - Exploring The Origins Of Wisdom",
+    "video_id": "yONviMHfKVg",
+    "youtube_url": "https://www.youtube.com/watch?v=yONviMHfKVg",
+    "channel_title": "ManTalks",
+    "summary": "ManTalks explores the Magician archetype through the theme of wisdom's origins and the figure's symbolic function.",
+    "tags": [
+      "magician",
+      "psychology",
+      "philosophy"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 83,
+    "duration_seconds": 1630
+  },
+  {
+    "id": "video-joker-playlist-84",
+    "slug": "joker-playlist-84",
+    "title": "Brand Strategy 101: The Magician Brand Archetype",
+    "video_id": "6m1IyIFK19w",
+    "youtube_url": "https://www.youtube.com/watch?v=6m1IyIFK19w",
+    "channel_title": "julishtv",
+    "summary": "A branding lesson connecting the Magician archetype with strategic brand identity and customer-facing positioning.",
+    "tags": [
+      "magician",
+      "psychology",
+      "branding"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 84,
+    "duration_seconds": 272
+  },
+  {
+    "id": "video-joker-playlist-85",
+    "slug": "joker-playlist-85",
+    "title": "Venturing into Sacred Space | Archetype of the Magician",
+    "video_id": "4unDD4OUUNQ",
+    "youtube_url": "https://www.youtube.com/watch?v=4unDD4OUUNQ",
+    "channel_title": "Like Stories of Old",
+    "summary": "Like Stories of Old discusses sacred space through the Magician archetype, emphasizing its symbolic role in storytelling.",
+    "tags": [
+      "magician",
+      "psychology",
+      "philosophy",
+      "storytelling"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 85,
+    "duration_seconds": 769
+  },
+  {
+    "id": "video-joker-playlist-86",
+    "slug": "joker-playlist-86",
+    "title": "The Magician Archetype - pt1: The 4 elemental weapons/tools",
+    "video_id": "tFO1YDNdm6Y",
+    "youtube_url": "https://www.youtube.com/watch?v=tFO1YDNdm6Y",
+    "channel_title": "Andrew T. Austin",
+    "summary": "Part one of a series about the Magician archetype and its four elemental weapons or tools, as outlined in the title.",
+    "tags": [
+      "magician",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 86,
+    "duration_seconds": 1883
+  },
+  {
+    "id": "video-joker-playlist-87",
+    "slug": "joker-playlist-87",
+    "title": "EP 8 -  MAGICIAN BRAND ARCHETYPE | How to create a brand that is transformative",
+    "video_id": "BnvRKxKIf9g",
+    "youtube_url": "https://www.youtube.com/watch?v=BnvRKxKIf9g",
+    "channel_title": "BRANDEM™ Strategy",
+    "summary": "A BRANDEM strategy episode on the Magician brand archetype and the idea of creating a transformative brand.",
+    "tags": [
+      "magician",
+      "psychology",
+      "branding"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 87,
+    "duration_seconds": 743
+  },
+  {
+    "id": "video-joker-playlist-88",
+    "slug": "joker-playlist-88",
+    "title": "The Magician Archetype and Actualising Your Vision",
+    "video_id": "DJV8Yb837G0",
+    "youtube_url": "https://www.youtube.com/watch?v=DJV8Yb837G0",
+    "channel_title": "Mind Mastery",
+    "summary": "Mind Mastery presents the Magician archetype in connection with realizing a personal vision and pursuing transformation.",
+    "tags": [
+      "magician",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 88,
+    "duration_seconds": 964
+  },
+  {
+    "id": "video-joker-playlist-89",
+    "slug": "joker-playlist-89",
+    "title": "Understanding the Trickster \"Archetype\": How to Answer its Riddle",
+    "video_id": "JN25Nmp9HLs",
+    "youtube_url": "https://www.youtube.com/watch?v=JN25Nmp9HLs",
+    "channel_title": "James P Dowling",
+    "summary": "James P Dowling revisits the trickster archetype through the metaphor of answering its riddle and questioning familiar assumptions.",
+    "tags": [
+      "trickster",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 89,
+    "duration_seconds": 757
+  },
+  {
+    "id": "video-joker-playlist-90",
+    "slug": "joker-playlist-90",
+    "title": "The Esoteric Meaning of the Trickster",
+    "video_id": "uF9CNB0Mw6s",
+    "youtube_url": "https://www.youtube.com/watch?v=uF9CNB0Mw6s",
+    "channel_title": "The Alchemist",
+    "summary": "An examination of the trickster's esoteric meaning, approaching the archetype through symbolism and spiritual interpretation.",
+    "tags": [
+      "trickster",
+      "psychology",
+      "philosophy"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 90,
+    "duration_seconds": 1058
+  },
+  {
+    "id": "video-joker-playlist-91",
+    "slug": "joker-playlist-91",
+    "title": "Tricksters | The Cunning and Untrustworthy",
+    "video_id": "GqTGcWqe6lw",
+    "youtube_url": "https://www.youtube.com/watch?v=GqTGcWqe6lw",
+    "channel_title": "Mythology Unleashed",
+    "summary": "Mythology Unleashed introduces trickster figures through cunning and untrustworthiness as recurring mythological qualities.",
+    "tags": [
+      "trickster",
+      "mythology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 91,
+    "duration_seconds": 955
+  },
+  {
+    "id": "video-joker-playlist-92",
+    "slug": "joker-playlist-92",
+    "title": "The Psychology of The Trickster \"Archetype\": Explained by Carl Jung",
+    "video_id": "7Th44cVrtjY",
+    "youtube_url": "https://www.youtube.com/watch?v=7Th44cVrtjY",
+    "channel_title": "Enlightened Philosopher",
+    "summary": "An archetypal-psychology treatment of the trickster, explicitly framed around Carl Jung's interpretation and terminology.",
+    "tags": [
+      "trickster",
+      "psychology"
+    ],
+    "verified_at": "2026-11-10",
+    "featured": false,
+    "related_trickster_ids": [],
+    "playlist_id": "PLNVTCBFgR1Te-oB0QHlw_kUbfWQ46t_Pq",
+    "playlist_position": 92,
+    "duration_seconds": 578
+  }
+]

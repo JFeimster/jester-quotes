@@ -1,0 +1,17 @@
+---
+import '../styles/quote-poster.css';
+import type { Quote } from '../types/quote';
+const { quote } = Astro.props as { quote: Quote };
+---
+<section aria-label="Download quotation artwork">
+  <h2>Download complete quote artwork</h2>
+  <p class="poster-note" id="poster-note">Full quotation and author, without clipping. One square PNG for shorter quotes; a numbered PNG slide pack (ZIP) for longer ones.</p>
+  <div class="poster-controls">
+    <button class="btn" type="button" id="download-poster" aria-describedby="poster-note" data-text={quote.quote} data-person={quote.person} data-id={quote.id}>Download complete quote ↓</button>
+    <a class="btn secondary" href={`/social/quotes/${quote.id}.png`} download={`${quote.id}-preview.png`}>Download link preview (may be excerpt)</a>
+    <a class="btn secondary" href={`/studio/?quote=${quote.id}`}>Customize in Quote Studio ↗</a>
+  </div>
+  <p id="poster-status" role="status" aria-live="polite" class="poster-status"></p>
+  <canvas id="poster-canvas" width="1080" height="1080" hidden aria-hidden="true"></canvas>
+</section>
+<script src="../scripts/poster.ts"></script>

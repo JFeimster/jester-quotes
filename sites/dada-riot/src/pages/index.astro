@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import FeaturedQuote from '../components/FeaturedQuote.astro';
+import DiscoveryGateway from '../components/DiscoveryGateway.astro';
+import CollectionsTeaser from '../components/CollectionsTeaser.astro';
+import WatchAndLearn from '../components/WatchAndLearn.astro';
+import RiotPressTeaser from '../components/RiotPressTeaser.astro';
+import FavoritesPanel from '../components/FavoritesPanel.astro';
+import SourceAttribution from '../components/SourceAttribution.astro';
+import { quotes } from '../lib/quote-data';
+import { collectionSchema } from '../lib/seo';
+const structuredData = collectionSchema(Astro.site ?? new URL('https://jester-quotes.vercel.app'), quotes);
+---
+<BaseLayout structuredData={structuredData}>
+  <div class="wrap home-discovery">
+    <Hero />
+    <FeaturedQuote quote={quotes[4] ?? quotes[0]} />
+    <DiscoveryGateway />
+    <CollectionsTeaser />
+    <section class="home-studio-promo" aria-labelledby="home-studio-title"><div><p class="eyebrow">The Riot Press / poster studio</p><h2 id="home-studio-title">Turn a line<br/>into a <em>signal.</em></h2><p>Choose any canonical quote. Make a poster that keeps every word and credits its author.</p><a class="btn" href="/studio/">Make your poster ↗</a></div><img src="/assets/dada-riot-poster-square.webp" alt="Dada Riot collage poster background" width="1080" height="1080" loading="lazy"/></section>
+    <WatchAndLearn />
+    <RiotPressTeaser />
+    <section class="home-archive-callout" aria-labelledby="home-archive-title">
+      <p class="eyebrow">The full court / All preserved voices</p>
+      <h2 id="home-archive-title">Got a little more <em>mischief</em> in you?</h2>
+      <p>The complete quote archive is waiting, with search, saved favorites, and poster-making tools.</p>
+      <a class="btn" href="/quotes/">EXPLORE ALL QUOTES ↗</a>
+    </section>
+    <FavoritesPanel />
+    <SourceAttribution />
+  </div>
+  <script src="../scripts/quote-explorer.ts"></script>
+</BaseLayout>

@@ -1,0 +1,32 @@
+---
+import QuoteCard from '../../components/QuoteCard.astro';
+import {getTheme,labThemeStyle} from '../theme-registry';
+import type {Quote} from '../../types/quote';
+const {samples}=Astro.props as {samples:[Quote,Quote,Quote]};
+const theme=getTheme('forbidden-library');
+---
+<section class="lab-composition lab-composition--library" data-theme="forbidden-library" style={labThemeStyle(theme)} aria-label="The Forbidden Library archive experience">
+  <div class="lab-library-mast"><span>JQ · PRIVATE COLLECTION</span><span>THE FORBIDDEN LIBRARY</span><span>EST. IN INCONVENIENT TIMES</span></div>
+  <div class="lab-library-hero">
+    <div class="lab-library-copy">
+      <div class="lab-library-eyebrow">DEPARTMENT OF UNAUTHORIZED WISDOM / VII</div>
+      <h2>THE TRUTH<br/>LIVES IN<br/><em>THE MARGINS.</em></h2>
+      <p>Every forbidden question has a shelf. Every dangerous idea deserves to be read.</p>
+      <div class="lab-library-actions"><a href="/sources/">OPEN THE ARCHIVE ↗</a><a href="/resources/">FOLLOW THE FOOTNOTES ✦</a></div>
+      <div class="lab-library-shelfmark">SHELF 07  <span>✥</span>  WIT / WISDOM / MISCHIEF</div>
+    </div>
+    <aside class="lab-library-scene" aria-label="Illustrated candlelit archive with antique books and manuscript">
+      <div class="lab-library-glow" aria-hidden="true"></div>
+      <div class="lab-library-shelf" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="lab-library-shelf lab-library-shelf--second" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="lab-library-manuscript"><span>MANUSCRIPT / 007</span><strong>Q</strong><p>Question everything.<br/>Even this.</p><small>NOT FOR THE KING'S EYES</small></div>
+      <div class="lab-library-candle" aria-hidden="true"><span></span></div>
+    </aside>
+  </div>
+  <div class="lab-library-catalog"><span>CATALOG NO. 07–A</span><span>SELECTED READINGS</span><span>ACCESS GRANTED</span></div>
+    <div class="lab-quote-grid lab-quote-grid--library" aria-label="Selected quotations">
+    <QuoteCard quote={samples[0]} index={0}/><QuoteCard quote={samples[1]} index={3}/><QuoteCard quote={samples[2]} index={5}/>
+  </div>
+
+  <div class="lab-library-footer"><span>THE FOOTNOTES ARE PART OF THE REBELLION.</span><a href="/collections/wise-fools/">READ THE WISE FOOLS ↗</a></div>
+</section>
