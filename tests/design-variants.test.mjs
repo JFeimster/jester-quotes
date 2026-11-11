@@ -23,9 +23,9 @@ test('seven unique theme contracts reference only canonical 100-quote records',(
   assert.equal(quotes.size,100);
   for(const id of IDs){
     const spec=read(files[id]);
-    assert.ok(spec.includes(`id:'${id}'`),id);
+    assert.match(spec,new RegExp(`id:\\s*['\"]${id}['\"]`),id);
     assert.match(spec,/sampleQuoteIds:/);
-    const match=spec.match(/sampleQuoteIds:\[([^\]]+)\]/);
+    const match=spec.match(/sampleQuoteIds:\s*\[([^\]]+)\]/);
     assert.ok(match,id);
     const quotedIds=[...match[1].matchAll(/jester-quote-\d{3}/g)].map(m=>m[0]);
     assert.equal(quotedIds.length,3,id);

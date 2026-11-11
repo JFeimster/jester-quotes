@@ -98,7 +98,7 @@
 .lab-neon-crosshair{position:absolute;inset:19% 14% auto;height:1px;background:linear-gradient(90deg,transparent,#30e7e9,transparent);box-shadow:0 0 15px #30e7e9}
 .lab-neon-hud{position:absolute;bottom:15px;left:16px;right:16px;z-index:1;background:#080d21e8;border-left:3px solid #e83aff;padding:12px 15px;font-family:ui-monospace,Consolas,monospace;color:#c5fbfa}
 .lab-neon-hud span,.lab-neon-hud small{display:block;font-size:.63rem;color:#60dadd;letter-spacing:.09em}
-.lab-neon-hud strong{display:block;font-size:1.35rem/1.15;font-weight:900;letter-spacing:.06em;margin:7px 0}
+.lab-neon-hud strong{display:block;font:900 1.35rem/1.15 ui-monospace,Consolas,monospace;letter-spacing:.06em;margin:7px 0}
 .lab-neon-ticker{display:flex;flex-wrap:wrap;justify-content:space-between;gap:11px;padding:12px;background:#211039;border:1px solid #bd34f2;color:#f2c9ff;font:800 .66rem ui-monospace,monospace}
 .lab-composition--neon .quote-card{background:#12132d;color:#edfbff;border:1px solid #4b9cbb;box-shadow:0 0 17px rgba(35,220,239,.18)}
 .lab-composition--neon .quote-card--editorial{background:linear-gradient(140deg,#3b1852,#191734);border-color:#e83aff}
