@@ -50,6 +50,28 @@ test('collections homepage and every curated detail route are built with real qu
   }
 });
 
+test('image-backed collection cards keep copy legible across all accent variants', () => {
+  const css = read('src/styles/discovery.css');
+  assert.match(css, /\.collection-card-shade\s*\{[^}]*rgba\(21,17,31,\.82\)\s+100%/s,
+    'all cards need a dark image veil through the right edge');
+  assert.match(css, /\.collection-card--ivory\s+\.collection-card-shade\s*\{[^}]*rgba\(21,17,31,\.88\)\s+100%/s,
+    'ivory-accent cards need a stronger veil behind their ivory CTA');
+  assert.match(css, /\.collection-card p\s*\{[^}]*color:\s*#cebfce/s,
+    'collection descriptions retain a light text color');
+  assert.match(css, /\.collection-card-foot\s*\{[^}]*color:\s*#d7cbd8/s,
+    'collection metadata remains readable over artwork');
+  assert.match(css, /\.collection-card-foot strong\s*\{[^}]*color:\s*var\(--collection-accent\)/s,
+    'CTA accent remains tied to each card identity');
+  const midnightCss = read('src/styles/midnight-2.css');
+  assert.match(midnightCss, /\.collection-card--ivory h3,\.collection-card--ivory p,\.collection-card--ivory \.collection-card-foot,\.collection-card--ivory \.collection-number,\.collection-card--ivory \.collection-intro\s*\{[^}]*color:var\(--ivory\)/s,
+    'ivory variant copy stays light over the image veil');
+  assert.match(midnightCss, /\.collection-card--ivory \.collection-card-foot strong\s*\{color:var\(--ivory\);\}/,
+    'ivory variant CTA stays light over the image veil');
+  for (const collection of collections) {
+    assert.ok(collection.tone, `Missing card accent for ${collection.slug}`);
+  }
+});
+
 test('Studio supports real browser canvas export and all 100 quote selectors', () => {
   const html = dist('studio/index.html');
   const script = read('src/scripts/studio.ts');

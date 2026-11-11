@@ -2,6 +2,10 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { collections } from '../../lib/collections';
 import CollectionCard from '../../components/CollectionCard.astro';
+import { getAsset, resolveAssetPath } from '../../lib/assets';
+const featured = getAsset('collections-featured');
+const featuredPath = featured ? resolveAssetPath(featured.id) : undefined;
+const featuredWebp = resolveAssetPath('collections-featured-webp');
 ---
 <BaseLayout title="Curated Jester Quote Collections | Jester Quotes" description="Explore six curated themes of Jester quotes, from truth to power and wise fools to the carnival of absurdity.">
   <div class="wrap discovery-page">
@@ -10,6 +14,7 @@ import CollectionCard from '../../components/CollectionCard.astro';
       <h1>Pick your <em>mischief.</em></h1>
       <p class="lede">One hundred preserved quotations. Six different ways into the mind of the fool. Choose the theme that speaks to you.</p>
       <div class="discovery-actions"><a class="btn secondary" href="/#explore">Browse all 100 quotes ↗</a><a class="btn" href="/studio/">Enter the Quote Studio ↗</a></div>
+      {featuredPath && featured && <figure class="collections-featured-art"><picture><source srcset={featuredWebp} type="image/webp" /><img src={featuredPath} alt={featured.alt ?? 'Midnight Carnival collection artwork'} width={featured.dimensions?.width ?? 1448} height={featured.dimensions?.height ?? 1086} fetchpriority="high" decoding="async" /></picture><figcaption>Six volumes / one wonderfully unreliable narrator</figcaption></figure>}
     </div>
     <div class="collection-grid">
       {collections.map((collection,index) => <CollectionCard collection={collection} index={index} />)}

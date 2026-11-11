@@ -54,20 +54,15 @@ The filename's ratio is an editorial descriptor, **not verified pixel dimensions
 - `integrated`: uploaded file is already referenced by the live application.
 - `archived`: excluded from regular use.
 
-Existing hero URLs now use canonical `/assets/images/heroes/...` paths; the old `/images/...` URLs are preserved through permanent Vercel redirects. **Dimensions are omitted until actual image headers are checked; do not claim the layout's intended dimensions reflect the binary.** The validator compares declared dimensions against actual image metadata whenever supplied. The two registered hero entries are the only currently verified manual images on GitHub; the local collection artwork, logo and Studio promo are not uploaded by this change.
+Existing hero URLs now use canonical `/assets/images/heroes/...` paths; the old `/images/...` URLs are preserved through permanent Vercel redirects. The registry stores verified binary dimensions where available, and the validator checks declared dimensions against actual image metadata.
 
 `src/lib/assets.ts` exports `getAsset(id)`, `findAssets(filter)`, `selectAsset(filter)`, `resolveAssetPath(id)`, and `imageAssets`. Resolution is gated on `uploaded`/`integrated`; planned artwork never creates a broken URL.
 
-## Incoming Midnight Carnival artwork — approved, binary upload pending
+## Midnight Carnival artwork integration
 
-The following **13 artwork records** were added from verified conversation attachments. Each has its actual PNG dimensions, collection and intended destination. **Status is `approved`, not `uploaded` or `integrated`.** The GitHub connector cannot transfer uploaded binary files in this workflow. Do not reference these URLs in Astro until a local upload finishes and the registry statuses advance to `uploaded`.
+The 13 approved PNGs (logo, Studio promo, collection covers, and Collections feature art) are present at their canonical paths and integrated into the site header, collection cards/details, Collections overview, and Quote Studio. Their registry entries use `integrated` only where the application renders them. Registered WebP derivatives reduce transfer weight while preserving each approved PNG as the `<picture>` fallback. The existing homepage portrait hero also has a registered WebP derivative; its verified original dimensions are 1122 × 1402. The separate wide hero remains `uploaded` because it is not currently rendered.
 
-- Brand: 1 horizontal logo in `public/assets/branding/logos/`
-- Quote Studio: 1 16x9 promo in `public/assets/studio/promotional/`
-- Collections: 10 clean/editorial covers in the numbered collection folders
-- Featured: 1 general collections visual in `public/assets/images/featured/`
-
-The 13 original PNG files and a non-overwriting, hash-verified PowerShell upload helper are bundled in the conversation attachment `jester-quotes-approved-artwork-upload.zip`. Extract and run the included `upload-assets.ps1` from a clean, up-to-date local checkout. It transitions matching `approved` entries to `uploaded`, refreshes the CSV and validates before pushing an image-upload branch for PR. **Do not upload images by copying a JSON record into GitHub; files must physically exist.**
+No avatar, profile/bio illustration, favicon source, standalone carousel slide or separate social post image was included in this set. Those folders remain reserved.
 
 No avatar, profile/bio illustration, favicon source, standalone carousel slide or separate social post image was attached in this set. Those folders remain reserved.
 

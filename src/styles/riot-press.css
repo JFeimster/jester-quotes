@@ -163,3 +163,7 @@ body.theme-riot-press :focus-visible{outline:3px solid #1260c5;outline-offset:4p
 @media(prefers-reduced-motion:reduce){
  .riot-press *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
+
+/* Edition stamp beside the preserved optimized Midnight Carnival brand logo. */
+.theme-riot-press .riot-brand-supplement{display:inline-block;margin-left:9px;background:#d6fa3e;color:#171411;border:2px solid #f04e40;padding:6px 8px;white-space:nowrap;font:900 .6rem/1.15 Impact,"Arial Black",sans-serif;letter-spacing:.05em;transform:rotate(-4deg)}
+@media(max-width:650px){.theme-riot-press .riot-brand-supplement{margin-left:4px;padding:5px;font-size:.52rem}}

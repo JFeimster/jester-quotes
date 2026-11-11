@@ -21,7 +21,7 @@ test('asset registry has unique IDs and only confirmed published files', () => {
   assert.ok(registry.some(x=>x.id==='site-hero-wide' && x.status==='uploaded'));
 });
 test('migrated hero paths are canonical and legacy URLs redirect permanently', () => {
-  const heroRecords = registry.filter(x => x.assetType === 'hero');
+  const heroRecords = registry.filter(x => x.assetType === 'hero' && x.variant !== 'optimized');
   assert.equal(heroRecords.length, 2);
   for (const item of heroRecords) {
     assert.ok(item.path.startsWith('/assets/images/heroes/'), item.path);
@@ -33,6 +33,11 @@ test('migrated hero paths are canonical and legacy URLs redirect permanently', (
     const destination = '/assets/images/heroes/midnight-carnival-hero-' + suffix + '.png';
     assert.ok(redirects.some(x => x.source === source && x.destination === destination && x.permanent === true), source);
   }
+  const portraitDerivative = registry.find(x => x.id === 'site-hero-portrait-webp');
+  assert.ok(portraitDerivative && portraitDerivative.status === 'integrated');
+  assert.equal(portraitDerivative.mimeType, 'image/webp');
+  assert.deepEqual(portraitDerivative.dimensions, { width: 1122, height: 1402 });
+  assert.ok(existsSync(path.join(root, 'public', portraitDerivative.path.slice(1))));
   assert.ok(!existsSync(path.join(root,'public/images')));
 });
 
