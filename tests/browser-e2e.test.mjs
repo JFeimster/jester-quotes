@@ -128,6 +128,14 @@ test('real headless Chrome exercises site routes, PNG/ZIP downloads and responsi
         await app.navigate(route);
         const dims=await app.eval(`({width:document.documentElement.scrollWidth,viewport:innerWidth})`);
         assert.ok(dims.width<=dims.viewport+2,route+' horizontal scroll at '+width+'px: '+JSON.stringify(dims));
+        if(route==='/lab/'){
+          for(const theme of ['dada-riot','neon-trickster','impossible-court','forbidden-library']){
+            await app.eval(`document.querySelector('[data-lab-tab="${theme}"]').click()`);
+            await app.waitFor(`!document.querySelector('[data-lab-panel="${theme}"]').hidden`,'mobile theme '+theme);
+            const panel=await app.eval(`({width:document.documentElement.scrollWidth,viewport:innerWidth})`);
+            assert.ok(panel.width<=panel.viewport+2,theme+' horizontal scroll at '+width+'px: '+JSON.stringify(panel));
+          }
+        }
         await app.screenshot(`${route==='/'?'home':route.slice(1,-1)}-${width}`);
       }
     }

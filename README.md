@@ -160,7 +160,9 @@ Keep manual artwork organized in `public/assets/` by purpose and collection, inc
 
 ## Design Lab (unindexed preview)
 
-The optional `/lab/` route presents Midnight Carnival, Neo-Brutalist Jester, and Luxury Bento / Velvet Gallery as **three different page compositions**, not just recolors. The lab uses the same canonical quotations, quote-card actions, source registries and `/studio/` downloads as the published site. Theme specifications live in `src/design/themes/`; `src/design/layouts/` holds the three component compositions, with one scoped design stylesheet and an accessible no-storage tab selector.
+The design system has seven fully implemented preview worlds. Four recent additions use unique illustrated CSS scenes, typography, layouts and quote-card skins; all reuse the existing quote and Studio functionality. Source lives in `src/design/` with isolated styles in `src/styles/lab-new-themes.css`. See [Four new design worlds](docs/DESIGN-LAB-EXPANSION.md) for details.
+
+The optional `/lab/` route previews **seven independent page compositions**: Midnight Carnival, Neo-Brutalist Jester, Velvet Gallery, Dada Riot, Neon Trickster, The Impossible Court, and The Forbidden Library—not seven color swaps. The lab uses the same canonical quotations, quote-card actions, source registries and `/studio/` downloads as the published site. Theme specifications live in `src/design/themes/`; `src/design/layouts/` holds the three component compositions, with one scoped design stylesheet and an accessible no-storage tab selector.
 
 The Lab remains **`noindex, nofollow`**, is excluded from the sitemap and public navigation, and does not change the public Midnight Carnival default. No new frameworks, CMS, root `assets/` folder, or cloned quote datasets are introduced.
 
