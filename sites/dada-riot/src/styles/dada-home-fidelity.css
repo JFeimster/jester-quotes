@@ -1,0 +1,214 @@
+/* DADA RIOT / HOMEPAGE COMPOSITION
+   Distinct from the other site routes. Reference-driven proportions, no new images. */
+body .reference-home.home-discovery{
+  --dada-black:#171310;--dada-paper:#f5e9cf;--dada-red:#e8393b;--dada-blue:#1738a8;
+  width:min(100%,1480px);max-width:1480px;margin:0 auto;padding:0 clamp(13px,1.65vw,28px) 30px;
+  color:var(--dada-black);
+}
+body:has(.reference-home) .dada-masthead.site-header-2.nav-v3{border-bottom-width:6px}
+body:has(.reference-home) .dada-masthead .topbar{min-height:78px;max-width:1460px;padding-block:10px}
+body:has(.reference-home) .dada-masthead .riot-wordmark{width:clamp(180px,19vw,262px)}
+body:has(.reference-home) .dada-masthead .brand{grid-template-columns:minmax(165px,262px) auto;gap:12px}
+/* Hero retains the existing photo-collage and actual buttons, at editorial rather than billboard scale. */
+body .reference-home.home-discovery > .hero.hero-2{
+  min-height:clamp(420px,40vw,550px);padding:clamp(36px,4vw,54px) clamp(23px,5.4vw,85px) clamp(39px,4vw,57px);
+  border-bottom-width:6px;
+}
+body .reference-home .hero-copy{width:min(61%,750px)}
+body .reference-home .hero h1{
+  max-width:10ch;margin:19px 0 16px;font-size:clamp(3.8rem,6.35vw,6.8rem);line-height:.85;
+}
+body .reference-home .hero h1 > span:nth-child(2){margin-left:.03em}
+body .reference-home .hero h1 em{font-size:.78em}
+body .reference-home .hero .lede{max-width:41ch;font-size:clamp(.9rem,1.15vw,1.07rem);line-height:1.38}
+body .reference-home .hero-actions{margin-top:17px;gap:12px}
+body .reference-home .hero-actions .btn{min-height:42px;min-width:150px;padding:10px 13px;font-size:.7rem}
+body .reference-home .hero-eyebrow{font-size:.59rem;padding:7px 10px}
+body .reference-home .hero-surprise{margin-top:11px;font-size:.59rem}
+body .reference-home .hero-stamp{width:95px;height:95px;top:24px;right:30px;font-size:.47rem}
+body .reference-home .hero-stamp strong{font-size:.87rem}
+body .reference-home .hero-visual-2::after{content:"";position:absolute;z-index:2;right:13%;bottom:14%;width:92px;height:100px;border:5px double var(--dada-paper);transform:rotate(-12deg);opacity:.55;pointer-events:none}
+/* Real cross-site search instead of decorative fake filters. */
+body .reference-home .dada-search-strip{
+  position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.36fr) minmax(0,1fr);
+  gap:14px;align-items:center;margin:0 0 10px;padding:13px 14px;
+  background:var(--dada-paper);border-block:5px solid var(--dada-black);
+  background-image:radial-gradient(#17131016 1px,transparent 1px);background-size:5px 5px;
+}
+body .reference-home .dada-search-form{min-width:0;display:flex;align-items:center;gap:0;border:2px solid var(--dada-black);background:#fff9e9}
+body .reference-home .dada-search-form input{min-width:0;flex:1;height:42px;padding:9px 12px 9px 3px;border:0;background:transparent;color:var(--dada-black);font:700 .93rem/1.3 Georgia,serif}
+body .reference-home .dada-search-form input:focus{outline:2px solid var(--dada-blue);outline-offset:-2px}
+body .reference-home .dada-search-form input::placeholder{color:#565045;opacity:1}
+body .reference-home .dada-search-icon{padding:0 11px;font:900 1.9rem/1 Arial,sans-serif}
+body .reference-home .dada-search-form button{align-self:stretch;border:0;border-left:2px solid var(--dada-black);padding:0 17px;background:var(--dada-red);color:white;font:900 .7rem var(--mono);cursor:pointer}
+body .reference-home .dada-search-form button:hover{background:var(--dada-blue)}
+body .reference-home .dada-search-shortcuts{display:flex;gap:7px;justify-content:space-between;min-width:0}
+body .reference-home .dada-search-shortcuts a{display:inline-flex;gap:5px;align-items:center;justify-content:center;text-align:center;min-height:42px;flex:1;padding:7px 8px;background:#fff9e9;color:var(--dada-black);border:2px solid var(--dada-black);font:900 clamp(.51rem,.7vw,.68rem)/1.25 var(--mono);text-decoration:none}
+body .reference-home .dada-search-shortcuts a:hover{background:var(--dada-blue);color:white}
+/* Four-column quotation broadside: label, readable quote, art, real action rail. */
+body .reference-home.home-discovery .feature-broadside{
+  display:grid;grid-template-columns:minmax(95px,.24fr) minmax(0,1.1fr) minmax(180px,.69fr) minmax(132px,.35fr);
+  gap:0;align-items:stretch;min-height:260px;margin:10px 0 22px;padding:0;
+  border:0;border-top:7px solid var(--dada-black);border-bottom:7px solid var(--dada-black);
+  box-shadow:none;transform:none;overflow:hidden;background:var(--dada-paper);
+}
+body .reference-home .dada-feature-stamp{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;min-width:0;padding:15px;background:repeating-linear-gradient(-31deg,#e8393b 0 19px,#171310 20px 23px,#e8393b 24px 39px);color:var(--dada-paper);border-right:5px solid var(--dada-black)}
+body .reference-home .dada-feature-stamp strong{display:inline-block;background:var(--dada-paper);color:var(--dada-black);padding:10px 5px;font:900 clamp(.95rem,1.75vw,1.7rem)/.97 var(--display);text-align:center;transform:rotate(-8deg);box-shadow:4px 5px var(--dada-black)}
+body .reference-home .dada-feature-stamp span{font:900 .6rem var(--mono);background:var(--dada-black);padding:7px 5px;transform:rotate(4deg)}
+body .reference-home .feature-broadside-copy{min-width:0;display:flex;flex-direction:column;justify-content:center;padding:19px clamp(15px,2.4vw,34px);background:repeating-linear-gradient(0deg,transparent 0 32px,#1713100b 33px)}
+body .reference-home .feature-register{padding:5px 0;gap:6px;font-size:.52rem;letter-spacing:.045em}
+body .reference-home .feature-broadside .kicker{margin:8px 0 10px;font-size:.58rem}
+body .reference-home .feature-broadside blockquote{
+  margin:0;max-width:35ch;font:800 clamp(1.13rem,2.14vw,2.12rem)/1.22 Georgia,serif;
+  letter-spacing:-.033em;overflow-wrap:break-word;
+}
+body .reference-home .feature-broadside blockquote span{font-size:1em;line-height:inherit}
+body .reference-home .feature-broadside .byline{margin:13px 0 0;font-size:.65rem;color:var(--dada-black)}
+body .reference-home .featured-art{
+  min-height:240px;margin:0;padding:0;overflow:hidden;border:0;border-inline:5px solid var(--dada-black);
+  background:var(--dada-red);
+}
+body .reference-home .featured-art::before{inset:10px;border:2px dashed #f5e9cfad}
+body .reference-home .featured-art img{display:block;width:100%;height:100%;min-height:240px;max-height:330px;object-fit:cover;object-position:center}
+body .reference-home .featured-art figcaption{left:8px;right:8px;bottom:9px;padding:8px 4px;background:var(--dada-black);font-size:.5rem}
+body .reference-home .feature-actions{display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:9px;margin:0;padding:13px;background:var(--dada-black)}
+body .reference-home .feature-actions .mini-action{
+  width:100%;min-height:42px;justify-content:center;padding:8px 5px;border:2px solid var(--dada-paper);
+  background:var(--dada-paper);color:var(--dada-black);font:900 .64rem var(--mono);text-align:center;
+  box-shadow:3px 3px #e8393b55;
+}
+body .reference-home .feature-actions .mini-action:first-child,body .reference-home .feature-actions .feature-create{background:var(--dada-red);color:white}
+body .reference-home .feature-actions .mini-action:hover{background:var(--dada-blue);color:white}
+/* Six unique real covers in one row, never the oversized three-card teaser. */
+body .reference-home .dada-cover-section{margin:18px 0 32px}
+body .reference-home .dada-section-heading{
+  display:flex;align-items:end;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:0 2px 12px;margin:0 0 12px;
+}
+body .reference-home .dada-section-heading h2{
+  margin:0;color:var(--dada-paper);background:var(--dada-black);
+  padding:6px 12px 7px;font:900 clamp(1.65rem,3.5vw,3.15rem)/.95 var(--display);transform:rotate(-1deg);
+}
+body .reference-home .dada-section-heading h2 span{color:var(--dada-red)}
+body .reference-home .dada-section-heading a{
+  color:var(--dada-black);font:900 .7rem var(--mono);text-decoration:none;border-bottom:3px solid var(--dada-red);padding-bottom:5px;
+}
+body .reference-home .dada-cover-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}
+body .reference-home .dada-cover{
+  display:flex;position:relative;isolation:isolate;flex-direction:column;justify-content:end;min-width:0;min-height:235px;
+  overflow:hidden;text-decoration:none;color:var(--dada-black);border:3px solid var(--dada-black);background:var(--dada-paper);
+  box-shadow:3px 4px var(--dada-black);transition:transform .18s ease;
+}
+body .reference-home .dada-cover:nth-child(2n){transform:rotate(1deg)}
+body .reference-home .dada-cover:nth-child(3n){transform:rotate(-1deg)}
+body .reference-home .dada-cover:hover{transform:translateY(-4px) rotate(0)}
+body .reference-home .dada-cover img{position:absolute;z-index:-2;inset:0;display:block;width:100%;height:100%;object-fit:cover;filter:saturate(1.12) contrast(1.1)}
+body .reference-home .dada-cover::before{content:"";position:absolute;z-index:-1;inset:35% 0 0;background:linear-gradient(0deg,#f5e9cffa 0%,#f5e9cfe6 36%,transparent 94%)}
+body .reference-home .dada-cover-top{align-self:start;margin:11px auto auto 9px;padding:4px 5px;background:var(--dada-black);color:var(--dada-paper);font:900 .49rem/1.2 var(--mono);letter-spacing:.04em}
+body .reference-home .dada-cover strong{
+  padding:0 9px 8px;font:900 clamp(1.15rem,1.55vw,1.65rem)/.93 var(--display);text-transform:uppercase;letter-spacing:-.025em;
+}
+body .reference-home .dada-cover-count{display:flex;justify-content:space-between;gap:5px;padding:6px 9px;background:var(--dada-paper);font:900 .55rem/1.15 var(--mono);border-top:2px solid var(--dada-black)}
+body .reference-home .dada-cover-count span{color:var(--dada-red)}
+/* Two finished editorial promo compositions instead of empty isolated panels. */
+body .reference-home .dada-promo-row{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:13px;margin:32px 0 28px}
+body .reference-home .dada-studio-panel{
+  position:relative;isolation:isolate;overflow:hidden;min-height:290px;display:grid;
+  grid-template-columns:minmax(0,1.07fr) minmax(0,.93fr);gap:10px;align-items:center;
+  padding:clamp(19px,2.5vw,36px);border:5px solid var(--dada-black);background:
+  radial-gradient(circle at 40% 50%,#e8393b33,transparent 65%),repeating-linear-gradient(-29deg,transparent 0 17px,#1713100e 18px 20px),var(--dada-paper);
+}
+body .reference-home .dada-studio-panel::before{content:"";position:absolute;z-index:-1;left:-6%;top:-13%;width:39%;height:135%;background:var(--dada-red);clip-path:polygon(12% 0,100% 0,83% 100%,0 91%)}
+body .reference-home .dada-promo-type{position:relative;z-index:1;min-width:0}
+body .reference-home .dada-promo-type>p:first-child{font:900 .58rem var(--mono);color:var(--dada-black);background:var(--dada-paper);display:inline-block;padding:5px}
+body .reference-home .dada-promo-type h2{margin:9px 0 10px;font:900 clamp(2.5rem,5.2vw,5.5rem)/.82 var(--display);letter-spacing:-.05em;color:var(--dada-black);text-shadow:2px 2px var(--dada-paper)}
+body .reference-home .dada-promo-type h2 span{color:var(--dada-paper);text-shadow:3px 3px var(--dada-black)}
+body .reference-home .dada-promo-description{max-width:28ch;margin:0 0 14px;font:700 .91rem/1.45 Georgia,serif;background:#f5e9cfe8;padding:5px}
+body .reference-home .dada-promo-type a,.reference-home .dada-archive-type a{
+  display:inline-flex;gap:8px;align-items:center;min-height:37px;padding:8px 11px;background:var(--dada-blue);color:white;
+  border:2px solid var(--dada-black);text-decoration:none;font:900 .65rem var(--mono);box-shadow:3px 3px var(--dada-black);
+}
+body .reference-home .dada-promo-type a:hover,.reference-home .dada-archive-type a:hover{background:var(--dada-red);color:white}
+body .reference-home .dada-promo-art{position:relative;min-width:0;min-height:245px;align-self:stretch}
+body .reference-home .dada-proof{position:absolute;margin:0;width:74%;height:84%;background:var(--dada-paper);border:5px solid var(--dada-black);padding:5px;box-shadow:8px 9px var(--dada-black)}
+body .reference-home .dada-proof img{display:block;width:100%;height:100%;object-fit:cover}
+body .reference-home .dada-proof--one{z-index:2;top:1%;left:0;transform:rotate(-10deg)}
+body .reference-home .dada-proof--two{z-index:1;top:18%;right:0;transform:rotate(10deg)}
+body .reference-home .dada-archive-panel{
+  position:relative;isolation:isolate;overflow:hidden;min-height:290px;display:flex;align-items:center;padding:clamp(18px,2.5vw,32px);
+  border:5px solid var(--dada-black);background:repeating-linear-gradient(13deg,#171310 0 14px,#29211c 15px 17px);color:var(--dada-paper);
+}
+body .reference-home .dada-archive-panel>img{
+  position:absolute;z-index:-1;right:-16%;bottom:-9%;height:110%;width:65%;object-fit:cover;
+  opacity:.63;filter:grayscale(1) contrast(1.4);
+  mask-image:linear-gradient(90deg,transparent 0%,#000 40%);
+}
+body .reference-home .dada-archive-type{position:relative;z-index:1;max-width:67%}
+body .reference-home .dada-archive-type>p:first-child{color:var(--dada-red);font:900 .54rem/1.45 var(--mono);letter-spacing:.07em}
+body .reference-home .dada-archive-type h2{margin:8px 0 14px;font:900 clamp(2.5rem,4.5vw,5.2rem)/.9 var(--display);color:var(--dada-paper);letter-spacing:-.06em}
+body .reference-home .dada-archive-type>p:not(:first-child){font:700 .87rem/1.45 Georgia,serif;color:var(--dada-paper);text-shadow:2px 2px var(--dada-black)}
+body .reference-home .dada-archive-type a{margin-top:9px;background:var(--dada-paper);color:var(--dada-black)}
+body .reference-home .reference-home-source{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin:0 0 20px;padding:11px 2px;border-top:2px solid var(--dada-black);font:900 .6rem var(--mono);letter-spacing:.05em}
+body .reference-home .reference-home-source a{color:var(--dada-blue)}
+/* Layout deliberately recomposes rather than cropping giant desktop panels. */
+@media(max-width:1100px){
+ body .reference-home.home-discovery .feature-broadside{grid-template-columns:minmax(75px,.18fr) minmax(0,1fr) minmax(160px,.6fr);}
+ body .reference-home .feature-actions{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;padding:10px}
+ body .reference-home .feature-actions .mini-action{min-width:0}
+ body .reference-home .dada-cover-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+ body .reference-home .dada-cover{min-height:235px}
+ body .reference-home .dada-promo-row{grid-template-columns:1fr 1fr}
+ body .reference-home .dada-studio-panel{grid-template-columns:1fr}
+ body .reference-home .dada-promo-art{min-height:195px}
+ body .reference-home .dada-proof{height:95%;width:57%}
+}
+@media(max-width:750px){
+ body:has(.reference-home) .dada-masthead .topbar{min-height:71px}
+ body .reference-home.home-discovery > .hero.hero-2{display:flex;min-height:690px;padding:30px 19px 32px;align-items:flex-end}
+ body .reference-home .hero-copy{width:100%;padding-top:330px}
+ body .reference-home .hero h1{font-size:clamp(2.6rem,9vw,4.8rem)}
+ body .reference-home .hero .lede{font-size:.94rem}
+ body .reference-home .hero-stamp{width:70px;height:70px}
+ body .reference-home .dada-search-strip{grid-template-columns:1fr;gap:9px;padding:10px 0}
+ body .reference-home .dada-search-shortcuts{gap:5px}
+ body .reference-home .dada-search-shortcuts a{font-size:.54rem;min-height:38px}
+ body .reference-home.home-discovery .feature-broadside{grid-template-columns:minmax(0,1fr) minmax(120px,.67fr);margin-block:8px 24px}
+ body .reference-home .dada-feature-stamp{grid-column:1/-1;flex-direction:row;gap:16px;min-height:49px;padding:7px;border-right:0;border-bottom:3px solid var(--dada-black)}
+ body .reference-home .dada-feature-stamp strong{font-size:1.12rem;transform:rotate(-3deg);padding:5px 14px}
+ body .reference-home .feature-broadside-copy{padding:17px}
+ body .reference-home .feature-broadside blockquote{font-size:clamp(1.12rem,3.1vw,1.6rem)}
+ body .reference-home .featured-art{min-height:220px;border-right:0}
+ body .reference-home .featured-art img{min-height:220px}
+ body .reference-home .feature-actions{grid-column:1/-1;grid-template-columns:repeat(2,minmax(0,1fr))}
+ body .reference-home .dada-promo-row{grid-template-columns:1fr}
+ body .reference-home .dada-studio-panel{grid-template-columns:1fr 1fr;min-height:270px}
+ body .reference-home .dada-archive-panel{min-height:270px}
+}
+@media(max-width:480px){
+ body .reference-home.home-discovery > .hero.hero-2{min-height:640px;padding-inline:17px}
+ body .reference-home .hero-copy{padding-top:265px}
+ body .reference-home .hero h1{font-size:clamp(2.5rem,10.1vw,3.7rem)}
+ body .reference-home .hero-actions .btn{min-width:0;padding:9px 10px}
+ body .reference-home .dada-search-form input{font-size:.82rem}
+ body .reference-home .dada-search-shortcuts a{padding:5px 4px;font-size:.48rem}
+ body .reference-home.home-discovery .feature-broadside{grid-template-columns:1fr}
+ body .reference-home .featured-art{height:185px;min-height:185px;border-left:0;border-top:3px solid var(--dada-black)}
+ body .reference-home .featured-art img{height:185px;min-height:185px}
+ body .reference-home .feature-broadside blockquote{font-size:clamp(1.2rem,5vw,1.6rem)}
+ body .reference-home .dada-cover-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ body .reference-home .dada-cover{min-height:218px}
+ body .reference-home .dada-cover strong{font-size:clamp(1.03rem,4.3vw,1.36rem)}
+ body .reference-home .dada-section-heading h2{font-size:1.55rem}
+ body .reference-home .dada-studio-panel{grid-template-columns:1fr;min-height:0}
+ body .reference-home .dada-promo-art{min-height:200px}
+ body .reference-home .dada-proof{width:63%;height:94%}
+ body .reference-home .dada-archive-type{max-width:75%}
+}
+@media(max-width:350px){
+ body .reference-home .hero-actions{flex-direction:column;align-items:stretch}
+ body .reference-home .dada-search-shortcuts a{font-size:.45rem}
+ body .reference-home .feature-actions .mini-action{font-size:.56rem}
+ body .reference-home .dada-cover{min-height:198px}
+}
+@media(prefers-reduced-motion:reduce){
+ body .reference-home .dada-cover{transition:none!important;transform:none!important}
+}
