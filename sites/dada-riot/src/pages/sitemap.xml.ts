@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import { quotes } from '../lib/quote-data';
 import { collections } from '../lib/collections';
 import { tricksters } from '../lib/tricksters';
+import { archetypes } from '../lib/research';
 
 const escapeXml = (text: string): string =>
   text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -9,7 +10,8 @@ const escapeXml = (text: string): string =>
 export const GET: APIRoute = ({ site }) => {
   const origin = site ?? new URL('https://jester-quotes.vercel.app');
   const paths = [
-    '/', '/about/', '/quotes/', '/collections/',
+    '/', '/about/', '/quotes/', '/collections/', '/editions/', '/archetypes/', '/jesters-in-media/', '/jester-brands/',
+    ...archetypes.filter(item=>item.publication_status==='published').map(item=>`/archetypes/${item.slug}/`),
     ...collections.map((collection) => `/collections/${encodeURIComponent(collection.slug)}/`),
     '/studio/', '/sources/', '/daily/', '/tricksters/', '/resources/', '/videos/',
     ...tricksters.map((record) => `/tricksters/${encodeURIComponent(record.slug)}/`),

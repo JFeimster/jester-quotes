@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { editions } from '../../lib/editions';
+import '../../styles/editions.css';
+---
+<BaseLayout title="Jester Quotes Editions" description="Explore the public Dada Riot site and seven distinct Jester Quotes design previews.">
+  <div class="wrap editions-page">
+    <p class="eyebrow">One archive / eight visual worlds</p>
+    <h1>Choose your <em>edition.</em></h1>
+    <p class="editions-lede">Dada Riot is the complete public site. The other directions are working design previews using the same sourced quotations and archive links.</p>
+    <div class="editions-grid">
+      {editions.map(edition => <article class="edition-card">
+        <a href={edition.destination ?? undefined} aria-label={`Open ${edition.name}`}>
+          <div class={`edition-visual edition-visual--${edition.slug}`} style={`--edition-preview:${edition.previewAsset ? `url('${edition.previewAsset}')` : 'none'}`}>
+            {edition.previewAsset ? <img src={edition.previewAsset} alt={`${edition.name} existing artwork`} loading="lazy" /> : <span aria-hidden="true">{edition.name}</span>}
+          </div>
+          <div class="edition-card-copy"><span>{edition.default ? 'Public default · Full edition' : 'Design Preview'}</span><h2>{edition.name}</h2><p>{edition.description}</p><strong>Open {edition.default ? 'site' : 'preview'} ↗</strong></div>
+        </a>
+      </article>)}
+    </div>
+  </div>
+</BaseLayout>

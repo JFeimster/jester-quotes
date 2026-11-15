@@ -11,7 +11,7 @@ let active: Filter = 'all';
 let items: SiteSearchItem[] = [];
 const kindNames: Record<SiteSearchKind,string> = {
   quotes:'QUOTE',collections:'COLLECTION',tricksters:'TRICKSTER',
-  videos:'VIDEO',resources:'RESOURCE'
+  videos:'VIDEO',resources:'RESOURCE',archetypes:'ARCHETYPE',media:'MEDIA CHARACTER',brands:'BRAND'
 };
 function normalize(value: string): string {
   return value.toLocaleLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'');
