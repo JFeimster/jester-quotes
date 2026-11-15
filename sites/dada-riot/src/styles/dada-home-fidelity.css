@@ -149,6 +149,7 @@ body .reference-home .dada-archive-type>p:not(:first-child){font:700 .87rem/1.45
 body .reference-home .dada-archive-type a{margin-top:9px;background:var(--dada-paper);color:var(--dada-black)}
 body .reference-home .reference-home-source{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin:0 0 20px;padding:11px 2px;border-top:2px solid var(--dada-black);font:900 .6rem var(--mono);letter-spacing:.05em}
 body .reference-home .reference-home-source a{color:var(--dada-blue)}
+body:has(.reference-home) .site-footer-v3{margin-top:0}
 /* Layout deliberately recomposes rather than cropping giant desktop panels. */
 @media(max-width:1100px){
  body .reference-home.home-discovery .feature-broadside{grid-template-columns:minmax(75px,.18fr) minmax(0,1fr) minmax(160px,.6fr);}
@@ -205,6 +206,7 @@ body .reference-home .reference-home-source a{color:var(--dada-blue)}
 }
 @media(max-width:350px){
  body .reference-home .hero-actions{flex-direction:column;align-items:stretch}
+ body .reference-home .hero-actions .btn{flex:0 0 auto;min-height:46px}
  body .reference-home .dada-search-shortcuts a{font-size:.45rem}
  body .reference-home .feature-actions .mini-action{font-size:.56rem}
  body .reference-home .dada-cover{min-height:198px}
