@@ -12,7 +12,7 @@ export const themeCatalog:readonly ThemeSpec[]=[
   midnightCarnival,neoBrutalist,velvetGallery,
   dadaRiot,neonTrickster,impossibleCourt,forbiddenLibrary,riotPress
 ];
-export const defaultThemeId:ThemeId='midnight-carnival';
+export const defaultThemeId:ThemeId='dada-riot';
 if(new Set(themeCatalog.map(theme=>theme.id)).size!==themeCatalog.length)
   throw new Error('Duplicate design Lab theme id');
 export function labThemeStyle(theme:ThemeSpec):string {

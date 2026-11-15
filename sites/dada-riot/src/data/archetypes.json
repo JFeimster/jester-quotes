@@ -1,0 +1,122 @@
+[
+  {
+    "id": "clown",
+    "slug": "clown",
+    "name": "Clown",
+    "summary": "The source frames the clown as a performer whose comic failures expose shared vulnerability and the masks of daily life.",
+    "description": "The source frames the clown as a performer whose comic failures expose shared vulnerability and the masks of daily life.",
+    "tags": [
+      "performance",
+      "humor",
+      "vulnerability"
+    ],
+    "source_document": "Archetypes.md",
+    "sources": [
+      "https://stottilien.com/2013/04/03/crazy-wisdom-the-archetype-of-the-fool-the-clown-the-jester-and-the-trickster/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "characteristics": [
+      "Visible failure invites empathy",
+      "Mime can carry criticism without words",
+      "The mask exposes ordinary social masks"
+    ],
+    "adjacent_archetype": "jester",
+    "context": "The author points to Charlie Chaplin’s wordless performance as a way comedy can show the awkwardness of modern life. In this account the clown also carries sorrow: laughter and failure make private feelings visible. This is the author’s reading of a flexible performance tradition."
+  },
+  {
+    "id": "jester",
+    "slug": "jester",
+    "name": "Jester",
+    "summary": "The source frames the jester as a verbal performer who uses wit to challenge powerful people from within their circle.",
+    "description": "The source frames the jester as a verbal performer who uses wit to challenge powerful people from within their circle.",
+    "tags": [
+      "wit",
+      "court",
+      "power"
+    ],
+    "source_document": "Archetypes.md",
+    "sources": [
+      "https://stottilien.com/2013/04/03/crazy-wisdom-the-archetype-of-the-fool-the-clown-the-jester-and-the-trickster/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [
+      "truth-to-power",
+      "art-of-the-jester"
+    ],
+    "characteristics": [
+      "Words and timing do the work",
+      "Access to authority creates opportunity",
+      "The performer remains dependent on the court"
+    ],
+    "adjacent_archetype": "fool",
+    "context": "The article places the jester in the setting of medieval courts and describes a performer who could entertain while speaking uncomfortable truths. It also stresses a tension: a jester’s access and livelihood depended on the same power being criticized. The court setting is a historical frame in the source, not a claim that all jesters held the same freedom."
+  },
+  {
+    "id": "fool",
+    "slug": "fool",
+    "name": "Fool",
+    "summary": "The source describes the fool as an outsider who can unsettle accepted rules through paradox, play, and difficult truths.",
+    "description": "The source describes the fool as an outsider who can unsettle accepted rules through paradox, play, and difficult truths.",
+    "tags": [
+      "paradox",
+      "play",
+      "outsider"
+    ],
+    "source_document": "Archetypes.md",
+    "sources": [
+      "https://stottilien.com/2013/04/03/crazy-wisdom-the-archetype-of-the-fool-the-clown-the-jester-and-the-trickster/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [
+      "wise-fools"
+    ],
+    "characteristics": [
+      "Paradox unsettles certainty",
+      "Play makes difficult ideas approachable",
+      "The outsider role permits sharp questions"
+    ],
+    "adjacent_archetype": "clown",
+    "context": "The author uses the wise or sacred fool to discuss rule breaking and change. Religious figures and traditions appear as the author’s analogies, not as a universal classification of those figures. In this framework, the fool’s apparently unserious position can make a serious challenge easier to hear."
+  },
+  {
+    "id": "trickster",
+    "slug": "trickster",
+    "name": "Trickster",
+    "summary": "The source presents the trickster as an ambiguous agent of mischief and change whose actions can help and harm.",
+    "description": "The source presents the trickster as an ambiguous agent of mischief and change whose actions can help and harm.",
+    "tags": [
+      "mischief",
+      "change",
+      "ambiguity"
+    ],
+    "source_document": "Archetypes.md",
+    "sources": [
+      "https://stottilien.com/2013/04/03/crazy-wisdom-the-archetype-of-the-fool-the-clown-the-jester-and-the-trickster/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [
+      "trickster-coyote",
+      "trickster-raven-tlingit"
+    ],
+    "related_collection_slugs": [],
+    "characteristics": [
+      "Deception disrupts expectations",
+      "Change has mixed consequences",
+      "Stories differ by culture and teller"
+    ],
+    "adjacent_archetype": "jester",
+    "context": "The article names Coyote and Raven among examples from different storytelling traditions. It treats transformation as central, but its broad comparisons should not erase the distinct origins and meanings of those stories. The related Trickster profiles below give more specific cultural context and their own sources."
+  }
+]

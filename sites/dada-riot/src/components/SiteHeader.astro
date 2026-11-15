@@ -12,6 +12,12 @@ const mainLinks = [
   { href: '/videos/', label: 'Videos' },
   { href: '/resources/', label: 'Resources' }
 ];
+const exploreLinks = [
+  { href: '/editions/', label: 'Editions' },
+  { href: '/archetypes/', label: 'Archetypes' },
+  { href: '/jesters-in-media/', label: 'Jesters in Media' },
+  { href: '/jester-brands/', label: 'Jester Brands' }
+];
 const current = (href: string) => path === href || (href !== '/' && path.startsWith(href));
 ---
 <header class="site-header site-header-2 nav-v3 dada-masthead" data-edition={riot ? 'riot-press' : 'dada-riot'}>
@@ -31,6 +37,7 @@ const current = (href: string) => path === href || (href !== '/' && path.startsW
         </div>
       </details>
       {mainLinks.map(link=><a href={link.href} aria-current={current(link.href) ? 'page' : undefined}>{link.label}</a>)}
+      <details class="desktop-quotes-menu"><summary>Explore <span aria-hidden="true" class="nav-chevron">⌄</span></summary><div class="quotes-menu-panel"><p class="menu-kicker">MORE TO DISCOVER</p>{exploreLinks.map(link=><a href={link.href} aria-current={current(link.href) ? 'page' : undefined}><strong>{link.label}</strong></a>)}</div></details>
       <a class="nav-icon nav-search-link" href="/search/" aria-label="Search the entire site" title="Search the site" aria-current={current('/search/') ? 'page' : undefined}>
         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10.7" cy="10.7" r="6.3"/><path d="m15.5 15.5 5 5"/></svg>
       </a>
@@ -50,6 +57,7 @@ const current = (href: string) => path === href || (href !== '/' && path.startsW
         {quoteLinks.map(link=><a href={link.href} aria-current={current(link.href) ? 'page' : undefined}>{link.label}</a>)}
         <span class="mobile-nav-heading">EXPLORE</span>
         {mainLinks.map(link=><a href={link.href} aria-current={current(link.href) ? 'page' : undefined}>{link.label}</a>)}
+        {exploreLinks.map(link=><a href={link.href} aria-current={current(link.href) ? 'page' : undefined}>{link.label}</a>)}
         <a href="/search/" aria-current={current('/search/') ? 'page' : undefined}>Search the Site</a>
         <a href="/saved/" aria-current={current('/saved/') ? 'page' : undefined}>Saved Quotes</a>
         <a href="/studio/" class="nav-studio-cta" aria-label="Open Quote Studio and design a poster">MAKE TROUBLE <span aria-hidden="true">↗</span></a>

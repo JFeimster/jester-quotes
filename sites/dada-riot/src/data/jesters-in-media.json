@@ -1,0 +1,554 @@
+[
+  {
+    "id": "fat-amy",
+    "slug": "fat-amy",
+    "name": "Fat Amy",
+    "summary": "Humor challenges expectations about confidence and protects her from intimacy.",
+    "description": "Humor challenges expectations about confidence and protects her from intimacy.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Fat Amy",
+    "originating_work": "Pitch Perfect",
+    "medium": "Film",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "kamala-khan",
+    "slug": "kamala-khan",
+    "name": "Kamala Khan",
+    "summary": "Wisecracks help her navigate family tension, friendship, and new powers.",
+    "description": "Wisecracks help her navigate family tension, friendship, and new powers.",
+    "tags": [
+      "comics"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Kamala Khan",
+    "originating_work": "Ms. Marvel",
+    "medium": "Comics",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "beetlejuice",
+    "slug": "beetlejuice",
+    "name": "Beetlejuice",
+    "summary": "The source reads his unruly pursuit of life as an extreme jester portrayal.",
+    "description": "The source reads his unruly pursuit of life as an extreme jester portrayal.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Beetlejuice",
+    "originating_work": "Beetlejuice",
+    "medium": "Film",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "austin-powers",
+    "slug": "austin-powers",
+    "name": "Austin Powers",
+    "summary": "A self-serious spy whose comic mismatch with reality drives the satire.",
+    "description": "A self-serious spy whose comic mismatch with reality drives the satire.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Austin Powers",
+    "originating_work": "Austin Powers",
+    "medium": "Film",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "leslie-chow",
+    "slug": "leslie-chow",
+    "name": "Leslie Chow",
+    "summary": "A chaotic ally whose appetite for the moment disrupts the group.",
+    "description": "A chaotic ally whose appetite for the moment disrupts the group.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Leslie Chow",
+    "originating_work": "The Hangover",
+    "medium": "Film",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "genie",
+    "slug": "genie",
+    "name": "Genie",
+    "summary": "Comic invention and guidance accompany his desire for freedom.",
+    "description": "Comic invention and guidance accompany his desire for freedom.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Genie",
+    "originating_work": "Aladdin",
+    "medium": "Film",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "dusty",
+    "slug": "dusty",
+    "name": "Dusty",
+    "summary": "Enthusiasm and jokes lighten the tornado-chasing crew’s dangerous work.",
+    "description": "Enthusiasm and jokes lighten the tornado-chasing crew’s dangerous work.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Dusty",
+    "originating_work": "Twister",
+    "medium": "Film",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "tars",
+    "slug": "tars",
+    "name": "TARS",
+    "summary": "A robot whose adjustable humor offers relief during a difficult mission.",
+    "description": "A robot whose adjustable humor offers relief during a difficult mission.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "TARS",
+    "originating_work": "Interstellar",
+    "medium": "Film",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "harley-quinn",
+    "slug": "harley-quinn",
+    "name": "Harley Quinn",
+    "summary": "The source interprets her jokes as a defense in painful relationships.",
+    "description": "The source interprets her jokes as a defense in painful relationships.",
+    "tags": [
+      "comics"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Harley Quinn",
+    "originating_work": "DC Comics",
+    "medium": "Comics",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "weasley-twins",
+    "slug": "weasley-twins",
+    "name": "Weasley Twins",
+    "summary": "Fred and George use pranks to create joy and resist routine.",
+    "description": "Fred and George use pranks to create joy and resist routine.",
+    "tags": [
+      "literature"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Weasley Twins",
+    "originating_work": "Harry Potter",
+    "medium": "Literature",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "c-3po",
+    "slug": "c-3po",
+    "name": "C-3PO",
+    "summary": "The source classifies the protocol droid as closer to a fool than a jester.",
+    "description": "The source classifies the protocol droid as closer to a fool than a jester.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "C-3PO",
+    "originating_work": "Star Wars",
+    "medium": "Film",
+    "character_type": "fool"
+  },
+  {
+    "id": "merry-and-pippin",
+    "slug": "merry-and-pippin",
+    "name": "Merry and Pippin",
+    "summary": "The source highlights the hobbits’ lighthearted companionship.",
+    "description": "The source highlights the hobbits’ lighthearted companionship.",
+    "tags": [
+      "literature"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Merry and Pippin",
+    "originating_work": "The Lord of the Rings",
+    "medium": "Literature",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "random",
+    "slug": "random",
+    "name": "Random",
+    "summary": "The source reads a playful contender for power as a jester who becomes a ruler.",
+    "description": "The source reads a playful contender for power as a jester who becomes a ruler.",
+    "tags": [
+      "literature"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Random",
+    "originating_work": "The Great Book of Amber",
+    "medium": "Literature",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "gambit",
+    "slug": "gambit",
+    "name": "Gambit",
+    "summary": "The source interprets humor as a shield around a troubled past.",
+    "description": "The source interprets humor as a shield around a troubled past.",
+    "tags": [
+      "comics"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Gambit",
+    "originating_work": "X-Men",
+    "medium": "Comics",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "skeleton",
+    "slug": "skeleton",
+    "name": "Skeleton",
+    "summary": "A riddle-loving former king is read as a jester guarding a passage.",
+    "description": "A riddle-loving former king is read as a jester guarding a passage.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Skeleton",
+    "originating_work": "The Last Unicorn",
+    "medium": "Film",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "puck",
+    "slug": "puck",
+    "name": "Puck",
+    "summary": "Puck is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "description": "Puck is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "tags": [
+      "literature"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "needs_enrichment",
+    "publication_status": "draft",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Puck",
+    "originating_work": "A Midsummer Night’s Dream",
+    "medium": "Literature",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "dory",
+    "slug": "dory",
+    "name": "Dory",
+    "summary": "Dory is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "description": "Dory is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "needs_enrichment",
+    "publication_status": "draft",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Dory",
+    "originating_work": "Finding Nemo",
+    "medium": "Film",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "edith-bunker",
+    "slug": "edith-bunker",
+    "name": "Edith Bunker",
+    "summary": "Edith Bunker is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "description": "Edith Bunker is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "tags": [
+      "television"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "needs_enrichment",
+    "publication_status": "draft",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Edith Bunker",
+    "originating_work": "All in the Family",
+    "medium": "Television",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "buddy",
+    "slug": "buddy",
+    "name": "Buddy",
+    "summary": "Buddy is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "description": "Buddy is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "needs_enrichment",
+    "publication_status": "draft",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Buddy",
+    "originating_work": "Elf",
+    "medium": "Film",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "megan",
+    "slug": "megan",
+    "name": "Megan",
+    "summary": "Megan is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "description": "Megan is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "needs_enrichment",
+    "publication_status": "draft",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Megan",
+    "originating_work": "Bridesmaids",
+    "medium": "Film",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "kramer",
+    "slug": "kramer",
+    "name": "Kramer",
+    "summary": "Kramer is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "description": "Kramer is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "tags": [
+      "television"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "needs_enrichment",
+    "publication_status": "draft",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Kramer",
+    "originating_work": "Seinfeld",
+    "medium": "Television",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "joey",
+    "slug": "joey",
+    "name": "Joey",
+    "summary": "Joey is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "description": "Joey is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "tags": [
+      "television"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "needs_enrichment",
+    "publication_status": "draft",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "Joey",
+    "originating_work": "Friends",
+    "medium": "Television",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "the-iguana",
+    "slug": "the-iguana",
+    "name": "The Iguana",
+    "summary": "The Iguana is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "description": "The Iguana is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "needs_enrichment",
+    "publication_status": "draft",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "The Iguana",
+    "originating_work": "Tangled",
+    "medium": "Film",
+    "character_type": "jester interpretation"
+  },
+  {
+    "id": "the-carpet",
+    "slug": "the-carpet",
+    "name": "The Carpet",
+    "summary": "The Carpet is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "description": "The Carpet is named in the supplied research as a possible jester example. Further editorial research is needed.",
+    "tags": [
+      "film"
+    ],
+    "source_document": "Examples of Jesters in Media.md",
+    "sources": [
+      "https://arielhudnall.com/2015/09/06/archetypes-jester/"
+    ],
+    "verification_status": "needs_enrichment",
+    "publication_status": "draft",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "character": "The Carpet",
+    "originating_work": "Aladdin",
+    "medium": "Film",
+    "character_type": "jester interpretation"
+  }
+]

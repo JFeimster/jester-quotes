@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EditorialLayout from '../../design/layouts/EditorialLayout.astro';
+import BrutalistLayout from '../../design/layouts/BrutalistLayout.astro';
+import BentoLayout from '../../design/layouts/BentoLayout.astro';
+import NeonTricksterLayout from '../../design/layouts/NeonTricksterLayout.astro';
+import ImpossibleCourtLayout from '../../design/layouts/ImpossibleCourtLayout.astro';
+import ForbiddenLibraryLayout from '../../design/layouts/ForbiddenLibraryLayout.astro';
+import RiotPressLayout from '../../design/layouts/RiotPressLayout.astro';
+import { previewEditions } from '../../lib/editions';
+import { getTheme } from '../../design/theme-registry';
+import { quotes } from '../../lib/quote-data';
+import type { Quote } from '../../types/quote';
+import '../../styles/design-variants.css';
+import '../../styles/lab-new-themes.css';
+import '../../styles/riot-press.css';
+import '../../styles/editions.css';
+
+const layouts = {EditorialLayout,BrutalistLayout,BentoLayout,NeonTricksterLayout,ImpossibleCourtLayout,ForbiddenLibraryLayout,RiotPressLayout};
+export function getStaticPaths() { return previewEditions.map(edition => ({params:{slug:edition.slug},props:{edition}})); }
+const { edition } = Astro.props;
+const Layout = layouts[edition.layout as keyof typeof layouts];
+if (!Layout) throw new Error(`Missing edition layout: ${edition.layout}`);
+const samples = getTheme(edition.id).sampleQuoteIds.map(id => quotes.find(quote => quote.id === id));
+if (samples.some(sample => !sample)) throw new Error(`Missing canonical quote in ${edition.id}`);
+---
+<BaseLayout title={`${edition.name} — Jester Quotes Design Preview`} description={edition.description} robots="noindex, nofollow">
+  <div class="wrap edition-preview-page theme-lab">
+    <p class="eyebrow">Jester Quotes / Design Preview</p>
+    <h1>{edition.name}</h1>
+    <p>{edition.description} This preview uses the shared quotation archive. <a href="/editions/">Browse all editions ↗</a></p>
+    <Layout samples={samples as [Quote,Quote,Quote]} />
+  </div>
+  <script src="../../scripts/quote-explorer.ts"></script>
+</BaseLayout>

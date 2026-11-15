@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { archetypes } from '../../lib/research';
+import '../../styles/research.css';
+---
+<BaseLayout title="Clown, Jester, Fool & Trickster — Jester Quotes" description="Compare four overlapping figures of humor and disruption through one attributed interpretive framework.">
+  <div class="wrap research-page"><p class="eyebrow">Four ways to upset the script</p><h1>Meet the <em>archetypes.</em></h1>
+    <p class="research-intro">Clown, Jester, Fool, and Trickster are often used interchangeably. This comparison presents one author’s interpretive framework, not a settled psychological taxonomy.</p>
+    <div class="research-grid">{archetypes.map(item=><article class="research-card"><span>{item.characteristics[0]}</span><h2>{item.name}</h2><p>{item.summary}</p><a href={`/archetypes/${item.slug}/`}>Explore {item.name} ↗</a></article>)}</div>
+    <p class="research-source">Framework adapted in original wording from <a href={archetypes[0].sources[0]} rel="external noopener">“Crazy Wisdom: The Archetype of the Fool, the Clown, the Jester and the Trickster”</a>. The source’s historical and psychological assertions are treated as the author’s interpretation.</p>
+  </div>
+</BaseLayout>

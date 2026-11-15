@@ -1,0 +1,110 @@
+[
+  {
+    "id": "m-and-ms",
+    "slug": "m-and-ms",
+    "name": "M&M’s",
+    "summary": "Character-led situational humor makes ordinary candy advertising playful.",
+    "description": "Character-led situational humor makes ordinary candy advertising playful.",
+    "tags": [
+      "brand",
+      "humor"
+    ],
+    "source_document": "Examples of Jester Brands.md",
+    "sources": [
+      "https://astute.co/resource/brand-archetypes-the-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "jester_characteristics": [
+      "Character-led situational humor makes ordinary candy advertising playful."
+    ],
+    "historical_examples": [
+      "The source discusses the Red and Yellow characters and an older slogan."
+    ],
+    "attribution": "Supplied research, citing Astute; historical examples are not verified current strategy."
+  },
+  {
+    "id": "geico",
+    "slug": "geico",
+    "name": "GEICO",
+    "summary": "Comic changes of perspective make insurance advertising entertaining.",
+    "description": "Comic changes of perspective make insurance advertising entertaining.",
+    "tags": [
+      "brand",
+      "humor"
+    ],
+    "source_document": "Examples of Jester Brands.md",
+    "sources": [
+      "https://astute.co/resource/brand-archetypes-the-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "jester_characteristics": [
+      "Comic changes of perspective make insurance advertising entertaining."
+    ],
+    "historical_examples": [
+      "The source points to humorous treatments of ordinary situations."
+    ],
+    "attribution": "Supplied research, citing Astute; historical examples are not verified current strategy."
+  },
+  {
+    "id": "old-spice",
+    "slug": "old-spice",
+    "name": "Old Spice",
+    "summary": "Absurd scenes and rapid shifts of reality are the source’s central examples.",
+    "description": "Absurd scenes and rapid shifts of reality are the source’s central examples.",
+    "tags": [
+      "brand",
+      "humor"
+    ],
+    "source_document": "Examples of Jester Brands.md",
+    "sources": [
+      "https://astute.co/resource/brand-archetypes-the-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "jester_characteristics": [
+      "Absurd scenes and rapid shifts of reality are the source’s central examples."
+    ],
+    "historical_examples": [
+      "The source refers to centaurs, comedians, and surreal campaigns without dates."
+    ],
+    "attribution": "Supplied research, citing Astute; historical examples are not verified current strategy."
+  },
+  {
+    "id": "taco-bell",
+    "slug": "taco-bell",
+    "name": "Taco Bell",
+    "summary": "Small humorous touches are read as a consistent playful brand voice.",
+    "description": "Small humorous touches are read as a consistent playful brand voice.",
+    "tags": [
+      "brand",
+      "humor"
+    ],
+    "source_document": "Examples of Jester Brands.md",
+    "sources": [
+      "https://astute.co/resource/brand-archetypes-the-jester/"
+    ],
+    "verification_status": "source_interpretation",
+    "publication_status": "published",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "jester_characteristics": [
+      "Small humorous touches are read as a consistent playful brand voice."
+    ],
+    "historical_examples": [
+      "The source mentions sauce packets and party packs."
+    ],
+    "attribution": "Supplied research, citing Astute; historical examples are not verified current strategy."
+  }
+]

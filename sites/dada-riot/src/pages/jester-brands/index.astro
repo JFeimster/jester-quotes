@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { jesterBrands } from '../../lib/research';
+import '../../styles/research.css';
+---
+<BaseLayout title="Jester Brands — Jester Quotes" description="An attributed editorial look at humor and playful disruption in four historical brand examples.">
+  <div class="wrap research-page"><p class="eyebrow">Brand archetypes / editorial examples</p><h1>Brands with a <em>jester streak.</em></h1>
+    <p class="research-intro">The supplied research associates these four brands with humor, absurdity, and playful disruption. The examples describe past campaigns or brand details; they do not establish current strategy, endorsement, or partnership.</p>
+    <div class="research-grid">{jesterBrands.map(item=><article class="research-card" id={item.slug}><span>Source interpretation</span><h2>{item.name}</h2><p>{item.summary}</p><p>{item.historical_examples[0]}</p></article>)}</div>
+    <p class="research-source">Research attribution: <a href={jesterBrands[0].sources[0]} rel="external noopener">Astute, “Brand Archetypes: The Jester”</a>. No brand logos or campaign creative are reproduced.</p>
+  </div>
+</BaseLayout>
