@@ -1,27 +1,23 @@
 import type { SiteSearchItem, SiteSearchKind } from '../lib/site-search';
+import { SEARCH_PAGE_SIZE, categoryCounts, readSearchState, searchPage, searchResults, type SearchFilter } from '../lib/search-results';
 
 const input = document.querySelector<HTMLInputElement>('#site-search-input');
 const form = document.querySelector<HTMLFormElement>('#site-search-form');
 const status = document.querySelector<HTMLElement>('#site-search-status');
 const resultList = document.querySelector<HTMLUListElement>('#site-search-results');
 const empty = document.querySelector<HTMLElement>('#site-search-empty');
+const more = document.querySelector<HTMLButtonElement>('#site-search-more');
 const filterButtons = [...document.querySelectorAll<HTMLButtonElement>('[data-site-filter]')];
-type Filter = SiteSearchKind | 'all';
-let active: Filter = 'all';
+let active: SearchFilter = 'all';
 let items: SiteSearchItem[] = [];
+let loaded = false;
+let shown = 20;
+let queryHistoryStarted = false;
 const kindNames: Record<SiteSearchKind,string> = {
   quotes:'QUOTE',collections:'COLLECTION',tricksters:'TRICKSTER',
   videos:'VIDEO',resources:'RESOURCE',archetypes:'ARCHETYPE',media:'MEDIA CHARACTER',brands:'BRAND'
 };
-function normalize(value: string): string {
-  return value.toLocaleLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'');
-}
-function ranking(item: SiteSearchItem, terms: string[]): number {
-  const title = normalize(item.title), source = normalize(item.source), tags = normalize(item.tags.join(' '));
-  const all = normalize(item.searchText);
-  if (!terms.every(term=>all.includes(term))) return 0;
-  return terms.reduce((score,term)=>score+(title.startsWith(term)?10:0)+(title.includes(term)?5:0)+(tags.includes(term)?4:0)+(source.includes(term)?2:0)+1,0);
-}
+
 function resultItem(item: SiteSearchItem): HTMLLIElement {
   const li = document.createElement('li');
   li.className = 'site-search-result';
@@ -44,52 +40,93 @@ function resultItem(item: SiteSearchItem): HTMLLIElement {
   li.appendChild(link);
   return li;
 }
+
 function render(): void {
-  if (!input || !resultList || !status || !empty) return;
+  if (!loaded || !input || !resultList || !status || !empty || !more) return;
   const query = input.value.trim();
-  const terms = normalize(query).split(/\s+/).filter(Boolean);
-  const candidates = items.filter(item=>active==='all' || item.kind===active);
-  const matches = terms.length
-    ? candidates.map(item=>({item,score:ranking(item,terms)})).filter(hit=>hit.score>0)
-      .sort((a,b)=>b.score-a.score || a.item.title.localeCompare(b.item.title)).map(hit=>hit.item)
-    : candidates.slice(0,20);
-  const view = matches.slice(0,30);
-  resultList.replaceChildren(...view.map(resultItem));
+  const allMatches = searchResults(items, query);
+  const counts = categoryCounts(allMatches);
+  const matches = active === 'all' ? allMatches : allMatches.filter(item => item.kind === active);
+  const visible = searchPage(matches, shown);
+  resultList.replaceChildren(...visible.map(resultItem));
   empty.hidden = matches.length !== 0;
-  if (terms.length) {
-    status.textContent = matches.length ? matches.length+' matching results'+(matches.length>30?' · showing first 30':'') : 'No matching results';
-  } else {
-    status.textContent = 'Explore the collection or search for something specific · '+items.length+' indexed entries';
+  more.hidden = visible.length >= matches.length;
+  if (!more.hidden) more.textContent = `SHOW ${Math.min(SEARCH_PAGE_SIZE, matches.length - visible.length)} MORE ↗`;
+  for (const button of filterButtons) {
+    const filter = button.dataset.siteFilter as SearchFilter;
+    button.setAttribute('aria-pressed', String(filter === active));
+    const count = button.querySelector<HTMLElement>('[data-filter-count]');
+    if (count) count.textContent = counts[filter].toLocaleString();
   }
+  status.textContent = matches.length
+    ? `${matches.length.toLocaleString()} ${query ? 'matching' : 'indexed'} ${matches.length === 1 ? 'result' : 'results'} · showing ${visible.length.toLocaleString()}`
+    : query ? 'No matching results' : 'No indexed results in this category';
 }
-function updateQuery(): void {
+
+function writeUrl(mode: 'push' | 'replace'): void {
   if (!input) return;
   const url = new URL(window.location.href);
-  if (input.value.trim()) url.searchParams.set('q',input.value.trim());
+  const query = input.value.trim();
+  if (query) url.searchParams.set('q', query);
   else url.searchParams.delete('q');
-  window.history.replaceState(null,'',url.pathname+url.search);
+  if (active !== 'all') url.searchParams.set('category', active);
+  else url.searchParams.delete('category');
+  const next = url.pathname + url.search + url.hash;
+  if (next !== window.location.pathname + window.location.search + window.location.hash)
+    window.history[mode === 'push' ? 'pushState' : 'replaceState'](null, '', next);
+}
+
+function restoreUrl(): void {
+  const state = readSearchState(new URL(window.location.href));
+  if (input) input.value = state.query;
+  active = state.filter;
+  shown = state.query ? SEARCH_PAGE_SIZE : 20;
+  queryHistoryStarted = false;
   render();
 }
-const query = new URL(window.location.href).searchParams.get('q');
-if (input && query) input.value = query.slice(0,180);
-input?.addEventListener('input',updateQuery);
-form?.addEventListener('submit',event=>{event.preventDefault();updateQuery();});
+
+restoreUrl();
+input?.addEventListener('input', () => {
+  shown = input.value.trim() ? SEARCH_PAGE_SIZE : 20;
+  writeUrl(queryHistoryStarted ? 'replace' : 'push');
+  queryHistoryStarted = true;
+  render();
+});
+form?.addEventListener('submit', event => {
+  event.preventDefault();
+  writeUrl('replace');
+  render();
+  resultList?.querySelector<HTMLAnchorElement>('a')?.focus();
+});
 for (const button of filterButtons) {
-  button.addEventListener('click',()=>{
-    active = (button.dataset.siteFilter ?? 'all') as Filter;
-    filterButtons.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+  button.addEventListener('click', () => {
+    active = button.dataset.siteFilter as SearchFilter;
+    shown = input?.value.trim() ? SEARCH_PAGE_SIZE : 20;
+    queryHistoryStarted = false;
+    writeUrl('push');
     render();
   });
 }
+more?.addEventListener('click', () => {
+  const previous = resultList?.childElementCount ?? 0;
+  shown += SEARCH_PAGE_SIZE;
+  render();
+  resultList?.children[previous]?.querySelector<HTMLAnchorElement>('a')?.focus();
+});
+window.addEventListener('popstate', restoreUrl);
+
 fetch('/search-index.json')
-  .then(async response=>{
-    if(!response.ok) throw new Error('Search index unavailable');
+  .then(async response => {
+    if (!response.ok) throw new Error('Search index unavailable');
     const data: unknown = await response.json();
-    if(!Array.isArray(data)) throw new Error('Search index invalid');
+    if (!Array.isArray(data)) throw new Error('Search index invalid');
     items = data as SiteSearchItem[];
+    loaded = true;
+    resultList?.setAttribute('aria-busy', 'false');
     render();
   })
-  .catch(()=>{
-    if(status)status.textContent='Search is temporarily unavailable. Browse the directories below instead.';
-    if(empty){empty.hidden=false;empty.textContent='Browse Quotes, Tricksters, Videos or Resources from the site menu.';}
+  .catch(() => {
+    resultList?.setAttribute('aria-busy', 'false');
+    if (status) status.textContent = 'Search is temporarily unavailable. Browse the directories below instead.';
+    if (empty) { empty.hidden = false; empty.textContent = 'Browse Quotes, Tricksters, Videos or Resources from the site menu.'; }
   });
