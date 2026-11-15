@@ -7,30 +7,31 @@ import '../../styles/site-search.css';
     <header class="site-search-hero">
       <p class="eyebrow">The index of beautiful trouble</p>
       <h1>Find your <em>rabbit hole.</em></h1>
-      <p class="lede">One search across quotes, collections, tricksters, videos, and the Resource Vault. No account. No algorithm deciding what you should find.</p>
+      <p class="lede">One search across quotes, collections, tricksters, videos, resources, archetypes, media characters, and brands.</p>
     </header>
     <section class="site-search-panel" aria-label="Search all site content">
       <form role="search" id="site-search-form">
         <label for="site-search-input">What's on your mind?</label>
         <div class="site-search-field">
-          <input type="search" id="site-search-input" name="q" placeholder="Try Alan Watts, Joker, Anansi, shadow, satire…" autocomplete="off" spellcheck="false"/>
+          <input type="search" id="site-search-input" name="q" placeholder="Try Alan Watts, Joker, Anansi, shadow, satire…" autocomplete="off" spellcheck="false" maxlength="180" enterkeyhint="search" aria-controls="site-search-results"/>
           <button class="site-search-submit" type="submit">SEARCH ↗</button>
         </div>
       </form>
       <div class="site-search-filter" role="group" aria-label="Filter search by type">
-        <button type="button" data-site-filter="all" aria-pressed="true">Everything</button>
-        <button type="button" data-site-filter="quotes" aria-pressed="false">Quotes</button>
-        <button type="button" data-site-filter="collections" aria-pressed="false">Collections</button>
-        <button type="button" data-site-filter="tricksters" aria-pressed="false">Tricksters</button>
-        <button type="button" data-site-filter="videos" aria-pressed="false">Videos</button>
-        <button type="button" data-site-filter="resources" aria-pressed="false">Resources</button>
-        <button type="button" data-site-filter="archetypes" aria-pressed="false">Archetypes</button>
-        <button type="button" data-site-filter="media" aria-pressed="false">Media</button>
-        <button type="button" data-site-filter="brands" aria-pressed="false">Brands</button>
+        <button type="button" data-site-filter="all" aria-pressed="true">Everything <span data-filter-count></span></button>
+        <button type="button" data-site-filter="quotes" aria-pressed="false">Quotes <span data-filter-count></span></button>
+        <button type="button" data-site-filter="collections" aria-pressed="false">Collections <span data-filter-count></span></button>
+        <button type="button" data-site-filter="tricksters" aria-pressed="false">Tricksters <span data-filter-count></span></button>
+        <button type="button" data-site-filter="videos" aria-pressed="false">Videos <span data-filter-count></span></button>
+        <button type="button" data-site-filter="resources" aria-pressed="false">Resources <span data-filter-count></span></button>
+        <button type="button" data-site-filter="archetypes" aria-pressed="false">Archetypes <span data-filter-count></span></button>
+        <button type="button" data-site-filter="media" aria-pressed="false">Media <span data-filter-count></span></button>
+        <button type="button" data-site-filter="brands" aria-pressed="false">Brands <span data-filter-count></span></button>
       </div>
       <div class="site-search-status" id="site-search-status" role="status" aria-live="polite">Preparing the index…</div>
-      <ul id="site-search-results" class="site-search-results" aria-label="Search results"></ul>
-      <p id="site-search-empty" class="site-search-empty" hidden>No matching content. Try a different phrase or select Everything.</p>
+      <ul id="site-search-results" class="site-search-results" aria-label="Search results" aria-busy="true"></ul>
+      <p id="site-search-empty" class="site-search-empty" hidden>No matching content. Try a shorter phrase, select Everything, or <a href="/quotes/">browse all quotes</a>.</p>
+      <button id="site-search-more" class="site-search-more" type="button" hidden aria-controls="site-search-results">SHOW MORE ↗</button>
       <noscript><p class="site-search-noscript">Search needs JavaScript. You can still <a href="/quotes/">browse quotes</a>, <a href="/tricksters/">meet tricksters</a>, <a href="/videos/">watch videos</a>, or <a href="/resources/">explore resources</a>.</p></noscript>
     </section>
   </div>
