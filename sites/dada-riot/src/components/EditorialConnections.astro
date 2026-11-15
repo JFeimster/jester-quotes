@@ -1,0 +1,18 @@
+---
+import { relatedLinks, type ContentKind } from '../lib/related-content';
+const { kind, id, limit = 8 } = Astro.props as { kind: ContentKind; id: string; limit?: number };
+const candidates = relatedLinks(kind, id).filter(link => link.ref.kind !== 'quote');
+const priority: ContentKind[] = ['brand', 'media', 'trickster', 'resource', 'collection', 'archetype', 'video', 'quote'];
+const links = (kind === 'archetype'
+  ? priority.flatMap(group => candidates.filter(link => link.ref.kind === group).slice(0, group === 'media' ? 6 : 4))
+  : candidates).slice(0, limit);
+const labels: Record<ContentKind, string> = {
+  quote: 'Quotation', collection: 'Collection', trickster: 'Trickster profile',
+  archetype: 'Archetype', media: 'Media character', brand: 'Brand example',
+  resource: 'Source', video: 'Video'
+};
+---
+{links.length > 0 && <aside class="editorial-connections" aria-label="Curated connections">
+  <h3>Follow the thread</h3>
+  <ul>{links.map(link => <li><a href={link.href}><span>{labels[link.ref.kind]}</span><strong>{link.title}</strong></a><p>{link.rationale}</p></li>)}</ul>
+</aside>}

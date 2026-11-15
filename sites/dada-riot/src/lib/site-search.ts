@@ -3,6 +3,7 @@ import { collections } from './collections';
 import { tricksters } from './tricksters';
 import { videos, resources } from './resource-catalog';
 import { archetypes, mediaExamples, jesterBrands } from './research';
+import { relatedLinks, type ContentKind } from './related-content';
 
 export type SiteSearchKind = 'quotes' | 'collections' | 'tricksters' | 'videos' | 'resources' | 'archetypes' | 'media' | 'brands';
 export interface SiteSearchItem {
@@ -17,10 +18,12 @@ export interface SiteSearchItem {
 }
 const excerpt = (text: string, max: number): string =>
   text.length > max ? text.slice(0,max).trimEnd()+'…' : text;
+const connectionTerms = (kind: ContentKind, id: string) =>
+  relatedLinks(kind, id).filter(link => link.ref.kind !== 'quote').map(link => link.title).join(' ');
 export const siteSearchIndex: SiteSearchItem[] = [
-  ...archetypes.filter(item=>item.publication_status==='published').map(item=>({id:'archetype-'+item.id,kind:'archetypes' as const,title:item.name,summary:item.summary,source:'Attributed archetype framework',href:'/archetypes/'+item.slug+'/',tags:item.tags,searchText:[item.name,item.summary,...item.tags].join(' ')})),
-  ...mediaExamples.filter(item=>item.publication_status==='published').map(item=>({id:'media-'+item.id,kind:'media' as const,title:item.name,summary:item.summary,source:item.originating_work,href:'/jesters-in-media/#'+item.slug,tags:item.tags,searchText:[item.name,item.originating_work,item.summary,...item.tags].join(' ')})),
-  ...jesterBrands.filter(item=>item.publication_status==='published').map(item=>({id:'brand-'+item.id,kind:'brands' as const,title:item.name,summary:item.summary,source:'Attributed brand example',href:'/jester-brands/#'+item.slug,tags:item.tags,searchText:[item.name,item.summary,...item.tags].join(' ')})),
+  ...archetypes.filter(item=>item.publication_status==='published').map(item=>({id:'archetype-'+item.id,kind:'archetypes' as const,title:item.name,summary:item.summary,source:'Attributed archetype framework',href:'/archetypes/'+item.slug+'/',tags:item.tags,searchText:[item.name,item.summary,...item.tags,connectionTerms('archetype',item.id)].join(' ')})),
+  ...mediaExamples.filter(item=>item.publication_status==='published').map(item=>({id:'media-'+item.id,kind:'media' as const,title:item.name,summary:item.summary,source:item.originating_work,href:'/jesters-in-media/#'+item.slug,tags:item.tags,searchText:[item.name,item.originating_work,item.summary,...item.tags,connectionTerms('media',item.id)].join(' ')})),
+  ...jesterBrands.filter(item=>item.publication_status==='published').map(item=>({id:'brand-'+item.id,kind:'brands' as const,title:item.name,summary:item.summary,source:'Attributed brand example',href:'/jester-brands/#'+item.slug,tags:item.tags,searchText:[item.name,item.summary,...item.tags,connectionTerms('brand',item.id)].join(' ')})),
   ...quotes.map(quote=>({
     id:quote.id,kind:'quotes' as const,
     title:excerpt(quote.quote,100),
