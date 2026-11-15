@@ -31,6 +31,9 @@ test('research records retain provenance and hold brief characters as drafts', (
   assert.equal(brands.length,4);
   assert.equal(notes.length,1);
   assert.equal(notes[0].kind,'editorial_note');
+  const directory=read('dist/jesters-in-media/index.html');
+  assert.ok(directory.includes('Fat Amy'));
+  assert.ok(!directory.includes('id="puck"'));
   const quoteIds=new Set(json('jester-quotes.json').items.map(item=>item.id));
   const tricksterIds=new Set(json('tricksters.json').map(item=>item.id));
   const collectionSlugs=new Set(json('collections.json').map(item=>item.slug));

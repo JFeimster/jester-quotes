@@ -2,14 +2,15 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { mediaExamples } from '../../lib/research';
 import '../../styles/research.css';
-const media = [...new Set(mediaExamples.map(item=>item.medium))];
+const publishedExamples = mediaExamples.filter(item=>item.publication_status==='published');
+const media = [...new Set(publishedExamples.map(item=>item.medium))];
 ---
 <BaseLayout title="Jesters in Media — Jester Quotes" description="An attributed editorial directory of comic and disruptive characters in film, television, literature, and comics.">
   <div class="wrap research-page"><p class="eyebrow">Characters / comedy / disruption</p><h1>Jesters in <em>media.</em></h1>
-    <p class="research-intro">The supplied essay reads these characters through a jester lens. Fifteen have source descriptions; nine brief examples need more research. These are editorial classifications, not official character designations.</p>
+    <p class="research-intro">The supplied essay reads these characters through a jester lens. These fifteen have source descriptions. Nine name-only examples are held for further research. These are editorial classifications, not official character designations.</p>
     <div class="media-controls"><label>Find a character <input id="media-query" type="search" placeholder="Search character or work" /></label><label>Medium <select id="media-medium"><option value="all">All media</option>{media.map(value=><option value={value}>{value}</option>)}</select></label><label>Character type <select id="media-type"><option value="all">All types</option><option value="jester interpretation">Jester interpretation</option><option value="fool">Fool</option></select></label></div>
-    <p id="media-count" role="status">{mediaExamples.length} examples</p>
-    <div class="research-grid" id="media-grid">{mediaExamples.map(item=><article class="research-card" id={item.slug} data-name={`${item.name} ${item.originating_work}`.toLowerCase()} data-medium={item.medium} data-type={item.character_type}><span>{item.medium} · {item.publication_status==='draft' ? 'Brief example / needs research' : item.character_type}</span><h2>{item.character}</h2><h3>{item.originating_work}</h3><p>{item.summary}</p></article>)}</div>
+    <p id="media-count" role="status">{publishedExamples.length} examples</p>
+    <div class="research-grid" id="media-grid">{publishedExamples.map(item=><article class="research-card" id={item.slug} data-name={`${item.name} ${item.originating_work}`.toLowerCase()} data-medium={item.medium} data-type={item.character_type}><span>{item.medium} · {item.character_type}</span><h2>{item.character}</h2><h3>{item.originating_work}</h3><p>{item.summary}</p></article>)}</div>
     <p class="research-source">Editorial source: <a href={mediaExamples[0].sources[0]} rel="external noopener">Archetypes: Jester</a>. No third-party stills or screenshots are reproduced. The source’s broad “anything an actor ever played” claim is excluded from character records.</p>
   </div>
   <script is:inline>
