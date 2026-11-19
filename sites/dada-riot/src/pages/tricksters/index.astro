@@ -140,7 +140,7 @@ const extras = verifiedProfiles.filter(profile => !cards.some(card => card.profi
             </div>
             <div class="trickster-card-top">
               <span>{String(card.source_list_number).padStart(3,'0')}</span>
-              <button class="trickster-card-kind trickster-filter-button" type="button" data-filter="kind" data-value={card.subject_type} aria-label={`Filter figure type: ${card.kindLabel}`}>{card.kindLabel}</button>
+              <button class="trickster-card-kind trickster-filter-button" type="button" data-filter="kind" data-value={card.subject_type} aria-label={`Filter figure type: ${card.kindLabel}`}>{card.subject_type === 'fictional_character' ? 'Fictional' : card.kindLabel}</button>
             </div>
             <h3>{card.profileSlug ? <a href={`/tricksters/${card.profileSlug}/`}>{card.display_name}</a> : card.display_name}</h3>
             <p class="trickster-card-desc">{card.summary || 'An entry in the original trickster research compilation.'}</p>
