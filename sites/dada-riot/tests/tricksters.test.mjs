@@ -123,6 +123,6 @@ test('site navigation, policy and CSS cover the directory without modifying quot
   assert.ok(sourcePage.includes('139 numbered research leads'));
   assert.ok(css.includes('@media(max-width:680px)'));
   assert.ok(css.includes('prefers-reduced-motion:reduce'));
-  assert.ok(read('README.md').includes('data/trickster-candidates.csv'));
-  assert.ok(read('CREDITS.md').includes('Trickster Directory'));
+  assert.ok(read('README.md').includes('Trickster directory/profiles'));
+  assert.ok(read('src/pages/tricksters/index.astro').includes('tricksters-139-source-registry.json'));
 });
