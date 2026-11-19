@@ -22,8 +22,8 @@
     "origin_or_work_written": 139,
     "trait_sets_written": 139,
     "with_independent_context_references": 66,
-    "images_with_src": 82,
-    "images_missing": 57,
+    "images_with_src": 83,
+    "images_missing": 56,
     "images_public_domain": 36,
     "images_cc_attribution": 20,
     "images_nonfree_editorial": 1
@@ -4311,7 +4311,17 @@
         "reversals"
       ],
       "summary": "Raven appears as a culture hero and trickster in many distinct community stories. The verified local profile specifically covers a Tlingit telling.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/32/Raven_at_the_Headwaters_of_Nass_hat_04.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Raven_at_the_Headwaters_of_Nass_hat_04.jpg",
+        "title": "Raven at the Headwaters of Nass hat",
+        "creator": "Joe Mabel (photograph), Tlingit artist",
+        "license": "CC-BY-SA-3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "usage_method": "remote",
+        "attribution": "Joe Mabel · CC BY-SA 3.0 · Wikimedia Commons",
+        "alt_text": "Tlingit Raven hat from museum collection"
+      },
       "related_verified_profile_slug": "raven-tlingit",
       "sources": [
         {
