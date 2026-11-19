@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "registry_name": "Jester Quotes — Expanded Trickster Source Registry",
   "source": {
     "origin": "User-supplied 139-name compilation",
@@ -22,11 +22,11 @@
     "origin_or_work_written": 139,
     "trait_sets_written": 139,
     "with_independent_context_references": 66,
-    "images_with_src": 83,
-    "images_missing": 56,
-    "images_public_domain": 36,
-    "images_cc_attribution": 20,
-    "images_nonfree_editorial": 1
+    "images_with_src": 128,
+    "images_missing": 11,
+    "images_public_domain": 39,
+    "images_cc_attribution": 34,
+    "images_nonfree_editorial": 44
   },
   "entries": [
     {
@@ -197,7 +197,18 @@
         "secret-intervention"
       ],
       "summary": "Amélie quietly engineers elaborate interventions in other people's lives. Her playful manipulations are usually benevolent, though her avoidance of direct intimacy complicates the picture.",
-      "image": null,
+      "image": {
+        "src": "https://www.datocms-assets.com/85660/1750106240-amelie_ver1_xxlg.jpg?ar=0.672&fp-x=0.5&fp-y=0.5&thumbhash=j9gJDQgGinaJWKhmeIylhyWAgQCH&w=1200",
+        "source_url": "https://metrocinema.com/show/amelie",
+        "title": "Amélie",
+        "creator": "Miramax / film distributor",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Miramax / film distributor; editorial image reference: https://metrocinema.com/show/amelie",
+        "alt_text": "Promotional image of Amélie from the film",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Amélie as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -352,7 +363,18 @@
         "transformation"
       ],
       "summary": "Ariel defies an underwater prohibition and seeks a different life. Her curiosity and rule-breaking resemble aspects of a trickster, but the film primarily casts her as a romantic heroine.",
-      "image": null,
+      "image": {
+        "src": "https://suret.pics/uploads/posts/2023-09/1695362358_1-4.jpg",
+        "source_url": "https://movies.disney.com/the-little-mermaid",
+        "title": "Ariel",
+        "creator": "Walt Disney Pictures",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Walt Disney Pictures; editorial image reference: https://movies.disney.com/the-little-mermaid",
+        "alt_text": "Animated Ariel from Disney's The Little Mermaid",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Ariel as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -424,7 +446,17 @@
         "consequences"
       ],
       "summary": "Atë personifies ruinous delusion and reckless error in Greek tradition. She brings disorder, but describing her simply as a playful goddess of mischief would be misleading.",
-      "image": null,
+      "image": {
+        "src": "https://images.metmuseum.org/CRDImages/es/original/157535.jpg",
+        "source_url": "https://www.metmuseum.org/art/collection/search/201708",
+        "title": "Ate and the Litai",
+        "creator": "Peter Flötner (German, 16th century)",
+        "license": "CC0-1.0 Met Open Access public-domain object",
+        "license_url": "https://www.metmuseum.org/policies/image-resources",
+        "usage_method": "remote",
+        "attribution": "Peter Flötner, Ate and the Litai · The Metropolitan Museum of Art (Open Access)",
+        "alt_text": "Renaissance relief depicting Até and the Litai from Greek mythology"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -510,7 +542,17 @@
         "satire"
       ],
       "summary": "Bart's pranks and defiance challenge family, school and civic authority. His mischief is central to the show's satirical portrayal of everyday institutions.",
-      "image": null,
+      "image": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bart_Simpson_statue.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bart_Simpson_statue.jpg",
+        "title": "Bart Simpson statue",
+        "creator": "Wikimedia Commons photographer",
+        "license": "CC-BY-SA-2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "usage_method": "remote",
+        "attribution": "Wikimedia Commons photographer · CC-BY-SA-2.0 · Wikimedia Commons",
+        "alt_text": "Photograph of a statue depicting Bart Simpson"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -696,7 +738,18 @@
         "wordplay"
       ],
       "summary": "Bugs Bunny defeats antagonists through quick wit, costume changes and reversals of power. He is a textbook comic trickster in animation.",
-      "image": null,
+      "image": {
+        "src": "https://3.bp.blogspot.com/-01jXO5yIxIQ/TZeNNhOnnpI/AAAAAAAABU8/LeaRvT3_dC4/s1600/bugs-bunny-3-g.jpg",
+        "source_url": "https://smfaanimation.blogspot.com/2011/04/whats-up-doc.html",
+        "title": "Bugs Bunny",
+        "creator": "Warner Bros. / Looney Tunes",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Warner Bros. / Looney Tunes; editorial image reference: https://smfaanimation.blogspot.com/2011/04/whats-up-doc.html",
+        "alt_text": "Animated Bugs Bunny in a Looney Tunes frame",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Bugs Bunny as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -1120,7 +1173,18 @@
         "provocation"
       ],
       "summary": "Deadpool jokes across the fourth wall while violating superhero conventions and social expectations. His comedy often accompanies explicit violence.",
-      "image": null,
+      "image": {
+        "src": "https://kritikanstvo.ru/movies/d/deadpool/posters/deadpool_200845.jpg",
+        "source_url": "https://kritikanstvo.ru/movies/deadpool/",
+        "title": "Deadpool",
+        "creator": "20th Century Fox / Marvel",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© 20th Century Fox / Marvel; editorial image reference: https://kritikanstvo.ru/movies/deadpool/",
+        "alt_text": "Deadpool promotional film poster",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Deadpool as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -1161,7 +1225,18 @@
         "uncertainty"
       ],
       "summary": "E.T. brings wonder and occasional comic mishaps to an ordinary household. He is better read as a playful outsider than a deliberate deceiver.",
-      "image": null,
+      "image": {
+        "src": "https://filmforum.org/do-not-enter-or-modify-or-erase/client-uploads/_1000w/ET_80s_slideshow.png",
+        "source_url": "https://filmforum.org/film/e.t-out-of-the-80s",
+        "title": "E.T.",
+        "creator": "Universal Pictures / Amblin Entertainment",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Universal Pictures / Amblin Entertainment; editorial image reference: https://filmforum.org/film/e.t-out-of-the-80s",
+        "alt_text": "E.T. from the 1982 film",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of E.T. as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -1246,7 +1321,18 @@
         "identity"
       ],
       "summary": "Edward Bloom retells life as extravagant tall tales. His stories transform his persona and challenge the boundary between fact and family myth.",
-      "image": null,
+      "image": {
+        "src": "https://moviesandmeows.com/wp-content/uploads/2023/07/bigfish-flowers-tall.jpg",
+        "source_url": "https://moviesandmeows.com/big-fish/",
+        "title": "Edward Bloom in Big Fish",
+        "creator": "Columbia Pictures / Sony Pictures",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Columbia Pictures / Sony Pictures; editorial image reference: https://moviesandmeows.com/big-fish/",
+        "alt_text": "Image illustrating Edward Bloom's larger-than-life storytelling in Big Fish",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Edward Bloom in Big Fish as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -1383,7 +1469,17 @@
         "plain-speaking"
       ],
       "summary": "Erin Brockovich challenged powerful institutions through persistence and unconventional investigation. Her trickster classification is speculative; a scrappy outsider is not automatically a trickster.",
-      "image": null,
+      "image": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Erin_brockovich_2016.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Erin_brockovich_2016.jpg",
+        "title": "Erin brockovich 2016",
+        "creator": "Gage Skidmore",
+        "license": "CC-BY-SA-2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "usage_method": "remote",
+        "attribution": "Gage Skidmore · CC-BY-SA-2.0 · Wikimedia Commons",
+        "alt_text": "Photograph of activist Erin Brockovich in 2016"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -1505,7 +1601,18 @@
         "anti-authoritarianism"
       ],
       "summary": "The Delta fraternity and other characters indulge in elaborate pranks against campus authority. This source label is a cast-wide generalization, not one individual trickster.",
-      "image": null,
+      "image": {
+        "src": "https://chicagovintageposters.com/cdn/shop/products/image_94c10b83-cbdd-47b7-8848-edf8319e1828_1200x1200.jpg?v=1634862334",
+        "source_url": "https://chicagovintageposters.com/products/national-lampoons-animal-house",
+        "title": "National Lampoon's Animal House",
+        "creator": "Universal Pictures / poster artist Rick Meyerowitz",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Universal Pictures / poster artist Rick Meyerowitz; editorial image reference: https://chicagovintageposters.com/products/national-lampoons-animal-house",
+        "alt_text": "Promotional poster for National Lampoon's Animal House",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of National Lampoon's Animal House as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -1629,7 +1736,18 @@
         "improvisation"
       ],
       "summary": "Ferris fakes illness and orchestrates an unauthorized day out, outsmarting suspicious adults. The caper casts him as a cheerful rule-breaker with consequences for friends.",
-      "image": null,
+      "image": {
+        "src": "https://cdn.posteritati.com/posters/000/000/064/633/ferris-buellers-day-off-md-web.jpg",
+        "source_url": "https://posteritati.com/poster/53912/ferris-buellers-day-off-original-1986-us-movie-poster",
+        "title": "Ferris Bueller",
+        "creator": "Paramount Pictures",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Paramount Pictures; editorial image reference: https://posteritati.com/poster/53912/ferris-buellers-day-off-original-1986-us-movie-poster",
+        "alt_text": "Original Ferris Bueller's Day Off promotional poster",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Ferris Bueller as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -1671,7 +1789,18 @@
         "improvisation"
       ],
       "summary": "Flynn Rider uses a false name, quick talking and thief's instincts to survive. His partnership with Rapunzel complicates the charming rogue persona.",
-      "image": null,
+      "image": {
+        "src": "https://c02.castel.jp/800x/0/flynn-rider-j89974.webp",
+        "source_url": "https://castel.jp/p/6504",
+        "title": "Flynn Rider",
+        "creator": "Walt Disney Animation Studios",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Walt Disney Animation Studios; editorial image reference: https://castel.jp/p/6504",
+        "alt_text": "Flynn Rider from Disney's Tangled",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Flynn Rider as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -1891,7 +2020,18 @@
         "superiority"
       ],
       "summary": "The Great Gazoo meddles with Fred and Barney through advanced technology and condescending jokes. His interventions regularly create comic trouble.",
-      "image": null,
+      "image": {
+        "src": "https://www.entoin.com/images/flins10.jpg",
+        "source_url": "https://www.entoin.com/entertainment/flintstones-characters",
+        "title": "The Great Gazoo",
+        "creator": "Hanna-Barbera / Warner Bros.",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Hanna-Barbera / Warner Bros.; editorial image reference: https://www.entoin.com/entertainment/flintstones-characters",
+        "alt_text": "The Great Gazoo, a green alien from The Flintstones",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of The Great Gazoo as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -1928,7 +2068,18 @@
         "survival"
       ],
       "summary": "Gollum's riddles, bargaining and duplicity place him on the trickster spectrum, but his narrative primarily concerns obsession, suffering and the Ring.",
-      "image": null,
+      "image": {
+        "src": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/08/07/17/gollum.jpg",
+        "source_url": "https://www.independent.co.uk/arts-entertainment/films/news/is-gollum-good-or-bad-peter-jackson-wades-into-turkish-court-debate-after-judge-demands-character-assessment-a6758611.html",
+        "title": "Gollum",
+        "creator": "New Line Cinema / Warner Bros.",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© New Line Cinema / Warner Bros.; editorial image reference: https://www.independent.co.uk/arts-entertainment/films/news/is-gollum-good-or-bad-peter-jackson-wades-into-turkish-court-debate-after-judge-demands-character-assessment-a6758611.html",
+        "alt_text": "Gollum from The Lord of the Rings films",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Gollum as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -2222,7 +2373,17 @@
         "reversals"
       ],
       "summary": "Jabuti the tortoise uses wit to overcome physically stronger opponents in Brazilian stories. Particular versions should be attributed rather than presented as universal.",
-      "image": null,
+      "image": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Jabuti_Tinga.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Jabuti_Tinga.jpg",
+        "title": "Jabuti Tinga",
+        "creator": "Blón Maia",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "usage_method": "remote",
+        "attribution": "Blón Maia · CC-BY-SA-4.0 · Wikimedia Commons",
+        "alt_text": "Reference photograph of a jabuti tortoise, the animal associated with the folklore trickster (not a depiction of a specific folktale)"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -2302,7 +2463,18 @@
         "transgression"
       ],
       "summary": "Jack Skellington attempts to take over Christmas and discovers the limits of transplanting one holiday into another. He is an imaginative outsider, not always a deceptive trickster.",
-      "image": null,
+      "image": {
+        "src": "https://images07.kaleidescape.com/transformed/covers/1134x1624s/447/44717662.jpg",
+        "source_url": "https://www.kaleidescape.com/movie-store/movie/the-nightmare-before-christmas-1993",
+        "title": "Jack Skellington",
+        "creator": "Disney / Touchstone Pictures",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Disney / Touchstone Pictures; editorial image reference: https://www.kaleidescape.com/movie-store/movie/the-nightmare-before-christmas-1993",
+        "alt_text": "Jack Skellington promotional image from The Nightmare Before Christmas",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Jack Skellington as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -2435,7 +2607,18 @@
         "manipulation"
       ],
       "summary": "Jareth the Goblin King tests Sarah through illusions, bargains and shifting rules. His theatrical control of the maze makes him a more threatening trickster figure.",
-      "image": null,
+      "image": {
+        "src": "https://imgix.bustle.com/rehost/2016/9/13/0f0d6ad4-33d8-4b0e-885a-233c36eacac3.jpg?crop=faces&fit=crop&fm=jpg&h=1200&w=1200",
+        "source_url": "https://www.bustle.com/articles/135155-how-labyrinth-made-david-bowie-fans-out-of-millions-of-older-millennials",
+        "title": "Jareth the Goblin King",
+        "creator": "Henson Associates / TriStar Pictures",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Henson Associates / TriStar Pictures; editorial image reference: https://www.bustle.com/articles/135155-how-labyrinth-made-david-bowie-fans-out-of-millions-of-older-millennials",
+        "alt_text": "David Bowie portraying Jareth in Labyrinth",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Jareth the Goblin King as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -2689,7 +2872,17 @@
         "teaching"
       ],
       "summary": "Kuekuatsheu, the wolverine, is a humorous and disruptive figure in Innu oral narratives. Storytelling comes from particular communities, not an interchangeable pan-Indigenous canon.",
-      "image": null,
+      "image": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Wolverine_01.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wolverine_01.jpg",
+        "title": "Wolverine 01",
+        "creator": "William F.",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "usage_method": "remote",
+        "attribution": "William F. · CC-BY-SA-4.0 · Wikimedia Commons",
+        "alt_text": "Reference photograph of a wolverine, the animal associated with Kuekuatsheu in Innu tradition; not a literal portrait of a mythic figure"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -3159,7 +3352,18 @@
         "outsider-perspective"
       ],
       "summary": "Manuel's language misunderstandings and service mishaps generate much of the hotel's farce. He is often the butt of jokes rather than their calculating instigator.",
-      "image": null,
+      "image": {
+        "src": "https://ichef.bbci.co.uk/news/976/cpsprodpb/B5E9/production/_92796564_andrewsachsbbc.jpg",
+        "source_url": "https://www.bbc.com/news/entertainment-arts-38178353",
+        "title": "Manuel",
+        "creator": "BBC / Fawlty Towers rights holders",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© BBC / Fawlty Towers rights holders; editorial image reference: https://www.bbc.com/news/entertainment-arts-38178353",
+        "alt_text": "Andrew Sachs as Manuel from Fawlty Towers",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Manuel as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -3239,7 +3443,18 @@
         "justice"
       ],
       "summary": "Matilda uses intelligence and occasional magical retaliation to outwit cruel adults. Her mischief serves resistance and fairness rather than chaos for its own sake.",
-      "image": null,
+      "image": {
+        "src": "https://cdn.shopify.com/s/files/1/1416/8662/products/Matilda_1996_original_film_art_0700f410-2c68-46ff-955c-49620244cc4a_2000x.jpg?v=1578855418",
+        "source_url": "https://www.originalfilmart.com/products/matilda-1996",
+        "title": "Matilda",
+        "creator": "TriStar Pictures / Sony",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© TriStar Pictures / Sony; editorial image reference: https://www.originalfilmart.com/products/matilda-1996",
+        "alt_text": "1996 Matilda film poster",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Matilda as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -3345,7 +3560,18 @@
         "loyalty"
       ],
       "summary": "Megan shocks the wedding party with blunt jokes and unpredictable confidence, but proves deeply supportive. Her comedy exposes the group's anxieties.",
-      "image": null,
+      "image": {
+        "src": "https://akns-images.eonline.com/eol_images/Entire_Site/2021412/rs_1024x759-210512094806-1024-Melissa-McCarthy-Bridesmaids.jpg?crop=776%3A576%3Bcenter%2Ctop&fit=around%7C776%3A576&output-quality=90",
+        "source_url": "https://www.eonline.com/photos/32661/secrets-of-bridesmaids",
+        "title": "Megan in Bridesmaids",
+        "creator": "Universal Pictures",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Universal Pictures; editorial image reference: https://www.eonline.com/photos/32661/secrets-of-bridesmaids",
+        "alt_text": "Melissa McCarthy portraying Megan in Bridesmaids",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Megan in Bridesmaids as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -3476,7 +3702,18 @@
         "rule-breaking"
       ],
       "summary": "Mister Mxyzptlk exploits near-limitless powers to plague Superman with arbitrary games. His escapades directly model the magical comic trickster.",
-      "image": null,
+      "image": {
+        "src": "https://images.comicbooktreasury.com/wp-content/uploads/2024/03/Mister-Mxyzptlk-Recommended-Reading-.jpg",
+        "source_url": "https://www.comicbooktreasury.com/mister-mxyzptlk-reading-order/",
+        "title": "Mister Mxyzptlk",
+        "creator": "DC Comics / Warner Bros.",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© DC Comics / Warner Bros.; editorial image reference: https://www.comicbooktreasury.com/mister-mxyzptlk-reading-order/",
+        "alt_text": "Illustration of Superman's trickster adversary Mister Mxyzptlk",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Mister Mxyzptlk as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -3614,7 +3851,18 @@
         "humor"
       ],
       "summary": "Mr. Miyagi teaches through deceptively mundane chores and understated humor. His surprising methods resemble the wise-fool mentor more than an agent of chaos.",
-      "image": null,
+      "image": {
+        "src": "https://elcomercio.pe/resizer/v2/6CQSEN725ZG6VE6POLZM4GONHM.jpg?auth=ec16e5e467cc688f3b42d1276f14545796195a3e32c3554d2ecf6d2a6d999972&height=801&quality=75&smart=true&width=1200",
+        "source_url": "https://elcomercio.pe/mag/gente/cobra-kai-la-historia-de-como-pat-morita-consiguio-el-papel-del-sr-miyagi-en-karate-kid-senor-miyagi-series-de-netflix-nnda-nnlt-noticia/",
+        "title": "Mr. Miyagi",
+        "creator": "Columbia Pictures / Sony",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Columbia Pictures / Sony; editorial image reference: https://elcomercio.pe/mag/gente/cobra-kai-la-historia-de-como-pat-morita-consiguio-el-papel-del-sr-miyagi-en-karate-kid-senor-miyagi-series-de-netflix-nnda-nnlt-noticia/",
+        "alt_text": "Pat Morita as Mr. Miyagi in The Karate Kid",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Mr. Miyagi as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -3656,7 +3904,18 @@
         "improvisation"
       ],
       "summary": "Mushu's loud schemes and improvised advice repeatedly complicate Mulan's journey. He also grows into a loyal helper.",
-      "image": null,
+      "image": {
+        "src": "https://cdn.shopify.com/s/files/1/0023/5418/4310/files/mulan-mushu-dragon_2048x2048.jpg?v=1662547486",
+        "source_url": "https://wickerdarling.com/blogs/wicker-darling-blog/dragon-purse",
+        "title": "Mushu the Dragon",
+        "creator": "Walt Disney Pictures",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Walt Disney Pictures; editorial image reference: https://wickerdarling.com/blogs/wicker-darling-blog/dragon-purse",
+        "alt_text": "Mushu, the comic dragon companion from Mulan",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Mushu the Dragon as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -3697,7 +3956,18 @@
         "deception"
       ],
       "summary": "Mystique uses her ability to assume other appearances for infiltration and deception. Her motives and alliances differ across stories.",
-      "image": null,
+      "image": {
+        "src": "https://img.buzzfeed.com/buzzfeed-static/static/2024-09/25/18/asset/5b353bdd5440/sub-buzz-6442-1727288953-1.jpg",
+        "source_url": "https://www.buzzfeed.com/hannahmarder/sexualized-costumes-actors-hated",
+        "title": "Mystique",
+        "creator": "20th Century Fox / Marvel",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© 20th Century Fox / Marvel; editorial image reference: https://www.buzzfeed.com/hannahmarder/sexualized-costumes-actors-hated",
+        "alt_text": "Mystique as portrayed in the X-Men films",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Mystique as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -3781,7 +4051,18 @@
         "perseverance"
       ],
       "summary": "Naruto begins as an attention-seeking prankster and uses disguise techniques, eventually becoming a community leader. The trickster reading fits his early conduct best.",
-      "image": null,
+      "image": {
+        "src": "https://ekladata.com/3NNOH2qxbwdixt2YVXct3hwRz6I@500x500.png",
+        "source_url": "https://plumedeloup.eklablog.fr/fiche-naruto-p707542",
+        "title": "Naruto Uzumaki",
+        "creator": "Shueisha / Studio Pierrot",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Shueisha / Studio Pierrot; editorial image reference: https://plumedeloup.eklablog.fr/fiche-naruto-p707542",
+        "alt_text": "Naruto Uzumaki from the anime",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Naruto Uzumaki as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -4039,7 +4320,18 @@
         "ambiguity"
       ],
       "summary": "Petyr Baelish uses secrets and competing loyalties to rise through power structures. His methods resemble a dark political trickster, not comic mischief.",
-      "image": null,
+      "image": {
+        "src": "https://media.indulgexpress.com/indulgexpress%2Fimport%2F2017%2F7%2F7%2Foriginal%2F3-petyr-baelish-05.jpg",
+        "source_url": "https://www.indulgexpress.com/culture/cover-story/2017/Jul/07/master-of-intrigue-exclusive-chat-with-aidan-gillen-on-petyr-baelish-2572.html",
+        "title": "Petyr Baelish",
+        "creator": "HBO / Warner Bros.",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© HBO / Warner Bros.; editorial image reference: https://www.indulgexpress.com/culture/cover-story/2017/Jul/07/master-of-intrigue-exclusive-chat-with-aidan-gillen-on-petyr-baelish-2572.html",
+        "alt_text": "Aidan Gillen as Petyr Baelish in Game of Thrones",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Petyr Baelish as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -4228,7 +4520,18 @@
         "testing"
       ],
       "summary": "Q bends reality to test and torment Starfleet crews. His arrogance and staged trials make him a cosmic trickster with uneven motives.",
-      "image": null,
+      "image": {
+        "src": "https://api.time.com/wp-content/uploads/2016/09/q-star-trek-villains.jpg?quality=85&w=560",
+        "source_url": "https://time.com/4477514/best-star-trek-villains-ever/",
+        "title": "Q from Star Trek",
+        "creator": "Paramount / CBS Studios",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Paramount / CBS Studios; editorial image reference: https://time.com/4477514/best-star-trek-villains-ever/",
+        "alt_text": "John de Lancie as Q in Star Trek",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Q from Star Trek as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -4370,7 +4673,18 @@
         "uncertainty"
       ],
       "summary": "Recitatif is a literary work, not an identified trickster character. Any proposed trickster role needs a named character and an argued textual basis.",
-      "image": null,
+      "image": {
+        "src": "https://www.pittuniversitystore.com/storeimages/275-891578-1.jpg",
+        "source_url": "https://www.pittuniversitystore.com/MerchDetail?CatID=32023&CategoryName=Black+Authors&MerchID=891578&Name=Black+Authors",
+        "title": "Recitatif",
+        "creator": "Toni Morrison / book publisher",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Toni Morrison / book publisher; editorial image reference: https://www.pittuniversitystore.com/MerchDetail?CatID=32023&CategoryName=Black+Authors&MerchID=891578&Name=Black+Authors",
+        "alt_text": "Book cover for Recitatif by Toni Morrison (work title rather than character)",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Recitatif as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -4471,7 +4785,18 @@
         "misdirection"
       ],
       "summary": "River Song conceals knowledge across timelines and meets the Doctor out of sequence. Her wit and secrets suggest a playful narrative trickster.",
-      "image": null,
+      "image": {
+        "src": "https://images2.minutemediacdn.com/image/upload/c_crop%2Cx_0%2Cy_451%2Cw_3328%2Ch_1872/c_fill%2Cw_1440%2Car_1440%3A810%2Cf_auto%2Cq_auto%2Cg_auto/images/ImageExchange/mmsport/342/01jmyh5x1ae027hyc92j.jpg",
+        "source_url": "https://doctorwhowatch.com/doctor-who-river-song-the-promise-that-paid-off-01jmyh17cm6w",
+        "title": "River Song",
+        "creator": "BBC Studios",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© BBC Studios; editorial image reference: https://doctorwhowatch.com/doctor-who-river-song-the-promise-that-paid-off-01jmyh17cm6w",
+        "alt_text": "Alex Kingston as River Song in Doctor Who",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of River Song as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -4548,7 +4873,17 @@
         "appetite"
       ],
       "summary": "Azeban is a raccoon trickster in Abenaki tales. The source's Rocket wording looks like a transcription issue and needs correction before a final display name.",
-      "image": null,
+      "image": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Raccoon_female.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Raccoon_female.jpg",
+        "title": "Raccoon female",
+        "creator": "Dger",
+        "license": "CC-BY-SA-3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "usage_method": "remote",
+        "attribution": "Dger · CC-BY-SA-3.0 · Wikimedia Commons",
+        "alt_text": "Reference photograph of a raccoon, the animal associated with Azeban in Abenaki stories; not a specific cultural illustration"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -4937,7 +5272,17 @@
         "outsider-perspective"
       ],
       "summary": "Spock's literal interpretation of human behavior supplies comic contrast, but his defining traits are logic and duty rather than deliberate deception.",
-      "image": null,
+      "image": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Leonard_Nimoy_as_Spock_1967_(cropped).jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Leonard_Nimoy_as_Spock_1967_(cropped).jpg",
+        "title": "Leonard Nimoy as Spock 1967 (cropped)",
+        "creator": "NBC Television publicity",
+        "license": "public-domain-US",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "usage_method": "remote",
+        "attribution": "NBC Television publicity · public-domain-US · Wikimedia Commons",
+        "alt_text": "1967 promotional photograph of Leonard Nimoy as Spock"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -4970,7 +5315,18 @@
         "ambition"
       ],
       "summary": "Starscream repeatedly plots against Megatron and fails spectacularly. His treachery and comic reversals make him a villainous schemer.",
-      "image": null,
+      "image": {
+        "src": "https://botchthecrab.com/archive/decepticon/1984/starscream.jpg",
+        "source_url": "https://botchthecrab.com/archive/teletran/decepticon/1984",
+        "title": "Starscream",
+        "creator": "Hasbro / Takara",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Hasbro / Takara; editorial image reference: https://botchthecrab.com/archive/teletran/decepticon/1984",
+        "alt_text": "Illustration of Starscream from Transformers",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Starscream as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -5047,7 +5403,18 @@
         "obsession"
       ],
       "summary": "Chip Douglas insinuates himself into another man's life through forced friendship and deception. The dark comedy involves threatening manipulation.",
-      "image": null,
+      "image": {
+        "src": "https://artofthemovies.co.uk/cdn/shop/products/cable_guy_NG06272_C2_framed1-596982.jpg?v=1611688443&width=1100",
+        "source_url": "https://artofthemovies.co.uk/products/the-cable-guy-1996",
+        "title": "The Cable Guy",
+        "creator": "Columbia Pictures / Sony",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Columbia Pictures / Sony; editorial image reference: https://artofthemovies.co.uk/products/the-cable-guy-1996",
+        "alt_text": "Promotional poster of The Cable Guy starring Jim Carrey",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of The Cable Guy as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -5080,7 +5447,18 @@
         "rule-breaking"
       ],
       "summary": "The Doctor improvises around apparently impossible limits, frequently exposing powerful institutions with humor and wit. Heroic responsibility and trickster play coexist.",
-      "image": null,
+      "image": {
+        "src": "https://4.bp.blogspot.com/-wRrcFuMa_9Q/UINshkikLrI/AAAAAAAADnc/0GmneGQbjaA/s1600/docs4.jpg",
+        "source_url": "https://amberinblunderland.blogspot.com/2012/11/whovember-dress-like-10th-doctor.html",
+        "title": "The Doctor",
+        "creator": "BBC Studios",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© BBC Studios; editorial image reference: https://amberinblunderland.blogspot.com/2012/11/whovember-dress-like-10th-doctor.html",
+        "alt_text": "The Tenth Doctor from Doctor Who",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of The Doctor as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -5208,7 +5586,18 @@
         "transformation"
       ],
       "summary": "The Grinch steals Christmas through impersonation and a calculated plan, then changes through the response of the Whos. Redemption, not pranking, is the heart of the story.",
-      "image": null,
+      "image": {
+        "src": "https://clickamericana.com/wp-content/uploads/Dr-Seuss-How-the-Grinch-Stole-Christmas-classic-cartoon-4-750x563.jpg",
+        "source_url": "https://clickamericana.com/holidays-seasons/christmas/dr-seuss-how-the-grinch-stole-christmas-1966",
+        "title": "The Grinch",
+        "creator": "Dr. Seuss Enterprises / MGM",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Dr. Seuss Enterprises / MGM; editorial image reference: https://clickamericana.com/holidays-seasons/christmas/dr-seuss-how-the-grinch-stole-christmas-1966",
+        "alt_text": "Animated Grinch from the 1966 TV adaptation",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of The Grinch as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -5296,7 +5685,18 @@
         "rule-breaking"
       ],
       "summary": "Stanley Ipkiss's enchanted alter ego turns inhibition into cartoon chaos. The film incarnation is distinct from darker comic-book stories.",
-      "image": null,
+      "image": {
+        "src": "https://s2.dmcdn.net/v/HecHJ1enRh1GhWIC7/x720",
+        "source_url": "https://www.dailymotion.com/video/x4w57bn",
+        "title": "The Mask",
+        "creator": "New Line Cinema / The Mask",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© New Line Cinema / The Mask; editorial image reference: https://www.dailymotion.com/video/x4w57bn",
+        "alt_text": "Jim Carrey in The Mask (1994) film scene",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of The Mask as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -5338,7 +5738,18 @@
         "misdirection"
       ],
       "summary": "The animated Pink Panther drifts through wordless absurdity and comic reversals. It is separate from the gemstone and Inspector Clouseau films.",
-      "image": null,
+      "image": {
+        "src": "https://s3.amazonaws.com/intanibase/iad_screenshots/1964/6723/8.jpg",
+        "source_url": "https://www.intanibase.com/iad_entries/screenshots?shortID=6723",
+        "title": "The Pink Panther",
+        "creator": "DePatie-Freleng / MGM",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© DePatie-Freleng / MGM; editorial image reference: https://www.intanibase.com/iad_entries/screenshots?shortID=6723",
+        "alt_text": "The Pink Panther character in an animated cartoon frame",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of The Pink Panther as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -5548,7 +5959,18 @@
         "quick-temper"
       ],
       "summary": "Tinker Bell's jealousy, resourcefulness and magical interference produce comic trouble. Her personality varies sharply across Barrie and Disney versions.",
-      "image": null,
+      "image": {
+        "src": "https://wl-cheery.cf.tsp.li/resize/728x/jpg/d4d/03b/ba634a56fcbd2df2962206a79c.jpg",
+        "source_url": "https://cheery.world/enjoy-films/disney-showed-the-trailer-for-peter-pan-wendy-featuring-yara-shahidi-as-the-first-black-tinker-bell-in-history-1834/",
+        "title": "Tinker Bell",
+        "creator": "Walt Disney Pictures",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Walt Disney Pictures; editorial image reference: https://cheery.world/enjoy-films/disney-showed-the-trailer-for-peter-pan-wendy-featuring-yara-shahidi-as-the-first-black-tinker-bell-in-history-1834/",
+        "alt_text": "Tinker Bell as portrayed in Peter Pan & Wendy",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Tinker Bell as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -5683,7 +6105,18 @@
         "rule-breaking"
       ],
       "summary": "Tony Stark uses sarcasm, bluffing and invention to defeat opponents while frequently challenging authority. He is chiefly a flawed inventor-hero.",
-      "image": null,
+      "image": {
+        "src": "https://www.film.ru/sites/default/files/styles/thumb_1024x450/public/news/iron-man-34.jpg",
+        "source_url": "https://www.film.ru/news/zheleznyy-chelovek-3-prodemonstriroval-vtoroy-luchshiy-start-v-istorii",
+        "title": "Tony Stark / Iron Man",
+        "creator": "Marvel Studios / Disney",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Marvel Studios / Disney; editorial image reference: https://www.film.ru/news/zheleznyy-chelovek-3-prodemonstriroval-vtoroy-luchshiy-start-v-istorii",
+        "alt_text": "Tony Stark in Iron Man",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Tony Stark / Iron Man as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -5725,7 +6158,18 @@
         "manipulation"
       ],
       "summary": "Tyler Durden draws followers into an anti-consumerist revolt built on deception and violence. The work treats this destabilizing persona critically.",
-      "image": null,
+      "image": {
+        "src": "https://i.guim.co.uk/img/media/44eddd0655bf11d1a7b029f15439f9f7b9efb201/181_28_2208_1324/master/2208.jpg?auto=format&fit=crop&height=1200&quality=85&s=431814d186eb7fc54568cb7442a58f27&width=1200",
+        "source_url": "https://www.theguardian.com/books/booksblog/2016/dec/13/fight-clubs-dark-fantasies-reality-chuck-palahniuk",
+        "title": "Tyler Durden",
+        "creator": "20th Century Fox",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© 20th Century Fox; editorial image reference: https://www.theguardian.com/books/booksblog/2016/dec/13/fight-clubs-dark-fantasies-reality-chuck-palahniuk",
+        "alt_text": "Tyler Durden from Fight Club",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Tyler Durden as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -5761,7 +6205,18 @@
         "subversion"
       ],
       "summary": "V uses disguise, symbolism and theatrical planning to attack an authoritarian state. The character's violence makes any celebratory trickster label contested.",
-      "image": null,
+      "image": {
+        "src": "https://m.media-amazon.com/images/M/MV5BMjZjZDQ4YzctMWU0Mi00NDRmLWIwYzEtMzRlMzI2NjNiN2UyXkEyXkFqcGc%40._V1_.jpg",
+        "source_url": "https://m.imdb.com/pt/list/ls023584724/mediaviewer/rm309607680/?ref_=ls_img_lst_m",
+        "title": "V for Vendetta",
+        "creator": "Warner Bros. / DC Comics",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Warner Bros. / DC Comics; editorial image reference: https://m.imdb.com/pt/list/ls023584724/mediaviewer/rm309607680/?ref_=ls_img_lst_m",
+        "alt_text": "Promotional poster of the masked figure V from V for Vendetta",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of V for Vendetta as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -5935,7 +6390,18 @@
         "comic-excess"
       ],
       "summary": "Walter Sobchak turns minor disputes into grand moral crises, generating absurd confrontations. He is a comic disruptor more than a calculating trickster.",
-      "image": null,
+      "image": {
+        "src": "https://www.looper.com/img/gallery/the-funniest-movie-scene-every-year-since-1990/l-intro-1629394684.jpg",
+        "source_url": "https://www.looper.com/492200/the-funniest-movie-scene-every-year-since-1990/",
+        "title": "Walter Sobchak",
+        "creator": "PolyGram / Working Title",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© PolyGram / Working Title; editorial image reference: https://www.looper.com/492200/the-funniest-movie-scene-every-year-since-1990/",
+        "alt_text": "Film image from The Big Lebowski associated with Walter Sobchak",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Walter Sobchak as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -5971,7 +6437,18 @@
         "persistence"
       ],
       "summary": "Wile E. Coyote's elaborate traps rebound on their maker. Unlike the powerful mythic Coyote, this cartoon predator is defined by failed schemes.",
-      "image": null,
+      "image": {
+        "src": "https://www.lavanguardia.com/uploads/2026/09/25/6ab649545d0a2.jpeg",
+        "source_url": "https://www.lavanguardia.com/internacional/20260927/11643723/mark-carney-donald-trump.html",
+        "title": "Wile E. Coyote",
+        "creator": "Warner Bros. / Looney Tunes",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Warner Bros. / Looney Tunes; editorial image reference: https://www.lavanguardia.com/internacional/20260927/11643723/mark-carney-donald-trump.html",
+        "alt_text": "Wile E. Coyote cartoon depiction",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Wile E. Coyote as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -6007,7 +6484,18 @@
         "role-play"
       ],
       "summary": "Willy Wonka stages elaborate moral tests in a fantastical factory, revealing little about his intentions. He belongs to Dahl's fiction, not Alice in Wonderland.",
-      "image": null,
+      "image": {
+        "src": "https://townsquare.media/site/442/files/2017/10/willy-wonka1.jpg",
+        "source_url": "https://katsfm.com/willy-wonka-the-wheel-of-goodness/",
+        "title": "Willy Wonka",
+        "creator": "Warner Bros. / film distributor",
+        "license": "copyrighted_nonfree",
+        "license_url": null,
+        "usage_method": "fair_use_editorial",
+        "attribution": "© Warner Bros. / film distributor; editorial image reference: https://katsfm.com/willy-wonka-the-wheel-of-goodness/",
+        "alt_text": "Gene Wilder as Willy Wonka in the 1971 film",
+        "fair_use_rationale": "One relevant image illustrating original editorial analysis of Willy Wonka as a trickster, foil, or rulebreaker. Reuse is a separate fair-use assessment and is not licensed by the source page."
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -6221,5 +6709,56 @@
     "original_file": "tricksters-139-source-registry(2).json",
     "image_update": "Display images populated only when direct URL available; separate source URLs retained for attribution. Some Commons matches remain unselected pending direct URL confirmation.",
     "image_source": "Wikimedia Commons file pages independently located in web research, November 19, 2026"
+  },
+  "image_sourcing_round2": {
+    "preserved_from_v1_3": 83,
+    "added": 45,
+    "unresolved": [
+      {
+        "number": 8,
+        "name": "Ārohirohi, Goddess of Mirages"
+      },
+      {
+        "number": 20,
+        "name": "Crow"
+      },
+      {
+        "number": 28,
+        "name": "El-Ahrairah from Watership Down"
+      },
+      {
+        "number": 39,
+        "name": "Fraus, Goddess of Treachery and Fraud"
+      },
+      {
+        "number": 56,
+        "name": "Kaulu"
+      },
+      {
+        "number": 61,
+        "name": "Kuku Lau"
+      },
+      {
+        "number": 65,
+        "name": "Laverna"
+      },
+      {
+        "number": 88,
+        "name": "Papagayo"
+      },
+      {
+        "number": 121,
+        "name": "The Yellow Woman"
+      },
+      {
+        "number": 136,
+        "name": "Wisakedjak"
+      },
+      {
+        "number": 139,
+        "name": "Yun-Harla"
+      }
+    ],
+    "notes": "New direct URLs include freely licensed historical photos and copyrighted editorial illustrations. Commons Special:Redirect/file URLs resolve through Wikimedia. Non-free imagery requires individual editorial-use assessment; remote image access may vary. Registry values do not certify legal clearance."
   }
 }
