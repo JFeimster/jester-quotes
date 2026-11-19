@@ -1,0 +1,22 @@
+/* Dada Riot navigation contrast: overrides inherited Midnight Carnival dropdown colors. */
+body .dada-masthead.site-header-2.nav-v3 .quotes-menu-panel {
+  background: var(--ink);
+  border-color: var(--red);
+}
+body .dada-masthead.site-header-2.nav-v3 .quotes-menu-panel a,
+body .dada-masthead.site-header-2.nav-v3 .quotes-menu-panel a strong,
+body .dada-masthead.site-header-2.nav-v3 .quotes-menu-panel a small {
+  color: var(--paper);
+}
+body .dada-masthead.site-header-2.nav-v3 .quotes-menu-panel a:hover,
+body .dada-masthead.site-header-2.nav-v3 .quotes-menu-panel a:focus-visible,
+body .dada-masthead.site-header-2.nav-v3 .quotes-menu-panel a[aria-current="page"] {
+  background: var(--blue);
+  color: var(--paper);
+  border-color: var(--acid);
+}
+body .dada-masthead.site-header-2.nav-v3 .quotes-menu-panel a:hover strong,
+body .dada-masthead.site-header-2.nav-v3 .quotes-menu-panel a:focus-visible strong,
+body .dada-masthead.site-header-2.nav-v3 .quotes-menu-panel a[aria-current="page"] strong {
+  color: var(--acid);
+}

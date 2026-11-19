@@ -66,7 +66,10 @@ test('quote contract and rendered editorial paths remain intact', () => {
   const media = readFileSync(path.join(root, 'dist/jesters-in-media/index.html'), 'utf8');
   const brands = readFileSync(path.join(root, 'dist/jester-brands/index.html'), 'utf8');
   assert.match(archetype, /Follow the thread/);
-  assert.match(media, /href="\/archetypes\/fool\/"/);
+  assert.match(media, /id="c-3po"/);
+  assert.match(media, /id="media-query"/);
+  assert.doesNotMatch(media, /id="media-type"/);
+  assert.doesNotMatch(media, /Follow the thread/);
   assert.match(brands, /href="\/archetypes\/jester\/"/);
   assert.ok(!edges.some(edge => edge.source.id === 'puck' || edge.target.id === 'puck'));
 });
