@@ -130,6 +130,8 @@ const extras = verifiedProfiles.filter(profile => !cards.some(card => card.profi
             data-origin={card.origin_or_work || card.source_context}
             data-name={card.display_name}
             data-kind-label={card.kindLabel}
+            data-media-labels={JSON.stringify(card.media.map(item => item.replaceAll('-', ' ')))}
+            data-trait-labels={JSON.stringify(card.trickster_traits.map(trait => trait.replaceAll('-', ' ')))}
             id={card.slug}
           >
             <div class="trickster-registry-art" class:list={{'no-image': !card.image?.src}}>
@@ -137,15 +139,11 @@ const extras = verifiedProfiles.filter(profile => !cards.some(card => card.profi
               <span class="trickster-registry-fallback" aria-hidden="true">✳</span>
             </div>
             <div class="trickster-card-top">
-              <span>FILE / {String(card.source_list_number).padStart(3,'0')}</span>
+              <span>{String(card.source_list_number).padStart(3,'0')}</span>
               <button class="trickster-card-kind trickster-filter-button" type="button" data-filter="kind" data-value={card.subject_type} aria-label={`Filter figure type: ${card.kindLabel}`}>{card.kindLabel}</button>
             </div>
             <h3>{card.profileSlug ? <a href={`/tricksters/${card.profileSlug}/`}>{card.display_name}</a> : card.display_name}</h3>
-            <div class="trickster-card-origin"><span>{card.origin_or_work || card.source_context}</span><div class="trickster-card-media">{card.media.map(item => <button class="trickster-filter-button" type="button" data-filter="medium" data-value={item} aria-label={`Filter medium: ${item.replaceAll('-',' ')}`}>{item.replaceAll('-',' ')}</button>)}</div></div>
             <p class="trickster-card-desc">{card.summary || 'An entry in the original trickster research compilation.'}</p>
-            <div class="trickster-registry-traits">
-              {card.trickster_traits.slice(0,3).map((trait, index) => <button class="trickster-filter-button" type="button" data-filter="tag" data-value={card.normalizedTraits[index]} aria-label={`Filter trait: ${trait.replaceAll('-',' ')}`}>{trait.replaceAll('-',' ')}</button>)}
-            </div>
             <button class="trickster-quick-open" type="button" data-quick-open aria-label={`Quick view: ${card.display_name}`}>Quick view ↗</button>
           </article>
         ))}
