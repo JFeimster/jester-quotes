@@ -1,0 +1,1210 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "jester-quotes-jesters-in-media",
+  "title": "Examples of Jesters in Media",
+  "created_at": "2026-11-19",
+  "canonical_source_document": "Examples of Jesters in Media.md",
+  "canonical_source_urls": [
+    "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+    "https://charactertherapist.blogspot.com/2013/06/character-archetypes-101-jester.html"
+  ],
+  "editorial_policy": "The first 15 original passages were supplied by the user and are retained in source_description. Card descriptions are original contextual adaptations; nine further entries rely on named external references. Character-to-archetype assignments are interpretations rather than publisher-defined classifications. Image reuse and hotlink status require review.",
+  "counts": {
+    "published_source_profiles": 15,
+    "researched_draft_profiles": 9,
+    "total_character_entries": 24,
+    "generalized_actor_notes": 1,
+    "original_full_size_image_urls": 15,
+    "research_image_candidates": 9
+  },
+  "recommended_properties": [
+    "id",
+    "slug",
+    "character",
+    "originating_work",
+    "medium",
+    "performer",
+    "original_source_heading",
+    "source_description",
+    "card_description",
+    "description",
+    "description_origin",
+    "archetype_traits",
+    "research_sources",
+    "research_status",
+    "publication_status",
+    "image",
+    "editorial_note"
+  ],
+  "items": [
+    {
+      "id": "fat-amy",
+      "slug": "fat-amy",
+      "character": "Fat Amy",
+      "originating_work": "Pitch Perfect",
+      "medium": "Film",
+      "performer": null,
+      "original_source_heading": "Fat Amy from Pitch Perfect",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "confidence",
+        "defensive-humor",
+        "social-satire"
+      ],
+      "card_description": "Fat Amy punctures the assumption that an outsider must be insecure. Her confidence and jokes expose the pretensions of competitive a cappella, yet the same humor becomes a sharp defensive wall when someone gets close enough to hurt her.",
+      "description": "Fat Amy is a fascinating character in that she flips the stereotype of fat = insecure on its head, while laughingly pointing out the often hypocritical standards of the acapella culture she takes part in. However, her humor becomes a barbed shield to those who try to get closer to her (such as the rival acapella group leader).",
+      "source_description": "Fat Amy is a fascinating character in that she flips the stereotype of fat = insecure on its head, while laughingly pointing out the often hypocritical standards of the acapella culture she takes part in. However, her humor becomes a barbed shield to those who try to get closer to her (such as the rival acapella group leader).",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/maxresdefault.jpg",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/maxresdefault.jpg",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "Fat Amy — visual referenced by the supplied Jester archetype article",
+        "width": 1280,
+        "height": 720,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "kamala-khan",
+      "slug": "kamala-khan",
+      "character": "Kamala Khan",
+      "originating_work": "Ms. Marvel",
+      "medium": "Comics",
+      "performer": null,
+      "original_source_heading": "Kamala Khan from Ms. Marvel",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "wisecracks",
+        "defensive-humor",
+        "friendship"
+      ],
+      "card_description": "Kamala keeps wisecracking even as family conflict, strained friendships, and superpowers complicate her life. Humor is her reflexive defense, but it also helps her connect with allies and repair relationships when the stakes become serious.",
+      "description": "There are a lot of serious, heavy things going on in Kamala Khan’s life, like getting into arguments with her family, alienating her friends, and, oh yeah, super powers, but it’s hard to find a single frame where Kamala isn’t issuing a wisecrack. Aware of her humor being a defense mechanism, but still unable to help herself, that humor, in the end, aids her in gaining new allies and soothing strained relationships.",
+      "source_description": "There are a lot of serious, heavy things going on in Kamala Khan’s life, like getting into arguments with her family, alienating her friends, and, oh yeah, super powers, but it’s hard to find a single frame where Kamala isn’t issuing a wisecrack. Aware of her humor being a defense mechanism, but still unable to help herself, that humor, in the end, aids her in gaining new allies and soothing strained relationships.",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/3580100-all-newmarvelnowpointone001-032.jpg",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/3580100-all-newmarvelnowpointone001-032.jpg",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "Kamala Khan — visual referenced by the supplied Jester archetype article",
+        "width": 1576,
+        "height": 1709,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "beetlejuice",
+      "slug": "beetlejuice",
+      "character": "Beetlejuice",
+      "originating_work": "Beetlejuice",
+      "medium": "Film",
+      "performer": "Michael Keaton",
+      "original_source_heading": "Beetlejuice",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "chaos",
+        "excess",
+        "rulebreaking"
+      ],
+      "card_description": "Already dead and hungry to rejoin the living, Beetlejuice treats every boundary like a suggestion. His vulgar bravado, manic appetite, and gleeful disregard for consequences push the Jester archetype into its most unruly extreme.",
+      "description": "It’s hard to make a list of Jesters and not include Beetlejuice. Beetlejuice takes the Jester archetype to the extreme — as he is already dead and is willing to do anything to get back with the living, Beetlejuice adopts a cavalier, often perverted, and definitely inebriated approach to seeking “aliveness” once more.",
+      "source_description": "It’s hard to make a list of Jesters and not include Beetlejuice. Beetlejuice takes the Jester archetype to the extreme — as he is already dead and is willing to do anything to get back with the living, Beetlejuice adopts a cavalier, often perverted, and definitely inebriated approach to seeking “aliveness” once more.",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/beetlejuice-2-news.jpg",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/beetlejuice-2-news.jpg",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "Beetlejuice — visual referenced by the supplied Jester archetype article",
+        "width": 800,
+        "height": 450,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "austin-powers",
+      "slug": "austin-powers",
+      "character": "Austin Powers",
+      "originating_work": "Austin Powers",
+      "medium": "Film",
+      "performer": "Mike Myers",
+      "original_source_heading": "Austin Powers",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "satire",
+        "self-delusion",
+        "absurdity"
+      ],
+      "card_description": "Austin considers himself an irresistible superspy; the audience sees a ridiculous one. His vanity, digressions, and misplaced confidence turn the spy genre inside out, making the satire more entertaining than any conventional mission.",
+      "description": "Austin Powers is a good example of a Jester used in the secondary capacity. Austin believes himself sexy and suave, but of course the audience knows better. As a main character, you can see how goal-related plots might be ill-suited; Austin is often distracted, and the strength of the story comes solely from its satire.",
+      "source_description": "Austin Powers is a good example of a Jester used in the secondary capacity. Austin believes himself sexy and suave, but of course the audience knows better. As a main character, you can see how goal-related plots might be ill-suited; Austin is often distracted, and the strength of the story comes solely from its satire.",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/grid-cell-10244-1377661040-16.jpg",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/grid-cell-10244-1377661040-16.jpg",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "Austin Powers — visual referenced by the supplied Jester archetype article",
+        "width": 309,
+        "height": 309,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "leslie-chow",
+      "slug": "leslie-chow",
+      "character": "Leslie Chow",
+      "originating_work": "The Hangover",
+      "medium": "Film",
+      "performer": "Ken Jeong",
+      "original_source_heading": "Leslie Chow from Hangover",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "chaos",
+        "provocation",
+        "recklessness"
+      ],
+      "card_description": "Leslie Chow manufactures trouble for everyone unlucky enough to call him a friend. He provokes danger, watches the fallout with delight, and rarely bothers with remorse. For Chow, the present moment is an excuse to burn the rulebook.",
+      "description": "Talk about a devil’s advocate! Leslie Chow is a gangster, and delights in creating chaos for those that consider him a friend. Not above leaving those “friends” out high and dry, Leslie often observes from afar the havoc his actions have wrought, yet shows no remorse, or even a sense of wrong-doing. For Leslie, it is all about the now, now, now.",
+      "source_description": "Talk about a devil’s advocate! Leslie Chow is a gangster, and delights in creating chaos for those that consider him a friend. Not above leaving those “friends” out high and dry, Leslie often observes from afar the havoc his actions have wrought, yet shows no remorse, or even a sense of wrong-doing. For Leslie, it is all about the now, now, now.",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/itssofunnybecausesheissofat_07d5bd2bf1db7f5f4d74c94287d5f072.jpg",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/itssofunnybecausesheissofat_07d5bd2bf1db7f5f4d74c94287d5f072.jpg",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "Leslie Chow — visual referenced by the supplied Jester archetype article",
+        "width": 620,
+        "height": 375,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "genie",
+      "slug": "genie",
+      "character": "Genie",
+      "originating_work": "Aladdin",
+      "medium": "Film",
+      "performer": "Robin Williams (voice)",
+      "original_source_heading": "Genie from Aladdin",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "improvisation",
+        "playfulness",
+        "mentor"
+      ],
+      "card_description": "Genie's endless impersonations and improvisations make him the comic heartbeat of Aladdin. Beneath the jokes is a captive yearning for freedom, and his guidance helps Aladdin see the value of the life he has instead of chasing an imaginary one.",
+      "description": "While Disney has its fair share of jesters (Goofy, Mushu and Lumiere, to name a few), the most memorable of them all has probably got to be Genie, from the Aladdin trilogy and TV show. “Infinite, cosmic power…. and an itty bitty living space” remains one of the first film’s most memorable, and concise conflicts, and Genie’s humor, as well as his guidance toward Aladdin, showing the street rat how to live in the now with what he has, VS what he may never receive, eventually earn him his freedom.",
+      "source_description": "While Disney has its fair share of jesters (Goofy, Mushu and Lumiere, to name a few), the most memorable of them all has probably got to be Genie, from the Aladdin trilogy and TV show. “Infinite, cosmic power…. and an itty bitty living space” remains one of the first film’s most memorable, and concise conflicts, and Genie’s humor, as well as his guidance toward Aladdin, showing the street rat how to live in the now with what he has, VS what he may never receive, eventually earn him his freedom.",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/disney-aladdin-prequel-movie-genie.jpg",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/disney-aladdin-prequel-movie-genie.jpg",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "Genie — visual referenced by the supplied Jester archetype article",
+        "width": 1920,
+        "height": 1080,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "dusty",
+      "slug": "dusty",
+      "character": "Dusty",
+      "originating_work": "Twister",
+      "medium": "Film",
+      "performer": "Philip Seymour Hoffman",
+      "original_source_heading": "Dusty from Twister",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "playfulness",
+        "adventure",
+        "comic-relief"
+      ],
+      "card_description": "Dusty approaches tornado chasing like an amusement-park ride, cracking jokes in the middle of genuine danger. His exhilaration is infectious, but the film lets fear break through the act, reminding us that the thrill-seeker is still human.",
+      "description": "You wouldn’t know tornadoes were a deadly force with the way Dusty goes on about them. While Dusty shows human emotion (particularly fear) towards the end of the film, it remains that the “ride” was what it was always about. That and Aunt May’s cooking.",
+      "source_description": "You wouldn’t know tornadoes were a deadly force with the way Dusty goes on about them. While Dusty shows human emotion (particularly fear) towards the end of the film, it remains that the “ride” was what it was always about. That and Aunt May’s cooking.",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/ll.jpg",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/ll.jpg",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "Dusty — visual referenced by the supplied Jester archetype article",
+        "width": 800,
+        "height": 342,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "tars",
+      "slug": "tars",
+      "character": "TARS",
+      "originating_work": "Interstellar",
+      "medium": "Film",
+      "performer": "Bill Irwin (voice)",
+      "original_source_heading": "TARS from Interstellar",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "dry-humor",
+        "wit",
+        "resilience"
+      ],
+      "card_description": "Facing a journey where despair could overwhelm the crew, TARS supplies deadpan, adjustable humor alongside practical help. His sarcasm isn't a distraction from the mission; it is part of what keeps his human partners going.",
+      "description": "Taking a long trip into deep space for a long shot at rescuing humanity is no easy thing, and for the crew in Interstellar, mental breakdowns are a very real concern. TARS, one of the robot interfaces designed to assist the human pilots, is programmed with a snarky sense of humor, no doubt a crucial element to the crew’s actual psychological health.",
+      "source_description": "Taking a long trip into deep space for a long shot at rescuing humanity is no easy thing, and for the crew in Interstellar, mental breakdowns are a very real concern. TARS, one of the robot interfaces designed to assist the human pilots, is programmed with a snarky sense of humor, no doubt a crucial element to the crew’s actual psychological health.",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/interstellar-screenshot-tars.jpg",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/interstellar-screenshot-tars.jpg",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "TARS — visual referenced by the supplied Jester archetype article",
+        "width": 1024,
+        "height": 640,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "harley-quinn",
+      "slug": "harley-quinn",
+      "character": "Harley Quinn",
+      "originating_work": "DC Comics",
+      "medium": "Comics",
+      "performer": null,
+      "original_source_heading": "Harley Quinn",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "defiant-humor",
+        "masking",
+        "survival"
+      ],
+      "card_description": "Harley meets a brutal history and an abusive relationship with a laugh sharp enough to pass for armor. Her jokes keep other people off balance while allowing her to dodge the painful consequences of her own choices.",
+      "description": "Yes, Joker from the same franchise probably should have made my list, but I personally find Harley more compelling, and her motivations are more in line with this archetype (over Joker’s more “Outlaw” leanings). Harley has lived a hard life, and her relationship with Joker is an abusive one – yet, Harley keeps a smile and joke on her lips like war paint, never letting her guard down, perhaps in fear of her own weakness. For Harley, it is easier to strive to be in the moment than to reflect on the vicious cause and effect cycle she has allowed herself to fall into.",
+      "source_description": "Yes, Joker from the same franchise probably should have made my list, but I personally find Harley more compelling, and her motivations are more in line with this archetype (over Joker’s more “Outlaw” leanings). Harley has lived a hard life, and her relationship with Joker is an abusive one – yet, Harley keeps a smile and joke on her lips like war paint, never letting her guard down, perhaps in fear of her own weakness. For Harley, it is easier to strive to be in the moment than to reflect on the vicious cause and effect cycle she has allowed herself to fall into.",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/og-harley-quinn-alternative.jpg",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/og-harley-quinn-alternative.jpg",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "Harley Quinn — visual referenced by the supplied Jester archetype article",
+        "width": 414,
+        "height": 573,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "weasley-twins",
+      "slug": "weasley-twins",
+      "character": "Fred and George Weasley",
+      "originating_work": "Harry Potter",
+      "medium": "Literature",
+      "performer": "James and Oliver Phelps (film)",
+      "original_source_heading": "Weasley Twins",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "pranks",
+        "joy",
+        "rebellion"
+      ],
+      "card_description": "Fred and George Weasley refuse to accept a world run entirely by solemn rules. Their pranks spread laughter through Hogwarts, challenge authority, and insist that even dark times leave room for joy and creative trouble.",
+      "description": "The Weasley Twins hardly need an introduction from me. Their shenanigans are known in our world as well as they are in the world of Harry Potter. And they embody this archetype to a ‘T.’ Fred and George refuse to live a normal day, creating mischief, infectious joy, and light-heartedness wherever they go.",
+      "source_description": "The Weasley Twins hardly need an introduction from me. Their shenanigans are known in our world as well as they are in the world of Harry Potter. And they embody this archetype to a ‘T.’ Fred and George refuse to live a normal day, creating mischief, infectious joy, and light-heartedness wherever they go.",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/phelps1.jpg",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/phelps1.jpg",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "Fred and George Weasley — visual referenced by the supplied Jester archetype article",
+        "width": 384,
+        "height": 280,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "c-3po",
+      "slug": "c-3po",
+      "character": "C-3PO",
+      "originating_work": "Star Wars",
+      "medium": "Film",
+      "performer": "Anthony Daniels",
+      "original_source_heading": "C3P0 from Star Wars",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "comic-foil",
+        "innocence",
+        "outsider"
+      ],
+      "card_description": "C-3PO is the anxious straight man in a galaxy of chaos. His rigid protocol and painfully literal reactions expose the absurdities around him. He may be closer to a theatrical Fool than a scheming Jester, but that's precisely why the jokes land.",
+      "description": "You have to feel pretty sorry for C3P0; designed as no more than a translator droid, C3P0 becomes the brunt of every joke in every language throughout the arcs of the series he is a part of. Definitely more “fool” than “jester,” C3P0 illuminates the bizarre behaviors of people and aliens alike, and we all love him for it.",
+      "source_description": "You have to feel pretty sorry for C3P0; designed as no more than a translator droid, C3P0 becomes the brunt of every joke in every language throughout the arcs of the series he is a part of. Definitely more “fool” than “jester,” C3P0 illuminates the bizarre behaviors of people and aliens alike, and we all love him for it.",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/c3p0.png",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/c3p0.png",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "C-3PO — visual referenced by the supplied Jester archetype article",
+        "width": 1024,
+        "height": 768,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "merry-and-pippin",
+      "slug": "merry-and-pippin",
+      "character": "Merry and Pippin",
+      "originating_work": "The Lord of the Rings",
+      "medium": "Literature",
+      "performer": "Dominic Monaghan and Billy Boyd (film)",
+      "original_source_heading": "Merry and Pippin",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "playfulness",
+        "friendship",
+        "loyalty"
+      ],
+      "card_description": "Merry and Pippin bring lightness, appetite, and irreverent friendship into an epic defined by dread. Their loyalty to Frodo matters more than grand heroics, and their playful outlook keeps the ordinary joys of life visible in Middle-earth.",
+      "description": "Meriadock Brandybuck and Peregrin “Fool” Took are about as lighthearted as you can get. Their journey with Frodo is more about being with Frodo than destroying the ring ––and",
+      "source_description": "Meriadock Brandybuck and Peregrin “Fool” Took are about as lighthearted as you can get. Their journey with Frodo is more about being with Frodo than destroying the ring ––and",
+      "description_origin": "provided_markdown",
+      "description_complete": false,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/lotrdrink1.gif",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/lotrdrink1.gif",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "Merry and Pippin — visual referenced by the supplied Jester archetype article",
+        "width": 500,
+        "height": 209,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": "The supplied Markdown paragraph ends mid-sentence; retain exact excerpt separately, use complete authored card copy."
+    },
+    {
+      "id": "random",
+      "slug": "random",
+      "character": "Random",
+      "originating_work": "The Great Book of Amber",
+      "medium": "Literature",
+      "performer": null,
+      "original_source_heading": "Random from The Great Book of Amber",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "wise-fool",
+        "humor",
+        "subversion"
+      ],
+      "card_description": "Random enters Roger Zelazny's royal power struggle with a jester's unlikely advantage: he doesn't expect to win. His unguarded humor and apparent lack of ambition make him an unexpected candidate for the throne, turning the fool into the ruler.",
+      "description": "Roger Zelazny’s classic metaphysical science fiction universe has its fair share of archetypes, but perhaps the most curious twist is Jester as Ruler. (SPOILERS) There is a theme in premodern uses of the archetype (in royal court stories, for example) to cast the Jester as the wisest character, a foil to the foolish king. Random is no exception, and in the arms race to the throne, his attitude of ‘I’ve got no chance so I might as well enjoy myself’ allows him to surpass all of his siblings.",
+      "source_description": "Roger Zelazny’s classic metaphysical science fiction universe has its fair share of archetypes, but perhaps the most curious twist is Jester as Ruler. (SPOILERS) There is a theme in premodern uses of the archetype (in royal court stories, for example) to cast the Jester as the wisest character, a foil to the foolish king. Random is no exception, and in the arms race to the throne, his attitude of ‘I’ve got no chance so I might as well enjoy myself’ allows him to surpass all of his siblings.",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/trumps_of_amber__random_by_tergiversatory_proxy-d5ry27k.png",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/trumps_of_amber__random_by_tergiversatory_proxy-d5ry27k.png",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "Random — visual referenced by the supplied Jester archetype article",
+        "width": 900,
+        "height": 1416,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "gambit",
+      "slug": "gambit",
+      "character": "Gambit",
+      "originating_work": "X-Men",
+      "medium": "Comics",
+      "performer": null,
+      "original_source_heading": "Gambit of X-Men",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "defensive-humor",
+        "wit",
+        "charm"
+      ],
+      "card_description": "Remy LeBeau hides a troubled history behind charm and perfectly timed jokes. Humor disarms enemies and friends alike, keeping attention away from the painful secrets he'd rather not revisit.",
+      "description": "A man with a horribly dark past, Gambit (aka Remy LeBeau) would rather not think about the Thieves Guild, his ex-wife Belladonna, or the fact that he unwittingly took part in the Mutant Massacre as lead man. So, humor is his coat of armor, disarming friend and foe alike to not look that much deeper. (Also notice the motif of the Jester as Ruler in this image).",
+      "source_description": "A man with a horribly dark past, Gambit (aka Remy LeBeau) would rather not think about the Thieves Guild, his ex-wife Belladonna, or the fact that he unwittingly took part in the Mutant Massacre as lead man. So, humor is his coat of armor, disarming friend and foe alike to not look that much deeper. (Also notice the motif of the Jester as Ruler in this image).",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/gambit2.jpg",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/08/gambit2.jpg",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "Gambit — visual referenced by the supplied Jester archetype article",
+        "width": 800,
+        "height": 600,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "skeleton",
+      "slug": "skeleton",
+      "character": "Skeleton",
+      "originating_work": "The Last Unicorn",
+      "medium": "Film",
+      "performer": null,
+      "original_source_heading": "Skeleton from The Last Unicorn",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "riddles",
+        "reversal",
+        "mischief"
+      ],
+      "card_description": "In a catacomb beneath The Last Unicorn, a former king reduced to a skeleton clings to the pleasures of living. He delights in a riddle game and can even be fooled into believing air is wine: a dead monarch reborn as the gatekeeping Jester.",
+      "description": "Nothing takes you further from living than being a skeleton in a catacomb. Skeleton is so desperate to feel the warmth of life again that he can be tricked by a magician into believing air is wine. Though once a king, he is very clearly now a Jester, forcing those who wish to enter the door he guards to play riddle games with him.",
+      "source_description": "Nothing takes you further from living than being a skeleton in a catacomb. Skeleton is so desperate to feel the warmth of life again that he can be tricked by a magician into believing air is wine. Though once a king, he is very clearly now a Jester, forcing those who wish to enter the door he guards to play riddle games with him.",
+      "description_origin": "provided_markdown",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Ariel Hudnall",
+          "title": "Archetypes: Jester",
+          "url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+          "use": "source characterization"
+        }
+      ],
+      "research_status": "source_attributed",
+      "publication_status": "published",
+      "visual_status": "existing_source_image_pending_rights",
+      "image": {
+        "url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/09/maxresdefault.jpg",
+        "full_size_url": "https://i0.wp.com/arielhudnall.com/wp-content/uploads/2015/09/maxresdefault.jpg",
+        "source_page": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+        "alt": "Skeleton — visual referenced by the supplied Jester archetype article",
+        "width": 1280,
+        "height": 720,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "hotlink_and_rights_not_verified"
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "puck",
+      "slug": "puck",
+      "character": "Puck",
+      "originating_work": "A Midsummer Night’s Dream (1999 film)",
+      "medium": "Film",
+      "performer": "Stanley Tucci",
+      "original_source_heading": "Stanley Tucci as Puck in A Midsummer Night's Dream",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "misdirection",
+        "magic",
+        "mischief"
+      ],
+      "card_description": "Puck meddles with love, disguises, and human certainty, leaving enchanted lovers to untangle his mistakes. Stanley Tucci plays this mischievous fairy in the 1999 film, turning Shakespeare's most famous troublemaker into a puckish comic catalyst.",
+      "description": "Puck—also called Robin Goodfellow—serves Oberon but treats the rules of romance as a playground. His mistaken use of a love potion scrambles loyalties, and his magic transforms Bottom into an ass-headed spectacle. This is a classic trickster, not merely a comic sidekick: he destabilizes order before helping restore it. Stanley Tucci portrays Puck in Michael Hoffman's 1999 film adaptation.",
+      "source_description": null,
+      "description_origin": "new_editorial_research",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "American Film Institute",
+          "title": "1999 film casting",
+          "url": "https://catalog.afi.com/Catalog/MovieDetails/61776",
+          "use": "character and production facts"
+        },
+        {
+          "publisher": "Folger Shakespeare Library",
+          "title": "character and plot",
+          "url": "https://www.folger.edu/explore/shakespeares-works/a-midsummer-nights-dream/read/puck/",
+          "use": "character and production facts"
+        }
+      ],
+      "research_status": "researched_pending_editorial_review",
+      "publication_status": "draft",
+      "visual_status": "candidate_pending_license",
+      "image": {
+        "url": null,
+        "full_size_url": null,
+        "source_page": "https://catalog.afi.com/Catalog/MovieDetails/61776",
+        "alt": "Stanley Tucci as Puck in the 1999 film, not a random theatrical interpretation",
+        "width": null,
+        "height": null,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "source_page_candidate",
+        "editorial_note": "Find an authorized 1999 still; AFI confirms casting but does not license the film image."
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "dory",
+      "slug": "dory",
+      "character": "Dory",
+      "originating_work": "Finding Nemo",
+      "medium": "Film",
+      "performer": "Ellen DeGeneres (voice)",
+      "original_source_heading": "Ellen DeGeneres as Dori in Finding Nemo",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "optimism",
+        "wordplay",
+        "friendship"
+      ],
+      "card_description": "Dory's missing short-term memory makes every conversation an adventure, but her irrepressible optimism often gives Marlin exactly the courage he lacks. Her jokes and accidental detours lighten the danger without diminishing the character's vulnerability.",
+      "description": "Dory's comedy grows from the collision between short-term memory loss and a generosity of spirit that refuses to quit. She keeps Marlin moving across the ocean even when she cannot remember the plan herself. The character functions as a kindhearted comic foil whose improvisation, empathy, and resilience are more important than any scheme. Ellen DeGeneres voices Dory in Finding Nemo.",
+      "source_description": null,
+      "description_origin": "new_editorial_research",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Pixar Animation Studios",
+          "title": "official film and character",
+          "url": "https://www.pixar.com/finding-nemo",
+          "use": "character and production facts"
+        },
+        {
+          "publisher": "Pixar Animation Studios",
+          "title": "subsequent character biography",
+          "url": "https://www.pixar.com/finding-dory",
+          "use": "character and production facts"
+        }
+      ],
+      "research_status": "researched_pending_editorial_review",
+      "publication_status": "draft",
+      "visual_status": "candidate_pending_license",
+      "image": {
+        "url": null,
+        "full_size_url": null,
+        "source_page": "https://www.pixar.com/finding-nemo",
+        "alt": "Dory blue tang beside Marlin in a Pixar Finding Nemo still",
+        "width": null,
+        "height": null,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "source_page_candidate",
+        "editorial_note": "Official Pixar film page contains promotional imagery; permission to reuse still required."
+      },
+      "editorial_note": "Source names Dori; standard film character spelling is Dory."
+    },
+    {
+      "id": "edith-bunker",
+      "slug": "edith-bunker",
+      "character": "Edith Bunker",
+      "originating_work": "All in the Family",
+      "medium": "Television",
+      "performer": "Jean Stapleton",
+      "original_source_heading": "Jean Stapleton as Edith Bunker on All in the Family",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "innocence",
+        "wisdom",
+        "social-commentary"
+      ],
+      "card_description": "Edith's innocent questions and openhearted common sense quietly puncture Archie's bluster. She seems to miss the point, yet often exposes the prejudice everyone else is too loud to notice. Her apparent foolishness becomes a surprising form of wisdom.",
+      "description": "Jean Stapleton plays Edith Bunker as a gentle, apparently naive counterweight to her husband Archie's anger and prejudice. Rather than delivering clever putdowns, Edith asks disarming questions and shows a moral clarity that sharper characters overlook. She's a strong Wise Fool example: her innocence creates both comedy and an unexpected critique of the world around her.",
+      "source_description": null,
+      "description_origin": "new_editorial_research",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Smithsonian Magazine",
+          "title": "character and impact",
+          "url": "https://www.smithsonianmag.com/smithsonian-institution/entertainment-curator-remembers-all-in-the-family-star-jean-stapleton-88978893/",
+          "use": "character and production facts"
+        },
+        {
+          "publisher": "Television Academy Interviews",
+          "title": "series and cast",
+          "url": "https://interviews.televisionacademy.com/shows/all-in-the-family",
+          "use": "character and production facts"
+        }
+      ],
+      "research_status": "researched_pending_editorial_review",
+      "publication_status": "draft",
+      "visual_status": "candidate_pending_license",
+      "image": {
+        "url": null,
+        "full_size_url": null,
+        "source_page": "https://www.smithsonianmag.com/smithsonian-institution/entertainment-curator-remembers-all-in-the-family-star-jean-stapleton-88978893/",
+        "alt": "Jean Stapleton as Edith Bunker opposite Archie in a licensed CBS series photograph",
+        "width": null,
+        "height": null,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "source_page_candidate",
+        "editorial_note": "Source may contain archival imagery. Rights require CBS/licensor clearance."
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "buddy",
+      "slug": "buddy",
+      "character": "Buddy",
+      "originating_work": "Elf",
+      "medium": "Film",
+      "performer": "Will Ferrell",
+      "original_source_heading": "Will Ferrell as Buddy in Elf",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "innocence",
+        "outsider",
+        "comic-contrast"
+      ],
+      "card_description": "Buddy arrives in Manhattan equipped with an elf's joy, literal-mindedness, and almost no understanding of adult cynicism. His relentless cheerfulness makes ordinary social rules look absurd—and sometimes exposes the people who've forgotten how to be delighted.",
+      "description": "Raised among elves and convinced that Christmas spirit belongs everywhere, Buddy plunges into New York City as an overgrown innocent. He violates unspoken city norms by assuming everyone wants to sing, celebrate, or become friends. Will Ferrell's physical comedy builds the jokes, but Buddy's genuine affection gives the character a Wise Fool dimension: the ridiculous outsider sees something the sophisticated adults have lost.",
+      "source_description": null,
+      "description_origin": "new_editorial_research",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Rotten Tomatoes",
+          "title": "film synopsis and cast",
+          "url": "https://www.rottentomatoes.com/m/elf",
+          "use": "character and production facts"
+        },
+        {
+          "publisher": "Warner Bros. Entertainment",
+          "title": "official film synopsis",
+          "url": "https://www.youtube.com/watch?v=bX9VT4LHPnk",
+          "use": "character and production facts"
+        }
+      ],
+      "research_status": "researched_pending_editorial_review",
+      "publication_status": "draft",
+      "visual_status": "candidate_pending_license",
+      "image": {
+        "url": null,
+        "full_size_url": null,
+        "source_page": "https://www.rottentomatoes.com/m/elf",
+        "alt": "Will Ferrell dressed as Buddy in New York City, official Elf promotional still",
+        "width": null,
+        "height": null,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "source_page_candidate",
+        "editorial_note": "Promotional still available through studio/press; rights unverified."
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "megan",
+      "slug": "megan",
+      "character": "Megan",
+      "originating_work": "Bridesmaids",
+      "medium": "Film",
+      "performer": "Melissa McCarthy",
+      "original_source_heading": "Melissa McCarthy as Megan in Bridesmaids",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "shamelessness",
+        "chaos",
+        "loyalty"
+      ],
+      "card_description": "Megan storms into the wedding party with startling confidence and absolutely no interest in looking respectable. Beneath the outrageous jokes and bizarre disclosures is someone fiercely loyal, willing to tell Annie uncomfortable truths when it matters.",
+      "description": "Melissa McCarthy's Megan is not a throwaway gross-out gag. Her unapologetic body language, absurd stories, and refusal to defer to social expectations turn polite wedding etiquette into comic chaos. Later, her toughness also provides Annie with direct, unexpectedly helpful encouragement. She is a disruptive Jester whose heart is less cynical than her jokes suggest.",
+      "source_description": null,
+      "description_origin": "new_editorial_research",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "American Film Institute",
+          "title": "casting and film recognition",
+          "url": "https://www.afi.com/news/afi-movie-club-bridesmaids/",
+          "use": "character and production facts"
+        },
+        {
+          "publisher": "GQ",
+          "title": "oral history of performance",
+          "url": "https://www.gq.com/story/melissa-mccarthy-gq-august-2011-bridesmaids",
+          "use": "character and production facts"
+        },
+        {
+          "publisher": "Universal Pictures",
+          "title": "official film details",
+          "url": "https://www.universalpicturesathome.com/movies/bridesmaids",
+          "use": "character and production facts"
+        }
+      ],
+      "research_status": "researched_pending_editorial_review",
+      "publication_status": "draft",
+      "visual_status": "candidate_pending_license",
+      "image": {
+        "url": null,
+        "full_size_url": null,
+        "source_page": "https://www.universalpicturesathome.com/movies/bridesmaids",
+        "alt": "Melissa McCarthy as Megan in the 2011 Bridesmaids film (not another cast member)",
+        "width": null,
+        "height": null,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "source_page_candidate",
+        "editorial_note": "Check studio publicity gallery; image use subject to Universal clearance."
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "kramer",
+      "slug": "kramer",
+      "character": "Cosmo Kramer",
+      "originating_work": "Seinfeld",
+      "medium": "Television",
+      "performer": "Michael Richards",
+      "original_source_heading": "Michael Richards as Kramer in Seinfeld",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "physical-comedy",
+        "eccentricity",
+        "disruption"
+      ],
+      "card_description": "Kramer enters every room as if gravity and social convention have both been temporarily suspended. His wild business ideas, physical entrances, and sideways logic turn Jerry's ordinary apartment into a laboratory for comic disruption.",
+      "description": "Michael Richards gives Kramer a distinctive physical vocabulary—sliding through doors, gesticulating, and pursuing ill-advised schemes with absolute conviction. He's less an evil trickster than an engine of consequences. By ignoring ordinary boundaries and refusing sensible advice, Kramer sets the Seinfeld group spinning into new absurdities.",
+      "source_description": null,
+      "description_origin": "new_editorial_research",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "CBS News",
+          "title": "cast confirmation and characterization",
+          "url": "https://www.cbsnews.com/pictures/seinfeld-where-are-they-now/13/",
+          "use": "character and production facts"
+        },
+        {
+          "publisher": "ABC News",
+          "title": "interview on Kramer performance",
+          "url": "https://www.abc.net.au/news/2024-06-22/michael-richards-interview-entrances-and-exits-memoir-seinfeld/104009786",
+          "use": "character and production facts"
+        }
+      ],
+      "research_status": "researched_pending_editorial_review",
+      "publication_status": "draft",
+      "visual_status": "candidate_pending_license",
+      "image": {
+        "url": null,
+        "full_size_url": null,
+        "source_page": "https://www.cbsnews.com/pictures/seinfeld-where-are-they-now/13/",
+        "alt": "Michael Richards playing Cosmo Kramer in a licensed NBC Seinfeld still",
+        "width": null,
+        "height": null,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "source_page_candidate",
+        "editorial_note": "Select a Kramer-specific archival still; rights require licensor confirmation."
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "joey",
+      "slug": "joey",
+      "character": "Joey Tribbiani",
+      "originating_work": "Friends",
+      "medium": "Television",
+      "performer": "Matt LeBlanc",
+      "original_source_heading": "Matt LeBlanc as Joey in Friends",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "innocence",
+        "loyalty",
+        "comic-relief"
+      ],
+      "card_description": "Joey's confidence far exceeds his grasp of what's happening, but his loyalty to his friends rarely wavers. Between failed auditions, romantic mishaps, and a heroic appetite, his sweet-natured foolishness makes him an affectionate comic foil.",
+      "description": "Matt LeBlanc's Joey Tribbiani is a struggling actor, relentless flirt, and often the last person in the room to understand the joke. Yet the comedy works because Joey is warmhearted rather than calculating. He punctures pretension through innocent misunderstanding and wholehearted enthusiasm, making him a Fool more than a manipulative trickster.",
+      "source_description": null,
+      "description_origin": "new_editorial_research",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Apple TV",
+          "title": "character and cast in Joey spinoff",
+          "url": "https://tv.apple.com/us/show/joey/umc.cmc.5o2vmaq5wg57rw7y7420kwia5",
+          "use": "character and production facts"
+        },
+        {
+          "publisher": "TV Insider",
+          "title": "character profile",
+          "url": "https://www.tvinsider.com/people/matt-leblanc/",
+          "use": "character and production facts"
+        }
+      ],
+      "research_status": "researched_pending_editorial_review",
+      "publication_status": "draft",
+      "visual_status": "candidate_pending_license",
+      "image": {
+        "url": null,
+        "full_size_url": null,
+        "source_page": "https://tv.apple.com/us/show/joey/umc.cmc.5o2vmaq5wg57rw7y7420kwia5",
+        "alt": "Matt LeBlanc as Joey Tribbiani in Friends with other central cast members",
+        "width": null,
+        "height": null,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "source_page_candidate",
+        "editorial_note": "Use an NBC/Warner licensed Friends publicity still, not necessarily spinoff artwork."
+      },
+      "editorial_note": null
+    },
+    {
+      "id": "the-iguana",
+      "slug": "the-iguana",
+      "character": "Pascal",
+      "originating_work": "Tangled",
+      "medium": "Film",
+      "performer": null,
+      "original_source_heading": "Anything Ben Stiller, Adam Sandler, or Jim Carey ever played",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "visual-comedy",
+        "nonverbal-humor",
+        "loyalty"
+      ],
+      "card_description": "Pascal, Rapunzel's fiercely protective chameleon, communicates more with a change of color or skeptical stare than most characters manage with a monologue. His silent reactions puncture grand gestures and add mischievous companionship to the journey.",
+      "description": "The original list calls him 'the Iguana,' but Disney identifies Rapunzel's companion as Pascal, a chameleon. Pascal acts as a tiny, expressive conscience and comic accomplice. His skeptical expressions, changing colors, and fierce loyalty make him an efficient visual Jester, offering commentary without speaking a single line.",
+      "source_description": null,
+      "description_origin": "new_editorial_research",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Walt Disney Animation Studios",
+          "title": "official film and character",
+          "url": "https://www.disneyanimation.com/films/tangled/",
+          "use": "character and production facts"
+        },
+        {
+          "publisher": "Disney Movies",
+          "title": "official character name",
+          "url": "https://movies.disney.com/tangled",
+          "use": "character and production facts"
+        }
+      ],
+      "research_status": "researched_pending_editorial_review",
+      "publication_status": "draft",
+      "visual_status": "candidate_pending_license",
+      "image": {
+        "url": null,
+        "full_size_url": null,
+        "source_page": "https://movies.disney.com/tangled",
+        "alt": "Pascal the chameleon on Rapunzel’s shoulder or reacting to Flynn Rider",
+        "width": null,
+        "height": null,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "source_page_candidate",
+        "editorial_note": "Correct original source mislabeling from iguana to chameleon; reuse requires Disney permission."
+      },
+      "editorial_note": "Source calls the character an iguana; correct Disney identification is Pascal the chameleon. Preserve ID/slug for existing anchors."
+    },
+    {
+      "id": "the-carpet",
+      "slug": "the-carpet",
+      "character": "Magic Carpet",
+      "originating_work": "Aladdin",
+      "medium": "Film",
+      "performer": null,
+      "original_source_heading": "The Iguana in Tangled",
+      "source_document": "Examples of Jesters in Media.md",
+      "source_article_url": "https://arielhudnall.com/2015/09/06/archetypes-jester/",
+      "archetype_traits": [
+        "nonverbal-humor",
+        "playfulness",
+        "loyalty"
+      ],
+      "card_description": "Magic Carpet doesn't need a voice or a face to steal a scene. A shy curl, an eager tug, or a perfectly timed flying maneuver gives Aladdin's woven companion a personality full of mischief, warmth, and physical comedy.",
+      "description": "The sentient Magic Carpet is one of Aladdin's most inventive comic sidekicks: an entire character performed through motion. It tilts, folds, gestures with tassels, and carries its friends through danger. Carpet is more playful helper than rulebreaking con artist, but its wordless irreverence and willingness to improvise make it a natural fit for an expanded Jester gallery.",
+      "source_description": null,
+      "description_origin": "new_editorial_research",
+      "description_complete": true,
+      "research_sources": [
+        {
+          "publisher": "Disney Movies",
+          "title": "official 1992 film",
+          "url": "https://movies.disney.com/Aladdin",
+          "use": "character and production facts"
+        },
+        {
+          "publisher": "D23 (Disney)",
+          "title": "1992 film and carpet animation",
+          "url": "https://d23.com/a-to-z/aladdin-film/",
+          "use": "character and production facts"
+        },
+        {
+          "publisher": "TIME",
+          "title": "film review noting Carpet personality",
+          "url": "https://time.com/archive/6721615/aladdins-magic/",
+          "use": "character and production facts"
+        }
+      ],
+      "research_status": "researched_pending_editorial_review",
+      "publication_status": "draft",
+      "visual_status": "candidate_pending_license",
+      "image": {
+        "url": null,
+        "full_size_url": null,
+        "source_page": "https://movies.disney.com/Aladdin",
+        "alt": "Magic Carpet folding a tassel or flying with Aladdin in Disney’s 1992 animated film",
+        "width": null,
+        "height": null,
+        "is_confirmed_reusable": false,
+        "license": null,
+        "status": "source_page_candidate",
+        "editorial_note": "Character-specific Disney promotional artwork; licensing unverified."
+      },
+      "editorial_note": "Source calls this character The Carpet; preferred displayed name is Magic Carpet. Preserve ID/slug for existing anchors."
+    }
+  ],
+  "editorial_notes": [
+    {
+      "id": "actor-generalization",
+      "source_heading": "Anything Ben Stiller, Adam Sandler, or Jim Carey ever played",
+      "source_document": "Examples of Jesters in Media.md",
+      "editorial_decision": "Do not publish this as an individual character or treat all performances as Jesters. Evaluate roles separately.",
+      "candidate_roles": [
+        {
+          "performer": "Ben Stiller",
+          "character": "Derek Zoolander",
+          "work": "Zoolander",
+          "archetype_fit": "Satirical self-delusion and exaggerated vanity",
+          "source_url": "https://www.paramount.com/movies/zoolander"
+        },
+        {
+          "performer": "Adam Sandler",
+          "character": "Billy Madison",
+          "work": "Billy Madison",
+          "archetype_fit": "Childish absurdity and deliberate disruption",
+          "source_url": "https://www.universalpicturesathome.com/movies/billy-madison"
+        },
+        {
+          "performer": "Jim Carrey",
+          "character": "Ace Ventura",
+          "work": "Ace Ventura: Pet Detective",
+          "archetype_fit": "Grotesque physical comedy and nonconformity",
+          "source_url": "https://www.sonypictures.com/movies/aceventurapetdetective"
+        },
+        {
+          "performer": "Jim Carrey",
+          "character": "Stanley Ipkiss / The Mask",
+          "work": "The Mask",
+          "archetype_fit": "Magical transgression, disguise, and cartoon physics",
+          "source_url": "https://www.dhentertainment.com/projects/mask/"
+        }
+      ]
+    }
+  ]
+}

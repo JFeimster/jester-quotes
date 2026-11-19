@@ -4,46 +4,47 @@ import { mediaExamples } from '../../lib/research';
 import mediaImages from '../../data/jesters-in-media-images.json';
 import '../../styles/research.css';
 import '../../styles/research-media-revisions.css';
+import '../../styles/research-media-enriched.css';
 const media = [...new Set(mediaExamples.map(item => item.medium))];
-const imageById: Record<string, {
-  src: string; source_page: string; source_caption: string;
-  width: number | null; height: number | null;
-}> = mediaImages;
+const imageById: Record<string, {src:string;source_page:string;width:number|null;height:number|null}> = mediaImages;
 ---
-<BaseLayout title="Jesters in Media — Jester Quotes" description="An attributed editorial directory of comic and disruptive characters in film, television, literature, and comics.">
+<BaseLayout title="Jesters in Media — Jester Quotes" description="Character-driven studies of comic fools, tricksters, and unruly sidekicks across film, literature, television, and comics.">
   <div class="wrap research-page">
     <p class="eyebrow">Characters / comedy / disruption</p>
     <h1>Jesters in <em>media.</em></h1>
-    <p class="research-intro">Explore 24 characters interpreted through a jester lens in the supplied essay. Fifteen have developed descriptions; nine are brief examples that need more research. These are editorial readings, not official character designations.</p>
+    <p class="research-intro">Meet 24 characters who turn solemnity into trouble. The first 15 are interpreted from the supplied archetype essay; nine additional examples draw on researched character and production references. These labels are editorial interpretations, not official classifications.</p>
     <div class="media-controls">
       <label>Find a character <input id="media-query" type="search" placeholder="Search character or work" autocomplete="off" /></label>
       <label>Medium <select id="media-medium"><option value="all">All media</option>{media.map(value => <option value={value}>{value}</option>)}</select></label>
     </div>
-    <p id="media-count" role="status" aria-live="polite">{mediaExamples.length} examples</p>
-    <div class="research-grid" id="media-grid">
+    <p id="media-count" role="status" aria-live="polite">{mediaExamples.length} characters</p>
+    <div class="research-grid media-grid-enriched" id="media-grid">
       {mediaExamples.map(item =>
-        <article class="research-card" id={item.slug} data-name={`${item.name} ${item.originating_work}`.toLowerCase()} data-medium={item.medium}>
-          {imageById[item.id] &&
+        <article class="research-card media-character-card" id={item.slug} data-name={`${item.name} ${item.originating_work} ${item.tags.join(' ')}`.toLowerCase()} data-medium={item.medium}>
+          {imageById[item.id]?.src ?
             <figure class="research-card-image">
               <img
                 src={imageById[item.id].src}
-                alt={`Source article illustration for ${item.character}`}
+                alt={`Illustration of ${item.character} from the source article`}
                 width={imageById[item.id].width || 800}
                 height={imageById[item.id].height || 500}
                 loading="lazy"
                 decoding="async"
                 referrerpolicy="no-referrer"
               />
-              <figcaption><a href={imageById[item.id].source_page} target="_blank" rel="external noopener noreferrer">Image source</a></figcaption>
-            </figure>}
-          <span class="research-card-type">{item.medium}{item.publication_status === 'draft' ? ' · Needs research' : ''}</span>
+            </figure>
+            : <div class="research-card-image media-image-placeholder" aria-hidden="true"><span>THE JESTER FILES</span><strong>✳</strong></div>
+          }
+          <span class="research-card-type">{item.medium}</span>
           <h2>{item.character}</h2>
           <h3>{item.originating_work}</h3>
           <p>{item.summary}</p>
+          {item.publication_status==='draft' && item.description !== item.summary &&
+            <details class="media-character-more"><summary>Read character analysis</summary><p>{item.description}</p></details>}
         </article>
       )}
     </div>
-    <p class="research-source">Editorial source: <a href={mediaExamples[0].sources[0]} rel="external noopener">Archetypes: Jester</a>. Third-party images are loaded from the URLs supplied in the research document and are not stored in this repository. Their rights and hotlink reliability require confirmation before production use.</p>
+    <p class="research-source"><strong>Source and image attribution:</strong> The first 15 entries and illustrations were adapted from <a href="https://arielhudnall.com/2015/09/06/archetypes-jester/" target="_blank" rel="external noopener noreferrer">Ariel Hudnall, <cite>Archetypes: Jester</cite></a>. Supplemental character descriptions use research from studios, film databases, and cultural archives. External images belong to their respective rightsholders; their use and availability must be verified. <a href="/sources/">Research policy and sources</a>.</p>
   </div>
   <script is:inline>
     const query = document.querySelector('#media-query');
@@ -58,8 +59,8 @@ const imageById: Record<string, {
         card.hidden = !show;
         if (show) visible++;
       }
-      count.textContent = `${visible} examples`;
+      count.textContent = `${visible} characters`;
     }
-    for (const control of [query, medium]) control.addEventListener('input', filter);
+    for (const control of [query,medium]) control.addEventListener('input',filter);
   </script>
 </BaseLayout>
