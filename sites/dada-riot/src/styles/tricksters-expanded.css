@@ -357,3 +357,62 @@
   .trickster-expanded .mini-action,
   .trickster-expanded .btn { transition: none !important; transform: none !important; }
 }
+
+
+/* Tricksters 3.1: even card rows, lean content, and uncluttered category labels.
+   Scoped to the registry grid; detail pages and the quick-view dialog are unaffected. */
+.trickster-expanded .trickster-grid,
+.trickster-expanded .trickster-grid.is-compact {
+  align-items: stretch;
+  grid-auto-flow: row;
+}
+.trickster-expanded .trickster-grid .trickster-registry-card,
+.trickster-expanded .trickster-grid .trickster-registry-card:nth-child(5n+2),
+.trickster-expanded .trickster-grid .trickster-registry-card:nth-child(7n+4) {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  height: 100%;
+  min-height: 0;
+}
+.trickster-expanded .trickster-registry-card .trickster-card-top {
+  min-width: 0;
+  gap: 6px;
+  justify-content: space-between;
+}
+.trickster-expanded .trickster-registry-card .trickster-card-kind {
+  max-width: none;
+  min-width: 0;
+  flex: 0 1 auto;
+  white-space: nowrap;
+  font-size: .58rem;
+  line-height: 1.15;
+  padding: 5px 7px;
+}
+.trickster-expanded .trickster-registry-card h3 {
+  line-height: 1.13;
+  margin-bottom: 11px;
+}
+.trickster-expanded .trickster-registry-card .trickster-card-desc {
+  margin-bottom: 13px;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  line-height: 1.5;
+}
+.trickster-expanded .trickster-grid.is-compact .trickster-card-desc {
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+.trickster-expanded .trickster-registry-card .trickster-quick-open {
+  margin: auto 14px 16px;
+  padding: 8px 0 0;
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+}
+.trickster-expanded .trickster-registry-card[hidden] { display: none; }
+@media (max-width: 680px) {
+  .trickster-expanded .trickster-grid .trickster-registry-card .trickster-card-kind {
+    font-size: .6rem;
+  }
+}
