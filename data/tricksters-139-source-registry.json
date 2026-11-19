@@ -22,8 +22,8 @@
     "origin_or_work_written": 139,
     "trait_sets_written": 139,
     "with_independent_context_references": 66,
-    "images_with_src": 65,
-    "images_missing": 74,
+    "images_with_src": 82,
+    "images_missing": 57,
     "images_public_domain": 36,
     "images_cc_attribution": 20,
     "images_nonfree_editorial": 1
@@ -301,7 +301,17 @@
         "provocation"
       ],
       "summary": "Andy Kaufman deliberately blurred performance and reality, testing whether audiences could tell when a joke had started or stopped. His provocations make trickster an interpretive analogy.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Andy_Kaufman_1979.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Andy_Kaufman_1979.jpg",
+        "title": "Andy Kaufman 1979",
+        "creator": "ABC publicity photo",
+        "license": "public-domain-US",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "usage_method": "remote",
+        "attribution": "ABC publicity photo · public-domain-US · Wikimedia Commons",
+        "alt_text": "Andy Kaufman, 1979"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -965,7 +975,17 @@
         "disguise"
       ],
       "summary": "The backward-footed Curupira leads hunters astray and guards forests in many accounts. His tricks defend a place rather than serving only as pranks.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Curupira.png",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Curupira.png",
+        "title": "Curupira",
+        "creator": "Commons contributor",
+        "license": "CC-BY-SA-3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "usage_method": "remote",
+        "attribution": "Commons contributor · CC-BY-SA-3.0 · Wikimedia Commons",
+        "alt_text": "Curupira illustration"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -1396,7 +1416,17 @@
         "consequences"
       ],
       "summary": "Eris personifies strife and helps trigger conflict, notably through the golden apple episode in later retellings. Disorder is central, but playful trickery is not always the point.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/Eris_Antikensammlung_Berlin_F1775.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Eris_Antikensammlung_Berlin_F1775.jpg",
+        "title": "Eris Antikensammlung Berlin F1775",
+        "creator": "Ancient Greek vase painter",
+        "license": "public-domain",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "usage_method": "remote",
+        "attribution": "Ancient Greek vase painter · public-domain · Wikimedia Commons",
+        "alt_text": "Greek vase depiction of Eris"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -1508,7 +1538,17 @@
         "nature"
       ],
       "summary": "Faunus and Fauna are related names or figures in Roman religion, but not interchangeable characters. Their trickster connection needs a specific cited myth.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9f/FaunusStatue.JPG",
+        "source_url": "https://commons.wikimedia.org/wiki/File:FaunusStatue.JPG",
+        "title": "FaunusStatue",
+        "creator": "Commons contributor",
+        "license": "public-domain-self",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "usage_method": "remote",
+        "attribution": "Commons contributor · public-domain-self · Wikimedia Commons",
+        "alt_text": "Historic statue of a faun"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -1805,7 +1845,17 @@
         "transformations"
       ],
       "summary": "Glooscap is a culture hero in Wabanaki traditions with widely varying stories of creation and transformation. Calling him merely a prankster would miss those roles.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/Glooscap_monument,_Millbrook,_Nova_Scotia,_closeup.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Glooscap_monument%2C_Millbrook%2C_Nova_Scotia%2C_closeup.jpg",
+        "title": "Glooscap monument, Millbrook, Nova Scotia, closeup",
+        "creator": "Madereugeneandrew",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "usage_method": "remote",
+        "attribution": "Madereugeneandrew · CC-BY-SA-4.0 · Wikimedia Commons",
+        "alt_text": "Glooscap monument"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -2074,7 +2124,17 @@
         "transgression"
       ],
       "summary": "Huehuecóyotl, often glossed as Old Coyote, is linked to music, dance and transgressive action. His identity and associations vary across historical interpretation.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Huehuecoyotl.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Huehuecoyotl.jpg",
+        "title": "Huehuecoyotl",
+        "creator": "Codex Telleriano-Remensis artist",
+        "license": "public-domain",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "usage_method": "remote",
+        "attribution": "Codex Telleriano-Remensis artist · public-domain · Wikimedia Commons",
+        "alt_text": "Huehuecóyotl codex illustration"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -2113,7 +2173,17 @@
         "teaching"
       ],
       "summary": "Iktomi is a spider-associated trickster appearing in Lakota stories, sometimes teaching by example of folly. Community-specific accounts and representation deserve priority.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Iktomicookingducks.png",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Iktomicookingducks.png",
+        "title": "Iktomicookingducks",
+        "creator": "Gertrude Spaller",
+        "license": "public-domain-US",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "usage_method": "remote",
+        "attribution": "Gertrude Spaller · public-domain-US · Wikimedia Commons",
+        "alt_text": "Iktomi story illustration"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -2187,7 +2257,17 @@
         "performance"
       ],
       "summary": "Jack Nicholson has played many subversive figures, but an actor's entire career cannot be assigned one archetype. Specific roles need separate treatment.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Jack_Nicholson_2002.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Jack_Nicholson_2002.jpg",
+        "title": "Jack Nicholson 2002",
+        "creator": "Georges Biard",
+        "license": "CC-BY-SA-3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "usage_method": "remote",
+        "attribution": "Georges Biard · CC-BY-SA-3.0 · Wikimedia Commons",
+        "alt_text": "Jack Nicholson photograph"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -2730,7 +2810,17 @@
         "raven-motif"
       ],
       "summary": "Kutkh appears in Itelmen tales as a Raven-linked culture hero and comic figure. His identity should not be equated automatically with other Raven traditions.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/db/Kutkh.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Kutkh.jpg",
+        "title": "Kutkh",
+        "creator": "Eliezg",
+        "license": "CC-BY-3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "usage_method": "remote",
+        "attribution": "Eliezg · CC-BY-3.0 · Wikimedia Commons",
+        "alt_text": "Kutkh carving"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -3018,7 +3108,17 @@
         "resourcefulness"
       ],
       "summary": "Lugh is a many-skilled Irish deity and hero. His ingenuity may invite a trickster comparison, but his primary portrayal is not simply comic mischief.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/Contemporary_male_Corn_dolly.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Contemporary_male_Corn_dolly.jpg",
+        "title": "Contemporary male Corn dolly",
+        "creator": "Mountainash333",
+        "license": "CC-BY-SA-3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "usage_method": "remote",
+        "attribution": "Mountainash333 · CC-BY-SA-3.0 · Wikimedia Commons",
+        "alt_text": "Contemporary corn dolly"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -3178,7 +3278,17 @@
         "boundary-crossing"
       ],
       "summary": "Māui's audacious feats in Polynesian stories include reshaping the world and winning resources for people. This registry's existing verified profile documents a Māori telling.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Maui_Sculpture.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Maui_Sculpture.jpg",
+        "title": "Maui Sculpture",
+        "creator": "Boydsk2000",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "usage_method": "remote",
+        "attribution": "Boydsk2000 · CC-BY-SA-4.0 · Wikimedia Commons",
+        "alt_text": "Māui sculpture"
+      },
       "related_verified_profile_slug": "maui",
       "sources": [
         {
@@ -3409,7 +3519,17 @@
         "subversion"
       ],
       "summary": "Monty Python's ensemble used surreal sketches and abrupt reversals to dismantle social and storytelling conventions. The group is a collective, not one character.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/All_six_members_of_Monty_Python_in_1978.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:All_six_members_of_Monty_Python_in_1978.jpg",
+        "title": "All six members of Monty Python in 1978",
+        "creator": "Arista Records publicity",
+        "license": "public-domain-US",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "usage_method": "remote",
+        "attribution": "Arista Records publicity · public-domain-US · Wikimedia Commons",
+        "alt_text": "Monty Python cast, 1978"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -3616,7 +3736,17 @@
         "divine-testing"
       ],
       "summary": "The traveling sage Nārada can catalyze events through pointed interventions. His devotional and teaching roles matter as much as humorous or provocative episodes.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Sage_Narada_at_the_hermitage_of_Sage_Valmiki_requesting_him_to_write_the_Story_of_Rama.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sage_Narada_at_the_hermitage_of_Sage_Valmiki_requesting_him_to_write_the_Story_of_Rama.jpg",
+        "title": "Sage Narada at the hermitage of Sage Valmiki requesting him to write the Story of Rama",
+        "creator": "Traditional painter",
+        "license": "public-domain",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "usage_method": "remote",
+        "attribution": "Traditional painter · public-domain · Wikimedia Commons",
+        "alt_text": "Narada in historic painting"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -3686,7 +3816,17 @@
         "dread"
       ],
       "summary": "Nyarlathotep appears through many guises and manipulates mortals. This is cosmic horror using a trickster-like deceiver, not a lighthearted jester.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Nyarlathotep_by_Zuccarello.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nyarlathotep_by_Zuccarello.jpg",
+        "title": "Nyarlathotep by Zuccarello",
+        "creator": "Zuccarello",
+        "license": "CC-BY-SA-3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "usage_method": "remote",
+        "attribution": "Zuccarello · CC-BY-SA-3.0 · Wikimedia Commons",
+        "alt_text": "Nyarlathotep illustration"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -4491,7 +4631,17 @@
         "adversary"
       ],
       "summary": "Satan is a complex religious figure with sharply different theological interpretations. Treating him as a generic mischievous trickster would erase those distinctions.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/Paradise_Lost_6.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Paradise_Lost_6.jpg",
+        "title": "Paradise Lost 6",
+        "creator": "Gustave Doré",
+        "license": "public-domain",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "usage_method": "remote",
+        "attribution": "Gustave Doré · public-domain · Wikimedia Commons",
+        "alt_text": "Satan in Paradise Lost"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -4953,7 +5103,17 @@
         "performance"
       ],
       "summary": "Shakespeare's fools can speak uncomfortable truths through jokes and riddles, but each play gives its fool a distinct dramatic role.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/2017-02_George_Romney_-_King_Lear,_Edgar_and_the_fool.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:2017-02_George_Romney_-_King_Lear%2C_Edgar_and_the_fool.jpg",
+        "title": "2017-02 George Romney - King Lear, Edgar and the fool",
+        "creator": "George Romney",
+        "license": "CC0-1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "usage_method": "remote",
+        "attribution": "George Romney · CC0-1.0 · Wikimedia Commons",
+        "alt_text": "King Lear, Edgar and the Fool"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
@@ -5921,7 +6081,17 @@
         "rebellion"
       ],
       "summary": "Woody's raucous laugh and prank-driven antics repeatedly frustrate authority and rivals. His animation persona is intentionally chaotic.",
-      "image": null,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Pantry_Panic_title_card.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pantry_Panic_title_card.jpg",
+        "title": "Pantry Panic title card",
+        "creator": "Walter Lantz Productions",
+        "license": "public-domain-US",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "usage_method": "remote",
+        "attribution": "Walter Lantz Productions · public-domain-US · Wikimedia Commons",
+        "alt_text": "Pantry Panic title card"
+      },
       "related_verified_profile_slug": null,
       "sources": [
         {
