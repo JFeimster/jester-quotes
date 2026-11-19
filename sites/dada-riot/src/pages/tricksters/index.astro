@@ -1,74 +1,172 @@
 ---
 import '../../styles/tricksters.css';
+import '../../styles/tricksters-expanded.css';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import TricksterCard from '../../components/TricksterCard.astro';
-import { tricksters, tricksterKinds, tricksterMedia } from '../../lib/tricksters';
-const tags = [...new Set(tricksters.flatMap(item=>item.tags))].sort();
+import registry from '../../../../../data/tricksters-139-source-registry.json';
+import { tricksters as verifiedProfiles } from '../../lib/tricksters';
+
+const verifiedSlugs = new Set(verifiedProfiles.map(profile => profile.slug));
+const labels: Record<string, string> = {
+  fictional_character: 'Fictional character',
+  real_person: 'Real person',
+  mythic_or_religious_figure: 'Myth & religion',
+  folklore_figure_or_motif: 'Folklore',
+  collective_or_motif: 'Group or motif',
+  ambiguous_reference: 'Reference / subject'
+};
+const cards = registry.entries.map(entry => {
+  const independentSources = entry.sources.filter(source => source.role !== 'compilation_provenance');
+  const profileSlug = entry.related_verified_profile_slug && verifiedSlugs.has(entry.related_verified_profile_slug)
+    ? entry.related_verified_profile_slug : null;
+  const traits = entry.trickster_traits.map(trait => trait.toLowerCase().replace(/\s+/g, '-'));
+  return {
+    ...entry,
+    independentSources,
+    firstSource: independentSources[0] ?? null,
+    profileSlug,
+    normalizedTraits: traits,
+    searchText: [
+      entry.display_name, entry.source_name, entry.origin_or_work,
+      entry.summary, entry.subject_type, ...entry.media, ...entry.trickster_traits
+    ].filter(Boolean).join(' ').toLowerCase(),
+    kindLabel: labels[entry.subject_type] ?? 'Research subject'
+  };
+});
+const categories = [...new Set(cards.map(card => card.subject_type))].sort();
+const media = [...new Set(cards.flatMap(card => card.media))].sort();
+const traits = [...new Set(cards.flatMap(card => card.normalizedTraits))].sort();
+const photoCount = cards.filter(card => Boolean(card.image?.src)).length;
+const sourcedCount = cards.filter(card => card.independentSources.length > 0).length;
+const extras = verifiedProfiles.filter(profile => !cards.some(card => card.profileSlug === profile.slug));
 ---
 <BaseLayout
- title="Trickster Directory — Myth, Folklore & Literary Figures | Jester Quotes"
- description="Explore an independently sourced, curated directory of trickster figures across folklore, mythology and literature. Search and filter verified profiles."
+  title="139 Tricksters — Characters, Mythology, Folklore & Culture | Jester Quotes"
+  description="Explore 139 proposed trickster figures across mythology, folklore, film, television and music. Search by origins, archetypes and media. Independently researched profiles are distinguished from editorial candidates."
 >
-  <div class="wrap discovery-page trickster-page">
+  <div class="wrap discovery-page trickster-page trickster-expanded">
     <header class="trickster-header">
       <div>
-        <p class="eyebrow">Beyond the court / A research archive</p>
+        <p class="eyebrow">Beyond the court / The expanded archive</p>
         <h1>The trickster <em>files.</em></h1>
-        <p class="lede">Not just court jesters. Meet figures who turn the rules inside out—from divine messengers to unruly storytellers. Each entry links to independently checked references.</p>
+        <p class="lede">139 possibilities. Gods, rebels, comedians, shape-shifters and fictional troublemakers. Some are established tricksters; others are interpretations worth questioning.</p>
         <div class="trickster-header-actions">
-          <a class="btn" href="#trickster-directory">Explore {tricksters.length} researched profiles ↗</a>
-          <a class="btn secondary" href="/collections/">Explore quote collections ↗</a>
+          <a class="btn" href="#trickster-directory">Explore all 139 ↗</a>
+          <a class="btn secondary" href="#image-credits">Artwork &amp; sources ↗</a>
         </div>
       </div>
-      <aside class="trickster-hero-aside" aria-label="Directory research policy">
+      <aside class="trickster-hero-aside" aria-label="Directory research notes">
         <span class="trickster-hero-symbol" aria-hidden="true">✳</span>
-        <p class="eyebrow">The archives are open</p>
-        <h2>Every trick has <em>a source.</em></h2>
-        <p>These original short profiles summarize linked references. Cultural traditions differ, and a label like “trickster” never tells the whole story.</p>
-        <a href="/sources/">Read the editorial policy ↗</a>
+        <p class="eyebrow">The archive is open</p>
+        <h2>Every trick has <em>a story.</em></h2>
+        <p>Our index includes interpretations and research candidates, not 139 independently verified biographies. Follow dedicated verified profiles and supporting sources for deeper context.</p>
+        <a href="/sources/">Read our source policy ↗</a>
       </aside>
     </header>
+
     <section id="trickster-directory" aria-labelledby="trickster-directory-title">
       <div class="section-title">
-        <div><p class="eyebrow">The verified selection</p><h2 id="trickster-directory-title">Meet the <em>rulebreakers.</em></h2></div>
-        <span class="byline">{tricksters.length} independently sourced entries · more under research</span>
+        <div>
+          <p class="eyebrow">The extended cast</p>
+          <h2 id="trickster-directory-title">Meet the <em>rulebreakers.</em></h2>
+        </div>
+        <span class="byline">{cards.length} names · {photoCount} image selections · {sourcedCount} with independent reference leads</span>
       </div>
-      <div class="trickster-controls" role="search" aria-label="Search Trickster profiles">
+      <div class="trickster-controls" role="search" aria-label="Search Trickster directory">
         <div class="trickster-field trickster-field--search">
-          <label for="trickster-search">Search names, origins and themes</label>
-          <input id="trickster-search" type="search" placeholder="Try Loki, storyteller, shapeshifting…" autocomplete="off" />
+          <label for="trickster-search">Search names, stories and themes</label>
+          <input id="trickster-search" type="search" placeholder="Try Loki, musician, mischief…" autocomplete="off" />
         </div>
         <div class="trickster-field">
           <label for="trickster-kind">Figure type</label>
-          <select id="trickster-kind"><option value="all">All figure types</option>{Object.entries(tricksterKinds).map(([id,label]) => <option value={id}>{label}</option>)}</select>
+          <select id="trickster-kind">
+            <option value="all">All figure types</option>
+            {categories.map(kind => <option value={kind}>{labels[kind] ?? kind.replaceAll('_',' ')}</option>)}
+          </select>
         </div>
         <div class="trickster-field">
-          <label for="trickster-medium">Where stories appear</label>
-          <select id="trickster-medium"><option value="all">All media</option>{Object.entries(tricksterMedia).map(([id,label]) => <option value={id}>{label}</option>)}</select>
+          <label for="trickster-medium">Where they appear</label>
+          <select id="trickster-medium">
+            <option value="all">All media</option>
+            {media.map(item => <option value={item}>{item.replaceAll('-',' ')}</option>)}
+          </select>
         </div>
         <div class="trickster-field">
-          <label for="trickster-tag">Theme</label>
-          <select id="trickster-tag"><option value="all">All themes</option>{tags.map(tag=><option value={tag}>{tag.replaceAll('-',' ')}</option>)}</select>
+          <label for="trickster-tag">Trickster trait</label>
+          <select id="trickster-tag">
+            <option value="all">All traits</option>
+            {traits.map(trait => <option value={trait}>{trait.replaceAll('-',' ')}</option>)}
+          </select>
         </div>
         <button id="trickster-reset" class="trickster-reset" type="button">Clear filters</button>
       </div>
       <div class="trickster-results-row">
-        <p id="trickster-count" aria-live="polite">{tricksters.length} documented profiles</p>
+        <p id="trickster-count" aria-live="polite">{cards.length} of {cards.length} entries</p>
         <button id="trickster-random" class="mini-action" type="button">Random trickster ✳</button>
       </div>
       <div id="trickster-grid" class="trickster-grid">
-        {tricksters.map((record,index)=><TricksterCard record={record} index={index} />)}
+        {cards.map(card => (
+          <article
+            class="trickster-card trickster-registry-card"
+            tabindex="-1"
+            data-trickster-card
+            data-kind={card.subject_type}
+            data-medium={card.media.join(' ')}
+            data-tags={card.normalizedTraits.join(' ')}
+            data-search={card.searchText}
+            id={card.slug}
+          >
+            <div class="trickster-registry-art" class:list={{'no-image': !card.image?.src}}>
+              {card.image?.src && <img src={card.image.src} alt={card.image.alt_text || card.display_name} loading="lazy" decoding="async" onerror="this.closest('.trickster-registry-art').classList.add('no-image')" />}
+              <span class="trickster-registry-fallback" aria-hidden="true">✳</span>
+            </div>
+            <div class="trickster-card-top">
+              <span>FILE / {String(card.source_list_number).padStart(3,'0')}</span>
+              <span class="trickster-card-kind">{card.kindLabel}</span>
+            </div>
+            <h3>{card.profileSlug ? <a href={`/tricksters/${card.profileSlug}/`}>{card.display_name}</a> : card.display_name}</h3>
+            <p class="trickster-card-origin">{card.origin_or_work || card.source_context}</p>
+            <p class="trickster-card-desc">{card.summary || 'An entry in the original trickster research compilation.'}</p>
+            <div class="trickster-registry-traits">
+              {card.trickster_traits.slice(0,3).map(trait => <span>{trait.replaceAll('-',' ')}</span>)}
+            </div>
+            <div class="trickster-card-foot">
+              <span>{card.profileSlug ? 'Verified profile' : card.independentSources.length ? 'Research references' : 'Editorial candidate'}</span>
+              {card.profileSlug ? <a href={`/tricksters/${card.profileSlug}/`}>Read profile ↗</a>
+              : card.firstSource ? <a href={card.firstSource.url} target="_blank" rel="noopener noreferrer">Read source ↗</a>
+              : <span>More research to come</span>}
+            </div>
+          </article>
+        ))}
       </div>
-      <p id="trickster-empty" class="trickster-empty" hidden>No profiles match those filters. Try clearing them.</p>
+      <p id="trickster-empty" class="trickster-empty" hidden>No figures match those filters. Try clearing them.</p>
       <p id="trickster-status" role="status" class="sr-only" aria-live="polite"></p>
     </section>
+
     <aside class="trickster-research-note">
       <span class="trickster-note-mark" aria-hidden="true">i</span>
       <div>
-        <h2>Why only {tricksters.length}?</h2>
-        <p>The wider Trickster research list spans 139 numbered possibilities, but this directory is not a copy of that compilation. Only profiles with independently checked sources and original editorial descriptions appear here. Research candidates remain unpublished pending review. <a href="/sources/">Sources, context and corrections ↗</a></p>
+        <h2>Names are not endorsements.</h2>
+        <p>This is a source-based editorial index of 139 suggested examples. Some names describe distinct cultural or religious traditions, and others are deliberately debatable character interpretations. Eight listed subjects connect to independently checked profiles; three additional verified profiles are available below. Images are credited separately and copyrighted promotional imagery is used for character-specific editorial discussion, where applicable.</p>
       </div>
     </aside>
+
+    {extras.length > 0 && <section class="trickster-extra-profiles" aria-label="Additional verified profiles">
+      <h2>Beyond the original 139.</h2>
+      <p>These independently sourced profiles are part of our established archive but weren't separate entries in the source compilation.</p>
+      <div>{extras.map(profile => <a href={`/tricksters/${profile.slug}/`}>{profile.name} ↗</a>)}</div>
+    </section>}
+
+    <details class="trickster-image-credits" id="image-credits">
+      <summary>Image credits, licensing &amp; source records ({photoCount})</summary>
+      <p>Image attribution and rights information is linked to the file's source page. Wikipedia and other third-party fair-use claims are not transferable permissions; character-specific editorial use requires its own justification.</p>
+      <ol>
+        {cards.filter(card => card.image?.src).map(card => <li>
+          <strong>{card.display_name}</strong>
+          <span>{card.image?.attribution || card.image?.creator || 'Original source credited'}</span>
+          {card.image?.source_url && <a href={card.image.source_url} target="_blank" rel="noopener noreferrer">Source and license ↗</a>}
+        </li>)}
+      </ol>
+    </details>
   </div>
   <script src="../../scripts/trickster-explorer.ts"></script>
 </BaseLayout>
