@@ -65,24 +65,38 @@ test('verified CSV export and candidate queue are separate from published JSON',
   }
 });
 
-test('directory page has functioning filter/empty-state/random hooks and all verified links',()=>{
+test('expanded directory renders 139 candidate records and preserves verified profile destinations',()=>{
+  const expanded=JSON.parse(read('../../data/tricksters-139-source-registry.json'));
+  const entries=expanded.entries;
+  assert.equal(entries.length,139);
+  assert.equal(new Set(entries.map(entry=>entry.id)).size,139);
+  assert.deepEqual(entries.map(entry=>entry.source_list_number),Array.from({length:139},(_,i)=>i+1));
+  const selected=entries.filter(entry=>Boolean(entry.image?.src));
+  assert.equal(selected.length,83);
+  for(const entry of selected){
+    assert.match(entry.image.src,/^https:\/\//);
+    assert.match(entry.image.source_url,/^https:\/\//);
+    assert.ok(entry.image.alt_text);
+    assert.ok(entry.image.license);
+    assert.equal(entry.image.publication_approved,undefined);
+    assert.equal(entry.image.review_status,undefined);
+  }
   const html=read('dist/tricksters/index.html');
   for(const hook of ['trickster-search','trickster-kind','trickster-medium','trickster-tag','trickster-reset',
     'trickster-grid','trickster-count','trickster-empty','trickster-random','trickster-status']) {
     assert.ok(html.includes(`id="${hook}"`),hook);
   }
-  for(const record of source){
-    assert.ok(html.includes(`href="/tricksters/${record.slug}/"`),record.slug);
-    assert.ok(html.includes(`data-kind="${record.kind}"`),record.slug);
+  for(const profile of source) {
+    assert.ok(html.includes(`href="/tricksters/${profile.slug}/"`),profile.slug);
   }
-  assert.equal([...html.matchAll(/<article[^>]*data-kind="[^"]+"/g)].length,source.length);
+  assert.equal([...html.matchAll(/<article[^>]*data-trickster-card/g)].length,139);
+  assert.match(html,/Image credits, licensing/);
+  assert.match(html,/AceVenturaFilm.PNG/);
+  assert.match(html,/Virginia_Woolf_1927.jpg/);
   const client=read('src/scripts/trickster-explorer.ts');
   assert.match(client,/\.includes\(query\)/);
   assert.match(client,/card\.hidden = !matches/);
-  assert.match(client,/window\.location\.assign/);
-  for(const candidate of ['Iktomi','Kitsune','Puck','Tengu']){
-    assert.ok(!html.includes(candidate),`No unverified research candidate: ${candidate}`);
-  }
+  assert.match(client,/scrollIntoView/);
 });
 
 test('all verified profile pages have full source references, canonical and original text',()=>{
