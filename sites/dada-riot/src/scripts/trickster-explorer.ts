@@ -103,14 +103,22 @@ function openQuickView(card: HTMLElement) {
     const target = dialog.querySelector<HTMLElement>(selector);
     if (target) target.textContent = value;
   }
-  for (const [selector, values] of [
-    ['#trickster-quick-media', card.querySelectorAll<HTMLButtonElement>('.trickster-card-media button')],
-    ['#trickster-quick-traits', card.querySelectorAll<HTMLButtonElement>('.trickster-registry-traits button')]
+  // Full media and trait labels live on the card's data attributes, not in its compact UI.
+  // Keep all entries available in Quick View even when the card has no visible chips.
+  for (const [selector, datasetValue] of [
+    ['#trickster-quick-media', card.dataset.mediaLabels],
+    ['#trickster-quick-traits', card.dataset.traitLabels]
   ] as const) {
     const target = dialog.querySelector<HTMLElement>(selector);
-    target?.replaceChildren(...[...values].map(button => {
+    if (!target) continue;
+    let values: string[] = [];
+    try {
+      const parsed: unknown = JSON.parse(datasetValue ?? '[]');
+      if (Array.isArray(parsed)) values = parsed.filter((item): item is string => typeof item === 'string');
+    } catch { values = []; }
+    target.replaceChildren(...values.map(value => {
       const span = document.createElement('span');
-      span.textContent = button.textContent;
+      span.textContent = value;
       return span;
     }));
   }
