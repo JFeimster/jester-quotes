@@ -1306,10 +1306,10 @@
     "tags": [
       "brand",
       "jester",
-      "beverages",
       "character-reversal",
       "everyday-exaggeration",
-      "clear-product-payoff"
+      "clear-product-payoff",
+      "consumer-packaged-goods"
     ],
     "source_document": "Examples of Jester Brands.md / sourced branding articles",
     "sources": [
@@ -1320,7 +1320,7 @@
     "related_quote_ids": [],
     "related_trickster_ids": [],
     "related_collection_slugs": [],
-    "industry_vertical": "Beverages",
+    "industry_vertical": "Consumer Packaged Goods",
     "brand_category": "Consumer",
     "logo": {
       "url": "https://www.google.com/s2/favicons?domain=snickers.com&sz=128",

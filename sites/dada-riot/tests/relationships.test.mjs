@@ -49,7 +49,8 @@ test('published classifications are attributed and drafts have no edges', () => 
   }
   for (const item of drafts) assert.deepEqual(relatedLinks('media', item.id), []);
   const brandEdges = edges.filter(edge => edge.source.kind === 'brand' && edge.type === 'example-of-archetype');
-  assert.equal(brandEdges.length, 4);
+  assert.equal(brandEdges.length, json('jester-brands.json').filter(item=>item.publication_status==='published').length);
+  assert.ok(json('jester-brands.json').filter(item=>item.publication_status==='draft').every(item=>relatedLinks('brand',item.id).length===0));
   assert.ok(brandEdges.every(edge => edge.target.id === 'jester' && /historical/.test(edge.rationale)));
 });
 
@@ -70,6 +71,8 @@ test('quote contract and rendered editorial paths remain intact', () => {
   assert.match(media, /id="media-query"/);
   assert.doesNotMatch(media, /id="media-type"/);
   assert.doesNotMatch(media, /Follow the thread/);
-  assert.match(brands, /href="\/archetypes\/jester\/"/);
+  assert.doesNotMatch(brands, /Follow the thread/);
+  assert.ok(brands.includes('id="jb-query"') && brands.includes('id="jb-vertical"'));
+  assert.ok(brands.includes('href="/jester-branding/"'));
   assert.ok(!edges.some(edge => edge.source.id === 'puck' || edge.target.id === 'puck'));
 });

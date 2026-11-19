@@ -72,7 +72,7 @@ test('expanded directory renders 139 candidate records and preserves verified pr
   assert.equal(new Set(entries.map(entry=>entry.id)).size,139);
   assert.deepEqual(entries.map(entry=>entry.source_list_number),Array.from({length:139},(_,i)=>i+1));
   const selected=entries.filter(entry=>Boolean(entry.image?.src));
-  assert.equal(selected.length,83);
+  assert.equal(selected.length,128); // Current source registry snapshot.
   for(const entry of selected){
     assert.match(entry.image.src,/^https:\/\//);
     assert.match(entry.image.source_url,/^https:\/\//);
