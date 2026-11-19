@@ -83,13 +83,18 @@ test('expanded directory renders 139 candidate records and preserves verified pr
   }
   const html=read('dist/tricksters/index.html');
   for(const hook of ['trickster-search','trickster-kind','trickster-medium','trickster-tag','trickster-reset',
-    'trickster-grid','trickster-count','trickster-empty','trickster-random','trickster-status']) {
+    'trickster-grid','trickster-count','trickster-empty','trickster-random','trickster-status',
+    'trickster-density','trickster-active-filters','trickster-quick-view','trickster-quick-close']) {
     assert.ok(html.includes(`id="${hook}"`),hook);
   }
   for(const profile of source) {
     assert.ok(html.includes(`href="/tricksters/${profile.slug}/"`),profile.slug);
   }
   assert.equal([...html.matchAll(/<article[^>]*data-trickster-card/g)].length,139);
+  assert.equal([...html.matchAll(/data-quick-open/g)].length,139);
+  assert.equal([...html.matchAll(/loading="lazy"/g)].length,selected.length);
+  for(const filter of ['kind','medium','tag']) assert.ok(html.includes(`data-filter="${filter}"`),filter);
+  assert.ok(!html.includes('trickster-card-foot'));
   assert.match(html,/Image credits, licensing/);
   assert.match(html,/AceVenturaFilm.PNG/);
   assert.match(html,/Virginia_Woolf_1927.jpg/);
@@ -97,6 +102,9 @@ test('expanded directory renders 139 candidate records and preserves verified pr
   assert.match(client,/\.includes\(query\)/);
   assert.match(client,/card\.hidden = !matches/);
   assert.match(client,/scrollIntoView/);
+  assert.match(client,/trickster-hero-random/);
+  assert.match(client,/URLSearchParams/);
+  assert.match(client,/showModal/);
 });
 
 test('all verified profile pages have full source references, canonical and original text',()=>{
