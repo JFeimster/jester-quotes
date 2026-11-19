@@ -3,108 +3,1339 @@
     "id": "m-and-ms",
     "slug": "m-and-ms",
     "name": "M&M’s",
-    "summary": "Character-led situational humor makes ordinary candy advertising playful.",
-    "description": "Character-led situational humor makes ordinary candy advertising playful.",
+    "summary": "Two candy characters turn a simple product into a running comedy act.",
+    "description": "The Red and Yellow characters keep the M&M’s brand recognizable through personality clashes, awkward situations, and playful exchanges. Rather than depending on product features alone, the campaigns make the characters themselves a reason to remember the candy.",
     "tags": [
       "brand",
-      "humor"
+      "jester",
+      "consumer-packaged-goods",
+      "character-led-storytelling",
+      "situational-comedy",
+      "recurring-mascots"
     ],
-    "source_document": "Examples of Jester Brands.md",
+    "source_document": "Examples of Jester Brands.md / sourced branding articles",
     "sources": [
       "https://astute.co/resource/brand-archetypes-the-jester/"
     ],
-    "verification_status": "source_interpretation",
     "publication_status": "published",
+    "evidence_status": "source_attributed",
     "related_quote_ids": [],
     "related_trickster_ids": [],
     "related_collection_slugs": [],
+    "industry_vertical": "Consumer Packaged Goods",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=mms.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": {
+      "url": "https://www.youtube.com/watch?v=avxukXPCeoo",
+      "video_id": "avxukXPCeoo",
+      "evidence": "Linked by user-supplied Examples of Jester Brands.md; host availability may change"
+    },
     "jester_characteristics": [
-      "Character-led situational humor makes ordinary candy advertising playful."
+      "Character-led storytelling",
+      "Situational comedy",
+      "Recurring mascots"
     ],
     "historical_examples": [
-      "The source discusses the Red and Yellow characters and an older slogan."
+      "The Red and Yellow characters keep the M&M’s brand recognizable through personality clashes, awkward situations, and playful exchanges."
     ],
-    "attribution": "Supplied research, citing Astute; historical examples are not verified current strategy."
-  },
-  {
-    "id": "geico",
-    "slug": "geico",
-    "name": "GEICO",
-    "summary": "Comic changes of perspective make insurance advertising entertaining.",
-    "description": "Comic changes of perspective make insurance advertising entertaining.",
-    "tags": [
-      "brand",
-      "humor"
-    ],
-    "source_document": "Examples of Jester Brands.md",
-    "sources": [
-      "https://astute.co/resource/brand-archetypes-the-jester/"
-    ],
-    "verification_status": "source_interpretation",
-    "publication_status": "published",
-    "related_quote_ids": [],
-    "related_trickster_ids": [],
-    "related_collection_slugs": [],
-    "jester_characteristics": [
-      "Comic changes of perspective make insurance advertising entertaining."
-    ],
-    "historical_examples": [
-      "The source points to humorous treatments of ordinary situations."
-    ],
-    "attribution": "Supplied research, citing Astute; historical examples are not verified current strategy."
+    "attribution": "Curated editorial interpretation of historical campaigns; not a current-brand-strategy claim or endorsement."
   },
   {
     "id": "old-spice",
     "slug": "old-spice",
     "name": "Old Spice",
-    "summary": "Absurd scenes and rapid shifts of reality are the source’s central examples.",
-    "description": "Absurd scenes and rapid shifts of reality are the source’s central examples.",
+    "summary": "Old Spice turns grooming advertisements into spectacular nonsense.",
+    "description": "Old Spice campaigns pivot from ordinary grooming promises to rapid-fire absurdity, impossible scene changes, and confidently ridiculous characters. The contrast between straight-faced delivery and surreal spectacle keeps the product in the joke without making it the only point.",
     "tags": [
       "brand",
-      "humor"
+      "jester",
+      "consumer-packaged-goods",
+      "absurdist-escalation",
+      "rapid-scene-changes",
+      "deadpan-confidence"
     ],
-    "source_document": "Examples of Jester Brands.md",
+    "source_document": "Examples of Jester Brands.md / sourced branding articles",
     "sources": [
-      "https://astute.co/resource/brand-archetypes-the-jester/"
+      "https://astute.co/resource/brand-archetypes-the-jester/",
+      "https://www.talktozilly.com/brandingai-daily/how-to-write-for-jester-brands-without-looking-like-a-fool"
     ],
-    "verification_status": "source_interpretation",
     "publication_status": "published",
+    "evidence_status": "source_attributed",
     "related_quote_ids": [],
     "related_trickster_ids": [],
     "related_collection_slugs": [],
+    "industry_vertical": "Consumer Packaged Goods",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=oldspice.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": {
+      "url": "https://www.youtube.com/watch?v=mSi_mLOG3Tc",
+      "video_id": "mSi_mLOG3Tc",
+      "evidence": "Linked by user-supplied Examples of Jester Brands.md; host availability may change"
+    },
     "jester_characteristics": [
-      "Absurd scenes and rapid shifts of reality are the source’s central examples."
+      "Absurdist escalation",
+      "Rapid scene changes",
+      "Deadpan confidence"
     ],
     "historical_examples": [
-      "The source refers to centaurs, comedians, and surreal campaigns without dates."
+      "Old Spice campaigns pivot from ordinary grooming promises to rapid-fire absurdity, impossible scene changes, and confidently ridiculous characters."
     ],
-    "attribution": "Supplied research, citing Astute; historical examples are not verified current strategy."
+    "attribution": "Curated editorial interpretation of historical campaigns; not a current-brand-strategy claim or endorsement."
+  },
+  {
+    "id": "skittles",
+    "slug": "skittles",
+    "name": "Skittles",
+    "summary": "Research lead: Skittles — consumer packaged goods example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "consumer-packaged-goods"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Consumer Packaged Goods",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=skittles.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "liquid-death",
+    "slug": "liquid-death",
+    "name": "Liquid Death",
+    "summary": "Liquid Death sells canned water with exaggerated anti-boring theatrics.",
+    "description": "TalktoZilly contrasts Liquid Death's more confrontational humor with softer Jester approaches. Its deliberately extreme naming and irreverent presentation demonstrate how the tone itself can become a differentiator in a commodity category.",
+    "tags": [
+      "brand",
+      "jester",
+      "consumer-packaged-goods",
+      "provocative-humor",
+      "genre-inversion",
+      "anti-boring-positioning"
+    ],
+    "source_document": "Examples of Jester Brands.md / sourced branding articles",
+    "sources": [
+      "https://www.talktozilly.com/brandingai-daily/how-to-write-for-jester-brands-without-looking-like-a-fool"
+    ],
+    "publication_status": "published",
+    "evidence_status": "source_attributed",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Consumer Packaged Goods",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=liquiddeath.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Provocative humor",
+      "Genre inversion",
+      "Anti-boring positioning"
+    ],
+    "historical_examples": [
+      "TalktoZilly contrasts Liquid Death's more confrontational humor with softer Jester approaches."
+    ],
+    "attribution": "Curated editorial interpretation of historical campaigns; not a current-brand-strategy claim or endorsement."
+  },
+  {
+    "id": "shinesty",
+    "slug": "shinesty",
+    "name": "Shinesty",
+    "summary": "Research lead: Shinesty — apparel & footwear example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "apparel-footwear"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Apparel & Footwear",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=shinesty.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "meundies",
+    "slug": "meundies",
+    "name": "MeUndies",
+    "summary": "Research lead: MeUndies — apparel & footwear example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "apparel-footwear"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Apparel & Footwear",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=meundies.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "chubbies",
+    "slug": "chubbies",
+    "name": "Chubbies",
+    "summary": "Research lead: Chubbies — apparel & footwear example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "apparel-footwear"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Apparel & Footwear",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=chubbiesshorts.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "dollar-shave-club",
+    "slug": "dollar-shave-club",
+    "name": "Dollar Shave Club",
+    "summary": "Dollar Shave Club uses irreverence to challenge grooming conventions.",
+    "description": "Instead of the usual polished grooming pitch, its best-known early advertising leaned into brash understatement and an intentionally unglamorous presentation. That disruptive tone positioned an everyday subscription as a funny alternative to category clichés.",
+    "tags": [
+      "brand",
+      "jester",
+      "beauty-personal-care",
+      "anti-category-comedy",
+      "direct-response-humor",
+      "founder-led-delivery"
+    ],
+    "source_document": "Examples of Jester Brands.md / sourced branding articles",
+    "sources": [
+      "https://apricotbranding.com/the-jester-archetype-fun-humor/"
+    ],
+    "publication_status": "published",
+    "evidence_status": "source_attributed",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Beauty & Personal Care",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=dollarshaveclub.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Anti-category comedy",
+      "Direct response humor",
+      "Founder-led delivery"
+    ],
+    "historical_examples": [
+      "Instead of the usual polished grooming pitch, its best-known early advertising leaned into brash understatement and an intentionally unglamorous presentation."
+    ],
+    "attribution": "Curated editorial interpretation of historical campaigns; not a current-brand-strategy claim or endorsement."
+  },
+  {
+    "id": "dr-squatch",
+    "slug": "dr-squatch",
+    "name": "Dr. Squatch",
+    "summary": "Research lead: Dr. Squatch — beauty & personal care example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "beauty-personal-care"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Beauty & Personal Care",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=drsquatch.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "billie",
+    "slug": "billie",
+    "name": "Billie",
+    "summary": "Research lead: Billie — beauty & personal care example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "beauty-personal-care"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Beauty & Personal Care",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=mybillie.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "geico",
+    "slug": "geico",
+    "name": "GEICO",
+    "summary": "GEICO makes a serious insurance purchase easier to remember with comedy.",
+    "description": "GEICO repeatedly places familiar situations at a strange angle: a gecko with opinions, a camel celebrating hump day, or unexpected celebrity appearances. The comedic premise becomes the entry point while the insurance offer remains recognizable.",
+    "tags": [
+      "brand",
+      "jester",
+      "insurance",
+      "perspective-shift",
+      "comic-spokescharacters",
+      "repetition-with-variation"
+    ],
+    "source_document": "Examples of Jester Brands.md / sourced branding articles",
+    "sources": [
+      "https://astute.co/resource/brand-archetypes-the-jester/",
+      "https://apricotbranding.com/the-jester-archetype-fun-humor/"
+    ],
+    "publication_status": "published",
+    "evidence_status": "source_attributed",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Insurance",
+    "brand_category": "Service",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=geico.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": {
+      "url": "https://www.youtube.com/watch?v=uU_3WpHuvyE",
+      "video_id": "uU_3WpHuvyE",
+      "evidence": "Linked by user-supplied Examples of Jester Brands.md; host availability may change"
+    },
+    "jester_characteristics": [
+      "Perspective shift",
+      "Comic spokescharacters",
+      "Repetition with variation"
+    ],
+    "historical_examples": [
+      "GEICO repeatedly places familiar situations at a strange angle: a gecko with opinions, a camel celebrating hump day, or unexpected celebrity appearances."
+    ],
+    "attribution": "Curated editorial interpretation of historical campaigns; not a current-brand-strategy claim or endorsement."
+  },
+  {
+    "id": "progressive",
+    "slug": "progressive",
+    "name": "Progressive",
+    "summary": "Progressive uses a recurring character to humanize insurance.",
+    "description": "Progressive's long-running comedic persona is regularly cited in Jester branding discussions because it gives an otherwise complex service a familiar face. The humor makes comparison shopping feel less forbidding without replacing the underlying coverage decision.",
+    "tags": [
+      "brand",
+      "jester",
+      "insurance",
+      "recurring-comic-character",
+      "friendly-tension-relief",
+      "recognizable-campaign-voice"
+    ],
+    "source_document": "Examples of Jester Brands.md / sourced branding articles",
+    "sources": [
+      "https://apricotbranding.com/the-jester-archetype-fun-humor/"
+    ],
+    "publication_status": "published",
+    "evidence_status": "source_attributed",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Insurance",
+    "brand_category": "Service",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=progressive.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Recurring comic character",
+      "Friendly tension relief",
+      "Recognizable campaign voice"
+    ],
+    "historical_examples": [
+      "Progressive's long-running comedic persona is regularly cited in Jester branding discussions because it gives an otherwise complex service a familiar face."
+    ],
+    "attribution": "Curated editorial interpretation of historical campaigns; not a current-brand-strategy claim or endorsement."
+  },
+  {
+    "id": "allstate-mayhem",
+    "slug": "allstate-mayhem",
+    "name": "Allstate (Mayhem campaign)",
+    "summary": "Research lead: Allstate (Mayhem campaign) — insurance example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "insurance"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Insurance",
+    "brand_category": "Service",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=allstate.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "dave",
+    "slug": "dave",
+    "name": "Dave",
+    "summary": "Research lead: Dave — financial services & fintech example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "financial-services-fintech"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Financial Services & FinTech",
+    "brand_category": "Digital",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=dave.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "klarna",
+    "slug": "klarna",
+    "name": "Klarna",
+    "summary": "Research lead: Klarna — financial services & fintech example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "financial-services-fintech"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Financial Services & FinTech",
+    "brand_category": "Digital",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=klarna.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "chime",
+    "slug": "chime",
+    "name": "Chime",
+    "summary": "Research lead: Chime — financial services & fintech example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "financial-services-fintech"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Financial Services & FinTech",
+    "brand_category": "Digital",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=chime.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "dbrand",
+    "slug": "dbrand",
+    "name": "dbrand",
+    "summary": "Research lead: dbrand — consumer tech & electronics example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "consumer-tech-electronics"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Consumer Tech & Electronics",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=dbrand.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "nothing",
+    "slug": "nothing",
+    "name": "Nothing",
+    "summary": "Research lead: Nothing — consumer tech & electronics example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "consumer-tech-electronics"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Consumer Tech & Electronics",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=nothing.tech&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "mailchimp",
+    "slug": "mailchimp",
+    "name": "Mailchimp",
+    "summary": "Mailchimp gives workplace marketing tools an approachable personality.",
+    "description": "Apricot lists Mailchimp among brands with Jester tendencies. A colorful identity and playful product communication illustrate how software can avoid feeling sterile; the source provides a broad archetype classification rather than proof that every campaign uses comedy.",
+    "tags": [
+      "brand",
+      "jester",
+      "b2b-saas",
+      "friendly-product-personality",
+      "whimsical-presentation",
+      "accessible-software-voice"
+    ],
+    "source_document": "Examples of Jester Brands.md / sourced branding articles",
+    "sources": [
+      "https://apricotbranding.com/the-jester-archetype-fun-humor/"
+    ],
+    "publication_status": "published",
+    "evidence_status": "source_attributed",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "B2B & SaaS",
+    "brand_category": "Business",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=mailchimp.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Friendly product personality",
+      "Whimsical presentation",
+      "Accessible software voice"
+    ],
+    "historical_examples": [
+      "Apricot lists Mailchimp among brands with Jester tendencies."
+    ],
+    "attribution": "Curated editorial interpretation of historical campaigns; not a current-brand-strategy claim or endorsement."
+  },
+  {
+    "id": "slack",
+    "slug": "slack",
+    "name": "Slack",
+    "summary": "Research lead: Slack — b2b & saas example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "b2b-saas"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "B2B & SaaS",
+    "brand_category": "Business",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=slack.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "gong",
+    "slug": "gong",
+    "name": "Gong",
+    "summary": "Research lead: Gong — b2b & saas example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "b2b-saas"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "B2B & SaaS",
+    "brand_category": "Business",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=gong.io&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "cards-against-humanity",
+    "slug": "cards-against-humanity",
+    "name": "Cards Against Humanity",
+    "summary": "Research lead: Cards Against Humanity — media, gaming & entertainment example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "media-gaming-entertainment"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Media, Gaming & Entertainment",
+    "brand_category": "Digital",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=cardsagainsthumanity.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "devolver-digital",
+    "slug": "devolver-digital",
+    "name": "Devolver Digital",
+    "summary": "Research lead: Devolver Digital — media, gaming & entertainment example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "media-gaming-entertainment"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Media, Gaming & Entertainment",
+    "brand_category": "Digital",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=devolverdigital.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "adult-swim",
+    "slug": "adult-swim",
+    "name": "adult swim",
+    "summary": "Research lead: adult swim — media, gaming & entertainment example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "media-gaming-entertainment"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Media, Gaming & Entertainment",
+    "brand_category": "Digital",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=adultswim.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "poo-pourri",
+    "slug": "poo-pourri",
+    "name": "Poo-Pourri",
+    "summary": "Research lead: Poo-Pourri — healthcare & wellness example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "healthcare-wellness"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Healthcare & Wellness",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=pourri.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "tushy",
+    "slug": "tushy",
+    "name": "Tushy",
+    "summary": "Research lead: Tushy — healthcare & wellness example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "healthcare-wellness"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Healthcare & Wellness",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=hellotushy.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "manscaped",
+    "slug": "manscaped",
+    "name": "Manscaped",
+    "summary": "Research lead: Manscaped — healthcare & wellness example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "healthcare-wellness"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Healthcare & Wellness",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=manscaped.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "mini",
+    "slug": "mini",
+    "name": "MINI",
+    "summary": "Research lead: MINI — automotive & mobility example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "automotive-mobility"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Automotive & Mobility",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=miniusa.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "kia-hamsters",
+    "slug": "kia-hamsters",
+    "name": "Kia (hamster campaigns)",
+    "summary": "Research lead: Kia (hamster campaigns) — automotive & mobility example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "automotive-mobility"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Automotive & Mobility",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=kia.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "wendys",
+    "slug": "wendys",
+    "name": "Wendy’s",
+    "summary": "Wendy’s converts fast-food competition into a source of jokes.",
+    "description": "Wendy’s has used memorable ad lines and punchy social replies to give the brand a sharper personality than a standard restaurant promotion. The studied examples focus on the comedic contrast between conventional fast-food marketing and the brand’s witty attitude.",
+    "tags": [
+      "brand",
+      "jester",
+      "hospitality-travel-qsr",
+      "competitive-wit",
+      "social-banter",
+      "memorable-slogans"
+    ],
+    "source_document": "Examples of Jester Brands.md / sourced branding articles",
+    "sources": [
+      "https://apricotbranding.com/the-jester-archetype-fun-humor/"
+    ],
+    "publication_status": "published",
+    "evidence_status": "source_attributed",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Hospitality, Travel & QSR",
+    "brand_category": "Service",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=wendys.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Competitive wit",
+      "Social banter",
+      "Memorable slogans"
+    ],
+    "historical_examples": [
+      "Wendy’s has used memorable ad lines and punchy social replies to give the brand a sharper personality than a standard restaurant promotion."
+    ],
+    "attribution": "Curated editorial interpretation of historical campaigns; not a current-brand-strategy claim or endorsement."
+  },
+  {
+    "id": "ryanair",
+    "slug": "ryanair",
+    "name": "Ryanair",
+    "summary": "Research lead: Ryanair — hospitality, travel & qsr example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "hospitality-travel-qsr"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Hospitality, Travel & QSR",
+    "brand_category": "Service",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=ryanair.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
+  },
+  {
+    "id": "southwest",
+    "slug": "southwest",
+    "name": "Southwest Airlines",
+    "summary": "Research lead: Southwest Airlines — hospitality, travel & qsr example suggested for Jester analysis.",
+    "description": "Listed in the site owner's industry-vertical examples. Its specific humor campaigns, creative execution, and current brand positioning still require individual source verification before a full editorial profile is published.",
+    "tags": [
+      "brand",
+      "jester",
+      "hospitality-travel-qsr"
+    ],
+    "source_document": "User-provided industry-vertical examples (research leads)",
+    "sources": [],
+    "publication_status": "draft",
+    "evidence_status": "research_candidate",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Hospitality, Travel & QSR",
+    "brand_category": "Service",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=southwest.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Suggested Jester positioning",
+      "Campaign evidence pending"
+    ],
+    "historical_examples": [],
+    "attribution": "Unverified research lead from the site owner's submitted industry examples."
   },
   {
     "id": "taco-bell",
     "slug": "taco-bell",
     "name": "Taco Bell",
-    "summary": "Small humorous touches are read as a consistent playful brand voice.",
-    "description": "Small humorous touches are read as a consistent playful brand voice.",
+    "summary": "Taco Bell makes room for wit even in the small details.",
+    "description": "From sauce-packet copy to group-meal naming and playful product presentation, Taco Bell's example shows how a mischievous tone can extend beyond a single advertisement. Humor works as a recognizable through-line rather than just an isolated punchline.",
     "tags": [
       "brand",
-      "humor"
+      "jester",
+      "quick-service-restaurants",
+      "playful-microcopy",
+      "everyday-irreverence",
+      "consistent-tone"
     ],
-    "source_document": "Examples of Jester Brands.md",
+    "source_document": "Examples of Jester Brands.md / sourced branding articles",
     "sources": [
       "https://astute.co/resource/brand-archetypes-the-jester/"
     ],
-    "verification_status": "source_interpretation",
     "publication_status": "published",
+    "evidence_status": "source_attributed",
     "related_quote_ids": [],
     "related_trickster_ids": [],
     "related_collection_slugs": [],
+    "industry_vertical": "Quick-Service Restaurants",
+    "brand_category": "Service",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=tacobell.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
     "jester_characteristics": [
-      "Small humorous touches are read as a consistent playful brand voice."
+      "Playful microcopy",
+      "Everyday irreverence",
+      "Consistent tone"
     ],
     "historical_examples": [
-      "The source mentions sauce packets and party packs."
+      "From sauce-packet copy to group-meal naming and playful product presentation, Taco Bell's example shows how a mischievous tone can extend beyond a single advertisement."
     ],
-    "attribution": "Supplied research, citing Astute; historical examples are not verified current strategy."
+    "attribution": "Curated editorial interpretation of historical campaigns; not a current-brand-strategy claim or endorsement."
+  },
+  {
+    "id": "blendtec",
+    "slug": "blendtec",
+    "name": "Blendtec",
+    "summary": "Blendtec made product demonstrations into absurd experiments.",
+    "description": "The 'Will It Blend?' campaigns recast a straightforward blender demonstration as a suspenseful question about wildly unexpected objects. The joke also demonstrates product capability, which makes the absurdity more useful than a disconnected gag.",
+    "tags": [
+      "brand",
+      "jester",
+      "kitchen-appliances",
+      "product-demonstration-as-spectacle",
+      "unexpected-premises",
+      "curiosity-loop"
+    ],
+    "source_document": "Examples of Jester Brands.md / sourced branding articles",
+    "sources": [
+      "https://apricotbranding.com/the-jester-archetype-fun-humor/"
+    ],
+    "publication_status": "published",
+    "evidence_status": "source_attributed",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Kitchen Appliances",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=blendtec.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Product demonstration as spectacle",
+      "Unexpected premises",
+      "Curiosity loop"
+    ],
+    "historical_examples": [
+      "The 'Will It Blend?' campaigns recast a straightforward blender demonstration as a suspenseful question about wildly unexpected objects."
+    ],
+    "attribution": "Curated editorial interpretation of historical campaigns; not a current-brand-strategy claim or endorsement."
+  },
+  {
+    "id": "ben-and-jerrys",
+    "slug": "ben-and-jerrys",
+    "name": "Ben & Jerry’s",
+    "summary": "Ben & Jerry’s represents a softer, communal mode of Jester branding.",
+    "description": "TalktoZilly uses Ben & Jerry’s to contrast a gentler, good-natured playful voice with more abrasive comic brands. This is an interpretation of a style of messaging, not a claim that every part of the company's identity is defined by the Jester.",
+    "tags": [
+      "brand",
+      "jester",
+      "food-ice-cream",
+      "warm-playfulness",
+      "approachable-wordplay",
+      "community-minded-expression"
+    ],
+    "source_document": "Examples of Jester Brands.md / sourced branding articles",
+    "sources": [
+      "https://www.talktozilly.com/brandingai-daily/how-to-write-for-jester-brands-without-looking-like-a-fool"
+    ],
+    "publication_status": "published",
+    "evidence_status": "source_attributed",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Food & Ice Cream",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=benjerry.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Warm playfulness",
+      "Approachable wordplay",
+      "Community-minded expression"
+    ],
+    "historical_examples": [
+      "TalktoZilly uses Ben & Jerry’s to contrast a gentler, good-natured playful voice with more abrasive comic brands."
+    ],
+    "attribution": "Curated editorial interpretation of historical campaigns; not a current-brand-strategy claim or endorsement."
+  },
+  {
+    "id": "budweiser",
+    "slug": "budweiser",
+    "name": "Budweiser",
+    "summary": "Budweiser turned a casual greeting into a shared advertising joke.",
+    "description": "Apricot points to the 'Wassup' campaign as an example of sociable, repeatable humor. Its most memorable feature was a line that audiences could perform themselves, making the advertisement part of everyday conversation.",
+    "tags": [
+      "brand",
+      "jester",
+      "beverages",
+      "shared-catchphrase",
+      "social-participation",
+      "comic-repetition"
+    ],
+    "source_document": "Examples of Jester Brands.md / sourced branding articles",
+    "sources": [
+      "https://apricotbranding.com/the-jester-archetype-fun-humor/"
+    ],
+    "publication_status": "published",
+    "evidence_status": "source_attributed",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Beverages",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=budweiser.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Shared catchphrase",
+      "Social participation",
+      "Comic repetition"
+    ],
+    "historical_examples": [
+      "Apricot points to the 'Wassup' campaign as an example of sociable, repeatable humor."
+    ],
+    "attribution": "Curated editorial interpretation of historical campaigns; not a current-brand-strategy claim or endorsement."
+  },
+  {
+    "id": "snickers",
+    "slug": "snickers",
+    "name": "Snickers",
+    "summary": "Snickers has been cited for humorous need-state advertising.",
+    "description": "Apricot includes Snickers among its Jester examples. The source establishes an archetype association, but does not document a complete history of its campaign strategy; this profile therefore focuses on the recognizable practice of making hunger an exaggerated social reversal.",
+    "tags": [
+      "brand",
+      "jester",
+      "beverages",
+      "character-reversal",
+      "everyday-exaggeration",
+      "clear-product-payoff"
+    ],
+    "source_document": "Examples of Jester Brands.md / sourced branding articles",
+    "sources": [
+      "https://apricotbranding.com/the-jester-archetype-fun-humor/"
+    ],
+    "publication_status": "published",
+    "evidence_status": "source_attributed",
+    "related_quote_ids": [],
+    "related_trickster_ids": [],
+    "related_collection_slugs": [],
+    "industry_vertical": "Beverages",
+    "brand_category": "Consumer",
+    "logo": {
+      "url": "https://www.google.com/s2/favicons?domain=snickers.com&sz=128",
+      "kind": "site-favicon",
+      "note": "Third-party favicon; not the full licensed brand logo"
+    },
+    "video": null,
+    "jester_characteristics": [
+      "Character reversal",
+      "Everyday exaggeration",
+      "Clear product payoff"
+    ],
+    "historical_examples": [
+      "Apricot includes Snickers among its Jester examples."
+    ],
+    "attribution": "Curated editorial interpretation of historical campaigns; not a current-brand-strategy claim or endorsement."
   }
 ]

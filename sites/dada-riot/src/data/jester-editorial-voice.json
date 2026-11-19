@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "jester-editorial-voice",
+  "purpose": "Public editorial principles, not a replacement for Astro design themes.",
+  "primary_placement": {
+    "route": "/about/",
+    "section_id": "the-jester-code",
+    "heading": "The Jester Code",
+    "intro": "Our favorite jokes are the ones that leave a useful question behind."
+  },
+  "supporting_placement": {
+    "route": "/jester-branding/",
+    "section_id": "how-we-write"
+  },
+  "voice_thesis": "Wit with a point. Play without pretense. Curiosity without a costume.",
+  "principles": [
+    {
+      "id": "earn-the-joke",
+      "title": "Earn the joke",
+      "description": "Make the observation meaningful before sharpening the punchline.",
+      "example": "The rulebook is very confident for something written in pencil."
+    },
+    {
+      "id": "challenge-the-frame",
+      "title": "Challenge the frame",
+      "description": "Question assumptions and institutions without turning vulnerable people into props.",
+      "example": "Every system looks inevitable until someone asks who designed the door."
+    },
+    {
+      "id": "keep-it-human",
+      "title": "Keep it human",
+      "description": "Use sincerity when a subject matters. A joke is optional; clarity is not.",
+      "example": "Some truths need a grin. Others need to be said plainly."
+    },
+    {
+      "id": "no-forced-whimsy",
+      "title": "No forced whimsy",
+      "description": "Avoid punchline overload, generic clown vocabulary, and ornamental chaos.",
+      "example": "Not every sentence needs bells."
+    },
+    {
+      "id": "credit-the-source",
+      "title": "Credit the source",
+      "description": "Separate quotation, interpretation, historical claim, and original commentary.",
+      "example": "A good punchline can survive a footnote."
+    }
+  ],
+  "tone_modes": [
+    {
+      "id": "wise-fool",
+      "label": "Wise Fool",
+      "best_for": [
+        "about",
+        "archetype-guides"
+      ],
+      "instruction": "Understated paradox, philosophical curiosity, and a spare, memorable turn."
+    },
+    {
+      "id": "carnival-host",
+      "label": "Carnival Host",
+      "best_for": [
+        "collections",
+        "homepage"
+      ],
+      "instruction": "Inviting, theatrical, mischievous, and never hard to navigate."
+    },
+    {
+      "id": "riot-press",
+      "label": "Riot Press",
+      "best_for": [
+        "satire",
+        "creative-editorial"
+      ],
+      "instruction": "Punchy, confrontational toward conventions, sourced when factual claims are made."
+    }
+  ],
+  "recommended_existing_page_revisions": [
+    {
+      "route": "/about/",
+      "target": "opening lede",
+      "proposed": "A jester can make an emperor laugh and still ask why the emperor needs a crown. Jester Quotes collects quotations about laughter, masks, foolishness, and the useful trouble of looking twice."
+    },
+    {
+      "route": "/about/",
+      "target": "new section",
+      "section_id": "the-jester-code",
+      "proposed": "Render the principles as a five-part manifesto."
+    }
+  ],
+  "source_resource_ids": [
+    "resource-talktozilly-jester-copywriting",
+    "resource-kameleon-jester-archetype",
+    "resource-nvision-jester-archetype"
+  ]
+}

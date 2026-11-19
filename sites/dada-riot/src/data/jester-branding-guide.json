@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "jester-branding-guide",
+  "route": "/jester-branding/",
+  "page": {
+    "eyebrow": "The art of serious mischief",
+    "title": "The Jester Is a Strategy, Not a Costume",
+    "meta_description": "Explore the Jester archetype through humor, satire, verbal wit, visual personality, and memorable brand campaigns.",
+    "lede": "A good jester does more than crack jokes. It notices the absurd, changes the angle, and makes a serious idea easier to confront."
+  },
+  "editorial_disclaimer": "Brand archetypes are interpretive frameworks for storytelling and positioning, not scientific personality diagnoses. Brand examples describe selected campaigns, not verified current strategies or endorsements.",
+  "sections": [
+    {
+      "id": "the-promise",
+      "title": "Why the Jester Works",
+      "intro": "The promise is a change in emotional temperature: less ceremony, more curiosity, and a chance to see an ordinary problem differently.",
+      "points": [
+        "Make a familiar moment surprising.",
+        "Give the audience a reason to participate, not just observe.",
+        "Let humor reveal a useful idea rather than bury it."
+      ]
+    },
+    {
+      "id": "the-tension",
+      "title": "A Grin With a Spine",
+      "intro": "Jester humor can be joyful, provocative, satirical, or quietly wise. It gets stronger when play serves a point.",
+      "points": [
+        "Surprise without confusing the message.",
+        "Challenge convention without mistaking cruelty for wit.",
+        "Keep the human truth visible behind the performance."
+      ]
+    },
+    {
+      "id": "the-voice",
+      "title": "How a Jester Sounds",
+      "intro": "Write like an observant person with good timing, not a machine trying to manufacture punchlines.",
+      "points": [
+        "Lead with a recognizable truth.",
+        "Tilt the framing, rather than adding a random joke.",
+        "Finish with something clear enough to act on."
+      ]
+    },
+    {
+      "id": "the-look",
+      "title": "How a Jester Looks",
+      "intro": "Unexpected color, irregular imagery, expressive type, and playful compositions can signal character, but the interface still needs contrast and legibility.",
+      "points": [
+        "Use contrast to make surprise intentional.",
+        "Prefer a distinctive visual system over random effects.",
+        "Keep accessible reading order and reliable interactions."
+      ]
+    }
+  ],
+  "interpretive_lenses": [
+    {
+      "id": "playful-entertainer",
+      "name": "Playful Entertainer",
+      "description": "Uses shared amusement and audience participation to make ordinary moments lighter."
+    },
+    {
+      "id": "absurdist",
+      "name": "Absurdist",
+      "description": "Escalates the ordinary into the improbable to expose how strange familiar conventions already are."
+    },
+    {
+      "id": "satirical-challenger",
+      "name": "Satirical Challenger",
+      "description": "Points humor toward assumptions, institutions, and contradictions instead of easy targets."
+    },
+    {
+      "id": "provocateur",
+      "name": "Provocateur",
+      "description": "Uses controlled friction to make an overlooked issue hard to ignore."
+    },
+    {
+      "id": "perspective-shifter",
+      "name": "Perspective Shifter",
+      "description": "Changes roles and framing so the audience can reconsider what it assumed was obvious."
+    }
+  ],
+  "interpretive_lenses_note": "These are Jester Quotes editorial lenses synthesized from the cited material, not an established five-part classification.",
+  "design_principles": [
+    {
+      "id": "surprise",
+      "title": "Surprise with a reason",
+      "application": "Use one deliberate visual disruption at a time."
+    },
+    {
+      "id": "typography",
+      "title": "Typography with character",
+      "application": "Pair expressive display treatments with a readable body face."
+    },
+    {
+      "id": "iconography",
+      "title": "A mark made by a person",
+      "application": "Use irregular icon treatments when they improve recognition."
+    },
+    {
+      "id": "accessibility",
+      "title": "Never sacrifice usability for mischief",
+      "application": "Preserve contrast, keyboard access, navigation clarity, and reduced-motion behavior."
+    }
+  ],
+  "existing_content_links": [
+    {
+      "label": "Meet the Tricksters",
+      "href": "/tricksters/"
+    },
+    {
+      "label": "Explore the Brands",
+      "href": "/jester-brands/"
+    },
+    {
+      "label": "Compare the Archetypes",
+      "href": "/archetypes/"
+    },
+    {
+      "label": "Research and References",
+      "href": "/resources/"
+    }
+  ],
+  "existing_brand_catalog_reference": "src/data/jester-brands.json",
+  "source_resource_ids": [
+    "resource-talktozilly-jester-copywriting",
+    "resource-streamline-jester-design",
+    "resource-apricot-jester-archetype",
+    "resource-kameleon-jester-archetype",
+    "resource-nvision-jester-archetype"
+  ]
+}

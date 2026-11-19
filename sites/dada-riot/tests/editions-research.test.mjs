@@ -28,7 +28,10 @@ test('research records retain provenance and hold brief characters as drafts', (
   assert.equal(media.length,24);
   assert.equal(media.filter(item=>item.publication_status==='published').length,15);
   assert.equal(media.filter(item=>item.publication_status==='draft').length,9);
-  assert.equal(brands.length,4);
+  assert.equal(brands.length,37);
+  assert.equal(brands.filter(item=>item.publication_status==='published').length,13);
+  assert.ok(brands.every(item=>item.industry_vertical && item.brand_category && item.evidence_status));
+  assert.ok(brands.filter(item=>item.publication_status==='draft').every(item=>item.sources.length===0));
   assert.equal(notes.length,1);
   assert.equal(notes[0].kind,'editorial_note');
   const quoteIds=new Set(json('jester-quotes.json').items.map(item=>item.id));

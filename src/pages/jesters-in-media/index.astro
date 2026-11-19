@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import media from '../../data/jesters-in-media.json';
+import '../../styles/jester-editorial.css';
+const items=media.filter(item=>item.publication_status==='published');
+const mediaTypes=[...new Set(items.map(item=>item.medium))];
+---
+<BaseLayout title="Jesters in Media — Jester Quotes" description="Explore sourced interpretations of Jester-like characters in film, comics and television.">
+  <div class="wrap je-page"><header class="je-intro"><p class="eyebrow">STORIES / CHARACTERS / CURIOUS FOOLS</p><h1>Jesters in <em>media.</em></h1><p class="je-lede">Explore attributed readings of characters whose humor, unpredictability, and contradictions disrupt the story. These are interpretive lenses, not official character classifications.</p></header>
+    <div class="je-lens-grid je-media-grid">{items.map(item=><article id={item.slug}><span class="je-index">{item.medium.toUpperCase()}</span><h2>{item.character}</h2><h3>{item.originating_work}</h3><p>{item.summary}</p></article>)}</div>
+    <p class="je-policy">Character examples reference <a href="https://arielhudnall.com/2015/09/06/archetypes-jester/" target="_blank" rel="noopener noreferrer">Ariel Hudnall’s Jester archetype article ↗</a> and supporting editorial research. No third-party character artwork is reproduced on this page.</p>
+  </div>
+</BaseLayout>

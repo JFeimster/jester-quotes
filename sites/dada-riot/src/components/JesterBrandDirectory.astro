@@ -1,0 +1,50 @@
+---
+import brands from '../data/jester-brands.json';
+import '../styles/jester-brand-directory.css';
+const published=brands.filter(item=>item.publication_status==='published');
+const candidates=brands.filter(item=>item.publication_status==='draft');
+const verticals=[...new Set(published.map(item=>item.industry_vertical))].sort();
+const candidateVerticals=[...new Set(candidates.map(item=>item.industry_vertical))].sort();
+---
+<section class="jb-layout" aria-labelledby="jb-heading">
+  <header class="jb-hero"><div><p class="eyebrow">THE JESTER / BRAND DIRECTORY</p><h1 id="jb-heading">Brands with a <em>jester streak.</em></h1><p>Humor can make the forgettable memorable. Explore sourced examples of brands that use absurdity, a comic persona, playful copy, or a well-timed punchline to change the story.</p><div class="jb-hero-actions"><a class="btn" href="#jb-directory">Browse {published.length} sourced profiles ↓</a><a class="btn secondary" href="/jester-branding/">Understand the archetype ↗</a></div></div><div class="jb-hero-art" aria-hidden="true"><span>✳</span><strong>GOOD BRANDS<br/>BEHAVE.<br/><em>OTHERS PERFORM.</em></strong></div></header>
+  <section class="jb-browser" id="jb-directory">
+    <div class="jb-section-heading"><div><p class="eyebrow">CASE FILES / EDITORIAL RESEARCH</p><h2>Find the <em>funny business.</em></h2></div><span>{published.length} published / {candidates.length} research leads</span></div>
+    <div class="jb-controls" role="search" aria-label="Filter Jester brands"><label>Find a brand<input type="search" id="jb-query" placeholder="Search name, tactic, or industry" autocomplete="off"/></label><label>Industry vertical<select id="jb-vertical"><option value="all">All sourced industries</option>{verticals.map(vertical=><option value={vertical}>{vertical}</option>)}</select></label><button id="jb-reset" type="button">Clear filters</button></div>
+    <p class="jb-count" id="jb-count" role="status" aria-live="polite">{published.length} sourced case studies</p>
+    <div class="jb-grid" id="jb-grid">{published.map(item=>
+      <article id={item.slug} class="jb-card" data-jb-card data-industry={item.industry_vertical} data-search={[item.name,item.industry_vertical,item.summary,item.description,...item.jester_characteristics].join(' ').toLowerCase()}>
+        <div class="jb-card-top">
+          <div class="jb-brand-mark">{item.logo?.url ? <img src={item.logo.url} alt={item.name+' site favicon'} loading="lazy" decoding="async" width="46" height="46" referrerpolicy="no-referrer" /> : <span aria-hidden="true">{item.name.slice(0,2).toUpperCase()}</span>}</div>
+          <span class="jb-card-category">{item.industry_vertical}</span>
+        </div>
+        <h3>{item.name}</h3><p class="jb-summary">{item.summary}</p><p class="jb-description">{item.description}</p>
+        <div class="jb-traits">{item.jester_characteristics.slice(0,2).map(trait=><span>{trait}</span>)}</div>
+        <div class="jb-card-footer">{item.video?.url ? <a class="jb-video" href={item.video.url} target="_blank" rel="noopener noreferrer" aria-label={'Watch '+item.name+' campaign video on YouTube'}>▶ Watch campaign ↗</a> : <span class="jb-text-label">EDITORIAL EXAMPLE</span>}</div>
+      </article>
+    )}</div>
+    <p id="jb-empty" class="jb-empty" hidden>No matching sourced brands. Try a different term or reset the filters.</p>
+  </section>
+  <section class="jb-research" aria-labelledby="jb-research-title"><details><summary><span><strong id="jb-research-title">{candidates.length} more brands under investigation</strong><small>Editorial leads across {candidateVerticals.length} industry verticals, not independently verified Jester campaigns</small></span><span aria-hidden="true">+</span></summary>
+    <div class="jb-research-grid">{candidateVerticals.map(vertical=><div><h3>{vertical}</h3><p>{candidates.filter(item=>item.industry_vertical===vertical).map(item=>item.name).join(' · ')}</p></div>)}</div>
+  </details></section>
+  <footer class="jb-editorial-footnote"><p><strong>Editorial policy:</strong> These are historical campaign interpretations from linked branding research, not official archetype certifications, brand partnerships, or assurances of current marketing strategy. Brand imagery in these cards is a website favicon, not a reproduced full-resolution corporate logo. Supplied video links open at their publishers; rights remain with their owners.</p>
+    <p><strong>Source reading:</strong> <a href="https://astute.co/resource/brand-archetypes-the-jester/" target="_blank" rel="noopener noreferrer">Astute Communication ↗</a> · <a href="https://apricotbranding.com/the-jester-archetype-fun-humor/" target="_blank" rel="noopener noreferrer">Apricot Branding ↗</a> · <a href="https://www.talktozilly.com/brandingai-daily/how-to-write-for-jester-brands-without-looking-like-a-fool" target="_blank" rel="noopener noreferrer">TalktoZilly ↗</a> · <a href="/resources/">Full resource vault ↗</a></p></footer>
+</section>
+<script is:inline>
+  const query=document.querySelector('#jb-query');
+  const vertical=document.querySelector('#jb-vertical');
+  const cards=[...document.querySelectorAll('[data-jb-card]')];
+  const count=document.querySelector('#jb-count');
+  const empty=document.querySelector('#jb-empty');
+  const reset=document.querySelector('#jb-reset');
+  function filterBrands(){
+    const q=query.value.trim().toLowerCase();
+    const group=vertical.value;let showing=0;
+    for(const card of cards){const show=card.dataset.search.includes(q)&&(group==='all'||card.dataset.industry===group);card.hidden=!show;if(show)showing++;}
+    count.textContent=showing+' sourced case '+(showing===1?'study':'studies');
+    empty.hidden=showing!==0;
+  }
+  for(const field of [query,vertical])field.addEventListener('input',filterBrands);
+  reset.addEventListener('click',()=>{query.value='';vertical.value='all';filterBrands();query.focus();});
+</script>

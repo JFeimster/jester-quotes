@@ -1,0 +1,15 @@
+---
+import voice from '../data/jester-editorial-voice.json';
+---
+<section id="the-jester-code" class="je-code" aria-labelledby="jester-code-title">
+  <div class="je-section-heading"><p class="eyebrow">THE EDITORIAL PROMISE</p><h2 id="jester-code-title">{voice.primary_placement.heading}</h2><p>{voice.primary_placement.intro}</p></div>
+  <div class="je-code-grid">{voice.principles.map((principle,index)=>
+    <article class="je-code-card">
+      <span class="je-index">{String(index+1).padStart(2,'0')} / THE CODE</span>
+      <h3>{principle.title}</h3>
+      <p>{principle.description}</p>
+      <blockquote>{principle.example}</blockquote>
+    </article>
+  )}</div>
+  <p class="je-code-outro">{voice.voice_thesis}</p>
+</section>

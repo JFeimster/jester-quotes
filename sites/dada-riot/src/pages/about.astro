@@ -1,13 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SourceAttribution from '../components/SourceAttribution.astro';
+import JesterCode from '../components/JesterCode.astro';
+import voice from '../data/jester-editorial-voice.json';
+import '../styles/jester-editorial.css';
+const lede = voice.recommended_existing_page_revisions.find(item=>item.target==='opening lede')?.proposed ?? voice.voice_thesis;
 ---
-<BaseLayout title="About — Jester Quotes">
-  <div class="detail">
-    <p class="eyebrow">Meet the jester</p>
-    <h1>A mirror, a grin, a little rebellion.</h1>
-    <p class="lede">The Jester archetype uses humor and outrageous imagery to challenge convention. This collection gathers 100 quotations about jesters, jokers, clowns, and the power of laughter.</p>
-    <SourceAttribution />
-    <p><a class="btn" href="/">Explore the collection</a></p>
+<BaseLayout title="About Jester Quotes — Wisdom, Absurdity & the Jester Code">
+  <div class="wrap je-about">
+    <header class="je-about-hero"><p class="eyebrow">Meet the jester / Beneath the mask</p><h1>A mirror. A grin. <em>A little rebellion.</em></h1><p class="je-lede">{lede}</p><div class="je-hero-links"><a class="btn" href="/jester-branding/">Explore the Jester guide ↗</a><a class="btn secondary" href="/archetypes/">Meet the archetypes ↗</a></div></header>
+    <JesterCode />
+    <section class="je-about-attribution"><h2>Credit where it's due.</h2><p>We distinguish sourced quotations, cultural interpretation, and new editorial commentary. The quote registry is preserved as supplied; disputed attribution is not silently rewritten.</p><SourceAttribution /><p><a href="/resources/">Browse sources ↗</a> · <a href="/jester-brands/">Explore Jester brands ↗</a></p></section>
   </div>
 </BaseLayout>

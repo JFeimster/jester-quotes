@@ -15,7 +15,7 @@ export interface ResearchRecord {
 }
 export interface Archetype extends ResearchRecord { characteristics: string[]; adjacent_archetype: string; context: string; }
 export interface MediaExample extends ResearchRecord { character: string; originating_work: string; medium: string; character_type: string; }
-export interface JesterBrand extends ResearchRecord { jester_characteristics: string[]; historical_examples: string[]; attribution: string; }
+export interface JesterBrand extends Omit<ResearchRecord, 'verification_status'> { jester_characteristics: string[]; historical_examples: string[]; attribution: string; industry_vertical: string; brand_category: string; evidence_status: 'source_attributed' | 'research_candidate'; logo: {url: string; kind: string; note?: string} | null; video: {url: string; video_id: string; evidence?: string} | null; }
 export const archetypes = archetypeData as Archetype[];
 export const mediaExamples = mediaData as MediaExample[];
 export const jesterBrands = brandData as JesterBrand[];
@@ -26,7 +26,7 @@ const collectionSlugs = new Set(collections.map(item => item.slug));
 for (const [group, records] of Object.entries({archetypes,mediaExamples,jesterBrands})) {
   if (new Set(records.map(item => item.slug)).size !== records.length) throw new Error(`Duplicate slug in ${group}`);
   for (const item of records) {
-    if (!item.id || !item.slug || !item.name || !item.summary || !item.source_document || !item.sources.length) throw new Error(`Incomplete ${group} record: ${item.slug}`);
+    if (!item.id || !item.slug || !item.name || !item.summary || !item.source_document || (!item.sources.length && item.publication_status === 'published')) throw new Error(`Incomplete ${group} record: ${item.slug}`);
     if (item.sources.some(url => { try { return new URL(url).protocol !== 'https:'; } catch { return true; } })) throw new Error(`Invalid source URL on ${item.slug}`);
     if (item.related_quote_ids.some(id => !quoteIds.has(id)) || item.related_trickster_ids.some(id => !tricksterIds.has(id)) || item.related_collection_slugs.some(slug => !collectionSlugs.has(slug))) throw new Error(`Invalid content relationship on ${item.slug}`);
   }

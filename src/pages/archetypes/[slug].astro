@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import archetypes from '../../data/archetypes.json';
+import '../../styles/jester-editorial.css';
+export function getStaticPaths(){return archetypes.filter(item=>item.publication_status==='published').map(item=>({params:{slug:item.slug},props:{item}}));}
+const {item}=Astro.props;
+const adjacent=archetypes.find(a=>a.slug===item.adjacent_archetype);
+---
+<BaseLayout title={item.name+' Archetype — Jester Quotes'} description={item.summary}>
+  <article class="wrap je-page je-detail"><a href="/archetypes/">← All four archetypes</a><p class="eyebrow">AN ATTRIBUTED INTERPRETATION</p><h1>{item.name}</h1><p class="je-lede">{item.summary}</p><p>{item.description}</p><h2>How this figure works</h2><p>{item.context}</p><ul>{item.characteristics.map(trait=><li>{trait}</li>)}</ul>
+  {item.id==='jester'&&<a class="btn" href="/jester-branding/">Explore modern Jester branding ↗</a>}
+  {adjacent&&<p>Compare with the <a href={'/archetypes/'+adjacent.slug+'/'}>{adjacent.name}</a>: {adjacent.summary}</p>}
+  <p class="je-policy">Sources: {item.sources.map((url,index)=><><a href={url} target="_blank" rel="noopener noreferrer">Reading {index+1} ↗</a>{index<item.sources.length-1?', ':''}</>)}</p>
+  <p><a href="/jester-brands/">See modern brand examples ↗</a> · <a href="/tricksters/">Browse mythological Tricksters ↗</a></p>
+  </article>
+</BaseLayout>

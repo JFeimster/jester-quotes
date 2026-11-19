@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import JesterCode from '../../components/JesterCode.astro';
+import guide from '../../data/jester-branding-guide.json';
+import voice from '../../data/jester-editorial-voice.json';
+import resources from '../../data/resources.json';
+import brands from '../../data/jester-brands.json';
+import '../../styles/jester-editorial.css';
+const evidence = guide.source_resource_ids.map(id => resources.find(source=>source.id===id)).filter(Boolean);
+const caseStudies = brands.filter(item=>item.publication_status==='published').slice(0,6);
+---
+<BaseLayout title={guide.page.title+' — Jester Quotes'} description={guide.page.meta_description} openGraphType="article">
+  <div class="wrap je-page">
+    <header class="je-hero">
+      <div class="je-hero-copy"><p class="eyebrow">{guide.page.eyebrow}</p><h1>The Jester Is a <em>Strategy.</em><br/>Not a Costume.</h1><p class="je-lede">{guide.page.lede}</p>
+        <div class="je-hero-links"><a class="btn" href="#the-promise">Explore the method ↓</a><a class="btn secondary" href="/jester-brands/">See the brands ↗</a></div>
+      </div>
+      <div class="je-hero-graphic" aria-hidden="true"><span class="je-hero-mark">✳</span><span class="je-hero-note">LESS PERFORMANCE.<br/>MORE PERSPECTIVE.</span><span class="je-hero-float">THE GRIN IS A METHOD</span></div>
+    </header>
+    <div class="je-kicker"><span>01 / THE POINT</span><span>02 / THE CRAFT</span><span>03 / THE PROOF</span></div>
+    <div class="je-sections">{guide.sections.map((section,index)=>
+      <section id={section.id} class="je-feature" aria-labelledby={section.id+'-title'}>
+        <div><span class="je-index">{String(index+1).padStart(2,'0')} / JESTER NOTES</span><h2 id={section.id+'-title'}>{section.title}</h2></div>
+        <div><p>{section.intro}</p><ul>{section.points.map(point=><li>{point}</li>)}</ul></div>
+      </section>
+    )}</div>
+    <section class="je-lenses" aria-labelledby="lenses-heading">
+      <div class="je-section-heading"><p class="eyebrow">FIVE WAYS TO MAKE TROUBLE</p><h2 id="lenses-heading">The jester has <em>more than one voice.</em></h2><p>{guide.interpretive_lenses_note}</p></div>
+      <div class="je-lens-grid">{guide.interpretive_lenses.map((lens,index)=><article><span class="je-index">LENS / {String(index+1).padStart(2,'0')}</span><h3>{lens.name}</h3><p>{lens.description}</p></article>)}</div>
+    </section>
+    <section class="je-brand-teaser" aria-labelledby="brands-heading"><div class="je-section-heading"><p class="eyebrow">FROM CONCEPT TO CAMPAIGN</p><h2 id="brands-heading">When brands <em>break character.</em></h2><p>A few sourced examples of humor as a distinct advertising device, not a claim about every current campaign.</p></div>
+      <div class="je-brand-strip">{caseStudies.map(brand=><a href={'/jester-brands/#'+brand.slug}><strong>{brand.name}</strong><span>{brand.summary}</span><small>View the example ↗</small></a>)}</div>
+      <p><a class="btn" href="/jester-brands/">Browse the brand directory ↗</a></p>
+    </section>
+    <JesterCode />
+    <section id="how-we-write" class="je-voice" aria-labelledby="voice-heading"><div class="je-section-heading"><p class="eyebrow">THE EDITORIAL VOICE</p><h2 id="voice-heading">Choose the <em>register.</em></h2></div><div class="je-lens-grid">{voice.tone_modes.map(mode=><article><h3>{mode.label}</h3><p>{mode.instruction}</p></article>)}</div></section>
+    <section class="je-resources" aria-labelledby="reading-heading"><div class="je-section-heading"><p class="eyebrow">ATTRIBUTION / FURTHER READING</p><h2 id="reading-heading">The source <em>material.</em></h2><p>{guide.editorial_disclaimer}</p></div><ul>{evidence.map(source=><li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a><span>{source.source_name}</span></li>)}</ul></section>
+    <nav class="je-next" aria-label="Continue reading">{guide.existing_content_links.map(item=><a href={item.href}>{item.label} ↗</a>)}</nav>
+  </div>
+</BaseLayout>

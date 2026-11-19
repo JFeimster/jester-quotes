@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import { quotes } from '../lib/quote-data';
 import { collections } from '../lib/collections';
 import { tricksters } from '../lib/tricksters';
+import archetypes from '../data/archetypes.json';
 
 const escapeXml = (text: string): string =>
   text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -12,6 +13,8 @@ export const GET: APIRoute = ({ site }) => {
     '/', '/about/', '/quotes/', '/collections/',
     ...collections.map((collection) => `/collections/${encodeURIComponent(collection.slug)}/`),
     '/studio/', '/sources/', '/daily/', '/tricksters/', '/resources/', '/videos/',
+    '/jester-branding/', '/jester-brands/', '/archetypes/', '/jesters-in-media/',
+    ...archetypes.filter(item=>item.publication_status==='published').map(item=>'/archetypes/'+item.slug+'/'),
     ...tricksters.map((record) => `/tricksters/${encodeURIComponent(record.slug)}/`),
     ...quotes.map((quote) => `/quotes/${encodeURIComponent(quote.id)}/`)
   ];

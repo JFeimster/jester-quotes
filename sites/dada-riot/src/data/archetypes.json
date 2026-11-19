@@ -31,16 +31,25 @@
     "id": "jester",
     "slug": "jester",
     "name": "Jester",
-    "summary": "The source frames the jester as a verbal performer who uses wit to challenge powerful people from within their circle.",
-    "description": "The source frames the jester as a verbal performer who uses wit to challenge powerful people from within their circle.",
+    "summary": "The jester uses wit, play, and well-timed disruption to make difficult truths easier to approach.",
+    "description": "Historically, a court jester could use timing, verbal wit, and access to authority to tell uncomfortable truths under the cover of entertainment. Modern marketing authors extend that idea into playful brand voices, subversive humor, and visual irreverence, but those interpretations are not a universal historical or psychological taxonomy.",
     "tags": [
       "wit",
       "court",
-      "power"
+      "power",
+      "branding",
+      "satire",
+      "communication",
+      "archetypes"
     ],
     "source_document": "Archetypes.md",
     "sources": [
-      "https://stottilien.com/2013/04/03/crazy-wisdom-the-archetype-of-the-fool-the-clown-the-jester-and-the-trickster/"
+      "https://stottilien.com/2013/04/03/crazy-wisdom-the-archetype-of-the-fool-the-clown-the-jester-and-the-trickster/",
+      "https://www.talktozilly.com/brandingai-daily/how-to-write-for-jester-brands-without-looking-like-a-fool",
+      "https://apricotbranding.com/the-jester-archetype-fun-humor/",
+      "https://e-kameleon.com/jester-archetype/",
+      "https://nvision-that.com/brand-archetype-the-jester/",
+      "https://blog.streamlinehq.com/jester/"
     ],
     "verification_status": "source_interpretation",
     "publication_status": "published",
@@ -51,12 +60,15 @@
       "art-of-the-jester"
     ],
     "characteristics": [
-      "Words and timing do the work",
-      "Access to authority creates opportunity",
-      "The performer remains dependent on the court"
+      "Humor helps the audience lower its guard",
+      "Timing and verbal wit can expose contradictions",
+      "Play can invite participation without erasing serious ideas",
+      "The historical court role and modern brand archetype are related interpretations, not identical facts"
     ],
     "adjacent_archetype": "fool",
-    "context": "The article places the jester in the setting of medieval courts and describes a performer who could entertain while speaking uncomfortable truths. It also stresses a tension: a jester’s access and livelihood depended on the same power being criticized. The court setting is a historical frame in the source, not a claim that all jesters held the same freedom."
+    "context": "The article places the jester in the setting of medieval courts and describes a performer who could entertain while speaking uncomfortable truths. It also stresses a tension: a jester’s access and livelihood depended on the same power being criticized. The court setting is a historical frame in the source, not a claim that all jesters held the same freedom. The modern branding lens is explained separately in the Jester Branding Guide, with its own sources and caveats.",
+    "related_page": "/jester-branding/",
+    "modern_branding_note": "Modern Jester branding uses playful voice, absurdity, or satire to make products memorable; examples describe attributed campaign interpretations, not official brand classifications."
   },
   {
     "id": "fool",

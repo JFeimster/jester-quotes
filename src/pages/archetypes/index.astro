@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import archetypes from '../../data/archetypes.json';
+import '../../styles/jester-editorial.css';
+---
+<BaseLayout title="Clown, Jester, Fool & Trickster — Jester Quotes" description="Four attributed readings of archetypes of humor and disruption, and how they differ.">
+  <div class="wrap je-page"><header class="je-intro"><p class="eyebrow">Four ways to upset the script</p><h1>Meet the <em>archetypes.</em></h1><p class="je-lede">Clown, Jester, Fool, and Trickster can overlap, but their history and cultural roles are not interchangeable. This is a sourced editorial framework, not a psychological diagnosis.</p></header>
+  <div class="je-lens-grid je-archetype-grid">{archetypes.filter(item=>item.publication_status==='published').map(item=><a class="je-archetype-card" href={'/archetypes/'+item.slug+'/'}><span class="je-index">ARCHETYPE / {item.id.toUpperCase()}</span><h2>{item.name}</h2><p>{item.summary}</p><span>Explore the figure ↗</span></a>)}</div>
+  <p class="je-policy">Interpretation of <a href="https://stottilien.com/2013/04/03/crazy-wisdom-the-archetype-of-the-fool-the-clown-the-jester-and-the-trickster/" target="_blank" rel="noopener noreferrer">Crazy Wisdom: The Archetype of the Fool, the Clown, the Jester and the Trickster ↗</a>; not an assertion that all traditions share one taxonomy.</p>
+  </div>
+</BaseLayout>

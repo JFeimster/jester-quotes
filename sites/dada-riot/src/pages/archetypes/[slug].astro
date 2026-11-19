@@ -12,6 +12,7 @@ const adjacent = archetypes.find(record => record.slug === item.adjacent_archety
     <p class="research-intro">{item.summary}</p>
     <h2>How this figure works</h2><p>{item.context}</p><ul>{item.characteristics.map(characteristic=><li>{characteristic}</li>)}</ul><p>These features describe one reading of a flexible cultural figure, not a universal definition.</p>
     {adjacent && <p>Compare with the <a href={`/archetypes/${adjacent.slug}/`}>{adjacent.name}</a>: {adjacent.summary}</p>}
+    {item.id === "jester" && <p><a class="btn" href="/jester-branding/">Explore the modern Jester branding guide ↗</a></p>}
     <EditorialConnections kind="archetype" id={item.id} limit={12} />
     <p>Explore the <a href="/tricksters/">Trickster directory</a> and the <a href="/collections/">full quotation collections</a> for more sourced material.</p>
     <p class="research-source">Source: <a href={item.sources[0]} rel="external noopener">{item.source_document} (original article)</a>. Historical and psychological statements in the source have not been independently verified for this profile.</p>
