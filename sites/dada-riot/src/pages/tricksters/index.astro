@@ -36,7 +36,6 @@ const categories = [...new Set(cards.map(card => card.subject_type))].sort();
 const media = [...new Set(cards.flatMap(card => card.media))].sort();
 const traits = [...new Set(cards.flatMap(card => card.normalizedTraits))].sort();
 const photoCount = cards.filter(card => Boolean(card.image?.src)).length;
-const sourcedCount = cards.filter(card => card.independentSources.length > 0).length;
 const extras = verifiedProfiles.filter(profile => !cards.some(card => card.profileSlug === profile.slug));
 ---
 <BaseLayout
@@ -51,16 +50,26 @@ const extras = verifiedProfiles.filter(profile => !cards.some(card => card.profi
         <p class="lede">139 possibilities. Gods, rebels, comedians, shape-shifters and fictional troublemakers. Some are established tricksters; others are interpretations worth questioning.</p>
         <div class="trickster-header-actions">
           <a class="btn" href="#trickster-directory">Explore all 139 ↗</a>
-          <a class="btn secondary" href="#image-credits">Artwork &amp; sources ↗</a>
+          <button class="btn secondary trickster-hero-random" id="trickster-hero-random" type="button">Surprise me ✳</button>
         </div>
       </div>
-      <aside class="trickster-hero-aside" aria-label="Directory research notes">
-        <span class="trickster-hero-symbol" aria-hidden="true">✳</span>
-        <p class="eyebrow">The archive is open</p>
-        <h2>Every trick has <em>a story.</em></h2>
-        <p>Our index includes interpretations and research leads across many traditions. Follow dedicated stories and supporting sources for deeper context.</p>
-        <a href="/sources/">Read our source policy ↗</a>
-      </aside>
+      <figure class="trickster-hero-art">
+        <div class="trickster-hero-art-frame">
+          <img
+            src="/assets/images/heroes/trickster-files-archive-hero.webp"
+            alt="Surreal paper-collage archive with a cracked jester mask, raven, fox, hare, carnival mirror, and celestial symbols in parchment, red, and cobalt."
+            width="1448"
+            height="1086"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        <figcaption class="trickster-hero-art-caption">
+          <span>THE IMPOSSIBLE ARCHIVE / NO. 139</span>
+          <span>MISCHIEF IN EVERY MEDIUM ✳</span>
+        </figcaption>
+      </figure>
     </header>
 
     <section id="trickster-directory" aria-labelledby="trickster-directory-title">
@@ -69,7 +78,7 @@ const extras = verifiedProfiles.filter(profile => !cards.some(card => card.profi
           <p class="eyebrow">The extended cast</p>
           <h2 id="trickster-directory-title">Meet the <em>rulebreakers.</em></h2>
         </div>
-        <span class="byline">{cards.length} names · {photoCount} image selections · {sourcedCount} with independent reference leads</span>
+        <span class="byline">{cards.length} files · Myth, folklore, fiction &amp; culture</span>
       </div>
       <div class="trickster-controls" role="search" aria-label="Search Trickster directory">
         <div class="trickster-field trickster-field--search">
@@ -153,13 +162,14 @@ const extras = verifiedProfiles.filter(profile => !cards.some(card => card.profi
       </div>
     </dialog>
 
-    <aside class="trickster-research-note">
-      <span class="trickster-note-mark" aria-hidden="true">i</span>
-      <div>
-        <h2>Names are not endorsements.</h2>
-        <p>This is a source-based editorial index of 139 suggested examples. Some names describe distinct cultural or religious traditions, and others are deliberately debatable character interpretations. Images are credited separately and copyrighted promotional imagery is used for character-specific editorial discussion, where applicable.</p>
+    <details class="trickster-editorial-note" id="trickster-editorial-policy">
+      <summary><span>BEHIND THE ARCHIVE</span><span>Editorial context &amp; sourcing ↗</span></summary>
+      <div class="trickster-editorial-note-body">
+        <p>The Trickster Files brings together mythology, folklore, performance, fiction and popular culture. The trickster label is an editorial interpretation, not a claim that every originating tradition describes these figures in the same way. Images are used to illustrate the subjects; licensing and artwork credits are documented separately.</p>
+        <a href="/sources/">Research, attribution &amp; corrections policy ↗</a>
+        <a href="#image-credits">View image credits ↗</a>
       </div>
-    </aside>
+    </details>
 
     {extras.length > 0 && <section class="trickster-extra-profiles" aria-label="More trickster stories">
       <h2>Beyond the original 139.</h2>
@@ -180,4 +190,5 @@ const extras = verifiedProfiles.filter(profile => !cards.some(card => card.profi
     </details>
   </div>
   <script src="../../scripts/trickster-explorer.ts"></script>
+  <script src="../../scripts/trickster-visuals.ts"></script>
 </BaseLayout>
