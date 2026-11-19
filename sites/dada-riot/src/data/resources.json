@@ -412,5 +412,105 @@
       "trickster-maui"
     ],
     "related_quote_ids": []
+  },
+  {
+    "id": "resource-talktozilly-jester-copywriting",
+    "slug": "talktozilly-jester-copywriting",
+    "title": "How to Write for a Jester Brand (And Not Look Like a Fool)",
+    "url": "https://www.talktozilly.com/brandingai-daily/how-to-write-for-jester-brands-without-looking-like-a-fool",
+    "source_name": "TalktoZilly",
+    "type": "article",
+    "summary": "John Zilly examines how playful, irreverent brand voices differ and offers practical guidance for humorous headlines, storytelling, brand-specific AI prompts, and writing that keeps the audience in mind.",
+    "tags": [
+      "jester",
+      "branding",
+      "copywriting",
+      "brand-voice",
+      "ai-prompts"
+    ],
+    "verified_at": "2026-11-19",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-streamline-jester-design",
+    "slug": "streamline-jester-design",
+    "title": "The 'Jester' — Marketing Archetype Tips",
+    "url": "https://blog.streamlinehq.com/jester/",
+    "source_name": "Streamline",
+    "type": "article",
+    "summary": "A visual branding guide showing how expressive typography, unexpected color combinations, playful icon styles, and imaginative illustrations can communicate the Jester archetype.",
+    "tags": [
+      "jester",
+      "branding",
+      "visual-design",
+      "typography",
+      "icons"
+    ],
+    "verified_at": "2026-11-19",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-apricot-jester-archetype",
+    "slug": "apricot-jester-archetype",
+    "title": "The Jester Archetype: Fun & Humor",
+    "url": "https://apricotbranding.com/the-jester-archetype-fun-humor/",
+    "source_name": "Apricot Branding",
+    "type": "article",
+    "summary": "An introduction to Jester traits and entertainment-driven marketing, examining historical campaign examples from Blendtec, GEICO, Wendy's, Budweiser, and Halifax.",
+    "tags": [
+      "jester",
+      "branding",
+      "archetypes",
+      "brand-examples",
+      "marketing"
+    ],
+    "verified_at": "2026-11-19",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-kameleon-jester-archetype",
+    "slug": "kameleon-jester-archetype",
+    "title": "The Jester Archetype",
+    "url": "https://e-kameleon.com/jester-archetype/",
+    "source_name": "Kameleon Digital Marketing",
+    "type": "article",
+    "summary": "A personal-branding interpretation of the Jester emphasizing purposeful humor, genuine audience connection, lively experiences, and balancing irreverence with a clear message.",
+    "tags": [
+      "jester",
+      "branding",
+      "personal-branding",
+      "brand-voice",
+      "archetypes"
+    ],
+    "verified_at": "2026-11-19",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
+  },
+  {
+    "id": "resource-nvision-jester-archetype",
+    "slug": "nvision-jester-archetype",
+    "title": "Brand Archetypes — Meet the Jester",
+    "url": "https://nvision-that.com/brand-archetype-the-jester/",
+    "source_name": "N-Vision Designs",
+    "type": "article",
+    "summary": "A detailed branding interpretation of the Jester's motivations, social role, stages of expression, and related personas such as Entertainer, Clown, Provocateur, and Shapeshifter.",
+    "tags": [
+      "jester",
+      "branding",
+      "archetypes",
+      "sub-archetypes",
+      "satire"
+    ],
+    "verified_at": "2026-11-19",
+    "featured": false,
+    "related_trickster_ids": [],
+    "related_quote_ids": []
   }
 ]

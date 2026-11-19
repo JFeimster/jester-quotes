@@ -13,7 +13,7 @@ const validResourceTypes=new Set(['reference','article','book','essay','podcast'
 const idRegex=/^[A-Za-z0-9_-]{11}$/;
 
 test('Resource Vault has original, verified publisher references and valid relationships',()=>{
-  assert.equal(resources.length,21);
+  assert.equal(resources.length,26);
   assert.equal(new Set(resources.map(x=>x.id)).size,resources.length);
   assert.equal(new Set(resources.map(x=>x.slug)).size,resources.length);
   assert.equal(new Set(resources.map(x=>x.url)).size,resources.length);
@@ -24,7 +24,7 @@ test('Resource Vault has original, verified publisher references and valid relat
     assert.ok(validResourceTypes.has(resource.type));
     assert.equal(new URL(resource.url).protocol,'https:');
     assert.ok(!resource.url.includes('example.com')&&!resource.url.includes('placeholder'));
-    assert.equal(resource.verified_at,'2026-11-10');
+    assert.ok(['2026-11-10','2026-11-19'].includes(resource.verified_at));
     assert.ok(Array.isArray(resource.tags) && resource.tags.length>0);
     assert.ok(resource.related_trickster_ids.every(id=>validTricksters.has(id)));
     assert.deepEqual(resource.related_quote_ids,[]);
