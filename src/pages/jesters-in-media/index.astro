@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import media from '../../data/jesters-in-media.json';
 import '../../styles/jester-editorial.css';
 const items=media.filter(item=>item.publication_status==='published');
-const mediaTypes=[...new Set(items.map(item=>item.medium))];
+
 ---
 <BaseLayout title="Jesters in Media — Jester Quotes" description="Explore sourced interpretations of Jester-like characters in film, comics and television.">
   <div class="wrap je-page"><header class="je-intro"><p class="eyebrow">STORIES / CHARACTERS / CURIOUS FOOLS</p><h1>Jesters in <em>media.</em></h1><p class="je-lede">Explore attributed readings of characters whose humor, unpredictability, and contradictions disrupt the story. These are interpretive lenses, not official character classifications.</p></header>

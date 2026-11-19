@@ -6,7 +6,7 @@ import voice from '../../data/jester-editorial-voice.json';
 import resources from '../../data/resources.json';
 import brands from '../../data/jester-brands.json';
 import '../../styles/jester-editorial.css';
-const evidence = guide.source_resource_ids.map(id => resources.find(source=>source.id===id)).filter(Boolean);
+const evidence = guide.source_resource_ids.map(id => resources.find(source=>source.id===id)).filter((source): source is (typeof resources)[number] => Boolean(source));
 const caseStudies = brands.filter(item=>item.publication_status==='published').slice(0,6);
 ---
 <BaseLayout title={guide.page.title+' — Jester Quotes'} description={guide.page.meta_description} openGraphType="article">
